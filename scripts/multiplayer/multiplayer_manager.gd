@@ -4,7 +4,7 @@ var host_mode_enabled = false
 var multiplayer_mode_enabled = false
 var respawn_point = Vector2(30, 20)
 
-const GAME_VERSION = "v0.0.1"
+const GAME_VERSION = "v0.0.2d"
 @onready var GAME_HASH = calculate_game_hash()
 
 func calculate_game_hash() -> String:
