@@ -1,0 +1,15 @@
+res://scenes/join_menu.tscn
+res://scripts/game_manager.gd
+res://scenes/steam_hud.tscn
+res://scenes/multiplayer_player.tscn
+res://scenes/game.tscn
+res://scripts/multiplayer/networks/steam_network.gd
+res://scripts/multiplayer/multiplayer_controller.gd
+res://scripts/multiplayer/multiplayer_input.gd
+res://scripts/multiplayer/steam/steam_manager.gd
+res://scripts/multiplayer/networks/network_manager.gd
+res://scripts/Map.cs
+res://scripts/GameData.cs
+res://scenes/map.tscn
+res://scripts/multiplayer/multiplayer_manager.gd
+res://scenes/multiplayer/networks/steam_network.tscn

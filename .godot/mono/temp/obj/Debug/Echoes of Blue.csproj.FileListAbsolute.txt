@@ -1,0 +1,17 @@
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/Echoes of Blue.csproj.AssemblyReference.cache
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/Echoes of Blue.GeneratedMSBuildEditorConfig.editorconfig
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/Echoes of Blue.AssemblyInfoInputs.cache
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/Echoes of Blue.AssemblyInfo.cs
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/Echoes of Blue.csproj.CoreCompileInputs.cache
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/bin/Debug/Echoes of Blue.deps.json
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/bin/Debug/Echoes of Blue.runtimeconfig.json
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/bin/Debug/Echoes of Blue.dll
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/bin/Debug/Echoes of Blue.pdb
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/Echoes of Blue.csproj.CopyComplete
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/Echoes of Blue.dll
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/refint/Echoes of Blue.dll
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/Echoes of Blue.pdb
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/Echoes of Blue.genruntimeconfig.cache
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/Debug/ref/Echoes of Blue.dll

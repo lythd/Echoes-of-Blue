@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciqk8lfdwbk37"]
+
+[ext_resource type="Texture2D" uid="uid://dfh4vqvhjcdu8" path="res://assets/tileset_map.png" id="1_dewdh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_472tl"]
+atlas = ExtResource("1_dewdh")
+region = Rect2(240, 224, 16, 16)
+
+[node name="Cursor" type="Sprite2D"]
+z_index = 1
+texture = SubResource("AtlasTexture_472tl")
