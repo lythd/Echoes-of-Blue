@@ -3,7 +3,7 @@
         "amount": 1,
         "category": "rocket",
         "inputs": {
-            "blazerod": 10,
+            "moltensulfur": 10,
             "titaniumbar": 20
         },
         "rocketrequired": true
@@ -285,7 +285,7 @@
         "amount": 1,
         "category": "rocket",
         "inputs": {
-            "blazerod": 20,
+            "moltensulfur": 20,
             "titaniumbar": 10
         },
         "rocketrequired": true
@@ -301,7 +301,7 @@
         "amount": 1,
         "category": "weapon",
         "inputs": {
-            "blazerod": 10,
+            "moltensulfur": 10,
             "bronzebar": 25
         }
     },
@@ -460,7 +460,7 @@
         "amount": 1,
         "category": "accessory",
         "inputs": {
-            "blazerod": 1,
+            "moltensulfur": 1,
             "ironbar": 5
         }
     },
@@ -558,42 +558,42 @@
             "manacrystal": 5
         }
     },
-    "netheriteaxe": {
+    "vulrinthaxe": {
         "amount": 1,
         "category": "weapon",
         "inputs": {
-            "netheritebar": 3,
+            "vulrinthbar": 3,
             "wood": 2
         }
     },
-    "netheritehelmet": {
+    "vulrinthhelmet": {
         "amount": 1,
         "category": "armor",
         "inputs": {
-            "netheritebar": 5
+            "vulrinthbar": 5
         }
     },
-    "netheritepickaxe": {
+    "vulrinthpickaxe": {
         "amount": 1,
         "category": "pickaxe",
         "inputs": {
-            "netheritebar": 20,
+            "vulrinthbar": 20,
             "wood": 2
         }
     },
-    "netheritesword": {
+    "vulrinthsword": {
         "amount": 1,
         "category": "weapon",
         "inputs": {
-            "netheritebar": 2,
+            "vulrinthbar": 2,
             "wood": 2
         }
     },
-    "netheriteworm": {
+    "vulrinthworm": {
         "amount": 1,
         "category": "bait",
         "inputs": {
-            "netheritebar": 1,
+            "vulrinthbar": 1,
             "worm": 1
         }
     },
@@ -644,7 +644,7 @@
         "amount": 1,
         "category": "weapon",
         "inputs": {
-            "blazerod": 50,
+            "moltensulfur": 50,
             "titaniumbar": 50
         },
         "rocketrequired": true

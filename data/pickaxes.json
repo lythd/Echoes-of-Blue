@@ -35,10 +35,10 @@
         "name": "Iron Pickaxe",
         "tier": 3
     },
-    "netheritepickaxe": {
+    "vulrinthpickaxe": {
         "double": 50,
         "durability": 15000,
-        "name": "Netherite Pickaxe",
+        "name": "Vulrinth Pickaxe",
         "tier": 8
     },
     "pickaxe": {

@@ -1,6 +1,6 @@
 {
-	"wither": {
-		"name": "Wither",
+	"dyronix": {
+		"name": "Dyronix",
 		"description": "The most terrifying creature in the world, this fierce boss brings terror into anyone in its path.",
 		"type": "Boss",
 		"pdmg": 600,
@@ -8,24 +8,24 @@
 		"mhp": 2000,
 		"def": 200,
 		"spd": 350,
-		"effects": ["Withering"],
+		"effects": ["Decaying"],
 		"drops": {
-			"Common": {"Nether Star": 1, "Netherite Bar": [1,3], "Titanium Bar": [125,375]},
-			"Uncommon": {"Netherite Axe": 1, "Nether Star": 2, "Mana Crystal": [40,60]},
-			"Rare": {"Netherite Helmet": 1, "Titanium Bar": [100,150]},
-			"Very Rare": {"Netherite Pickaxe": 1}
+			"Common": {"Dragon Heart": 1, "Vulrinth Bar": [1,3], "Titanium Bar": [125,375]},
+			"Uncommon": {"Vulrinth Axe": 1, "Dragon Heart": 2, "Mana Crystal": [40,60]},
+			"Rare": {"Vulrinth Helmet": 1, "Titanium Bar": [100,150]},
+			"Very Rare": {"Vulrinth Pickaxe": 1}
 		}
 	},
-	"warden": {
-		"name": "Warden",
-		"description": "The guardian of the deep dark is no joke, prepare to be obliterated.",
+	"pitchspawn": {
+		"name": "Pitchspawn",
+		"description": "The guardian of the underground is no joke, prepare to be obliterated.",
 		"type": "Mini Boss",
 		"pdmg": 100,
 		"bdmg": 300,
 		"mhp": 1500,
 		"def": 50,
 		"spd": 50,
-		"effects": ["Deep Dark"],
+		"effects": ["Oozing"],
 		"drops": {
 			"Common": {"Copper Bar": [400,600], "Tin Bar": [400,600], "Bronze Bar": [400,600]},
 			"Uncommon": {"Iron Bar": [400,600], "Silver Bar": [400,600], "Gold Bar": [400,600]},
@@ -33,9 +33,9 @@
 			"Very Rare": {"Titanium Bar": [400,600]}
 		}
 	},
-	"zoglin": {
-		"name": "Zoglin",
-		"description": "A hoglin that died and climbed its way out from hell. The Zoglin is so feared that no civilisation can come close to it.",
+	"boarfather": {
+		"name": "Boarfather",
+		"description": "It's said in order to save his kids the Boarfather climbed its way out from hell. It is so feared that no civilisation can come close to it.",
 		"type": "Mini Boss",
 		"pdmg": -1,
 		"bdmg": 1750,
@@ -101,8 +101,8 @@
 			"Very Rare": {"Pumpkin Seed": [1000,3000]}
 		}
 	},
-	"elderguardian": {
-		"name": "Elder Guardian",
+	"elitesentry": {
+		"name": "Elite Sentry",
 		"description": "An advanced machine, with powerful lasers that even work underwater; the guardian of the water won't take kindly to you treading on its territory.",
 		"type": "Mini Boss",
 		"pdmg": 200,
@@ -112,15 +112,15 @@
 		"spd": 100,
 		"effects": ["Magic","Mana"],
 		"drops": {
-			"Common": {"Prismarine Shard": [5,15], "Copper Wiring": [40,60], "Titanium Bar": [5,15]},
-			"Uncommon": {"Prismarine Shard": [20,40], "Gold Wiring": [40,60], "Titanium Bar": [20,40]},
-			"Rare": {"Prismarine Shard": [40,60], "Titanium Bar": [40,60]},
+			"Common": {"Mysterious Shard": [5,15], "Copper Wiring": [40,60], "Titanium Bar": [5,15]},
+			"Uncommon": {"Mysterious Shard": [20,40], "Gold Wiring": [40,60], "Titanium Bar": [20,40]},
+			"Rare": {"Mysterious Shard": [40,60], "Titanium Bar": [40,60]},
 			"Very Rare": {"Titanium Bar": [400,600]}
 		}
 	},
-	"ravager": {
-		"name": "Ravager",
-		"description": "A beast of unknown origins, believed to be assosciated with the pillaging and raiding in the Forests.",
+	"grymfang": {
+		"name": "Grymfang",
+		"description": "A possessed beast of unknown origins, believed to be associated with the mysterious activities in the Forests.",
 		"type": "Mini Boss",
 		"pdmg": -1,
 		"bdmg": 300,
@@ -237,9 +237,9 @@
 			"Very Rare": {"Obsidian": [40,60]}
 		}
 	},
-	"guardian": {
-		"name": "Guardian",
-		"description": "After the original design of the Elder Guardian, a cheaper solution was needed, thus the Guardian.",
+	"nauticalsentry": {
+		"name": "NauticalSentry",
+		"description": "After the original design of the Elite Sentry, a cheaper solution was needed, thus the Nautical Sentry.",
 		"type": "Mini Boss",
 		"pdmg": 200,
 		"bdmg": -1,
@@ -248,15 +248,15 @@
 		"spd": 200,
 		"effects": ["Magic","Mana"],
 		"drops": {
-			"Common": {"Prismarine Shard": 1, "Copper Wiring": [4,6], "Gold Bar": 1},
-			"Uncommon": {"Prismarine Shard": [2,4], "Gold Wiring": [4,6], "Gold Bar": [2,4]},
-			"Rare": {"Prismarine Shard": [4,6], "Gold Bar": [4,6]},
+			"Common": {"Mysterious Shard": 1, "Copper Wiring": [4,6], "Gold Bar": 1},
+			"Uncommon": {"Mysterious Shard": [2,4], "Gold Wiring": [4,6], "Gold Bar": [2,4]},
+			"Rare": {"Mysterious Shard": [4,6], "Gold Bar": [4,6]},
 			"Very Rare": {"Gold Bar": [40,60]}
 		}
 	},
-	"aerocreeper": {
-		"name": "Aero Creeper",
-		"description": "An invasive species of plants believed to have originated in the jungle, aero creepers have evolved to be able to fly.",
+	"ivebornaurea": {
+		"name": "Iveborn Aurea",
+		"description": "An invasive species of plants believed to have originated in the jungle, aurea have evolved to be able to fly.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 625,
@@ -265,15 +265,15 @@
 		"spd": 350,
 		"effects": ["Explosion"],
 		"drops": {
-			"Common": {"Gun Powder": [1,3], "Cloud": [1,5], "Gold Bar": 1},
+			"Common": {"Vine": [1,3], "Cloud": [1,5], "Gold Bar": 1},
 			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
 			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
 			"Very Rare": {"Explosive Rocket": [2,5]}
 		}
 	},
-	"lavacreeper": {
-		"name": "Lava Creeper",
-		"description": "An invasive species of plants believed to have originated in the jungle, lava creepers have evolved to be able to take on fierce nether mobs.",
+	"ivebornadustus": {
+		"name": "Iveborn Adustus",
+		"description": "An invasive species of plants believed to have originated in the jungle, adustus have evolved to be able to take on fierce pyroclast mobs.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 700,
@@ -282,15 +282,15 @@
 		"spd": 325,
 		"effects": ["Explosion"],
 		"drops": {
-			"Common": {"Gun Powder": [1,3], "Magma Block": [1,5], "Gold Bar": 1},
+			"Common": {"Vine": [1,3], "Magma Block": [1,5], "Gold Bar": 1},
 			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
 			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
 			"Very Rare": {"Explosive Rocket": [2,5]}
 		}
 	},
-	"terracreeper": {
-		"name": "Terra Creeper",
-		"description": "An invasive species of plants believed to have originated in the jungle, terra creepers have evolved the defense needed to withstand cave-ins.",
+	"iveborncaverna": {
+		"name": "Iveborn Caverna",
+		"description": "An invasive species of plants believed to have originated in the jungle, caverna have evolved the defense needed to withstand cave-ins.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 600,
@@ -299,15 +299,15 @@
 		"spd": 325,
 		"effects": ["Explosion"],
 		"drops": {
-			"Common": {"Gun Powder": [1,3], "Stone": [1,5], "Gold Bar": 1},
+			"Common": {"Vine": [1,3], "Stone": [1,5], "Gold Bar": 1},
 			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
 			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
 			"Very Rare": {"Explosive Rocket": [2,5]}
 		}
 	},
-	"icecreeper": {
-		"name": "Ice Creeper",
-		"description": "An invasive species of plants believed to have originated in the jungle, ice creepers have evolved the bulk needed to survive harsh winters.",
+	"ivebornglacio": {
+		"name": "Iveborn Glacio",
+		"description": "An invasive species of plants believed to have originated in the jungle, glacio have evolved the bulk needed to survive harsh winters.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 600,
@@ -316,15 +316,15 @@
 		"spd": 325,
 		"effects": ["Explosion"],
 		"drops": {
-			"Common": {"Gun Powder": [1,3], "Ice": [1,5], "Gold Bar": 1},
+			"Common": {"Vine": [1,3], "Ice": [1,5], "Gold Bar": 1},
 			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
 			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
 			"Very Rare": {"Explosive Rocket": [2,5]}
 		}
 	},
-	"aquacreeper": {
-		"name": "Aqua Creeper",
-		"description": "An invasive species of plants believed to have originated in the jungle, aqua creepers have evolved to the fast-paced aquatic lifestyle.",
+	"ivebornaquamaris": {
+		"name": "Iveborn Aquamaris",
+		"description": "An invasive species of plants believed to have originated in the jungle, aquamaris have evolved to the fast-paced aquatic lifestyle.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 600,
@@ -333,15 +333,15 @@
 		"spd": 425,
 		"effects": ["Explosion"],
 		"drops": {
-			"Common": {"Gun Powder": [1,3], "Wood": [1,5], "Gold Bar": 1},
+			"Common": {"Vine": [1,3], "Raw Cod": [1,5], "Gold Bar": 1},
 			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
 			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
 			"Very Rare": {"Explosive Rocket": [2,5]}
 		}
 	},
-	"creeper": {
-		"name": "Creeper",
-		"description": "An invasive species of plants believed to have originated in the jungle, creepers have evolved to attack any threats with a fierce explosion.",
+	"ivebornhedera": {
+		"name": "Iveborn Hedera",
+		"description": "An invasive species of plants believed to have originated in the jungle, hedera have evolved to attack any threats with a fierce explosion.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 600,
@@ -350,15 +350,15 @@
 		"spd": 325,
 		"effects": ["Explosion"],
 		"drops": {
-			"Common": {"Gun Powder": [1,3], "Wood": [1,5], "Gold Bar": 1},
+			"Common": {"Vine": [1,3], "Dirt": [1,5], "Gold Bar": 1},
 			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
 			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
 			"Very Rare": {"Explosive Rocket": [2,5]}
 		}
 	},
-	"ghast": {
-		"name": "Ghast",
-		"description": "A light-weight balloon-like mob that can snipe you with a fireball from afar.",
+	"unholyspectre": {
+		"name": "Unholy Spectre",
+		"description": "This spirit has been judged, and now it will judge you. It loves to snipe things from afar with fire.",
 		"type": "Enemy",
 		"pdmg": 500,
 		"bdmg": -1,
@@ -367,15 +367,15 @@
 		"spd": 25,
 		"effects": [],
 		"drops": {
-			"Common": {"Gun Powder": [1,3], "Silver Bar": 1, "Gold Bar": 1},
-			"Uncommon": {"Gun Powder": [3,5], "Silver Bar": [2,4], "Gold Bar": [2,4]},
+			"Common": {"Ash": [1,3], "Silver Bar": 1, "Gold Bar": 1},
+			"Uncommon": {"Ash": [3,5], "Silver Bar": [2,4], "Gold Bar": [2,4]},
 			"Rare": {"Silver Bar": [4,6], "Gold Bar": [4,6]},
 			"Very Rare": {"Silver Bar": [45,55]}
 		}
 	},
-	"blaze": {
-		"name": "Blaze",
-		"description": "They utilise the powers of electomagnetism to fly, blazes will spray fire at you.",
+	"incinerator": {
+		"name": "Incinerator",
+		"description": "Impressive machines that utilise the powers of electomagnetism to fly, incinerators will spray fire at you.",
 		"type": "Enemy",
 		"pdmg": 300,
 		"bdmg": -1,
@@ -384,15 +384,15 @@
 		"spd": 200,
 		"effects": [],
 		"drops": {
-			"Common": {"Blaze Rod": 2, "Bronze Bar": 1, "Gold Bar": 1},
-			"Uncommon": {"Blaze Rod": [3,4], "Bronze Bar": [2,4], "Gold Bar": [2,4]},
+			"Common": {"Molten Sulfur": 2, "Bronze Bar": 1, "Gold Bar": 1},
+			"Uncommon": {"Molten Sulfur": [3,4], "Bronze Bar": [2,4], "Gold Bar": [2,4]},
 			"Rare": {"Bronze Bar": [4,6], "Gold Bar": [4,6]},
 			"Very Rare": {"Bronze Bar": [45,55]}
 		}
 	},
-	"witherskeleton": {
-		"name": "Wither Skeleton",
-		"description": "A common nether mob, unlike their counterparts they attack with swords.",
+	"charredskeleton": {
+		"name": "Charred Skeleton",
+		"description": "Skeletons round these parts got burnt up.",
 		"type": "Enemy",
 		"pdmg": 225,
 		"bdmg": 25,
@@ -407,9 +407,9 @@
 			"Very Rare": {"Golden Steak": [15,25]}
 		}
 	},
-	"piglinbrute": {
-		"name": "Piglin Brute",
-		"description": "An elite version of a common nether mob, piglin brutes rule the bastion.",
+	"karkothianbrute": {
+		"name": "Karkothian Brute",
+		"description": "The strongest Karkothians, having lost lots of blood to get here, now exude power and command respect, bow down to the rulers of the bastions!",
 		"type": "Enemy",
 		"pdmg": 280,
 		"bdmg": 70,
@@ -424,9 +424,26 @@
 			"Very Rare": {"Golden Steak": [15,25]}
 		}
 	},
-	"hoglin": {
-		"name": "Hoglin",
-		"description": "A common nether mob, although strong to us they are prey to other nether mobs.",
+	"elderboar": {
+		"name": "Elder Boar",
+		"description": "Boars not in their prime are weak, and are only found where they can be protected. They still pack a punch though.",
+		"type": "Enemy",
+		"pdmg": -1,
+		"bdmg": 200,
+		"mhp": 400,
+		"def": -1,
+		"spd": 100,
+		"effects": [],
+		"drops": {
+			"Common": {"Bacon": [2,5], "Gold Ore": 1, "Gold Bar": 1},
+			"Uncommon": {"Leather": 1, "Gold Pickaxe": 1, "Gold Bar": [2,4]},
+			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
+			"Very Rare": {"Golden Steak": [15,25]}
+		}
+	},
+	"boar": {
+		"name": "Boar",
+		"description": "A common animal in pyroclast, although strong to us they are but food to the Karkothians.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 150,
@@ -441,15 +458,32 @@
 			"Very Rare": {"Golden Steak": [15,25]}
 		}
 	},
-	"zombifiedpiglin": {
-		"name": "Zombified Piglin",
-		"description": "A zombified variant of a common nether mob.",
+	"babyboar": {
+		"name": "Baby Boar",
+		"description": "Young boars are weak, and are only found where they can be protected. They still pack a punch though.",
 		"type": "Enemy",
-		"pdmg": 50,
+		"pdmg": -1,
+		"bdmg": 150,
+		"mhp": 400,
+		"def": -1,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"Common": {"Bacon": [2,5], "Gold Ore": 1, "Gold Bar": 1},
+			"Uncommon": {"Leather": 1, "Gold Pickaxe": 1, "Gold Bar": [2,4]},
+			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
+			"Very Rare": {"Golden Steak": [15,25]}
+		}
+	},
+	"karkothiangrunt": {
+		"name": "Karkothian Grunt",
+		"description": "They do the dirty work for the brutes, they aren't afraid to risk their lives if it gives them a shot at becoming a brute themselves.",
+		"type": "Enemy",
+		"pdmg": 125,
 		"bdmg": 100,
 		"mhp": 300,
-		"def": 50,
-		"spd": 150,
+		"def": 75,
+		"spd": 100,
 		"effects": [],
 		"drops": {
 			"Common": {"Bacon": 1, "Gold Ore": 1, "Gold Bar": 1},
@@ -458,9 +492,9 @@
 			"Very Rare": {"Golden Steak": [15,25]}
 		}
 	},
-	"piglin": {
-		"name": "Piglin",
-		"description": "A common nether mob, they are certainly strong.",
+	"karkothianscout": {
+		"name": "Karkothian Scout",
+		"description": "Scouts sent from the bastions to monitor areas and hunt for their prized bacon.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 150,
@@ -492,14 +526,14 @@
 			"Very Rare": {"Turtle Master Potion": [40,60]}
 		}
 	},
-	"silverfish": {
-		"name": "Silverfish",
-		"description": "Gah!",
+	"cavernghoul": {
+		"name": "Cavern Ghoul",
+		"description": "Most cavern ghouls go all their life without seeing a single other living creature besides for their own birth. Lets just say their curiosity towards seeing their first living creature won't be a friendly one.",
 		"type": "Enemy",
 		"pdmg": 150,
 		"bdmg": -1,
-		"mhp": 10,
-		"def": 250,
+		"mhp": 150,
+		"def": 100,
 		"spd": 90,
 		"effects": [],
 		"drops": {
@@ -509,9 +543,26 @@
 			"Very Rare": {"Silver Bar": [40,60]}
 		}
 	},
-	"phantom": {
-		"name": "Phantom",
-		"description": "The stuff of nightmares.",
+	"troll": {
+		"name": "Troll",
+		"description": "These stone creatures are very territorial, you will regret coming near.",
+		"type": "Enemy",
+		"pdmg": -1,
+		"bdmg": 200,
+		"mhp": 200,
+		"def": 200,
+		"spd": 25,
+		"effects": [],
+		"drops": {
+			"Common": {"Chain": 1, "Stone": [50, 100], "Bronze Bar": 1},
+			"Uncommon": {"Chain": [3,5], "Copper Ore": [3,5], "Bronze Bar": [2,4]},
+			"Rare": {"Copper Ore": [4,6], "Bronze Bar": [4,6]},
+			"Very Rare": {"Bronze Bar": [40,60]}
+		}
+	},
+	"vulture": {
+		"name": "Vulture",
+		"description": "They may be a scavenger but they will eat you alive too. Their insane dive speeds are good for both stealing things and for getting lunch.",
 		"type": "Enemy",
 		"pdmg": 200,
 		"bdmg": 50,
@@ -526,9 +577,9 @@
 			"Very Rare": {"Silver Bar": [40,60]}
 		}
 	},
-	"enderman": {
-		"name": "Enderman",
-		"description": "They will come after you. Afraid of water, I wonder why? They frequently hold dirt, and often take pieces from people's homes. They teleport using magic.",
+	"warlock": {
+		"name": "Warlock",
+		"description": "They will come after you. We aren't too sure where they come from, just that they hate us. They teleport using magic.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 150,
@@ -537,15 +588,15 @@
 		"spd": 175,
 		"effects": [],
 		"drops": {
-			"Common": {"Dirt": 1, "Ender Pearl": 1, "Silver Bar": 1},
+			"Common": {"Dirt": 1, "Wood": [5, 10], "Silver Bar": 1},
 			"Uncommon": {"Wood": [15,20], "Glass": [3,5], "Silver Bar": [2,4]},
 			"Rare": {"Mana Crystal": 1, "Silver Bar": [4,6]},
 			"Very Rare": {"Mana Crystal": [5,10]}
 		}
 	},
-	"enderskeleton": {
-		"name": "Enderskeleton",
-		"description": "Even after endermen die they will come after you.",
+	"warlockskeleton": {
+		"name": "Warlock Skeleton",
+		"description": "Even after warlocks die they will come after you.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 150,
@@ -554,7 +605,7 @@
 		"spd": 175,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [3,5], "Ender Pearl": 1, "Tin Bar": 2},
+			"Common": {"Bone": [3,5], "Wood": [5, 10], "Tin Bar": 2},
 			"Uncommon": {"Wood Bow": 1, "Bone Arrow": [3,5], "Tin Bar": [3,5]},
 			"Rare": {"Bone Ring": 1, "Tin Bar": [5,7]},
 			"Very Rare": {"Dual Bow": 1}
@@ -611,9 +662,9 @@
 			"Very Rare": {"Dual Bow": 1}
 		}
 	},
-	"spiderjockey": {
-		"name": "Spider Jockey",
-		"description": "What if a skeleton could move as fast as a spider?",
+	"wolfjockey": {
+		"name": "Wolf Jockey",
+		"description": "What if a skeleton could move as fast as a wolf?",
 		"type": "Enemy",
 		"pdmg": 150,
 		"bdmg": -1,
@@ -662,9 +713,9 @@
 			"Very Rare": {"Diamond Sword": 1}
 		}
 	},
-	"stray": {
-		"name": "Stray",
-		"description": "Always shoots at you when you least expect it.",
+	"frozenskeleton": {
+		"name": "Frozen Skeleton",
+		"description": "I bet they feel a chill in their spine.",
 		"type": "Enemy",
 		"pdmg": 200,
 		"bdmg": -1,
@@ -696,23 +747,6 @@
 			"Very Rare": {"Dual Bow": 1}
 		}
 	},
-	"cavespider": {
-		"name": "Cave Spider",
-		"description": "Holy hell they're huge! Well actually a little smaller than huge.",
-		"type": "Enemy",
-		"pdmg": 175,
-		"bdmg": 25,
-		"mhp": 75,
-		"def": 50,
-		"spd": 300,
-		"effects": [],
-		"drops": {
-			"Common": {"String": [1,3], "Copper Ore": 1, "Bronze Bar": 1},
-			"Uncommon": {"String": [3,5], "Silk Cloth": 1, "Bronze Bar": [2,4]},
-			"Rare": {"Silky String": 1, "Bronze Bar": [4,6]},
-			"Very Rare": {"Silk Rod": 1}
-		}
-	},
 	"spider": {
 		"name": "Spider",
 		"description": "Holy hell they're huge!",
@@ -732,7 +766,7 @@
 	},
 	"magmaslime": {
 		"name": "Magma Slime",
-		"description": "Magma Cube? No. Magma Slime? Yes!",
+		"description": "Did you ever just think slimes weren't annoying enough?",
 		"type": "Enemy",
 		"pdmg": 25,
 		"bdmg": 75,
@@ -900,9 +934,9 @@
 			"Very Rare": {"Shrimp Shrimp": [4,6]}
 		}
 	},
-	"illusioner": {
-		"name": "Illusioner",
-		"description": "Illusioners don't like to battle, but if they do you better be careful. Their dark magic clones will shoot at you from all sides.",
+	"alchemist": {
+		"name": "Alchemist",
+		"description": "Alchemists don't like to battle, but if they do you better be careful. Their dark magic clones will shoot at you from all sides.",
 		"type": "Enemy",
 		"pdmg": 200,
 		"bdmg": -1,
@@ -912,14 +946,14 @@
 		"effects": ["Multi Hit"],
 		"drops": {
 			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Emerald": 3, "Gold Bow": 1, "Iron Bar": [2,4]},
-			"Rare": {"Emerald": [4,6], "Iron Bar": [4,6]},
-			"Very Rare": {"Emerald": [10,20]}
+			"Uncommon": {"Microwave": 3, "Gold Bow": 1, "Iron Bar": [2,4]},
+			"Rare": {"Microwave": [4,6], "Iron Bar": [4,6]},
+			"Very Rare": {"Microwave": [10,20]}
 		}
 	},
-	"evoker": {
-		"name": "Evoker",
-		"description": "These strong wielders of dark magic will make you regret coming near, their signature move is summoning jaws to bite you.",
+	"necromancer": {
+		"name": "Necromancer",
+		"description": "These strong wielders of dark magic will make you regret coming near, they will send vengeful spirits your way.",
 		"type": "Enemy",
 		"pdmg": 600,
 		"bdmg": -1,
@@ -929,13 +963,13 @@
 		"effects": [],
 		"drops": {
 			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Emerald": 3, "Iron Ore": [2,4], "Iron Bar": [2,4]},
-			"Rare": {"Emerald": [4,6], "Iron Bar": [4,6]},
-			"Very Rare": {"Emerald": [10,20]}
+			"Uncommon": {"Microwave": 3, "Iron Ore": [2,4], "Iron Bar": [2,4]},
+			"Rare": {"Microwave": [4,6], "Iron Bar": [4,6]},
+			"Very Rare": {"Microwave": [10,20]}
 		}
 	},
-	"vex": {
-		"name": "Vex",
+	"anguishedsoul": {
+		"name": "Anguished Soul",
 		"description": "These pesky creatures are hard to hit, they are an embodiment of dark magic, and will hunt you down.",
 		"type": "Enemy",
 		"pdmg": 400,
@@ -946,14 +980,14 @@
 		"effects": [],
 		"drops": {
 			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Emerald": 2, "Iron Ore": [2,4], "Iron Bar": [2,4]},
-			"Rare": {"Emerald": [3,5], "Iron Bar": [4,6]},
-			"Very Rare": {"Emerald": [10,20]}
+			"Uncommon": {"Microwave": 2, "Iron Ore": [2,4], "Iron Bar": [2,4]},
+			"Rare": {"Microwave": [3,5], "Iron Bar": [4,6]},
+			"Very Rare": {"Microwave": [10,20]}
 		}
 	},
-	"vindicator": {
-		"name": "Vindicator",
-		"description": "Their strong axe is sure to bring some pain.",
+	"armedcultist": {
+		"name": "Armed Cultist",
+		"description": "Part of a mysterious group in the woods. They are sure to bring some pain.",
 		"type": "Enemy",
 		"pdmg": 400,
 		"bdmg": 100,
@@ -963,14 +997,14 @@
 		"effects": [],
 		"drops": {
 			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Emerald": 2, "Iron Axe": 1, "Iron Bar": [2,4]},
-			"Rare": {"Emerald": [3,5], "Iron Bar": [4,6]},
-			"Very Rare": {"Emerald": [10,20]}
+			"Uncommon": {"Microwave": 2, "Dagger": 1, "Iron Bar": [2,4]},
+			"Rare": {"Microwave": [3,5], "Iron Bar": [4,6]},
+			"Very Rare": {"Microwave": [10,20]}
 		}
 	},
-	"chillager": {
-		"name": "Chillager",
-		"description": "Using dark magic they hurl ice crystals to kill their enemies.",
+	"frozencultist": {
+		"name": "Frozen Cultist",
+		"description": "Part of a mysterious group in the woods. They appear to have gotten lost and frozen, and they will take that out on any passersby.",
 		"type": "Enemy",
 		"pdmg": 200,
 		"bdmg": 100,
@@ -980,14 +1014,14 @@
 		"effects": [],
 		"drops": {
 			"Common": {"Bread": [2,5], "Ice": 1, "Iron Bar": 1},
-			"Uncommon": {"Emerald": 2, "Ice": [2,4], "Iron Bar": [2,4]},
-			"Rare": {"Emerald": [3,5], "Iron Bar": [4,6]},
-			"Very Rare": {"Emerald": [10,20]}
+			"Uncommon": {"Microwave": 2, "Ice": [2,4], "Iron Bar": [2,4]},
+			"Rare": {"Microwave": [3,5], "Iron Bar": [4,6]},
+			"Very Rare": {"Microwave": [10,20]}
 		}
 	},
-	"pillager": {
-		"name": "Pillager",
-		"description": "These are the main raiders that plague settlements around the forest location.",
+	"meditatingcultist": {
+		"name": "Meditating Cultist",
+		"description": "Part of a mysterious group in the woods. They don't need to stop meditating to kill you.",
 		"type": "Enemy",
 		"pdmg": 200,
 		"bdmg": -1,
@@ -997,14 +1031,31 @@
 		"effects": [],
 		"drops": {
 			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Emerald": 1, "Iron Ore": [2,4], "Iron Bar": [2,4]},
-			"Rare": {"Emerald": [2,4], "Iron Bar": [4,6]},
-			"Very Rare": {"Emerald": [10,20]}
+			"Uncommon": {"Microwave": 1, "Iron Ore": [2,4], "Iron Bar": [2,4]},
+			"Rare": {"Microwave": [2,4], "Iron Bar": [4,6]},
+			"Very Rare": {"Microwave": [10,20]}
 		}
 	},
-	"husk": {
-		"name": "Husk",
-		"description": "Hordes of husks roam the desert, this basic mob is easily overcome.",
+	"sphinx": {
+		"name": "Sphinx",
+		"description": "Honestly don't know that much about sphinxes.",
+		"type": "Enemy",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 150,
+		"def": 50,
+		"spd": 250,
+		"effects": [],
+		"drops": {
+			"Common": {"Leather": 1, "Sand": [1,5], "Iron Bar": 1},
+			"Uncommon": {"Mining Charm": 1, "Leather": [2,4], "Iron Bar": [2,4]},
+			"Rare": {"Gold Bar": 2, "Iron Bar": [4,6]},
+			"Very Rare": {"Gold Bar": [50, 100]}
+		}
+	},
+	"mummy": {
+		"name": "Mummy",
+		"description": "Imagine a zombie, but like wrapped in cloth, and in the desert, and also they used to be rich.",
 		"type": "Enemy",
 		"pdmg": -1,
 		"bdmg": 150,
@@ -1019,9 +1070,26 @@
 			"Very Rare": {"The Spade": 1}
 		}
 	},
-	"drowned": {
-		"name": "Drowned",
-		"description": "Hordes of drowned roam the oceans, this basic mob is easily overcome.",
+	"sandserpent": {
+		"name": "Sand Serpent",
+		"description": "Careful walking through sand, you never know.",
+		"type": "Enemy",
+		"pdmg": 100,
+		"bdmg": -1,
+		"mhp": 50,
+		"def": 50,
+		"spd": 325,
+		"effects": [],
+		"drops": {
+			"Common": {"Chum": 1, "Sand": [1,5], "Iron Bar": 1},
+			"Uncommon": {"Mining Charm": 1, "Leather": 1, "Iron Bar": [2,4]},
+			"Rare": {"String": [20,40], "Iron Bar": [4,6]},
+			"Very Rare": {"Silk Cloth": [2,4]}
+		}
+	},
+	"brinebound": {
+		"name": "Brinebound",
+		"description": "These poor folk were unable to leave the sea once they entered.",
 		"type": "Enemy",
 		"pdmg": 50,
 		"bdmg": 75,

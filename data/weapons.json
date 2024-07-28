@@ -197,20 +197,20 @@
         "name": "Katana",
         "piercing": 50
     },
-    "netheriteaxe": {
+    "vulrinthaxe": {
         "blunt": 300,
         "durability": 10,
         "effects": [
             "Goes Last"
         ],
-        "name": "Netherite Axe",
+        "name": "vulrinth Axe",
         "piercing": 1200
     },
-    "netheritesword": {
+    "vulrinthsword": {
         "blunt": 75,
         "durability": 20,
         "effects": [],
-        "name": "Netherite Sword",
+        "name": "vulrinth Sword",
         "piercing": 675
     },
     "cometlance": {

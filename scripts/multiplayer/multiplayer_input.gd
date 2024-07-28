@@ -19,8 +19,6 @@ func _physics_process(_delta):
 func _process(_delta):
 	if Input.is_action_just_pressed("sneak"):
 		sneak.rpc()
-	#if Input.is_action_just_pressed("map"):
-		#set_map_open.rpc(!player.map_open)
 
 @rpc("call_local")
 func sneak():

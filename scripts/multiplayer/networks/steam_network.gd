@@ -11,7 +11,6 @@ const LOBBY_NAME = "SDOFUNzDOU3"
 const LOBBY_MODE = "CoOP"
 
 func  _ready():
-	#multiplayer_peer.lobby_created.connect(_on_lobby_created)
 	Steam.lobby_created.connect(_on_lobby_created.bind())
 
 func become_host():

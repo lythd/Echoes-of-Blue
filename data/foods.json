@@ -59,6 +59,10 @@
         "energy": 11,
         "name": "Mango"
     },
+    "coconut": {
+        "energy": 11,
+        "name": "Coconut"
+    },
     "milk": {
         "energy": 4,
         "name": "Milk"
@@ -79,9 +83,9 @@
         "energy": 24,
         "name": "Bacon"
     },
-    "netheriteworm": {
+    "vulrinthworm": {
         "energy": 5000,
-        "name": "Netherite Worm"
+        "name": "Vulrinth Worm"
     },
     "potato": {
         "energy": 10,

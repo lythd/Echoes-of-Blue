@@ -93,11 +93,11 @@
         ],
         "name": "Rock Helmet"
     },
-    "netheritehelmet": {
+    "vulrinthhelmet": {
         "defense": 450,
         "durability": 20,
         "effects": [],
-        "name": "Netherite Helmet"
+        "name": "Vulrinth Helmet"
     },
     "cometarmor": {
         "defense": 400,

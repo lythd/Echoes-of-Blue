@@ -8,7 +8,7 @@
     {
         "category": "generic",
         "description": "A truly priceless trophy item.",
-        "name": "Nether Star",
+        "name": "Dragon Heart",
         "price": 0
     },
     {
@@ -40,8 +40,8 @@
     {
         "bought": 1000,
         "category": "generic",
-        "description": "Wood from a fireproof tree found in the nether.",
-        "name": "Crimson Wood",
+        "description": "Wood from a fireproof tree found in pyroclast. Or maybe it just already burnt down who knows.",
+        "name": "Smoke Wood",
         "price": 25,
         "sold": 1000
     },
@@ -51,6 +51,14 @@
         "description": "Pretty important to uh see.",
         "name": "Torch",
         "price": 5,
+        "sold": 25000
+    },
+    {
+        "bought": 25000,
+        "category": "generic",
+        "description": "Used to be used as currency, now they are just pretty thing for decoration, or maybe you could still use it as currency nothing stopping you.",
+        "name": "Sea Shell",
+        "price": 15,
         "sold": 25000
     },
     {
@@ -64,9 +72,17 @@
     {
         "bought": 100000,
         "category": "generic",
-        "description": "Used in crafting, can be obtained from a beach.",
+        "description": "Used in crafting, can be obtained from a beach or desert... obviously.",
         "name": "Sand",
         "price": 5,
+        "sold": 100000
+    },
+    {
+        "bought": 100000,
+        "category": "generic",
+        "description": "Used in uh nothing. Ash!",
+        "name": "Ash",
+        "price": 10,
         "sold": 100000
     },
     {
@@ -112,7 +128,7 @@
     {
         "category": "generic",
         "description": "A weird material, perhaps it could be useful in constructing a dangerous machine.",
-        "name": "Prismarine Shard",
+        "name": "Mysterious Shard",
         "price": 0
     },
     {
@@ -138,17 +154,9 @@
         "sold": 10000
     },
     {
-        "bought": 1000,
         "category": "generic",
-        "description": "Seems to be connected to the magic of the Enderman.",
-        "name": "Ender Pearl",
-        "price": 75,
-        "sold": 1000
-    },
-    {
-        "category": "generic",
-        "description": "This rod has a unique connection to fire, its composition is unknown.",
-        "name": "Blaze Rod",
+        "description": "Molten Sulfur has a unique relationship with making things burn ✨toxicly✨.",
+        "name": "Molten Sulfur",
         "price": 0
     },
     {
@@ -210,8 +218,8 @@
     {
         "bought": 5000,
         "category": "generic",
-        "description": "Magma has pierced through this rock, be careful around it.",
-        "name": "Magma Block",
+        "description": "Magma has pierced through this rock, be careful around it. Hot like hell!",
+        "name": "Hellstone",
         "price": 40,
         "sold": 5000
     },
@@ -219,7 +227,7 @@
         "bought": 100,
         "category": "generic",
         "description": "The most luxurious of collectibles. Afforded only by those that are the master of stonks. It's an investors dream.",
-        "name": "Netherite Bar",
+        "name": "Vulrinth Bar",
         "price": 20000,
         "sold": 100
     },
@@ -332,6 +340,14 @@
         "category": "food",
         "description": "Halloween decoration and food.",
         "name": "Pumpkin",
+        "price": 10,
+        "sold": 20000
+    },
+    {
+        "bought": 20000,
+        "category": "food",
+        "description": "You think you just fell out of a coconut tree?",
+        "name": "Coconut",
         "price": 10,
         "sold": 20000
     },
@@ -541,7 +557,7 @@
         "bought": 100,
         "category": "pickaxe",
         "description": "Used to mine, more info in /pickaxes.",
-        "name": "Netherite Pickaxe",
+        "name": "Vulrinth Pickaxe",
         "price": 360000,
         "sold": 100
     },
@@ -690,11 +706,35 @@
         "sold": 500000
     },
     {
+        "bought": 500000,
+        "category": "mining",
+        "description": "I love gravel.",
+        "name": "Gravel",
+        "price": 4,
+        "sold": 500000
+    },
+    {
+        "bought": 500000,
+        "category": "mining",
+        "description": "It's like stone but prettier.",
+        "name": "Limestone",
+        "price": 8,
+        "sold": 500000
+    },
+    {
         "bought": 5000,
         "category": "mining",
-        "description": "A burnt piece of stone from the nether.",
+        "description": "A burnt piece of stone from pyroclast.",
         "name": "Blackstone",
         "price": 30,
+        "sold": 5000
+    },
+    {
+        "bought": 5000,
+        "category": "mining",
+        "description": "A piece of igneous stone from pyroclast.",
+        "name": "Basalt",
+        "price": 45,
         "sold": 5000
     },
     {
@@ -931,7 +971,7 @@
         "bought": 500,
         "category": "weapon",
         "description": "A weapon fit for a God, this weapon will slice up anything.",
-        "name": "Netherite Sword",
+        "name": "Vulrinth Sword",
         "price": 36000,
         "sold": 500
     },
@@ -939,7 +979,7 @@
         "bought": 500,
         "category": "weapon",
         "description": "A weapon fit for a God, this hefty weapon will put a dent into anything.",
-        "name": "Netherite Axe",
+        "name": "Vulrinth Axe",
         "price": 54000,
         "sold": 500
     },
@@ -1011,7 +1051,7 @@
     },
     {
         "category": "weapon",
-        "description": "A weapon forged and wielded by Piglin Brutes, who knows how they made it so light weight.",
+        "description": "A weapon forged and wielded by Karkothian Brutes, who knows how they made it so light weight.",
         "name": "True Gold Axe",
         "price": 0
     },
@@ -1161,7 +1201,7 @@
         "bought": 500,
         "category": "armor",
         "description": "Armor fit for a God, this armor can stand all blows.",
-        "name": "Netherite Helmet",
+        "name": "Vulrinth Helmet",
         "price": 90000,
         "sold": 500
     },
@@ -1577,7 +1617,7 @@
         "bought": 100,
         "category": "bait",
         "description": "This worm is living lavishly that's for sure. Top tier bait.",
-        "name": "Netherite Worm",
+        "name": "Vulrinth Worm",
         "price": 20000,
         "sold": 100
     },

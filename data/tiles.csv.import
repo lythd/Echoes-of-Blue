@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dhlaks8s0q3lm"
+
+[deps]
+
+files=["res://data/tiles. Pyro Soil.translation", "res://data/tiles. Pyro Soil{V}.translation", "res://data/tiles. Pyro Soil{V}.translation", "res://data/tiles. Pyro Soil{V}.translation", "res://data/tiles. Blackstone.translation", "res://data/tiles. Fire.translation", "res://data/tiles. Smoke Bush.translation"]
+
+source_file="res://data/tiles.csv"
+dest_files=["res://data/tiles. Pyro Soil.translation", "res://data/tiles. Pyro Soil{V}.translation", "res://data/tiles. Pyro Soil{V}.translation", "res://data/tiles. Pyro Soil{V}.translation", "res://data/tiles. Blackstone.translation", "res://data/tiles. Fire.translation", "res://data/tiles. Smoke Bush.translation"]
+
+[params]
+
+compress=true
+delimiter=0

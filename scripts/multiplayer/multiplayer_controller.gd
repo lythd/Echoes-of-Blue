@@ -26,9 +26,9 @@ var tile_is_slippery = false
 func _ready():
 	if in_control():
 		$Camera2D.make_current()
+		$Camera2D.enabled = true
 	else:
 		$Camera2D.enabled = false
-	#print_node_tree()
 
 func in_control() -> bool:
 	return multiplayer.get_unique_id() == player_id || !MultiplayerManager.multiplayer_mode_enabled
@@ -94,6 +94,7 @@ func press_map():
 	$InputSynchronizer.set_map_open.rpc(map_open)
 	if map_open:
 		map = map_scene.instantiate()
+		$Camera2D.enabled = false
 		map.Controller = self
 		$"../..".add_child(map, true)
 		hide()

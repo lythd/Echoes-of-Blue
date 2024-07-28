@@ -109,7 +109,7 @@
 	},
 	"treechopper9001": {
 		"name": "Tree Chopper 9001",
-		"description": "Chop down nether tree yes vroom.",
+		"description": "Chop down fire tree yes vroom.",
 		"power": 3,
 		"consumed": {},
 		"extracted": {
@@ -163,7 +163,7 @@
 	},
 	"blackstonequarry": {
 		"name": "Blackstone Quarry",
-		"description": "Nothing preserves the landscape better than a giant hole in the ground. Though the nether is ugly anyway.",
+		"description": "Nothing preserves the landscape better than a giant hole in the ground. Though pyroclast is ugly anyway.",
 		"power": 25,
 		"consumed": {},
 		"extracted": {
@@ -268,6 +268,20 @@
 		},
 		"materials": {
 			"mango": 10,
+			"basicmachinepart": 1,
+			"wood": 50
+		}
+	},
+	"coconuttreeshaker": {
+		"name": "Coconut Tree Shaker",
+		"description": "Coconut on tree, shake tree, coconut in hand.",
+		"power": 2,
+		"consumed": {},
+		"extracted": {
+			"coconut": 5
+		},
+		"materials": {
+			"coconut": 10,
 			"basicmachinepart": 1,
 			"wood": 50
 		}
@@ -400,7 +414,7 @@
 		"power": 3,
 		"consumed": {},
 		"extracted": {
-			"magmablock": 10
+			"hellstone": 10
 		},
 		"materials": {
 			"ironpickaxe": 1,

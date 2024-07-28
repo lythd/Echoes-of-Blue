@@ -42,7 +42,7 @@
     "strengthpotion": {
         "amount": 1,
         "inputs": {
-            "blazerod": 1,
+            "moltensulfur": 1,
             "manacrystal": 2,
             "waterbottle": 1
         }

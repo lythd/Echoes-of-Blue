@@ -1,2 +1,8 @@
+res://scenes/map.tscn
+res://scenes/game.tscn
+res://scenes/steam_hud.tscn
 res://scenes/multiplayer_player.tscn
-res://scripts/multiplayer/multiplayer_manager.gd
+res://scenes/multiplayer/networks/steam_network.tscn
+res://scripts/Map.cs
+res://scripts/GameData.cs
+res://scripts/multiplayer/multiplayer_controller.gd
