@@ -94,7 +94,6 @@ func press_map():
 	$InputSynchronizer.set_map_open.rpc(map_open)
 	if map_open:
 		map = map_scene.instantiate()
-		$Camera2D.enabled = false
 		map.Controller = self
 		$"../..".add_child(map, true)
 		hide()
@@ -111,6 +110,7 @@ func come_back_from_map():
 	$InputSynchronizer.set_map_open.rpc(map_open)
 	show()
 	_ready()
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE;
 
 func _check_tile_properties():
 	if tile_map == null:

@@ -5,3 +5,4 @@ res://scenes/map.tscn
 res://scripts/Map.cs
 res://scripts/GameData.cs
 res://scripts/multiplayer/multiplayer_controller.gd
+res://scripts/multiplayer/networks/steam_network.gd

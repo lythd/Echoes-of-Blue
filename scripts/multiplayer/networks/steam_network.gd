@@ -3,8 +3,6 @@ extends Node
 var multiplayer_scene = preload("res://scenes/multiplayer_player.tscn")
 var multiplayer_peer: SteamMultiplayerPeer = SteamMultiplayerPeer.new()
 var _players_spawn_node
-var _tile_map
-var _game
 var _hosted_lobby_id = 0
 
 const LOBBY_NAME = "SDOFUNzDOU3"

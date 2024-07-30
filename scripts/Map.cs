@@ -19,7 +19,7 @@ public partial class Map : Node2D
 	private Vector2 _lastDirection;
 	private float _keyRepeatTimer = 0;
 	
-	private const float _keyRepeatDelay = 0.5f;
+	private const float _keyRepeatDelay = 0.25f;
 	private const float _keyRepeatInterval = 0.1f;
 	
 	private Rect2 _cursorDefault = new Rect2(240, 896, 16, 16);
@@ -33,14 +33,12 @@ public partial class Map : Node2D
 	public override void _Ready()
 	{
 		_gameData = GetNode<GameData>("/root/GameData");
-		_tileMap = GetNode<TileMap>("/root/Game/Map/Canvas/TileMap");
-		_cursor = GetNode<Sprite2D>("/root/Game/Map/Canvas/Cursor");
-		_flag = GetNode<AnimatedSprite2D>("/root/Game/Map/Canvas/Flag");
-		_transitionTimer = GetNode<Timer>("/root/Game/Map/TransitionTimer");
-		_camera = GetNode<Camera2D>("/root/Game/Map/Canvas/Cursor/MapCamera2D");
+		_tileMap = GetNode<TileMap>("TileMap");
+		_cursor = GetNode<Sprite2D>("Canvas/Cursor");
+		_flag = GetNode<AnimatedSprite2D>("Flag");
+		_transitionTimer = GetNode<Timer>("TransitionTimer");
+		_camera = GetNode<Camera2D>("Canvas/Cursor/MapCamera2D");
 		_camera.MakeCurrent();
-		_camera.Enabled = true;
-		GD.Print($"{_camera.Enabled} {_camera.LimitRight}");
 		_atlasTexture = (AtlasTexture)_cursor.Texture;
 		_tileSize = _tileMap.TileSet.TileSize;
 		_cursorPosition = Vector2I.Zero;
@@ -50,12 +48,13 @@ public partial class Map : Node2D
 		
 		SetFlag();
 		UpdateCursor();
+		Input.MouseMode = Input.MouseModeEnum.Captured;
 	}
 
 	public override void _Process(double delta)
 	{
 		_keyRepeatTimer -= (float)delta;
-		Vector2 direction = Input.GetAxis("gui_left","gui_right") * Vector2.Right + Input.GetAxis("gui_up","gui_down") * Vector2.Down;
+		Vector2 direction = Input.GetAxis("gui_left","gui_right")*Vector2.Right+Input.GetAxis("gui_up","gui_down")*Vector2.Down;
 		if(_lastDirection == Vector2.Zero || _keyRepeatTimer <= 0) {
 			_keyRepeatTimer = _lastDirection == direction ? _keyRepeatInterval : _keyRepeatDelay;
 			if(_cursorEnabled) MoveCursor(direction);
@@ -78,7 +77,6 @@ public partial class Map : Node2D
 
 	private void SetFlag() {
 		//sets _flag.Position to whatever tile has the same "LocationName" custom data layer as _gameData.PlayerLocation
-		
 		for (int x = -_tileMap.GetUsedRect().Size.X/2; x < _tileMap.GetUsedRect().Size.X/2; x++)
 		{
 			for (int y = -_tileMap.GetUsedRect().Size.Y/2; y < _tileMap.GetUsedRect().Size.Y/2; y++)
@@ -88,7 +86,7 @@ public partial class Map : Node2D
 				if(tileData == null || ((string)tileData.GetCustomData("LocationName")).Length == 0) continue;
 				if (_gameData.PlayerLocation.Equals((string)tileData.GetCustomData("LocationName")))
 				{
-					_flag.Position = MapToGlobal(tileCoords)+_tileSize*2.4f-new Vector2(0,9.6f);
+					_flag.Position = MapToGlobal(tileCoords*2) - _tileSize*new Vector2(2.8f,-0.8f); // proof by i fiddled around with the values until it was perfect
 					return;
 				}
 			}
@@ -110,7 +108,7 @@ public partial class Map : Node2D
 	}
 	
 	private Vector2 MapToGlobal(Vector2 mapPos) {
-		return mapPos * _tileSize * 2.4f + _tileMap.Position;
+		return (mapPos + new Vector2I(4,0)) * _tileSize * 1.2f + _tileMap.Position + new Vector2(0.75f*2.4f, -2.5f*2.4f);
 	}
 	
 	private void UpdateCursorTexture() {

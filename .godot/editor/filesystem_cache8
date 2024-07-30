@@ -34,7 +34,7 @@ hurt.wav::AudioStreamWAV::9136989958465260607::1718286995::1721529552::1::::<><>
 jump.wav::AudioStreamWAV::4555448410108296144::1718286995::1721529552::1::::<><>::
 power_up.wav::AudioStreamWAV::5280086168748845488::1718286995::1721529552::1::::<><>::
 tap.wav::AudioStreamWAV::8577790250360397841::1718286995::1721529552::1::::<><>::
-::res://assets/sprites/::1722223983
+::res://assets/sprites/::1722297142
 coin.png::CompressedTexture2D::3447739040894185057::1718286995::1721529552::1::::<><>::
 fruit.png::CompressedTexture2D::470233896381552850::1718286995::1721529552::1::::<><>::
 knight.png::CompressedTexture2D::4707526479979974505::1718286995::1721529552::1::::<><>::
@@ -43,7 +43,7 @@ platforms.png::CompressedTexture2D::6429460309075172824::1718286995::1721529552:
 player_character.png::CompressedTexture2D::3921294245925839837::1720302778::1721529552::1::::<><>::
 slime_green.png::CompressedTexture2D::3222140907498469096::1718286995::1721529552::1::::<><>::
 slime_purple.png::CompressedTexture2D::3959724587980025257::1718286995::1721529552::1::::<><>::
-tileset_main.png::CompressedTexture2D::1818283891719488662::1722223972::1722223987::1::::<><>::
+tileset_main.png::CompressedTexture2D::1818283891719488662::1722297134::1722297145::1::::<><>::
 tileset_map.png::CompressedTexture2D::7526456081154766613::1722152345::1722152359::1::::<><>::
 world_tileset.png::CompressedTexture2D::263196027477670198::1718286995::1721529552::1::::<><>::
 ::res://data/::1722135757
@@ -74,22 +74,22 @@ weapons.json::JSON::-1::1721791343::0::1::::<><>::
 ::res://data_Echoes of Blue_linuxbsd_x86_64/::1722135767
 Echoes of Blue.deps.json::JSON::-1::1722135767::0::1::::<><>::
 Echoes of Blue.runtimeconfig.json::JSON::-1::1722135767::0::1::::<><>::
-::res://scenes/::1722223535
+::res://scenes/::1722295802
 cursor.tscn::PackedScene::5368048847328574984::1721528317::0::1::::<><>::uid://dfh4vqvhjcdu8::::res://assets/tileset_map.png
-game.tscn::PackedScene::3403377525641250617::1722223535::0::1::::<><>::res://scripts/game_manager.gd<>res://scripts/multiplayer/networks/network_manager.gd<>uid://b2nt3i27n12hb::::res://scenes/steam_hud.tscn<>uid://0514t1eqavys::::res://assets/sprites/tileset_main.png
-map.tscn::PackedScene::3538842000470776208::1722223535::0::1::::<><>::uid://dfh4vqvhjcdu8::::res://assets/sprites/tileset_map.png<>res://scripts/Map.cs<>uid://ciqk8lfdwbk37::::res://scenes/cursor.tscn<>uid://dctqn4jusjfgj::::res://assets/sprites/map_background.png
-multiplayer_player.tscn::PackedScene::7645680929107505955::1722223535::0::1::::<><>::res://scripts/multiplayer/multiplayer_controller.gd<>res://scripts/multiplayer/multiplayer_input.gd<>uid://bv4re4xesfx8x::::res://assets/sprites/player_character.png
+game.tscn::PackedScene::3403377525641250617::1722295801::0::1::::<><>::res://scripts/game_manager.gd<>res://scripts/multiplayer/networks/network_manager.gd<>uid://b2nt3i27n12hb::::res://scenes/steam_hud.tscn<>uid://0514t1eqavys::::res://assets/sprites/tileset_main.png
+map.tscn::PackedScene::3538842000470776208::1722295802::0::1::::<><>::uid://dfh4vqvhjcdu8::::res://assets/sprites/tileset_map.png<>res://scripts/Map.cs<>uid://ciqk8lfdwbk37::::res://scenes/cursor.tscn<>uid://dctqn4jusjfgj::::res://assets/sprites/map_background.png
+multiplayer_player.tscn::PackedScene::7645680929107505955::1722295801::0::1::::<><>::res://scripts/multiplayer/multiplayer_controller.gd<>res://scripts/multiplayer/multiplayer_input.gd<>uid://bv4re4xesfx8x::::res://assets/sprites/player_character.png
 player.tscn::PackedScene::2510409510203024937::1720302988::0::1::::<><>::
-steam_hud.tscn::PackedScene::4309560461183532091::1722223535::0::1::::<><>::uid://dbjl1e6kdxpl6::::res://assets/fonts/PixelOperator8.ttf<>uid://c53kogtyjwsss::::res://assets/fonts/PixelOperator8-Bold.ttf
+steam_hud.tscn::PackedScene::4309560461183532091::1722295801::0::1::::<><>::uid://dbjl1e6kdxpl6::::res://assets/fonts/PixelOperator8.ttf<>uid://c53kogtyjwsss::::res://assets/fonts/PixelOperator8-Bold.ttf
 ::res://scenes/multiplayer/::1718286995
 ::res://scenes/multiplayer/networks/::1722154594
 steam_network.tscn::PackedScene::4824204218293093628::1722154594::0::1::::<><>::res://scripts/multiplayer/networks/steam_network.gd
-::res://scripts/::1722155072
+::res://scripts/::1722295795
 GameData.cs::CSharpScript::-1::1722146958::0::1::::<>Node<>::
 game_manager.gd::GDScript::-1::1721602573::0::1::::<>Node<>::
-Map.cs::CSharpScript::-1::1722155072::0::1::::<>Node2D<>::
-::res://scripts/multiplayer/::1722154943
-multiplayer_controller.gd::GDScript::-1::1722154943::0::1::::<>CharacterBody2D<>::
+Map.cs::CSharpScript::-1::1722295795::0::1::::<>Node2D<>::
+::res://scripts/multiplayer/::1722224835
+multiplayer_controller.gd::GDScript::-1::1722224835::0::1::::<>CharacterBody2D<>::
 multiplayer_input.gd::GDScript::-1::1722135915::0::1::::<>MultiplayerSynchronizer<>::
 multiplayer_manager.gd::GDScript::-1::1721614453::0::1::::<>Node<>::
 ::res://scripts/multiplayer/networks/::1722135931
