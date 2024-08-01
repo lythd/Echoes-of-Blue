@@ -1,8 +1,9 @@
+SubViewport
+TileMap
 AnimatedSprite2D
 RichTextLabel
 Node2D
 MultiplayerSpawner
-TileMap
 Node
 Timer
 Sprite2D

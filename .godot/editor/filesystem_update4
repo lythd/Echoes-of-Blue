@@ -6,3 +6,6 @@ res://scripts/Map.cs
 res://scripts/GameData.cs
 res://scripts/multiplayer/multiplayer_controller.gd
 res://scripts/multiplayer/networks/steam_network.gd
+res://scenes/sepia_map.gdshader
+res://scenes/test.tscn
+res://scenes/test.gdshader
