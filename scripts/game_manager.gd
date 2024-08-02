@@ -21,6 +21,7 @@ func start_solo():
 	MultiplayerManager.multiplayer_mode_enabled = false
 	print("Start single player pressed")
 	%SteamHUD.hide()
+	%Customizer.hide()
 	var id = -1
 	print("Player %s joined the game!" % id)
 	var player_to_add = multiplayer_scene.instantiate()
@@ -33,6 +34,7 @@ func become_host():
 	MultiplayerManager.multiplayer_mode_enabled = true
 	print("Become host pressed")
 	%SteamHUD.hide()
+	%Customizer.hide()
 	%NetworkManager.become_host()
 	
 func join_as_client():
@@ -43,6 +45,7 @@ func join_as_client():
 func use_steam():
 	print("Using Steam!")
 	%SteamHUD.show()
+	%Customizer.show()
 	SteamManager.initialize_steam()
 	Steam.lobby_match_list.connect(_on_lobby_match_list)
 	%NetworkManager.active_network_type = %NetworkManager.MULTIPLAYER_NETWORK_TYPE.STEAM
@@ -55,6 +58,7 @@ func join_lobby(lobby_id = 0):
 	if %NetworkManager.join_as_client(lobby_id):
 		print("Joining lobby %s" % lobby_id)
 		%SteamHUD.hide()
+		%Customizer.hide()
 	else:
 		print("This lobby's version is incompatible with your own.")
 
@@ -91,95 +95,49 @@ func _on_lobby_match_list(lobbies: Array):
 func _on_random_pressed():
 	%CustomizeCharacter.call("Randomize")
 	emit_signal("update_pickers")
-
-
 func _on_special_left_pressed():
 	%CustomizeCharacter.call("AdjInd","Special",-1);
-
-
 func _on_special_right_pressed():
 	%CustomizeCharacter.call("AdjInd","Special",1);
-
-
 func _on_hair_left_pressed():
 	%CustomizeCharacter.call("AdjInd","Hair",-1);
-
-
 func _on_hair_right_pressed():
 	%CustomizeCharacter.call("AdjInd","Hair",1);
-
-
 func _on_eyes_left_pressed():
 	%CustomizeCharacter.call("AdjInd","Eyes",-1);
-
-
 func _on_eyes_right_pressed():
 	%CustomizeCharacter.call("AdjInd","Eyes",1);
-
-
 func _on_skin_left_pressed():
 	%CustomizeCharacter.call("AdjInd","Skin",-1);
-
-
 func _on_skin_right_pressed():
 	%CustomizeCharacter.call("AdjInd","Skin",1);
-
-
 func _on_shirt_left_pressed():
 	%CustomizeCharacter.call("AdjInd","Shirt",-1);
-
-
 func _on_shirt_right_pressed():
 	%CustomizeCharacter.call("AdjInd","Shirt",1);
-
-
 func _on_hands_left_pressed():
 	%CustomizeCharacter.call("AdjInd","Hands",-1);
-
-
 func _on_hands_right_pressed():
 	%CustomizeCharacter.call("AdjInd","Hands",1);
-
-
 func _on_pants_left_pressed():
 	%CustomizeCharacter.call("AdjInd","Pants",-1);
-
-
 func _on_pants_right_pressed():
 	%CustomizeCharacter.call("AdjInd","Pants",1);
-
-
 func _on_shoes_left_pressed():
 	%CustomizeCharacter.call("AdjInd","Shoes",-1);
-
-
 func _on_shoes_right_pressed():
 	%CustomizeCharacter.call("AdjInd","Shoes",1);
-
-
 func _on_hair_picker_color_changed(color):
 	%CustomizeCharacter.call("SetHSV","Hair",color.h,color.s,color.v);
-
-
 func _on_eyes_picker_color_changed(color):
 	%CustomizeCharacter.call("SetHSV","Eyes",color.h,color.s,color.v);
-
-
 func _on_skin_picker_color_changed(color):
 	%CustomizeCharacter.call("SetHSV","Skin",color.h,color.s,color.v);
-
-
 func _on_shirt_picker_color_changed(color):
 	%CustomizeCharacter.call("SetHSV","Shirt",color.h,color.s,color.v);
-
-
 func _on_hands_picker_color_changed(color):
 	%CustomizeCharacter.call("SetHSV","Hands",color.h,color.s,color.v);
-
-
 func _on_pants_picker_color_changed(color):
 	%CustomizeCharacter.call("SetHSV","Pants",color.h,color.s,color.v);
-
-
 func _on_shoes_picker_color_changed(color):
 	%CustomizeCharacter.call("SetHSV","Shoes",color.h,color.s,color.v);

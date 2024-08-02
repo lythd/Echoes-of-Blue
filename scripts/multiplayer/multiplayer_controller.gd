@@ -181,7 +181,7 @@ func come_back_from_map():
 
 func _check_tile_properties():
 	if tile_map == null:
-		tile_map = $"../../TileMap"
+		tile_map = $"../../TextureRectMain/TileMapMain"
 	if tile_map == null:
 		return
 	var tile_coords = tile_map.local_to_map(get_global_position()-tile_map.get_global_position())
