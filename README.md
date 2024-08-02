@@ -4,12 +4,16 @@ a little game I'm making :3
 # Changelog
 
 ## v0.0.2 (in development)
-First version woo!
+A lot prettier
 - Tile animations for both main and map
-- Automatic border tiles
-- Character customization
+- Character customization w temp menu
 - Map now has a sepia shader
 - Better player animations (including three emotes: sad, angry, shocked)
+- Automatic border tiles (wip)
+- New tiles/items that are now needed for various npcs or various biomes (wip)
+- Localization + character pronouns (wip)
+- Improved code, siGnAl Up CaLl dOWn (wip)
+- Using the data files (wip)
 
 ## v0.0.1
 First version woo!
