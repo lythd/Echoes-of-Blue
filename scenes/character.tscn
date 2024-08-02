@@ -2,56 +2,35 @@
 
 [ext_resource type="Script" path="res://scripts/Character.cs" id="1_e41aw"]
 [ext_resource type="Texture2D" uid="uid://bs8f054hgyqqt" path="res://assets/sprites/character_special.png" id="1_ee6dl"]
-[ext_resource type="Shader" path="res://scenes/custom_color.gdshader" id="2_5g88o"]
 [ext_resource type="Texture2D" uid="uid://bmmpfcts2fl0x" path="res://assets/sprites/character_hair.png" id="2_f8q1b"]
 [ext_resource type="Texture2D" uid="uid://cipsiiyiiluf3" path="res://assets/sprites/character_eyes.png" id="3_81k7a"]
+[ext_resource type="Shader" path="res://scenes/brighten.gdshader" id="3_ya567"]
 [ext_resource type="Texture2D" uid="uid://cr3lheqnsab20" path="res://assets/sprites/character_hands.png" id="4_2u3md"]
 [ext_resource type="Texture2D" uid="uid://dfo71til6g2i3" path="res://assets/sprites/character_shirt.png" id="5_f0nv5"]
 [ext_resource type="Texture2D" uid="uid://ctmltpjdneg1" path="res://assets/sprites/character_pants.png" id="6_lj7qc"]
 [ext_resource type="Texture2D" uid="uid://1omnr5ppinj" path="res://assets/sprites/character_shoes.png" id="7_vmsq0"]
 [ext_resource type="Texture2D" uid="uid://ck2pe3fpfoaot" path="res://assets/sprites/character_skin.png" id="8_m1my3"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_yljql"]
-shader = ExtResource("2_5g88o")
-shader_parameter/hue = 0.025
-shader_parameter/saturation = 0.52
-shader_parameter/value = 0.4
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3apua"]
+shader = ExtResource("3_ya567")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_tumrp"]
-shader = ExtResource("2_5g88o")
-shader_parameter/hue = 0.067
-shader_parameter/saturation = 0.83
-shader_parameter/value = 0.87
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eofnh"]
+shader = ExtResource("3_ya567")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_0f53e"]
-shader = ExtResource("2_5g88o")
-shader_parameter/hue = 0.081
-shader_parameter/saturation = 0.35
-shader_parameter/value = 0.93
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8y2rl"]
+shader = ExtResource("3_ya567")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_amiv7"]
-shader = ExtResource("2_5g88o")
-shader_parameter/hue = 0.886
-shader_parameter/saturation = 0.42
-shader_parameter/value = 0.27
+shader = ExtResource("3_ya567")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_d0d48"]
-shader = ExtResource("2_5g88o")
-shader_parameter/hue = 0.683
-shader_parameter/saturation = 0.38
-shader_parameter/value = 0.2
+shader = ExtResource("3_ya567")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8h42t"]
-shader = ExtResource("2_5g88o")
-shader_parameter/hue = 0.094
-shader_parameter/saturation = 0.08
-shader_parameter/value = 0.35
+shader = ExtResource("3_ya567")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q3k7u"]
-shader = ExtResource("2_5g88o")
-shader_parameter/hue = 0.081
-shader_parameter/saturation = 0.35
-shader_parameter/value = 0.93
+shader = ExtResource("3_ya567")
 
 [sub_resource type="Animation" id="Animation_kstxq"]
 length = 1.33333
@@ -871,27 +850,31 @@ hframes = 8
 vframes = 8
 
 [node name="Hair" type="Sprite2D" parent="."]
+self_modulate = Color(0.4, 0.2232, 0.192, 1)
 z_index = 6
-material = SubResource("ShaderMaterial_yljql")
+material = SubResource("ShaderMaterial_3apua")
 texture = ExtResource("2_f8q1b")
 hframes = 8
 vframes = 8
 
 [node name="Eyes" type="Sprite2D" parent="."]
+self_modulate = Color(0.87, 0.43674, 0.1479, 1)
 z_index = 5
-material = SubResource("ShaderMaterial_tumrp")
+material = SubResource("ShaderMaterial_eofnh")
 texture = ExtResource("3_81k7a")
 hframes = 8
 vframes = 8
 
 [node name="Hands" type="Sprite2D" parent="."]
+self_modulate = Color(0.93, 0.761825, 0.6045, 1)
 z_index = 4
-material = SubResource("ShaderMaterial_0f53e")
+material = SubResource("ShaderMaterial_8y2rl")
 texture = ExtResource("4_2u3md")
 hframes = 8
 vframes = 8
 
 [node name="Shirt" type="Sprite2D" parent="."]
+self_modulate = Color(0.27, 0.1566, 0.23409, 1)
 z_index = 3
 material = SubResource("ShaderMaterial_amiv7")
 texture = ExtResource("5_f0nv5")
@@ -899,6 +882,7 @@ hframes = 8
 vframes = 8
 
 [node name="Pants" type="Sprite2D" parent="."]
+self_modulate = Color(0.1316, 0.124, 0.2, 1)
 z_index = 2
 material = SubResource("ShaderMaterial_d0d48")
 texture = ExtResource("6_lj7qc")
@@ -906,6 +890,7 @@ hframes = 8
 vframes = 8
 
 [node name="Shoes" type="Sprite2D" parent="."]
+self_modulate = Color(0.35, 0.337867, 0.322, 1)
 z_index = 1
 material = SubResource("ShaderMaterial_8h42t")
 texture = ExtResource("7_vmsq0")
@@ -913,6 +898,7 @@ hframes = 8
 vframes = 8
 
 [node name="Skin" type="Sprite2D" parent="."]
+self_modulate = Color(0.93, 0.761825, 0.6045, 1)
 material = SubResource("ShaderMaterial_q3k7u")
 texture = ExtResource("8_m1my3")
 hframes = 8

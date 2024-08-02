@@ -110,191 +110,191 @@ public partial class Character : Node2D
 	}
 	
 	public float HairHue {
-		get { return (float)(_hair.Material as ShaderMaterial).GetShaderParameter("hue"); }
+		get { return _hair.SelfModulate.H; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_hair.Material as ShaderMaterial).SetShaderParameter("hue", value);
+				_hair.SelfModulate = Color.FromHsv(value,_hair.SelfModulate.S,_hair.SelfModulate.V);
 		}
 	}
 	
 	public float HairSat {
-		get { return (float)(_hair.Material as ShaderMaterial).GetShaderParameter("saturation"); }
+		get { return _hair.SelfModulate.S; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_hair.Material as ShaderMaterial).SetShaderParameter("saturation", value);
+				_hair.SelfModulate = Color.FromHsv(_hair.SelfModulate.H,value,_hair.SelfModulate.V);
 		}
 	}
 	
 	public float HairVal {
-		get { return (float)(_hair.Material as ShaderMaterial).GetShaderParameter("value"); }
+		get { return _hair.SelfModulate.V; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_hair.Material as ShaderMaterial).SetShaderParameter("value", value);
+				_hair.SelfModulate = Color.FromHsv(_hair.SelfModulate.H,_hair.SelfModulate.S,value);
 		}
 	}
 	
 	public float EyesHue {
-		get { return (float)(_eyes.Material as ShaderMaterial).GetShaderParameter("hue"); }
+		get { return _eyes.SelfModulate.H; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_eyes.Material as ShaderMaterial).SetShaderParameter("hue", value);
+				_eyes.SelfModulate = Color.FromHsv(value,_eyes.SelfModulate.S,_eyes.SelfModulate.V);
 		}
 	}
 	
 	public float EyesSat {
-		get { return (float)(_eyes.Material as ShaderMaterial).GetShaderParameter("saturation"); }
+		get { return _eyes.SelfModulate.S; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_eyes.Material as ShaderMaterial).SetShaderParameter("saturation", value);
+				_eyes.SelfModulate = Color.FromHsv(_eyes.SelfModulate.H,value,_eyes.SelfModulate.V);
 		}
 	}
 	
 	public float EyesVal {
-		get { return (float)(_eyes.Material as ShaderMaterial).GetShaderParameter("value"); }
+		get { return _eyes.SelfModulate.V; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_eyes.Material as ShaderMaterial).SetShaderParameter("value", value);
+				_eyes.SelfModulate = Color.FromHsv(_eyes.SelfModulate.H,_eyes.SelfModulate.S,value);
 		}
 	}
 	
 	public float HandsHue {
-		get { return (float)(_hands.Material as ShaderMaterial).GetShaderParameter("hue"); }
+		get { return _hands.SelfModulate.H; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_hands.Material as ShaderMaterial).SetShaderParameter("hue", value);
+				_hands.SelfModulate = Color.FromHsv(value,_hands.SelfModulate.S,_hands.SelfModulate.V);
 		}
 	}
 	
 	public float HandsSat {
-		get { return (float)(_hands.Material as ShaderMaterial).GetShaderParameter("saturation"); }
+		get { return _hands.SelfModulate.S; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_hands.Material as ShaderMaterial).SetShaderParameter("saturation", value);
+				_hands.SelfModulate = Color.FromHsv(_hands.SelfModulate.H,value,_hands.SelfModulate.V);
 		}
 	}
 	
 	public float HandsVal {
-		get { return (float)(_hands.Material as ShaderMaterial).GetShaderParameter("value"); }
+		get { return _hands.SelfModulate.V; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_hands.Material as ShaderMaterial).SetShaderParameter("value", value);
+				_hands.SelfModulate = Color.FromHsv(_hands.SelfModulate.H,_hands.SelfModulate.S,value);
 		}
 	}
 	
 	public float ShirtHue {
-		get { return (float)(_shirt.Material as ShaderMaterial).GetShaderParameter("hue"); }
+		get { return _shirt.SelfModulate.H; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_shirt.Material as ShaderMaterial).SetShaderParameter("hue", value);
+				_shirt.SelfModulate = Color.FromHsv(value,_shirt.SelfModulate.S,_shirt.SelfModulate.V);
 		}
 	}
 	
 	public float ShirtSat {
-		get { return (float)(_shirt.Material as ShaderMaterial).GetShaderParameter("saturation"); }
+		get { return _shirt.SelfModulate.S; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_shirt.Material as ShaderMaterial).SetShaderParameter("saturation", value);
+				_shirt.SelfModulate = Color.FromHsv(_shirt.SelfModulate.H,value,_shirt.SelfModulate.V);
 		}
 	}
 	
 	public float ShirtVal {
-		get { return (float)(_shirt.Material as ShaderMaterial).GetShaderParameter("value"); }
+		get { return _shirt.SelfModulate.V; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_shirt.Material as ShaderMaterial).SetShaderParameter("value", value);
+				_shirt.SelfModulate = Color.FromHsv(_shirt.SelfModulate.H,_shirt.SelfModulate.S,value);
 		}
 	}
 	
 	public float PantsHue {
-		get { return (float)(_pants.Material as ShaderMaterial).GetShaderParameter("hue"); }
+		get { return _pants.SelfModulate.H; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_pants.Material as ShaderMaterial).SetShaderParameter("hue", value);
+				_pants.SelfModulate = Color.FromHsv(value,_pants.SelfModulate.S,_pants.SelfModulate.V);
 		}
 	}
 	
 	public float PantsSat {
-		get { return (float)(_pants.Material as ShaderMaterial).GetShaderParameter("saturation"); }
+		get { return _pants.SelfModulate.S; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_pants.Material as ShaderMaterial).SetShaderParameter("saturation", value);
+				_pants.SelfModulate = Color.FromHsv(_pants.SelfModulate.H,value,_pants.SelfModulate.V);
 		}
 	}
 	
 	public float PantsVal {
-		get { return (float)(_pants.Material as ShaderMaterial).GetShaderParameter("value"); }
+		get { return _pants.SelfModulate.V; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_pants.Material as ShaderMaterial).SetShaderParameter("value", value);
+				_pants.SelfModulate = Color.FromHsv(_pants.SelfModulate.H,_pants.SelfModulate.S,value);
 		}
 	}
 	
 	public float ShoesHue {
-		get { return (float)(_shoes.Material as ShaderMaterial).GetShaderParameter("hue"); }
+		get { return _shoes.SelfModulate.H; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_shoes.Material as ShaderMaterial).SetShaderParameter("hue", value);
+				_shoes.SelfModulate = Color.FromHsv(value,_shoes.SelfModulate.S,_shoes.SelfModulate.V);
 		}
 	}
 	
 	public float ShoesSat {
-		get { return (float)(_shoes.Material as ShaderMaterial).GetShaderParameter("saturation"); }
+		get { return _shoes.SelfModulate.S; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_shoes.Material as ShaderMaterial).SetShaderParameter("saturation", value);
+				_shoes.SelfModulate = Color.FromHsv(_shoes.SelfModulate.H,value,_shoes.SelfModulate.V);
 		}
 	}
 	
 	public float ShoesVal {
-		get { return (float)(_shoes.Material as ShaderMaterial).GetShaderParameter("value"); }
+		get { return _shoes.SelfModulate.V; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_shoes.Material as ShaderMaterial).SetShaderParameter("value", value);
+				_shoes.SelfModulate = Color.FromHsv(_shoes.SelfModulate.H,_shoes.SelfModulate.S,value);
 		}
 	}
 	
 	public float SkinHue {
-		get { return (float)(_skin.Material as ShaderMaterial).GetShaderParameter("hue"); }
+		get { return _skin.SelfModulate.H; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_skin.Material as ShaderMaterial).SetShaderParameter("hue", value);
+				_skin.SelfModulate = Color.FromHsv(value,_skin.SelfModulate.S,_skin.SelfModulate.V);
 		}
 	}
 	
 	public float SkinSat {
-		get { return (float)(_skin.Material as ShaderMaterial).GetShaderParameter("saturation"); }
+		get { return _skin.SelfModulate.S; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_skin.Material as ShaderMaterial).SetShaderParameter("saturation", value);
+				_skin.SelfModulate = Color.FromHsv(_skin.SelfModulate.H,value,_skin.SelfModulate.V);
 		}
 	}
 	
 	public float SkinVal {
-		get { return (float)(_skin.Material as ShaderMaterial).GetShaderParameter("value"); }
+		get { return _skin.SelfModulate.V; }
 		set 
 		{ 
 			if(value <= 1.0f && value >= 0.0f)
-				(_skin.Material as ShaderMaterial).SetShaderParameter("value", value);
+				_skin.SelfModulate = Color.FromHsv(_skin.SelfModulate.H,_skin.SelfModulate.S,value);
 		}
 	}
 	
