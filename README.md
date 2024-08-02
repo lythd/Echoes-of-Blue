@@ -3,6 +3,14 @@ a little game I'm making :3
 
 # Changelog
 
+## v0.0.2 (in development)
+First version woo!
+- Tile animations for both main and map
+- Automatic border tiles
+- Character customization
+- Map now has a sepia shader
+- Better player animations (including three emotes: sad, angry, shocked)
+
 ## v0.0.1
 First version woo!
 - Steam networking to host and join lobbies
