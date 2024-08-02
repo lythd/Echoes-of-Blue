@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://boqveo8nxeudt"]
+[gd_scene load_steps=10 format=3 uid="uid://boqveo8nxeudt"]
 
+[ext_resource type="Script" path="res://scenes/game.gd" id="1_55jdq"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_am83m"]
 [ext_resource type="Script" path="res://scripts/multiplayer/networks/network_manager.gd" id="2_x5dcr"]
 [ext_resource type="PackedScene" uid="uid://b2nt3i27n12hb" path="res://scenes/steam_hud.tscn" id="3_3byfp"]
 [ext_resource type="Texture2D" uid="uid://0514t1eqavys" path="res://assets/sprites/tileset_main.png" id="4_84kl8"]
+[ext_resource type="PackedScene" uid="uid://bltgi20a35aro" path="res://scenes/character.tscn" id="5_m8we3"]
+[ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="6_r2rf5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i2rpr"]
 texture = ExtResource("4_84kl8")
@@ -2101,6 +2104,7 @@ custom_data_layer_0/type = 1
 sources/0 = SubResource("TileSetAtlasSource_i2rpr")
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_55jdq")
 
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("1_am83m")
@@ -2141,8 +2145,298 @@ spawn_limit = 10
 [node name="Players" type="Node2D" parent="."]
 position = Vector2(329, 469)
 
+[node name="Customizer" type="Control" parent="."]
+z_index = 2
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Panel" type="Panel" parent="Customizer"]
+layout_mode = 0
+offset_left = 843.0
+offset_top = 210.0
+offset_right = 992.0
+offset_bottom = 380.0
+
+[node name="CustomizeCharacter" parent="Customizer/Panel" instance=ExtResource("5_m8we3")]
+unique_name_in_owner = true
+position = Vector2(75, 95)
+scale = Vector2(8, 8)
+
+[node name="Random" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 2.0
+offset_right = 87.0
+offset_bottom = 26.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "?"
+
+[node name="SpecialLeft" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 2.0
+offset_right = 36.0
+offset_bottom = 26.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "<
+"
+
+[node name="SpecialRight" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 2.0
+offset_right = 129.0
+offset_bottom = 26.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = ">"
+
+[node name="HairLeft" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 22.0
+offset_right = 36.0
+offset_bottom = 46.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "<
+"
+
+[node name="HairRight" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 22.0
+offset_right = 129.0
+offset_bottom = 46.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = ">"
+
+[node name="HairPicker" type="ColorPickerButton" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 22.0
+offset_right = 148.0
+offset_bottom = 46.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "="
+
+[node name="EyesLeft" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 43.0
+offset_right = 36.0
+offset_bottom = 67.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "<
+"
+
+[node name="EyesRight" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 43.0
+offset_right = 129.0
+offset_bottom = 67.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = ">"
+
+[node name="EyesPicker" type="ColorPickerButton" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 43.0
+offset_right = 148.0
+offset_bottom = 67.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "="
+
+[node name="SkinLeft" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 65.0
+offset_right = 36.0
+offset_bottom = 89.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "<
+"
+
+[node name="SkinRight" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 65.0
+offset_right = 129.0
+offset_bottom = 89.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = ">"
+
+[node name="SkinPicker" type="ColorPickerButton" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 65.0
+offset_right = 148.0
+offset_bottom = 89.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "="
+
+[node name="ShirtLeft" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 86.0
+offset_right = 36.0
+offset_bottom = 110.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "<
+"
+
+[node name="ShirtRight" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 86.0
+offset_right = 129.0
+offset_bottom = 110.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = ">"
+
+[node name="ShirtPicker" type="ColorPickerButton" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 86.0
+offset_right = 148.0
+offset_bottom = 110.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "="
+
+[node name="HandsLeft" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 107.0
+offset_right = 36.0
+offset_bottom = 131.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "<
+"
+
+[node name="HandsRight" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 107.0
+offset_right = 129.0
+offset_bottom = 131.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = ">"
+
+[node name="HandsPicker" type="ColorPickerButton" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 107.0
+offset_right = 148.0
+offset_bottom = 131.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "="
+
+[node name="PantsLeft" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 127.0
+offset_right = 36.0
+offset_bottom = 151.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "<
+"
+
+[node name="PantsRight" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 127.0
+offset_right = 129.0
+offset_bottom = 151.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = ">"
+
+[node name="PantsPicker" type="ColorPickerButton" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 127.0
+offset_right = 148.0
+offset_bottom = 151.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "="
+
+[node name="ShoesLeft" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 148.0
+offset_right = 36.0
+offset_bottom = 172.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "<
+"
+
+[node name="ShoesRight" type="Button" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 148.0
+offset_right = 129.0
+offset_bottom = 172.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = ">"
+
+[node name="ShoesPicker" type="ColorPickerButton" parent="Customizer/Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 148.0
+offset_right = 148.0
+offset_bottom = 172.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("6_r2rf5")
+text = "="
+
+[connection signal="update_pickers" from="GameManager" to="." method="_on_game_manager_update_pickers"]
 [connection signal="pressed" from="SteamHUD/Panel/Options/Single Player" to="GameManager" method="start_solo"]
 [connection signal="pressed" from="SteamHUD/Panel/Options/HostGame" to="GameManager" method="become_host"]
 [connection signal="pressed" from="SteamHUD/Panel/Options/ListLobbies" to="GameManager" method="list_steam_lobbies"]
+[connection signal="pressed" from="Customizer/Panel/Random" to="GameManager" method="_on_random_pressed"]
+[connection signal="pressed" from="Customizer/Panel/SpecialLeft" to="GameManager" method="_on_special_left_pressed"]
+[connection signal="pressed" from="Customizer/Panel/SpecialRight" to="GameManager" method="_on_special_right_pressed"]
+[connection signal="pressed" from="Customizer/Panel/HairLeft" to="GameManager" method="_on_hair_left_pressed"]
+[connection signal="pressed" from="Customizer/Panel/HairRight" to="GameManager" method="_on_hair_right_pressed"]
+[connection signal="color_changed" from="Customizer/Panel/HairPicker" to="GameManager" method="_on_hair_picker_color_changed"]
+[connection signal="pressed" from="Customizer/Panel/EyesLeft" to="GameManager" method="_on_eyes_left_pressed"]
+[connection signal="pressed" from="Customizer/Panel/EyesRight" to="GameManager" method="_on_eyes_right_pressed"]
+[connection signal="color_changed" from="Customizer/Panel/EyesPicker" to="GameManager" method="_on_eyes_picker_color_changed"]
+[connection signal="pressed" from="Customizer/Panel/SkinLeft" to="GameManager" method="_on_skin_left_pressed"]
+[connection signal="pressed" from="Customizer/Panel/SkinRight" to="GameManager" method="_on_skin_right_pressed"]
+[connection signal="color_changed" from="Customizer/Panel/SkinPicker" to="GameManager" method="_on_skin_picker_color_changed"]
+[connection signal="pressed" from="Customizer/Panel/ShirtLeft" to="GameManager" method="_on_shirt_left_pressed"]
+[connection signal="pressed" from="Customizer/Panel/ShirtRight" to="GameManager" method="_on_shirt_right_pressed"]
+[connection signal="color_changed" from="Customizer/Panel/ShirtPicker" to="GameManager" method="_on_shirt_picker_color_changed"]
+[connection signal="pressed" from="Customizer/Panel/HandsLeft" to="GameManager" method="_on_hands_left_pressed"]
+[connection signal="pressed" from="Customizer/Panel/HandsRight" to="GameManager" method="_on_hands_right_pressed"]
+[connection signal="color_changed" from="Customizer/Panel/HandsPicker" to="GameManager" method="_on_hands_picker_color_changed"]
+[connection signal="pressed" from="Customizer/Panel/PantsLeft" to="GameManager" method="_on_pants_left_pressed"]
+[connection signal="pressed" from="Customizer/Panel/PantsRight" to="GameManager" method="_on_pants_right_pressed"]
+[connection signal="color_changed" from="Customizer/Panel/PantsPicker" to="GameManager" method="_on_pants_picker_color_changed"]
+[connection signal="pressed" from="Customizer/Panel/ShoesLeft" to="GameManager" method="_on_shoes_left_pressed"]
+[connection signal="pressed" from="Customizer/Panel/ShoesRight" to="GameManager" method="_on_shoes_right_pressed"]
+[connection signal="color_changed" from="Customizer/Panel/ShoesPicker" to="GameManager" method="_on_shoes_picker_color_changed"]
 
 [editable path="SteamHUD"]

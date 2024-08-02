@@ -5,10 +5,14 @@ const SPEED = 75.0
 var map_scene = preload("res://scenes/map.tscn")
 var map = null
 
-@onready var animated_sprite = $AnimatedSprite2D
+@onready var character = $Character
 
 var direction
 @export var sneaking = false
+@export var attacking = false
+@export var crying = false
+@export var angried = false
+@export var shocked = false
 @export var map_open = false
 var alive = true
 
@@ -27,6 +31,23 @@ func _ready():
 	if in_control():
 		$Camera2D.make_current()
 		$Camera2D.enabled = true
+		var game = $"../.."
+		if game != null:
+			var character_pick = game.call("get_character")
+			var color = character_pick.call("GetHSV", "Hair")
+			character.call("SetHSV", "Hair", color.h, color.s, color.v)
+			color = character_pick.call("GetHSV", "Eyes")
+			character.call("SetHSV", "Eyes", color.h, color.s, color.v)
+			color = character_pick.call("GetHSV", "Skin")
+			character.call("SetHSV", "Skin", color.h, color.s, color.v)
+			color = character_pick.call("GetHSV", "Shirt")
+			character.call("SetHSV", "Shirt", color.h, color.s, color.v)
+			color = character_pick.call("GetHSV", "Hands")
+			character.call("SetHSV", "Hands", color.h, color.s, color.v)
+			color = character_pick.call("GetHSV", "Pants")
+			character.call("SetHSV", "Pants", color.h, color.s, color.v)
+			color = character_pick.call("GetHSV", "Shoes")
+			character.call("SetHSV", "Shoes", color.h, color.s, color.v)
 	else:
 		$Camera2D.enabled = false
 
@@ -48,15 +69,23 @@ func print_node_tree(root_node=null, indent = 0):
 
 func _apply_animations(_delta):
 	if direction.x > 0:
-		animated_sprite.flip_h = false
+		character.scale.x = 1
 	elif direction.x < 0:
-		animated_sprite.flip_h = true
-	if sneaking:
-		animated_sprite.play("sneak")
+		character.scale.x = -1
+	if attacking:
+		character.Play("Attack")
+	elif crying:
+		character.Play("Cry")
+	elif angried:
+		character.Play("Angry")
+	elif shocked:
+		character.Play("Shock")
+	elif sneaking:
+		character.Play("Sneak")
 	elif direction:
-		animated_sprite.play("run")
+		character.Play("Run")
 	else:
-		animated_sprite.play("idle")
+		character.Play("Idle")
 
 func _apply_movement_from_input(delta):
 	var is_server = MultiplayerManager.multiplayer_mode_enabled
@@ -69,12 +98,23 @@ func _apply_movement_from_input(delta):
 	if in_control() && Input.is_action_just_pressed("map"):
 		press_map()
 	
-	if !is_server && Input.is_action_just_pressed("sneak"): # for singleplayer sneaking
+	if !is_server && Input.is_action_just_pressed("sneak"): # for singleplayer
 		press_sneak()
+	if !is_server && Input.is_action_just_pressed("attack"): # for singleplayer
+		attack()
+	if !is_server && Input.is_action_just_pressed("cry"): # for singleplayer
+		cry()
+	if !is_server && Input.is_action_just_pressed("angry"): # for singleplayer
+		angry()
+	if !is_server && Input.is_action_just_pressed("shock"): # for singleplayer
+		shock()
 	
 	var speed = SPEED/3 if sneaking else SPEED
 	if direction:
 		velocity = direction * speed
+		crying = false
+		angried = false
+		shocked = false
 	elif tile_is_slippery:
 		velocity.x = move_toward(velocity.x, 0, speed * delta)
 		velocity.y = move_toward(velocity.y, 0, speed * delta)
@@ -85,11 +125,38 @@ func _apply_movement_from_input(delta):
 	move_and_slide()
 
 func press_sneak():
+	crying = false
+	angried = false
+	shocked = false
 	if map_open:
 		return
 	sneaking = !sneaking
 
+func attack():
+	crying = false
+	angried = false
+	shocked = false
+	attacking = !attacking
+
+func cry():
+	angried = false
+	shocked = false
+	crying = !crying
+
+func angry():
+	crying = false
+	shocked = false
+	angried = !angried
+
+func shock():
+	crying = false
+	angried = false
+	shocked = !shocked
+
 func press_map():
+	crying = false
+	angried = false
+	shocked = false
 	map_open = map == null
 	$InputSynchronizer.set_map_open.rpc(map_open)
 	if map_open:
@@ -115,6 +182,8 @@ func come_back_from_map():
 func _check_tile_properties():
 	if tile_map == null:
 		tile_map = $"../../TileMap"
+	if tile_map == null:
+		return
 	var tile_coords = tile_map.local_to_map(get_global_position()-tile_map.get_global_position())
 	var bot_tile_data = tile_map.get_cell_tile_data(0, tile_coords)
 	var top_tile_data = tile_map.get_cell_tile_data(1, tile_coords)
