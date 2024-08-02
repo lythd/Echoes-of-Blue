@@ -16,3 +16,4 @@ res://scenes/game.gd
 res://scripts/multiplayer/multiplayer_input.gd
 res://scenes/test2.gdshader
 res://scenes/brighten.gdshader
+res://scenes/test.tres

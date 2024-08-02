@@ -5,9 +5,9 @@ void vertex() {
 }
 
 void fragment() {
-	vec2 uv = UV;
-	//uv.x -= 1.;
-	COLOR = texture(TEXTURE, uv);
+	vec4 col = texture(TEXTURE, UV);
+	col.a = 1. - step(1,col.a);
+	COLOR = col;
 }
 
 //void light() {

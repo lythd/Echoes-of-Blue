@@ -1,4 +1,8 @@
-[gd_resource type="VisualShader" format=3 uid="uid://7juulikthpiy"]
+[gd_resource type="VisualShader" load_steps=2 format=3 uid="uid://7juulikthpiy"]
+
+[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_kapki"]
+parameter_name = "Texture2DParameter"
+qualifier = 1
 
 [resource]
 code = "shader_type canvas_item;
@@ -7,5 +11,8 @@ render_mode blend_mix;
 
 
 "
+graph_offset = Vector2(-231.594, 10.421)
 mode = 1
 flags/light_only = false
+nodes/fragment/2/node = SubResource("VisualShaderNodeTexture2DParameter_kapki")
+nodes/fragment/2/position = Vector2(-100, 60)

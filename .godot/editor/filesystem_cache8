@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722566192
+::res://::1722577181
 export_presets.cfg::TextFile::-1::1722135768::0::1::::<><>::
 icon.png::CompressedTexture2D::769512299669444221::1719449539::1719449570::1::::<><>::
 README.md::TextFile::-1::1721613801::0::1::::<><>::
@@ -46,7 +46,7 @@ hurt.wav::AudioStreamWAV::9136989958465260607::1718286995::1721529552::1::::<><>
 jump.wav::AudioStreamWAV::4555448410108296144::1718286995::1721529552::1::::<><>::
 power_up.wav::AudioStreamWAV::5280086168748845488::1718286995::1721529552::1::::<><>::
 tap.wav::AudioStreamWAV::8577790250360397841::1718286995::1721529552::1::::<><>::
-::res://assets/sprites/::1722572159
+::res://assets/sprites/::1722629404
 character_eyes.png::CompressedTexture2D::5366425432659130222::1722560933::1722560991::1::::<><>::
 character_hair.png::CompressedTexture2D::3254379159511341421::1722560941::1722560991::1::::<><>::
 character_hands.png::CompressedTexture2D::6024534909249179635::1722560924::1722560991::1::::<><>::
@@ -66,7 +66,7 @@ slime_green.png::CompressedTexture2D::3222140907498469096::1718286995::172152955
 slime_purple.png::CompressedTexture2D::3959724587980025257::1718286995::1721529552::1::::<><>::
 tileset_main.png::CompressedTexture2D::1818283891719488662::1722297134::1722297145::1::::<><>::
 tileset_map.png::CompressedTexture2D::7526456081154766613::1722152345::1722152359::1::::<><>::
-tileset_test.png::CompressedTexture2D::3830960092467726921::1722387092::1722387100::1::::<><>::
+tileset_test.png::CompressedTexture2D::3830960092467726921::1722629390::1722629405::1::::<><>::
 world_tileset.png::CompressedTexture2D::263196027477670198::1718286995::1721529552::1::::<><>::
 ::res://data/::1722135757
 accessories.json::JSON::-1::1702933058::0::1::::<><>::
@@ -96,30 +96,33 @@ weapons.json::JSON::-1::1721791343::0::1::::<><>::
 ::res://data_Echoes of Blue_linuxbsd_x86_64/::1722135767
 Echoes of Blue.deps.json::JSON::-1::1722135767::0::1::::<><>::
 Echoes of Blue.runtimeconfig.json::JSON::-1::1722135767::0::1::::<><>::
-::res://scenes/::1722572131
-character.tscn::PackedScene::3198101186135592384::1722572131::0::1::::<><>::res://scripts/Character.cs<>uid://bs8f054hgyqqt::::res://assets/sprites/character_special.png<>res://scenes/custom_color.gdshader<>uid://bmmpfcts2fl0x::::res://assets/sprites/character_hair.png<>uid://cipsiiyiiluf3::::res://assets/sprites/character_eyes.png<>uid://cr3lheqnsab20::::res://assets/sprites/character_hands.png<>uid://dfo71til6g2i3::::res://assets/sprites/character_shirt.png<>uid://ctmltpjdneg1::::res://assets/sprites/character_pants.png<>uid://1omnr5ppinj::::res://assets/sprites/character_shoes.png<>uid://ck2pe3fpfoaot::::res://assets/sprites/character_skin.png
+::res://scenes/::1722628654
+character.tscn::PackedScene::3198101186135592384::1722627165::0::1::::<><>::res://scripts/Character.cs<>uid://bs8f054hgyqqt::::res://assets/sprites/character_special.png<>uid://bmmpfcts2fl0x::::res://assets/sprites/character_hair.png<>uid://cipsiiyiiluf3::::res://assets/sprites/character_eyes.png<>res://scenes/brighten.gdshader<>uid://cr3lheqnsab20::::res://assets/sprites/character_hands.png<>uid://dfo71til6g2i3::::res://assets/sprites/character_shirt.png<>uid://ctmltpjdneg1::::res://assets/sprites/character_pants.png<>uid://1omnr5ppinj::::res://assets/sprites/character_shoes.png<>uid://ck2pe3fpfoaot::::res://assets/sprites/character_skin.png
 cursor.tscn::PackedScene::5368048847328574984::1721528317::0::1::::<><>::uid://dfh4vqvhjcdu8::::res://assets/tileset_map.png
-game.tscn::PackedScene::3403377525641250617::1722572131::0::1::::<><>::res://scripts/game_manager.gd<>res://scripts/multiplayer/networks/network_manager.gd<>uid://b2nt3i27n12hb::::res://scenes/steam_hud.tscn<>uid://0514t1eqavys::::res://assets/sprites/tileset_main.png
-map.tscn::PackedScene::3538842000470776208::1722572131::0::1::::<><>::uid://dfh4vqvhjcdu8::::res://assets/sprites/tileset_map.png<>res://scripts/Map.cs<>uid://ciqk8lfdwbk37::::res://scenes/cursor.tscn<>uid://dctqn4jusjfgj::::res://assets/sprites/map_background.png<>res://scenes/sepia_map.gdshader
-multiplayer_player.tscn::PackedScene::7645680929107505955::1722572131::0::1::::<><>::res://scripts/multiplayer/multiplayer_controller.gd<>res://scripts/multiplayer/multiplayer_input.gd<>uid://bv4re4xesfx8x::::res://assets/sprites/player_character.png
+game.tscn::PackedScene::3403377525641250617::1722627165::0::1::::<><>::res://scenes/game.gd<>res://scripts/game_manager.gd<>res://scripts/multiplayer/networks/network_manager.gd<>uid://b2nt3i27n12hb::::res://scenes/steam_hud.tscn<>uid://0514t1eqavys::::res://assets/sprites/tileset_main.png<>uid://bltgi20a35aro::::res://scenes/character.tscn<>uid://dbjl1e6kdxpl6::::res://assets/fonts/PixelOperator8.ttf
+map.tscn::PackedScene::3538842000470776208::1722627165::0::1::::<><>::uid://dfh4vqvhjcdu8::::res://assets/sprites/tileset_map.png<>res://scripts/Map.cs<>uid://ciqk8lfdwbk37::::res://scenes/cursor.tscn<>uid://dctqn4jusjfgj::::res://assets/sprites/map_background.png<>res://scenes/sepia_map.gdshader
+multiplayer_player.tscn::PackedScene::7645680929107505955::1722627165::0::1::::<><>::res://scripts/multiplayer/multiplayer_controller.gd<>res://scripts/multiplayer/multiplayer_input.gd<>uid://bltgi20a35aro::::res://scenes/character.tscn
 player.tscn::PackedScene::2510409510203024937::1720302988::0::1::::<><>::
-custom_color.gdshader::Shader::-1::1722572131::0::1::::<><>::
-sepia_map.gdshader::Shader::-1::1722572131::0::1::::<><>::
-steam_hud.tscn::PackedScene::4309560461183532091::1722572131::0::1::::<><>::uid://dbjl1e6kdxpl6::::res://assets/fonts/PixelOperator8.ttf<>uid://c53kogtyjwsss::::res://assets/fonts/PixelOperator8-Bold.ttf
-test.gdshader::Shader::-1::1722572131::0::1::::<><>::
-test.tres::VisualShader::2265873042532325772::1722390454::0::1::::<><>::
-test.tscn::PackedScene::2481860787340623805::1722572131::0::1::::<><>::uid://7juulikthpiy::::res://scenes/test.tres<>uid://but0mac2skin6::::res://assets/sprites/tileset_test.png
+custom_color.gdshader::Shader::-1::1722628654::0::1::::<><>::
+game.gd::GDScript::-1::1722576162::0::1::::<>Node2D<>::
+brighten.gdshader::Shader::-1::1722628654::0::1::::<><>::
+test2.gdshader::Shader::-1::1722628654::0::1::::<><>::
+sepia_map.gdshader::Shader::-1::1722628654::0::1::::<><>::
+steam_hud.tscn::PackedScene::4309560461183532091::1722627165::0::1::::<><>::uid://dbjl1e6kdxpl6::::res://assets/fonts/PixelOperator8.ttf<>uid://c53kogtyjwsss::::res://assets/fonts/PixelOperator8-Bold.ttf
+test.gdshader::Shader::-1::1722628654::0::1::::<><>::
+test.tres::VisualShader::2265873042532325772::1722628196::0::1::::<><>::
+test.tscn::PackedScene::2481860787340623805::1722628654::0::1::::<><>::res://scenes/test.gdshader<>res://scenes/test2.gdshader<>uid://but0mac2skin6::::res://assets/sprites/tileset_test.png
 ::res://scenes/multiplayer/::1718286995
 ::res://scenes/multiplayer/networks/::1722154594
 steam_network.tscn::PackedScene::4824204218293093628::1722154594::0::1::::<><>::res://scripts/multiplayer/networks/steam_network.gd
-::res://scripts/::1722572129
-Character.cs::CSharpScript::-1::1722572129::0::1::::<>Node2D<>::
+::res://scripts/::1722621901
+Character.cs::CSharpScript::-1::1722621901::0::1::::<>Node2D<>::
 GameData.cs::CSharpScript::-1::1722146958::0::1::::<>Node<>::
-game_manager.gd::GDScript::-1::1721602573::0::1::::<>Node<>::
+game_manager.gd::GDScript::-1::1722575476::0::1::::<>Node<>::
 Map.cs::CSharpScript::-1::1722300233::0::1::::<>Node2D<>::
-::res://scripts/multiplayer/::1722300229
-multiplayer_controller.gd::GDScript::-1::1722300229::0::1::::<>CharacterBody2D<>::
-multiplayer_input.gd::GDScript::-1::1722135915::0::1::::<>MultiplayerSynchronizer<>::
+::res://scripts/multiplayer/::1722577568
+multiplayer_controller.gd::GDScript::-1::1722577568::0::1::::<>CharacterBody2D<>::
+multiplayer_input.gd::GDScript::-1::1722577125::0::1::::<>MultiplayerSynchronizer<>::
 multiplayer_manager.gd::GDScript::-1::1721614453::0::1::::<>Node<>::
 ::res://scripts/multiplayer/networks/::1722300108
 network_manager.gd::GDScript::-1::1721598117::0::1::::<>Node<>::
