@@ -1,7 +1,5 @@
 extends Node
 
-signal add_player(player)
-
 var multiplayer_scene = preload("res://scenes/multiplayer_player.tscn")
 var multiplayer_peer: SteamMultiplayerPeer = SteamMultiplayerPeer.new()
 var _players_spawn_node
@@ -44,6 +42,21 @@ func _on_lobby_created(connection: int, lobby_id):
 		Steam.setLobbyData(_hosted_lobby_id, "hash", MultiplayerManager.GAME_HASH)
 		
 		_create_host()
+	else:
+		print("Error %s with lobby %s." % [connection, lobby_id])
+		var FAIL_REASON: String
+		match connection:
+			2:  FAIL_REASON = "This lobby no longer exists."
+			3:  FAIL_REASON = "You don't have permission to join this lobby."
+			4:  FAIL_REASON = "The lobby is now full."
+			5:  FAIL_REASON = "Uh... something unexpected happened!"
+			6:  FAIL_REASON = "You are banned from this lobby."
+			7:  FAIL_REASON = "You cannot join due to having a limited account."
+			8:  FAIL_REASON = "This lobby is locked or disabled."
+			9:  FAIL_REASON = "This lobby is community locked."
+			10: FAIL_REASON = "A user in the lobby has blocked you from joining."
+			11: FAIL_REASON = "A user you have blocked is in the lobby."
+		print("That error could potentially be: % Though really I have no idea I can't find these error codes anywhere idk if its the same for lobby create and lobby join. If its not the listed reason my best guess is another lobby exists with the same lobby name." % FAIL_REASON)
 
 func _create_host():
 	print("Create Host")
@@ -103,7 +116,6 @@ func _add_player_to_game(id: int):
 	var player_to_add = multiplayer_scene.instantiate()
 	player_to_add.player_id = id
 	player_to_add.name = str(id)
-	add_player.emit(player_to_add)
 	_players_spawn_node.add_child(player_to_add, true)
 	
 func _del_player(id: int):

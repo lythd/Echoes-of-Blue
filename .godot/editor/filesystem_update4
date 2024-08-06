@@ -15,3 +15,9 @@ res://scripts/multiplayer/networks/steam_network.gd
 res://scripts/game_manager.gd
 res://scripts/multiplayer/networks/network_manager.gd
 res://scenes/game.gd
+res://scripts/Character.cs
+res://scripts/Map.cs
+res://scripts/GameData.cs
+res://scenes/tempfornow.cs
+res://scenes/tempfornow.gd
+res://scripts/multiplayer/multiplayer_input.gd

@@ -37,262 +37,320 @@ public partial class Character : Node2D
 	
 	private RandomNumberGenerator random = new RandomNumberGenerator();
 	
+	[Export]
 	public int SpecialInd {
 		get { return _specialInd; }
 		set
 		{
+			if(_special == null) return;
 			_specialInd = value % SpritesheetSpecial.Length;
 			_special.Texture = SpritesheetSpecial[_specialInd];
 		}
 	}
 	
+	[Export]
 	public int HairInd {
 		get { return _hairInd; }
 		set
 		{
+			if(_hair == null) return;
 			_hairInd = value % SpritesheetHair.Length;
 			_hair.Texture = SpritesheetHair[_hairInd];
 		}
 	}
 	
+	[Export]
 	public int EyesInd {
 		get { return _eyesInd; }
 		set
 		{
+			if(_eyes == null) return;
 			_eyesInd = value % SpritesheetEyes.Length;
 			_eyes.Texture = SpritesheetEyes[_eyesInd];
 		}
 	}
 	
+	[Export]
 	public int HandsInd {
 		get { return _handsInd; }
 		set
 		{
+			if(_hands == null) return;
 			_handsInd = value % SpritesheetHands.Length;
 			_hands.Texture = SpritesheetHands[_handsInd];
 		}
 	}
 	
+	[Export]
 	public int ShirtInd {
 		get { return _shirtInd; }
 		set
 		{
+			if(_shirt == null) return;
 			_shirtInd = value % SpritesheetShirt.Length;
 			_shirt.Texture = SpritesheetShirt[_shirtInd];
 		}
 	}
 	
+	[Export]
 	public int PantsInd {
 		get { return _pantsInd; }
 		set
 		{
+			if(_pants == null) return;
 			_pantsInd = value % SpritesheetPants.Length;
 			_pants.Texture = SpritesheetPants[_pantsInd];
 		}
 	}
 	
+	[Export]
 	public int ShoesInd {
 		get { return _shoesInd; }
 		set
 		{
+			if(_shoes == null) return;
 			_shoesInd = value % SpritesheetShoes.Length;
 			_shoes.Texture = SpritesheetShoes[_shoesInd];
 		}
 	}
 	
+	[Export]
 	public int SkinInd {
 		get { return _skinInd; }
 		set
 		{
+			if(_skin == null) return;
 			_skinInd = value % SpritesheetSkin.Length;
 			_skin.Texture = SpritesheetSkin[_skinInd];
 		}
 	}
 	
+	[Export]
 	public float HairHue {
 		get { return _hair.SelfModulate.H; }
 		set 
 		{ 
+			if(_hair == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_hair.SelfModulate = Color.FromHsv(value,_hair.SelfModulate.S,_hair.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float HairSat {
 		get { return _hair.SelfModulate.S; }
 		set 
 		{ 
+			if(_hair == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_hair.SelfModulate = Color.FromHsv(_hair.SelfModulate.H,value,_hair.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float HairVal {
 		get { return _hair.SelfModulate.V; }
 		set 
 		{ 
+			if(_hair == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_hair.SelfModulate = Color.FromHsv(_hair.SelfModulate.H,_hair.SelfModulate.S,value);
 		}
 	}
 	
+	[Export]
 	public float EyesHue {
 		get { return _eyes.SelfModulate.H; }
 		set 
 		{ 
+			if(_eyes == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_eyes.SelfModulate = Color.FromHsv(value,_eyes.SelfModulate.S,_eyes.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float EyesSat {
 		get { return _eyes.SelfModulate.S; }
 		set 
 		{ 
+			if(_eyes == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_eyes.SelfModulate = Color.FromHsv(_eyes.SelfModulate.H,value,_eyes.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float EyesVal {
 		get { return _eyes.SelfModulate.V; }
 		set 
 		{ 
+			if(_eyes == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_eyes.SelfModulate = Color.FromHsv(_eyes.SelfModulate.H,_eyes.SelfModulate.S,value);
 		}
 	}
 	
+	[Export]
 	public float HandsHue {
 		get { return _hands.SelfModulate.H; }
 		set 
 		{ 
+			if(_hands == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_hands.SelfModulate = Color.FromHsv(value,_hands.SelfModulate.S,_hands.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float HandsSat {
 		get { return _hands.SelfModulate.S; }
 		set 
 		{ 
+			if(_hands == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_hands.SelfModulate = Color.FromHsv(_hands.SelfModulate.H,value,_hands.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float HandsVal {
 		get { return _hands.SelfModulate.V; }
 		set 
 		{ 
+			if(_hands == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_hands.SelfModulate = Color.FromHsv(_hands.SelfModulate.H,_hands.SelfModulate.S,value);
 		}
 	}
 	
+	[Export]
 	public float ShirtHue {
 		get { return _shirt.SelfModulate.H; }
 		set 
 		{ 
+			if(_shirt == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_shirt.SelfModulate = Color.FromHsv(value,_shirt.SelfModulate.S,_shirt.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float ShirtSat {
 		get { return _shirt.SelfModulate.S; }
 		set 
 		{ 
+			if(_shirt == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_shirt.SelfModulate = Color.FromHsv(_shirt.SelfModulate.H,value,_shirt.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float ShirtVal {
 		get { return _shirt.SelfModulate.V; }
 		set 
 		{ 
+			if(_shirt == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_shirt.SelfModulate = Color.FromHsv(_shirt.SelfModulate.H,_shirt.SelfModulate.S,value);
 		}
 	}
 	
+	[Export]
 	public float PantsHue {
 		get { return _pants.SelfModulate.H; }
 		set 
 		{ 
+			if(_pants == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_pants.SelfModulate = Color.FromHsv(value,_pants.SelfModulate.S,_pants.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float PantsSat {
 		get { return _pants.SelfModulate.S; }
 		set 
 		{ 
+			if(_pants == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_pants.SelfModulate = Color.FromHsv(_pants.SelfModulate.H,value,_pants.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float PantsVal {
 		get { return _pants.SelfModulate.V; }
 		set 
 		{ 
+			if(_pants == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_pants.SelfModulate = Color.FromHsv(_pants.SelfModulate.H,_pants.SelfModulate.S,value);
 		}
 	}
 	
+	[Export]
 	public float ShoesHue {
 		get { return _shoes.SelfModulate.H; }
 		set 
 		{ 
+			if(_shoes == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_shoes.SelfModulate = Color.FromHsv(value,_shoes.SelfModulate.S,_shoes.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float ShoesSat {
 		get { return _shoes.SelfModulate.S; }
 		set 
 		{ 
+			if(_shoes == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_shoes.SelfModulate = Color.FromHsv(_shoes.SelfModulate.H,value,_shoes.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float ShoesVal {
 		get { return _shoes.SelfModulate.V; }
 		set 
 		{ 
+			if(_shoes == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_shoes.SelfModulate = Color.FromHsv(_shoes.SelfModulate.H,_shoes.SelfModulate.S,value);
 		}
 	}
 	
+	[Export]
 	public float SkinHue {
 		get { return _skin.SelfModulate.H; }
 		set 
 		{ 
+			if(_skin == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_skin.SelfModulate = Color.FromHsv(value,_skin.SelfModulate.S,_skin.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float SkinSat {
 		get { return _skin.SelfModulate.S; }
 		set 
 		{ 
+			if(_skin == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_skin.SelfModulate = Color.FromHsv(_skin.SelfModulate.H,value,_skin.SelfModulate.V);
 		}
 	}
 	
+	[Export]
 	public float SkinVal {
 		get { return _skin.SelfModulate.V; }
 		set 
 		{ 
+			if(_skin == null) return;
 			if(value <= 1.0f && value >= 0.0f)
 				_skin.SelfModulate = Color.FromHsv(_skin.SelfModulate.H,_skin.SelfModulate.S,value);
 		}

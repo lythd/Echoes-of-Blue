@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
-signal sync_character(character)
+signal show_all(show_all)
+signal sync_character(player)
 signal add_map(map)
-signal check_tile_properties(global_position, multiplayer_controller)
+signal check_tile_properties(global_position_player, multiplayer_controller)
 
 const SPEED = 75.0
 
@@ -32,11 +33,34 @@ var tile_is_slippery = false
 
 func _ready():
 	if in_control():
+		var game_node = get_node_or_null("/root/Game")
+		if game_node != null:
+			game_node.call("connect_player_signals", self)
+		else:
+			print("Running player standalone!")
+		sync_character.emit(self)
+	set_camera()
+
+
+func set_camera():
+	if in_control():
 		$Camera2D.make_current()
 		$Camera2D.enabled = true
-		sync_character.emit(character)
 	else:
 		$Camera2D.enabled = false
+
+func print_node_tree(root_node=null, indent = 0):
+	if root_node == null:
+		root_node = get_tree().get_root()
+
+	var indent_str = ""
+	for i in range(indent):
+		indent_str += "  "
+
+	print(indent_str + "|-- " + root_node.name)
+
+	for child in root_node.get_children():
+		print_node_tree(child, indent + 1)
 
 func in_control() -> bool:
 	return multiplayer.get_unique_id() == player_id || !MultiplayerManager.multiplayer_mode_enabled
@@ -68,27 +92,28 @@ func _apply_movement_from_input(delta):
 	if map_open:
 		direction = Vector2.ZERO
 	
-	# the map is always handled client side so instead of checking for singleplayer we just check if this is the client
+	# client side controls
 	if in_control() && Input.is_action_just_pressed("map"):
 		press_map()
+	if in_control() && Input.is_action_just_pressed("debug_print_scene_tree"):
+		print_node_tree()
 	
-	if !is_server && Input.is_action_just_pressed("sneak"): # for singleplayer
+	# singleplayer versions of host side controls
+	if !is_server && Input.is_action_just_pressed("sneak"): 
 		press_sneak()
-	if !is_server && Input.is_action_just_pressed("attack"): # for singleplayer
+	if !is_server && Input.is_action_just_pressed("attack"):
 		attack()
-	if !is_server && Input.is_action_just_pressed("cry"): # for singleplayer
+	if !is_server && Input.is_action_just_pressed("cry"):
 		cry()
-	if !is_server && Input.is_action_just_pressed("angry"): # for singleplayer
+	if !is_server && Input.is_action_just_pressed("angry"):
 		angry()
-	if !is_server && Input.is_action_just_pressed("shock"): # for singleplayer
+	if !is_server && Input.is_action_just_pressed("shock"):
 		shock()
 	
 	var speed = SPEED/3 if sneaking else SPEED
 	if direction:
 		velocity = direction * speed
-		crying = false
-		angried = false
-		shocked = false
+		crying = false;angried = false;shocked = false
 	elif tile_is_slippery:
 		velocity.x = move_toward(velocity.x, 0, speed * delta)
 		velocity.y = move_toward(velocity.y, 0, speed * delta)
@@ -99,45 +124,36 @@ func _apply_movement_from_input(delta):
 	move_and_slide()
 
 func press_sneak():
-	crying = false
-	angried = false
-	shocked = false
+	crying = false;angried = false;shocked = false
 	if map_open:
 		return
 	sneaking = !sneaking
 
 func attack():
-	crying = false
-	angried = false
-	shocked = false
+	crying = false;angried = false;shocked = false
 	attacking = !attacking
 
 func cry():
-	angried = false
-	shocked = false
+	angried = false;shocked = false
 	crying = !crying
 
 func angry():
-	crying = false
-	shocked = false
+	crying = false;shocked = false
 	angried = !angried
 
 func shock():
-	crying = false
-	angried = false
+	crying = false;angried = false
 	shocked = !shocked
 
 func press_map():
-	crying = false
-	angried = false
-	shocked = false
+	crying = false;angried = false;shocked = false
 	map_open = map == null
 	$InputSynchronizer.set_map_open.rpc(map_open)
 	if map_open:
 		map = map_scene.instantiate()
 		map.Controller = self
 		add_map.emit(map)
-		hide()
+		show_all.emit(false)
 	else:
 		come_back_from_map()
 
@@ -149,8 +165,8 @@ func come_back_from_map():
 	map = null
 	map_open = false
 	$InputSynchronizer.set_map_open.rpc(map_open)
-	show()
-	_ready()
+	show_all.emit(true)
+	set_camera()
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE;
 
 func _check_tile_properties():
@@ -179,3 +195,9 @@ func _respawn():
 func _set_alive():
 	alive = true
 	Engine.time_scale = 1.0
+
+func call_character(color, part):
+	character.call("SetHSV", part, color.h, color.s, color.v)
+
+func get_input_synchronizer():
+	return $InputSynchronizer

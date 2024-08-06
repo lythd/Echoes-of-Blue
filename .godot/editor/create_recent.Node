@@ -1,9 +1,9 @@
+Node2D
 TextureRect
 SubViewport
 ColorPickerButton
 Panel
 Control
-Node2D
 Button
 AnimationPlayer
 Node
@@ -12,4 +12,3 @@ AnimatedSprite2D
 TileMap
 RichTextLabel
 MultiplayerSpawner
-Timer

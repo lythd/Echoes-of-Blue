@@ -57,3 +57,8 @@ func shock():
 func set_map_open(val: bool):
 	if multiplayer.is_server():
 		player._set_map_open(val)
+
+@rpc("call_local")
+func call_character(color, part):
+	if multiplayer.is_server():
+		player.call_character(color, part)

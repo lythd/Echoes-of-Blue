@@ -27,7 +27,6 @@ func start_solo():
 	var player_to_add = multiplayer_scene.instantiate()
 	player_to_add.player_id = id
 	player_to_add.name = str(id)
-	_on_add_player(player_to_add)
 	%NetworkManager._players_spawn_node.add_child(player_to_add, true)
 	
 
@@ -90,41 +89,6 @@ func _on_lobby_match_list(lobbies: Array):
 			lobby_button.connect("pressed", Callable(self, "join_lobby").bind(lobby))
 			
 			$"../SteamHUD/Panel/Lobbies/VBoxContainer".add_child(lobby_button)
-
-func _on_add_player(player):
-	print("Connecting player signals...")
-	player.sync_character.connect(_on_sync_character)
-	player.add_map.connect(_on_add_map)
-	player.check_tile_properties.connect(_on_check_tile_properties)
-
-func _on_sync_character(character):
-	var character_pick = $"..".call("get_character")
-	var color = character_pick.call("GetHSV", "Hair")
-	character.call("SetHSV", "Hair", color.h, color.s, color.v)
-	color = character_pick.call("GetHSV", "Eyes")
-	character.call("SetHSV", "Eyes", color.h, color.s, color.v)
-	color = character_pick.call("GetHSV", "Skin")
-	character.call("SetHSV", "Skin", color.h, color.s, color.v)
-	color = character_pick.call("GetHSV", "Shirt")
-	character.call("SetHSV", "Shirt", color.h, color.s, color.v)
-	color = character_pick.call("GetHSV", "Hands")
-	character.call("SetHSV", "Hands", color.h, color.s, color.v)
-	color = character_pick.call("GetHSV", "Pants")
-	character.call("SetHSV", "Pants", color.h, color.s, color.v)
-	color = character_pick.call("GetHSV", "Shoes")
-	character.call("SetHSV", "Shoes", color.h, color.s, color.v)
-
-func _on_add_map(map):
-	add_child(map, true)
-
-func _on_check_tile_properties(global_position, multiplayer_controller):
-	var tile_map = %TileMapMain
-	var tile_coords = tile_map.local_to_map(global_position-tile_map.get_global_position())
-	var bot_tile_data = tile_map.get_cell_tile_data(0, tile_coords)
-	var top_tile_data = tile_map.get_cell_tile_data(1, tile_coords)
-	var bot_tile_slippery = bool(bot_tile_data.get_custom_data("slippery")) if bot_tile_data != null else false
-	var top_tile_slippery = bool(top_tile_data.get_custom_data("slippery")) if top_tile_data != null else false
-	multiplayer_controller.tile_is_slippery = bot_tile_slippery || top_tile_slippery
 
 func _on_random_pressed():
 	%CustomizeCharacter.call("Randomize")
