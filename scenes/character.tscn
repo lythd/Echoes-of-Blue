@@ -841,6 +841,7 @@ _data = {
 }
 
 [node name="Character" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_e41aw")
 
 [node name="Special" type="Sprite2D" parent="."]

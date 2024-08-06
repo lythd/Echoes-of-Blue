@@ -38,6 +38,7 @@ height = 14.0
 
 [node name="MultiplayerPlayer" type="CharacterBody2D"]
 z_index = 5
+y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_ij7lf")
 
