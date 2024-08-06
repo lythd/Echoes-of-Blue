@@ -34,7 +34,7 @@ func _ready():
 	if in_control():
 		$Camera2D.make_current()
 		$Camera2D.enabled = true
-		emit_signal("sync_character", character)
+		sync_character.emit(character)
 	else:
 		$Camera2D.enabled = false
 
@@ -136,7 +136,7 @@ func press_map():
 	if map_open:
 		map = map_scene.instantiate()
 		map.Controller = self
-		emit_signal("add_map", map)
+		add_map.emit(map)
 		hide()
 	else:
 		come_back_from_map()
