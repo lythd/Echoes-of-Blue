@@ -95,7 +95,9 @@
     "fist": {
         "blunt": 25,
         "durability": -1,
-        "effects": [],
+        "effects": [
+        	"Fist"
+        ],
         "name": "Fist",
         "piercing": -1
     },
@@ -346,5 +348,60 @@
         ],
         "name": "Wood Bow",
         "piercing": 75
+    },
+    "shiv": {
+        "blunt": -1,
+        "durability": 5,
+        "effects": [],
+        "name": "Shiv",
+        "piercing": 50
+    },
+    "crowbar": {
+        "blunt": 40,
+        "durability": 15,
+        "effects": [
+            "Stun"
+        ],
+        "name": "Crowbar",
+        "piercing": -1
+    },
+    "brassknuckles": {
+        "blunt": 75,
+        "durability": 50,
+        "effects": [],
+        "name": "Brass Knuckles",
+        "piercing": 25
+    },
+    "brokenbottle": {
+        "blunt": -1,
+        "durability": 3,
+        "effects": [],
+        "name": "Broken Bottle",
+        "piercing": 175
+    },
+    "metalpipe": {
+        "blunt": 100,
+        "durability": 5,
+        "effects": [],
+        "name": "Metal Pipe",
+        "piercing": -1
+    },
+    "seismometer": {
+        "blunt": 300,
+        "durability": 500,
+        "effects": [
+            "Seismometer"
+        ],
+        "name": "Seismometer",
+        "piercing": -1
+    },
+    "extendablearm": {
+        "blunt": 75,
+        "durability": 500,
+        "effects": [
+            "Extendable Arm"
+        ],
+        "name": "Extendable Arm",
+        "piercing": -1
     }
 }

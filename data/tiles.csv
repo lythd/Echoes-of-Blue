@@ -1,27 +1,27 @@
-"Pyro Grass", "Pyro Soil", "Pyro Soil{V}", "Pyro Soil{V}", "Pyro Soil{V}", "Blackstone",,, "Fire", "Smoke Bush"
-"Pyro Soil{V}", "Pyro Soil{V}", "Pyro Soil{V}", "Lava", "Pyro Soil{V}", "Hellstone",,, "Blood Sage", "Smoke Tree"
-"Pyro Soil{V}", "Pyro Soil{V}", "Pyro Soil{V}", "Pyro Soil{V}", "Pyro Soil{V}", "Surface Gold Ore",,, "Pyro Tall Grass"
-"Ash", "Smooth Ash",,,,,,, "Bones", "Fossil{V}", "Fossil{V}"
-,,,,,,,,, "Burnt Tall Grass", "Fossil{V}", "Fossil{V}"
-,,,,,,,,, "Basalt", "Fossil{V}", "Fossil"
-"Grass", "Dirt", "Dirt{V}", "Dirt{V}", "Dirt{V}", "Ice",,, "Tall Grass", "Bush", "Oak Tree", "Snowglobe"
-"Dirt{V}", "Dirt{V}", "Dirt{V}", "Water", "Dirt{V}",,,, "Sunflower", "Wheat", "Autumn Oak Tree", "Sign"
-"Dirt{V}", "Dirt{V}", "Dirt{V}", "Dirt{V}", "Dirt{V}",,,, "Blue Flax", "Snowpile", "Rubber Tree", "Hot Chocolate"
-"Jungle Grass", "Mud", "Mud{V}", "Mud{V}", "Mud{V}",,,, "Pumpkin{V}/Watermelon{V}", "Jungle Bush", "Mahogany Tree", "Jungle Tall Grass"
-"Mud{V}", "Mud{V}", "Mud{V}", "Mud{V}", "Jungle Water", "Mud{V}",,,, "Pumpkin{V}", "Watermelon{V}", "Mango Tree{V}", "Mahogany Log"
-"Mud{V}", "Mud{V}", "Mud{V}", "Mud{V}", "Mud{V}", "Mud{V}",,,, "Pumpkin", "Watermelon", "Mango Tree", "Sugarcane"
-"Swamp", "Swamp{V}", "Swamp{V}", "Swamp{V}", "Swamp{V}",,,, "Swamp Leaves{V}", "Swamp Leaves", "Mangrove Tree"
-"Swamp{V}", "Swamp{V}", "Swamp{V}", "Swamp Water", "Swamp{V}",,,, "Lilypad{V}", "Lilypad", "Mangrove Log"
-"Swamp{V}", "Swamp{V}", "Swamp{V}", "Swamp{V}", "Swamp{V}",,,, "Lilypad{V}", "Lilypad{V}"
-"Sky", "Cloud{V}", "Cloud{V}", "Cloud{V}", "Cloud{V}", "Storm Cloud{V}", "Storm Cloud{V}", "Storm Cloud{V}", "Cloud", "Storm Cloud", "Lightning{V}"
-"Cloud{V}", "Cloud{V}", "Cloud{V}", "Cloud{V}", "Cloud{V}", "Storm Cloud{V}", "Storm Cloud{V}", "Storm Cloud{V}", "Cloud{V}", "Storm Cloud{V}", "Lightning{V}"
-"Cloud{V}", "Cloud{V}", "Cloud{V}", "Cloud{V}", "Cloud{V}", "Storm Cloud{V}", "Storm Cloud{V}", "Storm Cloud{V}", "Cloud{V}", "Storm Cloud{V}", "Lightning{V}"
-, "Sand", "Sand{V}", "Sand{V}", "Sand{V}",,,, "Seashells{V}", "Cactus{V}", "Coconut Tree{V}"
-"Sand{V}", "Sand{V}", "Sand{V}", "Clear Water", "Sand{V}", "Seashells", "Cactus", "Coconut Tree"
-"Sand{V}", "Sand{V}", "Sand{V}", "Sand{V}", "Sand{V}", "Piña Colada", "Coconut Tree{V}", "Coconut Tree{V}"
-"Chalk Soil", "Stone", "Limestone", "Gravel",,,,, "Pebbles", "Boulder", "Silver Ore Boulder", "Emerald Ore Boulder"
-,,,,,,,,, "Twigs", "Coal Ore Boulder", "Gold Ore Boulder", "Rail"
-,,,,,,,,, "Rock Flower", "Iron Ore Boulder", "Diamond Ore Boulder", "Torch"
-"Coal Ore", "Tin Ore", "Copper Ore", "Iron Ore"
-"Silver Ore", "Gold Ore", "Ruby Ore", "Diamond Ore"
-"Emerald Ore", "Titanium Ore", "Vulrinth Ore"
+Pyro Grass,Pyro Soil,Lava,Surface Gold Ore,Hellstone,Blackstone,,,Fire,Smoke Bush,,,,,,,Path,Carriage Floor,,,,,,,Carriage,Carriage{V},Carriage{V},Carriage{V},Carriage{V},,,
+,,,,,,,,Blood Sage,Smoke Tree,,,,,,,Wood Floor,Stone Floor,Limestone Floor,Iron Floor,,,,,Carriage{V},Carriage{V},Piggy Bank,Safe,Carriage{V},,,
+,,,,,,,,Pyro Tall Grass,,,,,,,,,,,,,,,,Carriage{V},Carriage{V},Carriage{V},Sleeping Mat,Carriage{V},,,
+Ash,Smooth Ash,,,,,,,Bones,Fossil{V},Fossil{V},,,,,,,,,,,,,,,Carriage{V},Carriage{V},Carriage{V},Carriage{V},,,
+,,,,,,,,Burnt Tall Grass,Fossil{V},Fossil{V},,,,,,,,,,,,,,Sign{V},Sign{V},Sign{V},Sign{V},Gravestone,,,
+,,,,,,,,Basalt,Fossil{V},Fossil,,,,,,,,,,,,,,Wood Pole,Stone Pole,Limestone Pole,Iron Pole,Wood Fence,Stone Fence,Limestone Fence,Iron Fence
+Grass,Dirt,Water,Ice,,,,,Tall Grass,Bush,Oak Tree,Snowglobe,,,,,,,,,,,,,Wood Gate,Stone Gate,Limestone Gate,Iron Gate,Wood Gate{V},Stone Gate{V},Limestone Gate{V},Iron Gate{V}
+,,,,,,,,Sunflower,Wheat,Autumn Oak Tree,Sign,,,,,,,,,,,,,Wood Pole,Stone Pole,Limestone Pole,Iron Pole,Window,,,
+,,,,,,,,Blue Flax,Snowpile,Rubber Tree,Hot Chocolate,,,,,,,,,,,,,Wood Pole,Stone Pole,Limestone Pole,Iron Pole,,,,
+Jungle Grass,Mud,Jungle Water,,,,,,Pumpkin{V}/Watermelon{V},Jungle Bush,Mahogany Tree,Jungle Tall Grass,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall,Stall{V}
+,,,,,,,,Pumpkin{V},Watermelon{V},Mango Tree{V},Mahogany Log,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V}
+,,,,,,,,Pumpkin,Watermelon,Mango Tree,Sugarcane,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V}
+Swamp,Swamp{V},Swamp Water,,,,,,Swamp Leaves{V},Swamp Leaves,Mangrove Tree,,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V}
+,,,,,,,,Lilypad{V},Lilypad,Mangrove Log,,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},,,,,
+,,,,,,,,Lilypad{V},Lilypad{V},,,,,,,,,,,,,,,Beanstalk,Sand Toys,Plane{V},Plane{V},Plane{V},Plane,,
+Sky,Cloud{V},Storm Cloud{V},,,,,,Cloud,Storm Cloud,Lightning{V},,,,,,,,,,,,,,,,Plane{V},Plane{V},Plane{V},,,
+,,,,,,,,Cloud{V},Storm Cloud{V},Lightning{V},,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Cloud{V},Storm Cloud{V},Lightning{V},,,,,,,,,,,,,,,,,,,,,
+,Sand,Clear Water,,,,,,Seashells{V},Cactus{V},Coconut Tree{V},,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Seashells,Cactus,Coconut Tree,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Piña Colada,Coconut Tree{V},Coconut Tree{V},,,,,,,,,,,,,,,,,,,,,
+Chalk Soil,Stone,Limestone,Gravel,,,,,Pebbles,Boulder,Silver Ore Boulder,Emerald Ore Boulder,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Twigs,Coal Ore Boulder,Gold Ore Boulder,Rail,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Rock Flower,Iron Ore Boulder,Diamond Ore Boulder,Torch,,,,,,,,,,,,,,,,,,,,
+Coal Ore,Tin Ore,Copper Ore,Iron Ore,,,,,,,,,,,,,Dungeon Background,Dungeon Floor,Dungeon Wall,,,,,,Dungeon Pot,Dungeon Chest,Dungeon Cell,Dungeon Stairs,,,,
+Silver Ore,Gold Ore,Ruby Ore,Diamond Ore,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Emerald Ore,Titanium Ore,Vulrinth Ore,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

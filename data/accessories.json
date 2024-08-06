@@ -242,5 +242,75 @@
             "Turtled"
         ],
         "name": "Turtle Master Potion"
+    },
+    "jetpack": {
+        "durability": 75,
+        "effects": [
+            "Jetpack"
+        ],
+        "name": "Jetpack"
+    },
+    "holographicdecoy": {
+        "durability": 30,
+        "effects": [
+            "Holographic Decoy"
+        ],
+        "name": "Holographic Decoy"
+    },
+    "energyshield": {
+        "durability": 50,
+        "effects": [
+            "Energy Shield"
+        ],
+        "name": "Energy Shield"
+    },
+    "magnet": {
+        "durability": 500,
+        "effects": [
+            "Magnetized"
+        ],
+        "name": "Magnet"
+    },
+    "magnetpotion": {
+        "durability": 1,
+        "effects": [
+            "Magnetized"
+        ],
+        "name": "Magnet Potion"
+    },
+    "lightningpotion": {
+        "durability": 1,
+        "effects": [
+            "Blessing of Zeus"
+        ],
+        "name": "Lightning Potion"
+    },
+    "fireresistancepotion": {
+        "durability": 1,
+        "effects": [
+            "Fire Resistant"
+        ],
+        "name": "Fire Resistance Potion"
+    },
+    "waterwalkingpotion": {
+        "durability": 1,
+        "effects": [
+            "Water Walking"
+        ],
+        "name": "Water Walking Potion"
+    },
+    "invisibilitypotion": {
+        "durability": 1,
+        "effects": [
+            "Invisible"
+        ],
+        "name": "Invisibility Potion"
+    },
+    "cocktail": {
+        "durability": 1,
+        "effects": [
+            "Cocktail"
+        ],
+        "name": "Cocktail"
     }
 }

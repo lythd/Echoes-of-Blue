@@ -256,6 +256,174 @@
         "sold": 100
     },
     {
+        "category": "generic",
+        "description": "A humble floor.",
+        "name": "Wood Floor",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A strong floor.",
+        "name": "Stone Floor",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A pretty floor.",
+        "name": "Limestone Floor",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A shiny floor.",
+        "name": "Iron Floor",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A humble wall.",
+        "name": "Wood Wall",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A strong wall.",
+        "name": "Stone Wall",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A pretty wall.",
+        "name": "Limestone Wall",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A shiny wall.",
+        "name": "Iron Wall",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A humble door.",
+        "name": "Wood Door",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A strong door.",
+        "name": "Stone Door",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A pretty door.",
+        "name": "Limestone Door",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A shiny door.",
+        "name": "Iron Door",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A humble pole.",
+        "name": "Wood Pole",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A strong pole.",
+        "name": "Stone Pole",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A pretty pole.",
+        "name": "Limestone Pole",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A shiny pole.",
+        "name": "Iron Pole",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A humble fence.",
+        "name": "Wood Fence",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A strong fence.",
+        "name": "Stone Fence",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A pretty fence.",
+        "name": "Limestone Fence",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A shiny fence.",
+        "name": "Iron Fence",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A humble gate.",
+        "name": "Wood Gate",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A strong gate.",
+        "name": "Stone Gate",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A pretty gate.",
+        "name": "Limestone Gate",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "A shiny gate.",
+        "name": "Iron Gate",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "The dead like to be buried properly.",
+        "name": "Gravestone",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "All the better to see you with.",
+        "name": "Window",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "The first true papermaking process is attributed to Cai Lun, a Chinese court official, in the first century CE.",
+        "name": "Paper",
+        "price": 0
+    },
+    {
+        "category": "generic",
+        "description": "The first libraries were made to archive the earliest forms of writing, clay tablets written in the cuneiform script from 2600 BCE.",
+        "name": "Book",
+        "price": 0
+    },
+    {
         "bought": 10000,
         "category": "food",
         "description": "A drink not normally found here.",
@@ -738,6 +906,48 @@
         "sold": 5000
     },
     {
+        "category": "mining",
+        "description": "A beautiful rare blue stone.",
+        "name": "Lapis Lazuli",
+        "price": 0
+    },
+    {
+        "category": "mining",
+        "description": "A beautiful rare blue stone.",
+        "name": "Amber",
+        "price": 0
+    },
+    {
+        "category": "mining",
+        "description": "A beautiful rare pink stone; rhodachrosite.",
+        "name": "Inca Rose",
+        "price": 0
+    },
+    {
+        "category": "mining",
+        "description": "A beautiful rare green stone.",
+        "name": "Malachite",
+        "price": 0
+    },
+    {
+        "category": "mining",
+        "description": "A beautiful rare orange stone.",
+        "name": "Jasper",
+        "price": 0
+    },
+    {
+        "category": "mining",
+        "description": "A beautiful rare white stone.",
+        "name": "Opal",
+        "price": 0
+    },
+    {
+        "category": "mining",
+        "description": "A beautiful rare turquoise (literally) stone.",
+        "name": "Turquoise",
+        "price": 0
+    },
+    {
         "bought": 100,
         "category": "industrial",
         "description": "Lamp oil, fluctuates pretty heavily, a solid choice for starting investors.",
@@ -1035,6 +1245,48 @@
         "category": "weapon",
         "description": "A favorite of assassins and thieves, does a lot of damage if it catches you off guard.",
         "name": "Dagger",
+        "price": 0
+    },
+    {
+        "category": "weapon",
+        "description": "A favorite of burglars, stuns the target.",
+        "name": "Crowbar",
+        "price": 0
+    },
+    {
+        "category": "weapon",
+        "description": "I mean this was made by an inmate surely you have better options?",
+        "name": "Shiv",
+        "price": 0
+    },
+    {
+        "category": "weapon",
+        "description": "Amplifies your punches, you would not want to be on the receiving end of one of these.",
+        "name": "Brass Knuckles",
+        "price": 0
+    },
+    {
+        "category": "weapon",
+        "description": "Nothing hurts more than shards of broken glass in your skin.",
+        "name": "Broken Bottle",
+        "price": 0
+    },
+    {
+        "category": "weapon",
+        "description": "Fresh from your neighbors toilet is a metal pipe ready to knock you out!",
+        "name": "Metal Pipe",
+        "price": 0
+    },
+    {
+        "category": "weapon",
+        "description": "Do I really need to check if earthquakes are happening? Wait, why is this in the weapons category? Oh.",
+        "name": "Seismometer",
+        "price": 0
+    },
+    {
+        "category": "weapon",
+        "description": "Lucy made this to solve the age old problem of wanting to grab things but not wanting to get out of bed.",
+        "name": "Extendable Arm",
         "price": 0
     },
     {
@@ -1447,6 +1699,30 @@
     },
     {
         "category": "accessory",
+        "description": "The best defense is flying over the enemies.",
+        "name": "Jetpack",
+        "price": 0
+    },
+    {
+        "category": "accessory",
+        "description": "Distract enemies with a decoy! Useful to get a moment to breathe.",
+        "name": "Holographic Decoy",
+        "price": 0
+    },
+    {
+        "category": "accessory",
+        "description": "Keep your problems at bay with this energy shield!",
+        "name": "Energy Shield",
+        "price": 0
+    },
+    {
+        "category": "accessory",
+        "description": "Sexy! Actually maybe a different type of attractive.",
+        "name": "Magnet",
+        "price": 0
+    },
+    {
+        "category": "accessory",
         "description": "Buffs all types of damage; consumable.",
         "name": "Strength Potion",
         "price": 0
@@ -1485,6 +1761,42 @@
         "category": "accessory",
         "description": "Boosts fishing power and only consumes less bait; consumable.",
         "name": "Fishing Potion",
+        "price": 0
+    },
+    {
+        "category": "accessory",
+        "description": "It's like a magnet, but in potion form! Consumable.",
+        "name": "Magnet Potion",
+        "price": 0
+    },
+    {
+        "category": "accessory",
+        "description": "Drinking this gives you Zeus' blessing to strike lightning! Consumable.",
+        "name": "Lightning Potion",
+        "price": 0
+    },
+    {
+        "category": "accessory",
+        "description": "Becomes immune to fire and lava; consumable.",
+        "name": "Fire Resistance Potion",
+        "price": 0
+    },
+    {
+        "category": "accessory",
+        "description": "Made from a distilled bearded canaanite man; consumable.",
+        "name": "Water Walking Potion",
+        "price": 0
+    },
+    {
+        "category": "accessory",
+        "description": "I've mastered the ability of standing so incredibly still… that I become invisible to the eye. Consumable.",
+        "name": "Invisibility Potion",
+        "price": 0
+    },
+    {
+        "category": "accessory",
+        "description": "You won't know what you get until you drink it! Consumable.",
+        "name": "Cocktail",
         "price": 0
     },
     {
@@ -1530,6 +1842,18 @@
         "price": 0
     },
     {
+        "category": "improvisedexplosive",
+        "description": "Do not try at home.",
+        "name": "Pipe Bomb",
+        "price": 0
+    },
+    {
+        "category": "improvisedexplosive",
+        "description": "Do not confuse with regular cocktails.",
+        "name": "Molotov Cocktail",
+        "price": 0
+    },
+    {
         "bought": 10000,
         "category": "bait",
         "description": "Eww a worm. Can be used as bait.",
@@ -1556,7 +1880,7 @@
     {
         "bought": 1000,
         "category": "bait",
-        "description": "Ew who eats raw fish. Can be used as bait",
+        "description": "Ew who eats raw fish. Can be used as bait.",
         "name": "Raw Cod",
         "price": 10,
         "sold": 1000
@@ -1684,5 +2008,35 @@
         "name": "Devil Ray",
         "price": 500000,
         "sold": 100
+    },
+    {
+        "category": "utility",
+        "description": "Allows you to summon or clear any gusty weather.",
+        "name": "Wind Vane",
+        "price": 0
+    },
+    {
+        "category": "utility",
+        "description": "Allows you to summon or clear the rain in the skies.",
+        "name": "Rain Gauge",
+        "price": 0
+    },
+    {
+        "category": "utility",
+        "description": "Temporarily changes seasons.",
+        "name": "Thermometer",
+        "price": 0
+    },
+    {
+        "category": "utility",
+        "description": "Temporarily changes the time of day.",
+        "name": "Sundial",
+        "price": 0
+    },
+    {
+        "category": "utility",
+        "description": "Digs paths like never before! I refrained from calling this an edging shovel.",
+        "name": "20\" Path Master Ultra",
+        "price": 0
     }
 ]

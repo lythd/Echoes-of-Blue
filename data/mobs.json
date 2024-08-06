@@ -214,8 +214,8 @@
 		"spd": 1000,
 		"effects": [],
 		"drops": {
-			"Common": {"Magma Block": 1, "Cloud": [1,5], "Silver Bar": 1},
-			"Uncommon": {"Magma Block": [2,4], "Cloud": [10,20], "Silver Bar": [2,4]},
+			"Common": {"Hellstone": 1, "Cloud": [1,5], "Silver Bar": 1},
+			"Uncommon": {"Hellstone": [2,4], "Cloud": [10,20], "Silver Bar": [2,4]},
 			"Rare": {"Photon Wings": 1, "Silver Bar": [4,6]},
 			"Very Rare": {"Comet Fragment": [8,12]}
 		}
@@ -238,14 +238,31 @@
 		}
 	},
 	"nauticalsentry": {
-		"name": "NauticalSentry",
+		"name": "Nautical Sentry",
 		"description": "After the original design of the Elite Sentry, a cheaper solution was needed, thus the Nautical Sentry.",
-		"type": "Mini Boss",
+		"type": "Enemy",
 		"pdmg": 200,
 		"bdmg": -1,
 		"mhp": 250,
 		"def": 250,
 		"spd": 200,
+		"effects": ["Magic","Mana"],
+		"drops": {
+			"Common": {"Mysterious Shard": 1, "Copper Wiring": [4,6], "Gold Bar": 1},
+			"Uncommon": {"Mysterious Shard": [2,4], "Gold Wiring": [4,6], "Gold Bar": [2,4]},
+			"Rare": {"Mysterious Shard": [4,6], "Gold Bar": [4,6]},
+			"Very Rare": {"Gold Bar": [40,60]}
+		}
+	},
+	"brokensentry": {
+		"name": "Broken Sentry",
+		"description": "A heavily damaged sentry, something truly massive must have attacked it. It's very glitchy in its current state.",
+		"type": "Enemy",
+		"pdmg": 400,
+		"bdmg": -1,
+		"mhp": 100,
+		"def": 50,
+		"spd": 400,
 		"effects": ["Magic","Mana"],
 		"drops": {
 			"Common": {"Mysterious Shard": 1, "Copper Wiring": [4,6], "Gold Bar": 1},

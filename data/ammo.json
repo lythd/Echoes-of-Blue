@@ -36,5 +36,17 @@
         "effects": [],
         "name": "Wooden Arrow",
         "piercing": 5
+    },
+    "pipebomb": {
+        "blunt": 50,
+        "effects": [],
+        "name": "Pipe Bomb",
+        "piercing": 50
+    },
+    "molotovcocktail": {
+        "blunt": -1,
+        "effects": [],
+        "name": "Molotov Cocktail",
+        "piercing": 150
     }
 }

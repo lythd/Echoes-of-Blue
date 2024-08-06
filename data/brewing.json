@@ -54,5 +54,21 @@
             "turtleshell": 1,
             "waterbottle": 1
         }
+    },
+    "magnetpotion": {
+        "amount": 1,
+        "inputs": {
+            "magnet": 1,
+            "manacrystal": 2,
+            "waterbottle": 1
+        }
+    },
+    "lightningpotion": {
+        "amount": 1,
+        "inputs": {
+            "cloud": 500,
+            "manacrystal": 2,
+            "waterbottle": 1
+        }
     }
 }

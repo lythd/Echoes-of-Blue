@@ -5,3 +5,8 @@ res://scenes/test2.gdshader
 res://scenes/test.gdshader
 res://scenes/test.tres
 res://scenes/custom_color.gdshader
+res://scenes/steam_hud.tscn
+res://scenes/multiplayer_player.tscn
+res://scenes/map.tscn
+res://scenes/character.tscn
+res://scenes/test.tscn

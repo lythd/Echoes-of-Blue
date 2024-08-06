@@ -385,14 +385,6 @@
             "string": 3
         }
     },
-    "grapplinghook": {
-        "amount": 1,
-        "category": "accessory",
-        "inputs": {
-            "chain": 15,
-            "silverbar": 5
-        }
-    },
     "healbell": {
         "amount": 1,
         "category": "accessory",
@@ -815,6 +807,189 @@
         "category": "arrow",
         "inputs": {
             "wood": 1
+        }
+    },
+    "woodfloor": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "wood": 5
+        }
+    },
+    "stonefloor": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "stone": 5
+        }
+    },
+    "limestonefloor": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "limestone": 5
+        }
+    },
+    "iron": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "ironbar": 5
+        }
+    },
+    "woodwall": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "wood": 5
+        }
+    },
+    "stonewall": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "stone": 5
+        }
+    },
+    "limestonewall": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "limestone": 5
+        }
+    },
+    "ironwall": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "ironbar": 5
+        }
+    },
+    "wooddoor": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "wood": 5
+        }
+    },
+    "stonedoor": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "stone": 5
+        }
+    },
+    "limestonedoor": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "limestone": 5
+        }
+    },
+    "irondoor": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "ironbar": 5
+        }
+    },
+    "woodpole": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "wood": 5
+        }
+    },
+    "stonepole": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "stone": 5
+        }
+    },
+    "limestonepole": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "limestone": 5
+        }
+    },
+    "ironpole": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "ironbar": 5
+        }
+    },
+    "woodfence": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "wood": 5
+        }
+    },
+    "stonefence": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "stone": 5
+        }
+    },
+    "limestonefence": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "limestone": 5
+        }
+    },
+    "ironfence": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "ironbar": 5
+        }
+    },
+    "woodgate": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "wood": 5
+        }
+    },
+    "stonegate": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "stone": 5
+        }
+    },
+    "limestonegate": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "limestone": 5
+        }
+    },
+    "irongate": {
+        "amount": 1,
+        "category": "generic",
+        "inputs": {
+            "ironbar": 5
+        }
+    },
+    "shiv": {
+        "amount": 1,
+        "category": "weapon",
+        "inputs": {
+            "ironbar": 15,
+            "wood": 5
+        }
+    },
+    "crowbar": {
+        "amount": 1,
+        "category": "weapon",
+        "inputs": {
+            "ironbar": 20
         }
     }
 }

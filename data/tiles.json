@@ -434,4 +434,219 @@
 		"drop": "vulrinthore",
 		"count": 1
 	},
+	"Path" : {
+		"description": "Connecting buildings with ease!",
+		"drop": "dirt",
+		"count": 1
+	},
+	"Carriage Floor" : {
+		"description": "A nice sturdy floor to take you where you want to go.",
+		"drop": "",
+		"count": 0
+	},
+	"Carriage" : {
+		"description": "A nice sturdy carriage to take you where you want to go.",
+		"drop": "",
+		"count": 0
+	},
+	"Piggy Bank" : {
+		"description": "Did you know if you save a quarter a day for a year you will have saved $10k?",
+		"drop": "",
+		"count": 0
+	},
+	"Safe" : {
+		"description": "This safe isn't tied down so someone could just steal the safe. But at least it looks secure!",
+		"drop": "",
+		"count": 0
+	},
+	"Sleeping Mat" : {
+		"description": "Zzzz",
+		"drop": "",
+		"count": 0
+	},
+	"Gravestone" : {
+		"description": "Pay your respects.",
+		"drop": "gravestone",
+		"count": 1
+	},
+	"Window" : {
+		"description": "All the better to see you with.",
+		"drop": "window",
+		"count": 1
+	},
+	"Wood Floor" : {
+		"description": "A humble floor.",
+		"drop": "woodfloor",
+		"count": 1
+	},
+	"Stone Floor" : {
+		"description": "A strong floor.",
+		"drop": "stonefloor",
+		"count": 1
+	},
+	"Limestone Floor" : {
+		"description": "A pretty floor.",
+		"drop": "limestonefloor",
+		"count": 1
+	},
+	"Iron Floor" : {
+		"description": "A shiny floor.",
+		"drop": "ironfloor",
+		"count": 1
+	},
+	"Wood Wall" : {
+		"description": "A humble wall.",
+		"drop": "woodwall",
+		"count": 1
+	},
+	"Stone Wall" : {
+		"description": "A strong wall.",
+		"drop": "stonewall",
+		"count": 1
+	},
+	"Limestone Wall" : {
+		"description": "A pretty wall.",
+		"drop": "limestonewall",
+		"count": 1
+	},
+	"Iron Wall" : {
+		"description": "A shiny wall.",
+		"drop": "ironwall",
+		"count": 1
+	},
+	"Wood Pole" : {
+		"description": "A humble pole.",
+		"drop": "woodpole",
+		"count": 1
+	},
+	"Stone Pole" : {
+		"description": "A strong pole.",
+		"drop": "stonepole",
+		"count": 1
+	},
+	"Limestone Pole" : {
+		"description": "A pretty pole.",
+		"drop": "limestonepole",
+		"count": 1
+	},
+	"Iron Pole" : {
+		"description": "A shiny pole.",
+		"drop": "ironpole",
+		"count": 1
+	},
+	"Wood Door" : {
+		"description": "A humble door.",
+		"drop": "wooddoor",
+		"count": 1
+	},
+	"Stone Door" : {
+		"description": "A strong door.",
+		"drop": "stonedoor",
+		"count": 1
+	},
+	"Limestone Door" : {
+		"description": "A pretty door.",
+		"drop": "limestonedoor",
+		"count": 1
+	},
+	"Iron Door" : {
+		"description": "A shiny door.",
+		"drop": "irondoor",
+		"count": 1
+	},
+	"Wood Fence" : {
+		"description": "A humble fence.",
+		"drop": "woodfence",
+		"count": 1
+	},
+	"Stone Fence" : {
+		"description": "A strong fence.",
+		"drop": "stonefence",
+		"count": 1
+	},
+	"Limestone Fence" : {
+		"description": "A pretty fence.",
+		"drop": "limestonefence",
+		"count": 1
+	},
+	"Iron Fence" : {
+		"description": "A shiny fence.",
+		"drop": "ironfence",
+		"count": 1
+	},
+	"Wood Gate" : {
+		"description": "A humble gate.",
+		"drop": "woodgate",
+		"count": 1
+	},
+	"Stone Gate" : {
+		"description": "A strong gate.",
+		"drop": "stonegate",
+		"count": 1
+	},
+	"Limestone Gate" : {
+		"description": "A pretty gate.",
+		"drop": "limestonegate,
+		"count": 1
+	},
+	"Iron Gate" : {
+		"description": "A shiny gate.",
+		"drop": "irongate",
+		"count": 1
+	},
+	"Stall" : {
+		"description": "People from all over the island will open up stalls to sell various items or offer services.",
+		"drop": "",
+		"count": 0
+	},
+	"Plane" : {
+		"description": "Planes are a rare sight on Blue Island.",
+		"drop": "",
+		"count": 0
+	},
+	"Beanstalk" : {
+		"description": "Well Jack has to replenish his shop somehow!",
+		"drop": "",
+		"count": 0
+	},
+	"Sand Toys" : {
+		"description": "Oh to be young again.",
+		"drop": "",
+		"count": 0
+	},
+	"Dungeon Background" : {
+		"description": "",
+		"drop": "",
+		"count": 0
+	},
+	"Dungeon Floor" : {
+		"description": "Careful where you step.",
+		"drop": "",
+		"count": 0
+	},
+	"Dungeon Wall" : {
+		"description": "These walls look old, but definitely sturdy.",
+		"drop": "",
+		"count": 0
+	},
+	"Dungeon Pot" : {
+		"description": "Treasure?",
+		"drop": "",
+		"count": 0
+	},
+	"Dungeon Chest" : {
+		"description": "Treasure!",
+		"drop": "",
+		"count": 0
+	},
+	"Dungeon Cell" : {
+		"description": "The poor souls in here.",
+		"drop": "",
+		"count": 0
+	},
+	"Dungeon Stairs" : {
+		"description": "Ascend to heights never seen before!",
+		"drop": "",
+		"count": 0
+	}
 }
