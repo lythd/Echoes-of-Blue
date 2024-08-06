@@ -1781,6 +1781,7 @@ viewport_path = NodePath("SubViewport")
 script = ExtResource("1_55jdq")
 
 [node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
 script = ExtResource("1_am83m")
 
 [node name="NetworkManager" type="Node" parent="." node_paths=PackedStringArray("_players_spawn_node")]
@@ -2145,6 +2146,7 @@ theme_override_fonts/font = ExtResource("6_r2rf5")
 text = "="
 
 [connection signal="update_pickers" from="GameManager" to="." method="_on_game_manager_update_pickers"]
+[connection signal="add_player" from="NetworkManager" to="GameManager" method="_on_add_player"]
 [connection signal="pressed" from="SteamHUD/Panel/Options/Single Player" to="GameManager" method="start_solo"]
 [connection signal="pressed" from="SteamHUD/Panel/Options/HostGame" to="GameManager" method="become_host"]
 [connection signal="pressed" from="SteamHUD/Panel/Options/ListLobbies" to="GameManager" method="list_steam_lobbies"]

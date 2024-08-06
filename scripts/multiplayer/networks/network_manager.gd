@@ -1,5 +1,7 @@
 extends Node
 
+signal add_player(player)
+
 enum MULTIPLAYER_NETWORK_TYPE { ENET, STEAM }
 
 @export var _players_spawn_node: Node2D
@@ -27,7 +29,11 @@ func _set_active_network(active_network_scene):
 	active_network._players_spawn_node = _players_spawn_node
 	active_network._tile_map = %TileMap
 	active_network._game = get_tree().get_root()
+	active_network.add_player.connect(_on_add_player)
 	add_child(active_network)
+
+func _on_add_player(player):
+	emit_signal("add_player", player)
 
 func become_host(is_dedicated_server = false):
 	_build_multiplayer_network()

@@ -1,5 +1,9 @@
 extends CharacterBody2D
 
+signal sync_character(character)
+signal add_map(map)
+signal check_tile_properties(global_position, multiplayer_controller)
+
 const SPEED = 75.0
 
 var map_scene = preload("res://scenes/map.tscn")
@@ -19,7 +23,6 @@ var alive = true
 @onready var username_label = $Username
 var username = ""
 
-var tile_map: TileMap = null
 var tile_is_slippery = false
 
 @export var player_id := 1:
@@ -31,41 +34,12 @@ func _ready():
 	if in_control():
 		$Camera2D.make_current()
 		$Camera2D.enabled = true
-		var game = $"../.."
-		if game != null:
-			var character_pick = game.call("get_character")
-			var color = character_pick.call("GetHSV", "Hair")
-			character.call("SetHSV", "Hair", color.h, color.s, color.v)
-			color = character_pick.call("GetHSV", "Eyes")
-			character.call("SetHSV", "Eyes", color.h, color.s, color.v)
-			color = character_pick.call("GetHSV", "Skin")
-			character.call("SetHSV", "Skin", color.h, color.s, color.v)
-			color = character_pick.call("GetHSV", "Shirt")
-			character.call("SetHSV", "Shirt", color.h, color.s, color.v)
-			color = character_pick.call("GetHSV", "Hands")
-			character.call("SetHSV", "Hands", color.h, color.s, color.v)
-			color = character_pick.call("GetHSV", "Pants")
-			character.call("SetHSV", "Pants", color.h, color.s, color.v)
-			color = character_pick.call("GetHSV", "Shoes")
-			character.call("SetHSV", "Shoes", color.h, color.s, color.v)
+		emit_signal("sync_character", character)
 	else:
 		$Camera2D.enabled = false
 
 func in_control() -> bool:
 	return multiplayer.get_unique_id() == player_id || !MultiplayerManager.multiplayer_mode_enabled
-
-func print_node_tree(root_node=null, indent = 0):
-	if root_node == null:
-		root_node = get_tree().get_root()
-
-	var indent_str = ""
-	for i in range(indent):
-		indent_str += "  "
-
-	print(indent_str + "|-- " + root_node.name)
-
-	for child in root_node.get_children():
-		print_node_tree(child, indent + 1)
 
 func _apply_animations(_delta):
 	if direction.x > 0:
@@ -162,7 +136,7 @@ func press_map():
 	if map_open:
 		map = map_scene.instantiate()
 		map.Controller = self
-		$"../..".add_child(map, true)
+		emit_signal("add_map", map)
 		hide()
 	else:
 		come_back_from_map()
@@ -180,16 +154,7 @@ func come_back_from_map():
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE;
 
 func _check_tile_properties():
-	if tile_map == null:
-		tile_map = $"../../TextureRectMain/TileMapMain"
-	if tile_map == null:
-		return
-	var tile_coords = tile_map.local_to_map(get_global_position()-tile_map.get_global_position())
-	var bot_tile_data = tile_map.get_cell_tile_data(0, tile_coords)
-	var top_tile_data = tile_map.get_cell_tile_data(1, tile_coords)
-	var bot_tile_slippery = bool(bot_tile_data.get_custom_data("slippery")) if bot_tile_data != null else false
-	var top_tile_slippery = bool(top_tile_data.get_custom_data("slippery")) if top_tile_data != null else false
-	tile_is_slippery = bot_tile_slippery || top_tile_slippery
+	check_tile_properties.emit(get_global_position(), self)
 
 func _physics_process(delta):
 	_check_tile_properties()

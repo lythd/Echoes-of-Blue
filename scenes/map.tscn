@@ -3147,6 +3147,7 @@ animations = [{
 }]
 
 [node name="Map" type="Node2D"]
+z_index = 2
 script = ExtResource("1_410jd")
 
 [node name="Canvas" type="CanvasLayer" parent="."]

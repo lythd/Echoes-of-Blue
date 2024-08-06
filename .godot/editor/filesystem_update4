@@ -10,3 +10,8 @@ res://scenes/multiplayer_player.tscn
 res://scenes/map.tscn
 res://scenes/character.tscn
 res://scenes/test.tscn
+res://scripts/multiplayer/multiplayer_controller.gd
+res://scripts/multiplayer/networks/steam_network.gd
+res://scripts/game_manager.gd
+res://scripts/multiplayer/networks/network_manager.gd
+res://scenes/game.gd

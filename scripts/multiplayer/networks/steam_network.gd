@@ -1,5 +1,7 @@
 extends Node
 
+signal add_player(player)
+
 var multiplayer_scene = preload("res://scenes/multiplayer_player.tscn")
 var multiplayer_peer: SteamMultiplayerPeer = SteamMultiplayerPeer.new()
 var _players_spawn_node
@@ -101,6 +103,7 @@ func _add_player_to_game(id: int):
 	var player_to_add = multiplayer_scene.instantiate()
 	player_to_add.player_id = id
 	player_to_add.name = str(id)
+	emit_signal("add_player", player_to_add)
 	_players_spawn_node.add_child(player_to_add, true)
 	
 func _del_player(id: int):
