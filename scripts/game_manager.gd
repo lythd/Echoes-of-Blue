@@ -77,7 +77,7 @@ func _on_lobby_match_list(lobbies: Array):
 			var lobby_hash: String = Steam.getLobbyData(lobby, "hash")
 			
 			var lobby_button: Button = Button.new()
-			lobby_button.set_text(lobby_name + " | " + lobby_mode + " | " + lobby_ver + "#" + lobby_hash.substr(0,8))
+			lobby_button.set_text(lobby_name + " | " + tr(lobby_mode) + " | " + lobby_ver + "#" + lobby_hash.substr(0,8))
 			lobby_button.set_size(Vector2(100, 30))
 			lobby_button.add_theme_font_size_override("font_size", 8)
 			

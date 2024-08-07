@@ -1,17 +1,3 @@
 [remap]
 
-importer="csv_translation"
-type="Translation"
-uid="uid://dauw0b6o2v74m"
-
-[deps]
-
-files=["res://data/tiles.Pyro Soil.translation", "res://data/tiles.Lava.translation", "res://data/tiles.Surface Gold Ore.translation", "res://data/tiles.Hellstone.translation", "res://data/tiles.Blackstone.translation", "res://data/tiles.Fire.translation", "res://data/tiles.Smoke Bush.translation", "res://data/tiles.Path.translation", "res://data/tiles.Carriage Floor.translation", "res://data/tiles.Carriage.translation", "res://data/tiles.Carriage{V}.translation", "res://data/tiles.Carriage{V}.translation", "res://data/tiles.Carriage{V}.translation", "res://data/tiles.Carriage{V}.translation"]
-
-source_file="res://data/tiles.csv"
-dest_files=["res://data/tiles.Pyro Soil.translation", "res://data/tiles.Lava.translation", "res://data/tiles.Surface Gold Ore.translation", "res://data/tiles.Hellstone.translation", "res://data/tiles.Blackstone.translation", "res://data/tiles.Fire.translation", "res://data/tiles.Smoke Bush.translation", "res://data/tiles.Path.translation", "res://data/tiles.Carriage Floor.translation", "res://data/tiles.Carriage.translation", "res://data/tiles.Carriage{V}.translation", "res://data/tiles.Carriage{V}.translation", "res://data/tiles.Carriage{V}.translation", "res://data/tiles.Carriage{V}.translation"]
-
-[params]
-
-compress=true
-delimiter=0
+importer="keep"

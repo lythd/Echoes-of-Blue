@@ -3,6 +3,7 @@ extends Node2D
 @onready var game_manager = $GameManager
 
 func _ready():
+	TranslationServer.set_locale("es_ES")
 	update_pickers()
 	
 func update_pickers():
