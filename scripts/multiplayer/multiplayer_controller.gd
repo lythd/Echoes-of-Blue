@@ -22,7 +22,6 @@ var direction
 var alive = true
 
 @onready var username_label = $Username
-var username = ""
 
 var tile_is_slippery = false
 
@@ -88,7 +87,8 @@ func _apply_animations(_delta):
 func _apply_movement_from_input(delta):
 	var is_server = MultiplayerManager.multiplayer_mode_enabled
 	direction = $InputSynchronizer.input_direction if is_server else Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	username = $InputSynchronizer.username if is_server else GameData.PlayerName
+	if is_server:
+		GameData.PlayerName = $InputSynchronizer.username
 	if map_open:
 		direction = Vector2.ZERO
 	
@@ -180,8 +180,8 @@ func _physics_process(delta):
 	_apply_movement_from_input(delta)
 	_apply_animations(delta)
 
-	if username_label && username != "":
-		username_label.set_text(username)
+	if username_label && GameData.PlayerName != "":
+		username_label.set_text(GameData.PlayerName)
 
 func mark_dead():
 	alive = false

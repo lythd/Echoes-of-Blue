@@ -8,12 +8,39 @@
 		"mhp": 2000,
 		"def": 200,
 		"spd": 350,
-		"effects": ["Decaying"],
+		"effects": [
+			"Decaying"
+		],
 		"drops": {
-			"Common": {"Dragon Heart": 1, "Vulrinth Bar": [1,3], "Titanium Bar": [125,375]},
-			"Uncommon": {"Vulrinth Axe": 1, "Dragon Heart": 2, "Mana Crystal": [40,60]},
-			"Rare": {"Vulrinth Helmet": 1, "Titanium Bar": [100,150]},
-			"Very Rare": {"Vulrinth Pickaxe": 1}
+			"Common": {
+				"Dragon Heart": 1,
+				"Vulrinth Bar": [
+					1,
+					3
+				],
+				"Titanium Bar": [
+					125,
+					375
+				]
+			},
+			"Uncommon": {
+				"Vulrinth Axe": 1,
+				"Dragon Heart": 2,
+				"Mana Crystal": [
+					40,
+					60
+				]
+			},
+			"Rare": {
+				"Vulrinth Helmet": 1,
+				"Titanium Bar": [
+					100,
+					150
+				]
+			},
+			"Very Rare": {
+				"Vulrinth Pickaxe": 1
+			}
 		}
 	},
 	"pitchspawn": {
@@ -25,12 +52,54 @@
 		"mhp": 1500,
 		"def": 50,
 		"spd": 50,
-		"effects": ["Oozing"],
+		"effects": [
+			"Oozing"
+		],
 		"drops": {
-			"Common": {"Copper Bar": [400,600], "Tin Bar": [400,600], "Bronze Bar": [400,600]},
-			"Uncommon": {"Iron Bar": [400,600], "Silver Bar": [400,600], "Gold Bar": [400,600]},
-			"Rare": {"Diamond": [400,600], "Emerald": [400,600]},
-			"Very Rare": {"Titanium Bar": [400,600]}
+			"Common": {
+				"Copper Bar": [
+					400,
+					600
+				],
+				"Tin Bar": [
+					400,
+					600
+				],
+				"Bronze Bar": [
+					400,
+					600
+				]
+			},
+			"Uncommon": {
+				"Iron Bar": [
+					400,
+					600
+				],
+				"Silver Bar": [
+					400,
+					600
+				],
+				"Gold Bar": [
+					400,
+					600
+				]
+			},
+			"Rare": {
+				"Diamond": [
+					400,
+					600
+				],
+				"Emerald": [
+					400,
+					600
+				]
+			},
+			"Very Rare": {
+				"Titanium Bar": [
+					400,
+					600
+				]
+			}
 		}
 	},
 	"boarfather": {
@@ -44,10 +113,50 @@
 		"spd": 200,
 		"effects": [],
 		"drops": {
-			"Common": {"Copper Bar": [400,600], "Tin Bar": [400,600], "Bronze Bar": [400,600]},
-			"Uncommon": {"Iron Bar": [400,600], "Silver Bar": [400,600], "Gold Bar": [400,600]},
-			"Rare": {"Diamond": [400,600], "Emerald": [400,600]},
-			"Very Rare": {"Titanium Bar": [400,600]}
+			"Common": {
+				"Copper Bar": [
+					400,
+					600
+				],
+				"Tin Bar": [
+					400,
+					600
+				],
+				"Bronze Bar": [
+					400,
+					600
+				]
+			},
+			"Uncommon": {
+				"Iron Bar": [
+					400,
+					600
+				],
+				"Silver Bar": [
+					400,
+					600
+				],
+				"Gold Bar": [
+					400,
+					600
+				]
+			},
+			"Rare": {
+				"Diamond": [
+					400,
+					600
+				],
+				"Emerald": [
+					400,
+					600
+				]
+			},
+			"Very Rare": {
+				"Titanium Bar": [
+					400,
+					600
+				]
+			}
 		}
 	},
 	"skeletonking": {
@@ -61,10 +170,47 @@
 		"spd": 500,
 		"effects": [],
 		"drops": {
-			"Common": {"Crown": 1, "Bone": [1000,2000], "Bronze Bar": [400,600]},
-			"Uncommon": {"Iron Bar": [400,600], "Silver Bar": [400,600], "Gold Bar": [400,600]},
-			"Rare": {"Diamond": [400,600], "Emerald": [400,600]},
-			"Very Rare": {"Titanium Bar": [400,600]}
+			"Common": {
+				"Crown": 1,
+				"Bone": [
+					1000,
+					2000
+				],
+				"Bronze Bar": [
+					400,
+					600
+				]
+			},
+			"Uncommon": {
+				"Iron Bar": [
+					400,
+					600
+				],
+				"Silver Bar": [
+					400,
+					600
+				],
+				"Gold Bar": [
+					400,
+					600
+				]
+			},
+			"Rare": {
+				"Diamond": [
+					400,
+					600
+				],
+				"Emerald": [
+					400,
+					600
+				]
+			},
+			"Very Rare": {
+				"Titanium Bar": [
+					400,
+					600
+				]
+			}
 		}
 	},
 	"zeus": {
@@ -78,10 +224,47 @@
 		"spd": 500,
 		"effects": [],
 		"drops": {
-			"Common": {"Copper Bar": [400,600], "Tin Bar": [400,600], "Bronze Bar": [400,600]},
-			"Uncommon": {"Iron Bar": [400,600], "Silver Bar": [400,600], "Gold Bar": [400,600]},
-			"Rare": {"Diamond": [400,600], "Emerald": [400,600]},
-			"Very Rare": {"Master Bolt": 1}
+			"Common": {
+				"Copper Bar": [
+					400,
+					600
+				],
+				"Tin Bar": [
+					400,
+					600
+				],
+				"Bronze Bar": [
+					400,
+					600
+				]
+			},
+			"Uncommon": {
+				"Iron Bar": [
+					400,
+					600
+				],
+				"Silver Bar": [
+					400,
+					600
+				],
+				"Gold Bar": [
+					400,
+					600
+				]
+			},
+			"Rare": {
+				"Diamond": [
+					400,
+					600
+				],
+				"Emerald": [
+					400,
+					600
+				]
+			},
+			"Very Rare": {
+				"Master Bolt": 1
+			}
 		}
 	},
 	"pumpkinhorseman": {
@@ -95,10 +278,38 @@
 		"spd": 600,
 		"effects": [],
 		"drops": {
-			"Common": {"Pumpkin Seed": [1,3], "Pumpkin Seed": [3,5], "Pumpkin": [400,600]},
-			"Uncommon": {"Pumpkin Seed": [10,30], "Pumpkin Seed": [30,50], "Pumpkin": [4000,6000]},
-			"Rare": {"Pumpkin Seed": [100,300], "Pumpkin Seed": [300,500]},
-			"Very Rare": {"Pumpkin Seed": [1000,3000]}
+			"Common": {
+				"Pumpkin Seed": [
+					3,
+					5
+				],
+				"Pumpkin": [
+					400,
+					600
+				]
+			},
+			"Uncommon": {
+				"Pumpkin Seed": [
+					30,
+					50
+				],
+				"Pumpkin": [
+					4000,
+					6000
+				]
+			},
+			"Rare": {
+				"Pumpkin Seed": [
+					300,
+					500
+				]
+			},
+			"Very Rare": {
+				"Pumpkin Seed": [
+					1000,
+					3000
+				]
+			}
 		}
 	},
 	"elitesentry": {
@@ -110,12 +321,55 @@
 		"mhp": 500,
 		"def": 1000,
 		"spd": 100,
-		"effects": ["Magic","Mana"],
+		"effects": [
+			"Magic",
+			"Mana"
+		],
 		"drops": {
-			"Common": {"Mysterious Shard": [5,15], "Copper Wiring": [40,60], "Titanium Bar": [5,15]},
-			"Uncommon": {"Mysterious Shard": [20,40], "Gold Wiring": [40,60], "Titanium Bar": [20,40]},
-			"Rare": {"Mysterious Shard": [40,60], "Titanium Bar": [40,60]},
-			"Very Rare": {"Titanium Bar": [400,600]}
+			"Common": {
+				"Mysterious Shard": [
+					5,
+					15
+				],
+				"Copper Wiring": [
+					40,
+					60
+				],
+				"Titanium Bar": [
+					5,
+					15
+				]
+			},
+			"Uncommon": {
+				"Mysterious Shard": [
+					20,
+					40
+				],
+				"Gold Wiring": [
+					40,
+					60
+				],
+				"Titanium Bar": [
+					20,
+					40
+				]
+			},
+			"Rare": {
+				"Mysterious Shard": [
+					40,
+					60
+				],
+				"Titanium Bar": [
+					40,
+					60
+				]
+			},
+			"Very Rare": {
+				"Titanium Bar": [
+					400,
+					600
+				]
+			}
 		}
 	},
 	"grymfang": {
@@ -129,10 +383,50 @@
 		"spd": 150,
 		"effects": [],
 		"drops": {
-			"Common": {"Copper Bar": [400,600], "Tin Bar": [400,600], "Bronze Bar": [400,600]},
-			"Uncommon": {"Iron Bar": [400,600], "Silver Bar": [400,600], "Gold Bar": [400,600]},
-			"Rare": {"Diamond": [400,600], "Emerald": [400,600]},
-			"Very Rare": {"Titanium Bar": [400,600]}
+			"Common": {
+				"Copper Bar": [
+					400,
+					600
+				],
+				"Tin Bar": [
+					400,
+					600
+				],
+				"Bronze Bar": [
+					400,
+					600
+				]
+			},
+			"Uncommon": {
+				"Iron Bar": [
+					400,
+					600
+				],
+				"Silver Bar": [
+					400,
+					600
+				],
+				"Gold Bar": [
+					400,
+					600
+				]
+			},
+			"Rare": {
+				"Diamond": [
+					400,
+					600
+				],
+				"Emerald": [
+					400,
+					600
+				]
+			},
+			"Very Rare": {
+				"Titanium Bar": [
+					400,
+					600
+				]
+			}
 		}
 	},
 	"giant": {
@@ -146,10 +440,50 @@
 		"spd": 25,
 		"effects": [],
 		"drops": {
-			"Common": {"Copper Bar": [400,600], "Tin Bar": [400,600], "Bronze Bar": [400,600]},
-			"Uncommon": {"Iron Bar": [400,600], "Silver Bar": [400,600], "Gold Bar": [400,600]},
-			"Rare": {"Diamond": [400,600], "Emerald": [400,600]},
-			"Very Rare": {"Titanium Bar": [400,600]}
+			"Common": {
+				"Copper Bar": [
+					400,
+					600
+				],
+				"Tin Bar": [
+					400,
+					600
+				],
+				"Bronze Bar": [
+					400,
+					600
+				]
+			},
+			"Uncommon": {
+				"Iron Bar": [
+					400,
+					600
+				],
+				"Silver Bar": [
+					400,
+					600
+				],
+				"Gold Bar": [
+					400,
+					600
+				]
+			},
+			"Rare": {
+				"Diamond": [
+					400,
+					600
+				],
+				"Emerald": [
+					400,
+					600
+				]
+			},
+			"Very Rare": {
+				"Titanium Bar": [
+					400,
+					600
+				]
+			}
 		}
 	},
 	"hugeslime": {
@@ -163,10 +497,50 @@
 		"spd": 125,
 		"effects": [],
 		"drops": {
-			"Common": {"Slime Ball": [400,600], "Tin Bar": [400,600], "Bronze Bar": [400,600]},
-			"Uncommon": {"Iron Bar": [400,600], "Silver Bar": [400,600], "Gold Bar": [400,600]},
-			"Rare": {"Diamond": [400,600], "Emerald": [400,600]},
-			"Very Rare": {"Titanium Bar": [400,600]}
+			"Common": {
+				"Slime Ball": [
+					400,
+					600
+				],
+				"Tin Bar": [
+					400,
+					600
+				],
+				"Bronze Bar": [
+					400,
+					600
+				]
+			},
+			"Uncommon": {
+				"Iron Bar": [
+					400,
+					600
+				],
+				"Silver Bar": [
+					400,
+					600
+				],
+				"Gold Bar": [
+					400,
+					600
+				]
+			},
+			"Rare": {
+				"Diamond": [
+					400,
+					600
+				],
+				"Emerald": [
+					400,
+					600
+				]
+			},
+			"Very Rare": {
+				"Titanium Bar": [
+					400,
+					600
+				]
+			}
 		}
 	},
 	"hallowedcreature": {
@@ -180,10 +554,44 @@
 		"spd": 300,
 		"effects": [],
 		"drops": {
-			"Common": {"Sugar": [90,110], "Cloud": [1,5], "Silver Bar": 1},
-			"Uncommon": {"Sugar": [180,220], "Cloud": [10,20], "Silver Bar": [2,4]},
-			"Rare": {"Holy Wings": 1, "Silver Bar": [4,6]},
-			"Very Rare": {"Sugar": [1800,2200]}
+			"Common": {
+				"Sugar": [
+					90,
+					110
+				],
+				"Cloud": [
+					1,
+					5
+				],
+				"Silver Bar": 1
+			},
+			"Uncommon": {
+				"Sugar": [
+					180,
+					220
+				],
+				"Cloud": [
+					10,
+					20
+				],
+				"Silver Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Holy Wings": 1,
+				"Silver Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Sugar": [
+					1800,
+					2200
+				]
+			}
 		}
 	},
 	"skysorcerer": {
@@ -195,12 +603,43 @@
 		"mhp": 300,
 		"def": 300,
 		"spd": 300,
-		"effects": ["Magic","Mana"],
+		"effects": [
+			"Magic",
+			"Mana"
+		],
 		"drops": {
-			"Common": {"Mana Crystal": 1, "Cloud": [1,5], "Silver Bar": 1},
-			"Uncommon": {"Mana Crystal": 2, "Cloud": [10,20], "Silver Bar": [2,4]},
-			"Rare": {"Crystal Wings": 1, "Silver Bar": [4,6]},
-			"Very Rare": {"Mana Crystal": [15,25]}
+			"Common": {
+				"Mana Crystal": 1,
+				"Cloud": [
+					1,
+					5
+				],
+				"Silver Bar": 1
+			},
+			"Uncommon": {
+				"Mana Crystal": 2,
+				"Cloud": [
+					10,
+					20
+				],
+				"Silver Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Crystal Wings": 1,
+				"Silver Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Mana Crystal": [
+					15,
+					25
+				]
+			}
 		}
 	},
 	"solarflare": {
@@ -214,10 +653,41 @@
 		"spd": 1000,
 		"effects": [],
 		"drops": {
-			"Common": {"Hellstone": 1, "Cloud": [1,5], "Silver Bar": 1},
-			"Uncommon": {"Hellstone": [2,4], "Cloud": [10,20], "Silver Bar": [2,4]},
-			"Rare": {"Photon Wings": 1, "Silver Bar": [4,6]},
-			"Very Rare": {"Comet Fragment": [8,12]}
+			"Common": {
+				"Hellstone": 1,
+				"Cloud": [
+					1,
+					5
+				],
+				"Silver Bar": 1
+			},
+			"Uncommon": {
+				"Hellstone": [
+					2,
+					4
+				],
+				"Cloud": [
+					10,
+					20
+				],
+				"Silver Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Photon Wings": 1,
+				"Silver Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Comet Fragment": [
+					8,
+					12
+				]
+			}
 		}
 	},
 	"dragon": {
@@ -231,10 +701,41 @@
 		"spd": 300,
 		"effects": [],
 		"drops": {
-			"Common": {"Obsidian": 1, "Cloud": [1,5], "Silver Bar": 1},
-			"Uncommon": {"Obsidian": [2,4], "Cloud": [10,20], "Silver Bar": [2,4]},
-			"Rare": {"Scaly Wings": 1, "Silver Bar": [4,6]},
-			"Very Rare": {"Obsidian": [40,60]}
+			"Common": {
+				"Obsidian": 1,
+				"Cloud": [
+					1,
+					5
+				],
+				"Silver Bar": 1
+			},
+			"Uncommon": {
+				"Obsidian": [
+					2,
+					4
+				],
+				"Cloud": [
+					10,
+					20
+				],
+				"Silver Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Scaly Wings": 1,
+				"Silver Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Obsidian": [
+					40,
+					60
+				]
+			}
 		}
 	},
 	"nauticalsentry": {
@@ -246,12 +747,49 @@
 		"mhp": 250,
 		"def": 250,
 		"spd": 200,
-		"effects": ["Magic","Mana"],
+		"effects": [
+			"Magic",
+			"Mana"
+		],
 		"drops": {
-			"Common": {"Mysterious Shard": 1, "Copper Wiring": [4,6], "Gold Bar": 1},
-			"Uncommon": {"Mysterious Shard": [2,4], "Gold Wiring": [4,6], "Gold Bar": [2,4]},
-			"Rare": {"Mysterious Shard": [4,6], "Gold Bar": [4,6]},
-			"Very Rare": {"Gold Bar": [40,60]}
+			"Common": {
+				"Mysterious Shard": 1,
+				"Copper Wiring": [
+					4,
+					6
+				],
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Mysterious Shard": [
+					2,
+					4
+				],
+				"Gold Wiring": [
+					4,
+					6
+				],
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Mysterious Shard": [
+					4,
+					6
+				],
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Gold Bar": [
+					40,
+					60
+				]
+			}
 		}
 	},
 	"brokensentry": {
@@ -263,12 +801,49 @@
 		"mhp": 100,
 		"def": 50,
 		"spd": 400,
-		"effects": ["Magic","Mana"],
+		"effects": [
+			"Magic",
+			"Mana"
+		],
 		"drops": {
-			"Common": {"Mysterious Shard": 1, "Copper Wiring": [4,6], "Gold Bar": 1},
-			"Uncommon": {"Mysterious Shard": [2,4], "Gold Wiring": [4,6], "Gold Bar": [2,4]},
-			"Rare": {"Mysterious Shard": [4,6], "Gold Bar": [4,6]},
-			"Very Rare": {"Gold Bar": [40,60]}
+			"Common": {
+				"Mysterious Shard": 1,
+				"Copper Wiring": [
+					4,
+					6
+				],
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Mysterious Shard": [
+					2,
+					4
+				],
+				"Gold Wiring": [
+					4,
+					6
+				],
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Mysterious Shard": [
+					4,
+					6
+				],
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Gold Bar": [
+					40,
+					60
+				]
+			}
 		}
 	},
 	"ivebornaurea": {
@@ -280,12 +855,42 @@
 		"mhp": 275,
 		"def": 25,
 		"spd": 350,
-		"effects": ["Explosion"],
+		"effects": [
+			"Explosion"
+		],
 		"drops": {
-			"Common": {"Vine": [1,3], "Cloud": [1,5], "Gold Bar": 1},
-			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Explosive Rocket": [2,5]}
+			"Common": {
+				"Vine": [
+					1,
+					3
+				],
+				"Cloud": [
+					1,
+					5
+				],
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Gold Bow": 1,
+				"Gold Sword": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Explosive Rocket": [
+					2,
+					5
+				]
+			}
 		}
 	},
 	"ivebornadustus": {
@@ -297,12 +902,42 @@
 		"mhp": 250,
 		"def": -1,
 		"spd": 325,
-		"effects": ["Explosion"],
+		"effects": [
+			"Explosion"
+		],
 		"drops": {
-			"Common": {"Vine": [1,3], "Magma Block": [1,5], "Gold Bar": 1},
-			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Explosive Rocket": [2,5]}
+			"Common": {
+				"Vine": [
+					1,
+					3
+				],
+				"Magma Block": [
+					1,
+					5
+				],
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Gold Bow": 1,
+				"Gold Sword": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Explosive Rocket": [
+					2,
+					5
+				]
+			}
 		}
 	},
 	"iveborncaverna": {
@@ -314,12 +949,42 @@
 		"mhp": 250,
 		"def": 100,
 		"spd": 325,
-		"effects": ["Explosion"],
+		"effects": [
+			"Explosion"
+		],
 		"drops": {
-			"Common": {"Vine": [1,3], "Stone": [1,5], "Gold Bar": 1},
-			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Explosive Rocket": [2,5]}
+			"Common": {
+				"Vine": [
+					1,
+					3
+				],
+				"Stone": [
+					1,
+					5
+				],
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Gold Bow": 1,
+				"Gold Sword": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Explosive Rocket": [
+					2,
+					5
+				]
+			}
 		}
 	},
 	"ivebornglacio": {
@@ -331,12 +996,42 @@
 		"mhp": 350,
 		"def": -1,
 		"spd": 325,
-		"effects": ["Explosion"],
+		"effects": [
+			"Explosion"
+		],
 		"drops": {
-			"Common": {"Vine": [1,3], "Ice": [1,5], "Gold Bar": 1},
-			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Explosive Rocket": [2,5]}
+			"Common": {
+				"Vine": [
+					1,
+					3
+				],
+				"Ice": [
+					1,
+					5
+				],
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Gold Bow": 1,
+				"Gold Sword": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Explosive Rocket": [
+					2,
+					5
+				]
+			}
 		}
 	},
 	"ivebornaquamaris": {
@@ -348,12 +1043,42 @@
 		"mhp": 250,
 		"def": -1,
 		"spd": 425,
-		"effects": ["Explosion"],
+		"effects": [
+			"Explosion"
+		],
 		"drops": {
-			"Common": {"Vine": [1,3], "Raw Cod": [1,5], "Gold Bar": 1},
-			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Explosive Rocket": [2,5]}
+			"Common": {
+				"Vine": [
+					1,
+					3
+				],
+				"Raw Cod": [
+					1,
+					5
+				],
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Gold Bow": 1,
+				"Gold Sword": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Explosive Rocket": [
+					2,
+					5
+				]
+			}
 		}
 	},
 	"ivebornhedera": {
@@ -365,12 +1090,42 @@
 		"mhp": 250,
 		"def": -1,
 		"spd": 325,
-		"effects": ["Explosion"],
+		"effects": [
+			"Explosion"
+		],
 		"drops": {
-			"Common": {"Vine": [1,3], "Dirt": [1,5], "Gold Bar": 1},
-			"Uncommon": {"Gold Bow": 1, "Gold Sword": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Explosive Rocket": [2,5]}
+			"Common": {
+				"Vine": [
+					1,
+					3
+				],
+				"Dirt": [
+					1,
+					5
+				],
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Gold Bow": 1,
+				"Gold Sword": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Explosive Rocket": [
+					2,
+					5
+				]
+			}
 		}
 	},
 	"unholyspectre": {
@@ -384,10 +1139,44 @@
 		"spd": 25,
 		"effects": [],
 		"drops": {
-			"Common": {"Ash": [1,3], "Silver Bar": 1, "Gold Bar": 1},
-			"Uncommon": {"Ash": [3,5], "Silver Bar": [2,4], "Gold Bar": [2,4]},
-			"Rare": {"Silver Bar": [4,6], "Gold Bar": [4,6]},
-			"Very Rare": {"Silver Bar": [45,55]}
+			"Common": {
+				"Ash": [
+					1,
+					3
+				],
+				"Silver Bar": 1,
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Ash": [
+					3,
+					5
+				],
+				"Silver Bar": [
+					2,
+					4
+				],
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Silver Bar": [
+					4,
+					6
+				],
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Silver Bar": [
+					45,
+					55
+				]
+			}
 		}
 	},
 	"incinerator": {
@@ -401,10 +1190,41 @@
 		"spd": 200,
 		"effects": [],
 		"drops": {
-			"Common": {"Molten Sulfur": 2, "Bronze Bar": 1, "Gold Bar": 1},
-			"Uncommon": {"Molten Sulfur": [3,4], "Bronze Bar": [2,4], "Gold Bar": [2,4]},
-			"Rare": {"Bronze Bar": [4,6], "Gold Bar": [4,6]},
-			"Very Rare": {"Bronze Bar": [45,55]}
+			"Common": {
+				"Molten Sulfur": 2,
+				"Bronze Bar": 1,
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Molten Sulfur": [
+					3,
+					4
+				],
+				"Bronze Bar": [
+					2,
+					4
+				],
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Bronze Bar": [
+					4,
+					6
+				],
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Bronze Bar": [
+					45,
+					55
+				]
+			}
 		}
 	},
 	"charredskeleton": {
@@ -418,10 +1238,41 @@
 		"spd": 200,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [2,4], "Stone Sword": 1, "Gold Bar": 1},
-			"Uncommon": {"Bone": [4,6], "Coal": [5,10], "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Golden Steak": [15,25]}
+			"Common": {
+				"Bone": [
+					2,
+					4
+				],
+				"Stone Sword": 1,
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Bone": [
+					4,
+					6
+				],
+				"Coal": [
+					5,
+					10
+				],
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Golden Steak": [
+					15,
+					25
+				]
+			}
 		}
 	},
 	"karkothianbrute": {
@@ -435,10 +1286,32 @@
 		"spd": 150,
 		"effects": [],
 		"drops": {
-			"Common": {"Bacon": 1, "Gold Ore": 1, "Gold Bar": 1},
-			"Uncommon": {"Leather": 1, "Gold Axe": 1, "Gold Bar": [2,4]},
-			"Rare": {"True Gold Axe": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Golden Steak": [15,25]}
+			"Common": {
+				"Bacon": 1,
+				"Gold Ore": 1,
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Leather": 1,
+				"Gold Axe": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"True Gold Axe": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Golden Steak": [
+					15,
+					25
+				]
+			}
 		}
 	},
 	"elderboar": {
@@ -452,10 +1325,35 @@
 		"spd": 100,
 		"effects": [],
 		"drops": {
-			"Common": {"Bacon": [2,5], "Gold Ore": 1, "Gold Bar": 1},
-			"Uncommon": {"Leather": 1, "Gold Pickaxe": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Golden Steak": [15,25]}
+			"Common": {
+				"Bacon": [
+					2,
+					5
+				],
+				"Gold Ore": 1,
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Leather": 1,
+				"Gold Pickaxe": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Golden Steak": [
+					15,
+					25
+				]
+			}
 		}
 	},
 	"boar": {
@@ -469,10 +1367,35 @@
 		"spd": 100,
 		"effects": [],
 		"drops": {
-			"Common": {"Bacon": [2,5], "Gold Ore": 1, "Gold Bar": 1},
-			"Uncommon": {"Leather": 1, "Gold Pickaxe": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Golden Steak": [15,25]}
+			"Common": {
+				"Bacon": [
+					2,
+					5
+				],
+				"Gold Ore": 1,
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Leather": 1,
+				"Gold Pickaxe": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Golden Steak": [
+					15,
+					25
+				]
+			}
 		}
 	},
 	"babyboar": {
@@ -486,10 +1409,35 @@
 		"spd": 150,
 		"effects": [],
 		"drops": {
-			"Common": {"Bacon": [2,5], "Gold Ore": 1, "Gold Bar": 1},
-			"Uncommon": {"Leather": 1, "Gold Pickaxe": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Golden Steak": [15,25]}
+			"Common": {
+				"Bacon": [
+					2,
+					5
+				],
+				"Gold Ore": 1,
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Leather": 1,
+				"Gold Pickaxe": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Golden Steak": [
+					15,
+					25
+				]
+			}
 		}
 	},
 	"karkothiangrunt": {
@@ -503,10 +1451,32 @@
 		"spd": 100,
 		"effects": [],
 		"drops": {
-			"Common": {"Bacon": 1, "Gold Ore": 1, "Gold Bar": 1},
-			"Uncommon": {"Leather": 1, "Gold Pickaxe": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Golden Steak": [15,25]}
+			"Common": {
+				"Bacon": 1,
+				"Gold Ore": 1,
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Leather": 1,
+				"Gold Pickaxe": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Golden Steak": [
+					15,
+					25
+				]
+			}
 		}
 	},
 	"karkothianscout": {
@@ -520,10 +1490,32 @@
 		"spd": 150,
 		"effects": [],
 		"drops": {
-			"Common": {"Bacon": 1, "Gold Ore": 1, "Gold Bar": 1},
-			"Uncommon": {"Leather": 1, "Gold Pickaxe": 1, "Gold Bar": [2,4]},
-			"Rare": {"Gold Bracelet": 1, "Gold Bar": [4,6]},
-			"Very Rare": {"Golden Steak": [15,25]}
+			"Common": {
+				"Bacon": 1,
+				"Gold Ore": 1,
+				"Gold Bar": 1
+			},
+			"Uncommon": {
+				"Leather": 1,
+				"Gold Pickaxe": 1,
+				"Gold Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bracelet": 1,
+				"Gold Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Golden Steak": [
+					15,
+					25
+				]
+			}
 		}
 	},
 	"witch": {
@@ -535,12 +1527,46 @@
 		"mhp": 300,
 		"def": -1,
 		"spd": 150,
-		"effects": ["Mana","Magic"],
+		"effects": [
+			"Mana",
+			"Magic"
+		],
 		"drops": {
-			"Common": {"Fishing Potion": 1, "Strength Potion": 1, "Mining Potion": 1},
-			"Uncommon": {"Iron Potion": [2,4], "Cactus Potion": [2,4], "Silver Bar": [2,4]},
-			"Rare": {"Beetle Master Potion": [4,6], "Silver Bar": [4,6]},
-			"Very Rare": {"Turtle Master Potion": [40,60]}
+			"Common": {
+				"Fishing Potion": 1,
+				"Strength Potion": 1,
+				"Mining Potion": 1
+			},
+			"Uncommon": {
+				"Iron Potion": [
+					2,
+					4
+				],
+				"Cactus Potion": [
+					2,
+					4
+				],
+				"Silver Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Beetle Master Potion": [
+					4,
+					6
+				],
+				"Silver Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Turtle Master Potion": [
+					40,
+					60
+				]
+			}
 		}
 	},
 	"cavernghoul": {
@@ -554,10 +1580,41 @@
 		"spd": 90,
 		"effects": [],
 		"drops": {
-			"Common": {"Chain": 1, "Silver Ore": 1, "Silver Bar": 1},
-			"Uncommon": {"Chain": [3,5], "Silver Ore": [3,5], "Silver Bar": [2,4]},
-			"Rare": {"Silver Ore": [4,6], "Silver Bar": [4,6]},
-			"Very Rare": {"Silver Bar": [40,60]}
+			"Common": {
+				"Chain": 1,
+				"Silver Ore": 1,
+				"Silver Bar": 1
+			},
+			"Uncommon": {
+				"Chain": [
+					3,
+					5
+				],
+				"Silver Ore": [
+					3,
+					5
+				],
+				"Silver Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Silver Ore": [
+					4,
+					6
+				],
+				"Silver Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Silver Bar": [
+					40,
+					60
+				]
+			}
 		}
 	},
 	"troll": {
@@ -571,10 +1628,44 @@
 		"spd": 25,
 		"effects": [],
 		"drops": {
-			"Common": {"Chain": 1, "Stone": [50, 100], "Bronze Bar": 1},
-			"Uncommon": {"Chain": [3,5], "Copper Ore": [3,5], "Bronze Bar": [2,4]},
-			"Rare": {"Copper Ore": [4,6], "Bronze Bar": [4,6]},
-			"Very Rare": {"Bronze Bar": [40,60]}
+			"Common": {
+				"Chain": 1,
+				"Stone": [
+					50,
+					100
+				],
+				"Bronze Bar": 1
+			},
+			"Uncommon": {
+				"Chain": [
+					3,
+					5
+				],
+				"Copper Ore": [
+					3,
+					5
+				],
+				"Bronze Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Copper Ore": [
+					4,
+					6
+				],
+				"Bronze Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Bronze Bar": [
+					40,
+					60
+				]
+			}
 		}
 	},
 	"vulture": {
@@ -588,10 +1679,38 @@
 		"spd": 375,
 		"effects": [],
 		"drops": {
-			"Common": {"String": 1, "Bone": 1, "Silver Bar": 1},
-			"Uncommon": {"String": [3,5], "Bone": [3,5], "Silver Bar": [2,4]},
-			"Rare": {"Silk Cloth": 1, "Silver Bar": [4,6]},
-			"Very Rare": {"Silver Bar": [40,60]}
+			"Common": {
+				"String": 1,
+				"Bone": 1,
+				"Silver Bar": 1
+			},
+			"Uncommon": {
+				"String": [
+					3,
+					5
+				],
+				"Bone": [
+					3,
+					5
+				],
+				"Silver Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Silk Cloth": 1,
+				"Silver Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Silver Bar": [
+					40,
+					60
+				]
+			}
 		}
 	},
 	"warlock": {
@@ -605,10 +1724,41 @@
 		"spd": 175,
 		"effects": [],
 		"drops": {
-			"Common": {"Dirt": 1, "Wood": [5, 10], "Silver Bar": 1},
-			"Uncommon": {"Wood": [15,20], "Glass": [3,5], "Silver Bar": [2,4]},
-			"Rare": {"Mana Crystal": 1, "Silver Bar": [4,6]},
-			"Very Rare": {"Mana Crystal": [5,10]}
+			"Common": {
+				"Dirt": 1,
+				"Wood": [
+					5,
+					10
+				],
+				"Silver Bar": 1
+			},
+			"Uncommon": {
+				"Wood": [
+					15,
+					20
+				],
+				"Glass": [
+					3,
+					5
+				],
+				"Silver Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Mana Crystal": 1,
+				"Silver Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Mana Crystal": [
+					5,
+					10
+				]
+			}
 		}
 	},
 	"warlockskeleton": {
@@ -622,10 +1772,38 @@
 		"spd": 175,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [3,5], "Wood": [5, 10], "Tin Bar": 2},
-			"Uncommon": {"Wood Bow": 1, "Bone Arrow": [3,5], "Tin Bar": [3,5]},
-			"Rare": {"Bone Ring": 1, "Tin Bar": [5,7]},
-			"Very Rare": {"Dual Bow": 1}
+			"Common": {
+				"Bone": [
+					3,
+					5
+				],
+				"Wood": [
+					5,
+					10
+				],
+				"Tin Bar": 2
+			},
+			"Uncommon": {
+				"Wood Bow": 1,
+				"Bone Arrow": [
+					3,
+					5
+				],
+				"Tin Bar": [
+					3,
+					5
+				]
+			},
+			"Rare": {
+				"Bone Ring": 1,
+				"Tin Bar": [
+					5,
+					7
+				]
+			},
+			"Very Rare": {
+				"Dual Bow": 1
+			}
 		}
 	},
 	"skeletonhorseman": {
@@ -639,10 +1817,38 @@
 		"spd": 300,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [3,5], "Wooden Arrow": [3,7], "Tin Bar": 2},
-			"Uncommon": {"Wood Bow": 1, "Bone Arrow": [3,5], "Tin Bar": [3,5]},
-			"Rare": {"Bone Ring": 1, "Tin Bar": [5,7]},
-			"Very Rare": {"Dual Bow": 1}
+			"Common": {
+				"Bone": [
+					3,
+					5
+				],
+				"Wooden Arrow": [
+					3,
+					7
+				],
+				"Tin Bar": 2
+			},
+			"Uncommon": {
+				"Wood Bow": 1,
+				"Bone Arrow": [
+					3,
+					5
+				],
+				"Tin Bar": [
+					3,
+					5
+				]
+			},
+			"Rare": {
+				"Bone Ring": 1,
+				"Tin Bar": [
+					5,
+					7
+				]
+			},
+			"Very Rare": {
+				"Dual Bow": 1
+			}
 		}
 	},
 	"skeletonminer": {
@@ -656,10 +1862,32 @@
 		"spd": 175,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [1,3], "Pickaxe": 1, "Tin Bar": 1},
-			"Uncommon": {"Iron Pickaxe": 1, "Bone": [5,10], "Tin Bar": [2,4]},
-			"Rare": {"Mining Charm": 1, "Mining Helmet": 1},
-			"Very Rare": {"Diamond Pickaxe": 1}
+			"Common": {
+				"Bone": [
+					1,
+					3
+				],
+				"Pickaxe": 1,
+				"Tin Bar": 1
+			},
+			"Uncommon": {
+				"Iron Pickaxe": 1,
+				"Bone": [
+					5,
+					10
+				],
+				"Tin Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Mining Charm": 1,
+				"Mining Helmet": 1
+			},
+			"Very Rare": {
+				"Diamond Pickaxe": 1
+			}
 		}
 	},
 	"skeletonassassin": {
@@ -673,10 +1901,35 @@
 		"spd": 225,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [3,5], "Dagger": 1, "Tin Bar": 2},
-			"Uncommon": {"Wood Bow": 1, "Bone Arrow": [3,5], "Tin Bar": [3,5]},
-			"Rare": {"Bone Ring": 1, "Tin Bar": [5,7]},
-			"Very Rare": {"Dual Bow": 1}
+			"Common": {
+				"Bone": [
+					3,
+					5
+				],
+				"Dagger": 1,
+				"Tin Bar": 2
+			},
+			"Uncommon": {
+				"Wood Bow": 1,
+				"Bone Arrow": [
+					3,
+					5
+				],
+				"Tin Bar": [
+					3,
+					5
+				]
+			},
+			"Rare": {
+				"Bone Ring": 1,
+				"Tin Bar": [
+					5,
+					7
+				]
+			},
+			"Very Rare": {
+				"Dual Bow": 1
+			}
 		}
 	},
 	"wolfjockey": {
@@ -690,10 +1943,38 @@
 		"spd": 275,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [3,5], "Wooden Arrow": [3,7], "Tin Bar": 2},
-			"Uncommon": {"Wood Bow": 1, "Bone Arrow": [3,5], "Tin Bar": [3,5]},
-			"Rare": {"Bone Ring": 1, "Tin Bar": [5,7]},
-			"Very Rare": {"Dual Bow": 1}
+			"Common": {
+				"Bone": [
+					3,
+					5
+				],
+				"Wooden Arrow": [
+					3,
+					7
+				],
+				"Tin Bar": 2
+			},
+			"Uncommon": {
+				"Wood Bow": 1,
+				"Bone Arrow": [
+					3,
+					5
+				],
+				"Tin Bar": [
+					3,
+					5
+				]
+			},
+			"Rare": {
+				"Bone Ring": 1,
+				"Tin Bar": [
+					5,
+					7
+				]
+			},
+			"Very Rare": {
+				"Dual Bow": 1
+			}
 		}
 	},
 	"skeletonarcher": {
@@ -707,10 +1988,38 @@
 		"spd": 175,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [1,3], "Bone Arrow": [1,5], "Tin Bar": 1},
-			"Uncommon": {"Gold Bow": 1, "Emerald Arrow": [1,3], "Tin Bar": [2,4]},
-			"Rare": {"Bone Ring": 1, "Tin Bar": [4,6]},
-			"Very Rare": {"Dual Bow": 1}
+			"Common": {
+				"Bone": [
+					1,
+					3
+				],
+				"Bone Arrow": [
+					1,
+					5
+				],
+				"Tin Bar": 1
+			},
+			"Uncommon": {
+				"Gold Bow": 1,
+				"Emerald Arrow": [
+					1,
+					3
+				],
+				"Tin Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Bone Ring": 1,
+				"Tin Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Dual Bow": 1
+			}
 		}
 	},
 	"skeletonsoldier": {
@@ -724,10 +2033,32 @@
 		"spd": 175,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [1,3], "Stone Sword": 1, "Shield": 1},
-			"Uncommon": {"Iron Sword": 1, "Spear": 1, "Tin Bar": [2,4]},
-			"Rare": {"Bone Ring": 1, "Tin Bar": [4,6]},
-			"Very Rare": {"Diamond Sword": 1}
+			"Common": {
+				"Bone": [
+					1,
+					3
+				],
+				"Stone Sword": 1,
+				"Shield": 1
+			},
+			"Uncommon": {
+				"Iron Sword": 1,
+				"Spear": 1,
+				"Tin Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Bone Ring": 1,
+				"Tin Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Diamond Sword": 1
+			}
 		}
 	},
 	"frozenskeleton": {
@@ -741,10 +2072,41 @@
 		"spd": 200,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [1,3], "Wooden Arrow": [1,5], "Ice": [3,5]},
-			"Uncommon": {"Wood Bow": 1, "Bone Arrow": [1,3], "Tin Bar": [2,4]},
-			"Rare": {"Bone Ring": 1, "Tin Bar": [4,6]},
-			"Very Rare": {"Dual Bow": 1}
+			"Common": {
+				"Bone": [
+					1,
+					3
+				],
+				"Wooden Arrow": [
+					1,
+					5
+				],
+				"Ice": [
+					3,
+					5
+				]
+			},
+			"Uncommon": {
+				"Wood Bow": 1,
+				"Bone Arrow": [
+					1,
+					3
+				],
+				"Tin Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Bone Ring": 1,
+				"Tin Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Dual Bow": 1
+			}
 		}
 	},
 	"skeleton": {
@@ -758,10 +2120,38 @@
 		"spd": 175,
 		"effects": [],
 		"drops": {
-			"Common": {"Bone": [1,3], "Wooden Arrow": [1,5], "Tin Bar": 1},
-			"Uncommon": {"Wood Bow": 1, "Bone Arrow": [1,3], "Tin Bar": [2,4]},
-			"Rare": {"Bone Ring": 1, "Tin Bar": [4,6]},
-			"Very Rare": {"Dual Bow": 1}
+			"Common": {
+				"Bone": [
+					1,
+					3
+				],
+				"Wooden Arrow": [
+					1,
+					5
+				],
+				"Tin Bar": 1
+			},
+			"Uncommon": {
+				"Wood Bow": 1,
+				"Bone Arrow": [
+					1,
+					3
+				],
+				"Tin Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Bone Ring": 1,
+				"Tin Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Dual Bow": 1
+			}
 		}
 	},
 	"spider": {
@@ -775,10 +2165,35 @@
 		"spd": 275,
 		"effects": [],
 		"drops": {
-			"Common": {"String": [1,3], "Copper Ore": 1, "Bronze Bar": 1},
-			"Uncommon": {"String": [3,5], "Silk Cloth": 1, "Bronze Bar": [2,4]},
-			"Rare": {"Silky String": 1, "Bronze Bar": [4,6]},
-			"Very Rare": {"Silk Rod": 1}
+			"Common": {
+				"String": [
+					1,
+					3
+				],
+				"Copper Ore": 1,
+				"Bronze Bar": 1
+			},
+			"Uncommon": {
+				"String": [
+					3,
+					5
+				],
+				"Silk Cloth": 1,
+				"Bronze Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Silky String": 1,
+				"Bronze Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Silk Rod": 1
+			}
 		}
 	},
 	"magmaslime": {
@@ -792,10 +2207,44 @@
 		"spd": 200,
 		"effects": [],
 		"drops": {
-			"Common": {"Slime Ball": [1,3], "Magma Block": [1,5], "Copper Bar": 1},
-			"Uncommon": {"Slime Ball": [3,5], "Copper Ore": [3,5], "Copper Bar": [2,4]},
-			"Rare": {"Slime Ball": [15,25], "Copper Bar": [4,6]},
-			"Very Rare": {"Emerald": 1}
+			"Common": {
+				"Slime Ball": [
+					1,
+					3
+				],
+				"Magma Block": [
+					1,
+					5
+				],
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Slime Ball": [
+					3,
+					5
+				],
+				"Copper Ore": [
+					3,
+					5
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Slime Ball": [
+					15,
+					25
+				],
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Emerald": 1
+			}
 		}
 	},
 	"flyingslime": {
@@ -809,10 +2258,44 @@
 		"spd": 250,
 		"effects": [],
 		"drops": {
-			"Common": {"Slime Ball": [1,3], "Cloud": [1,5], "Copper Bar": 1},
-			"Uncommon": {"Slime Ball": [3,5], "Copper Ore": [3,5], "Copper Bar": [2,4]},
-			"Rare": {"Slime Ball": [15,25], "Copper Bar": [4,6]},
-			"Very Rare": {"Emerald": 1}
+			"Common": {
+				"Slime Ball": [
+					1,
+					3
+				],
+				"Cloud": [
+					1,
+					5
+				],
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Slime Ball": [
+					3,
+					5
+				],
+				"Copper Ore": [
+					3,
+					5
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Slime Ball": [
+					15,
+					25
+				],
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Emerald": 1
+			}
 		}
 	},
 	"slime": {
@@ -826,10 +2309,44 @@
 		"spd": 200,
 		"effects": [],
 		"drops": {
-			"Common": {"Slime Ball": [1,3], "Dirt": [1,5], "Copper Bar": 1},
-			"Uncommon": {"Slime Ball": [3,5], "Copper Ore": [3,5], "Copper Bar": [2,4]},
-			"Rare": {"Slime Ball": [15,25], "Copper Bar": [4,6]},
-			"Very Rare": {"Emerald": 1}
+			"Common": {
+				"Slime Ball": [
+					1,
+					3
+				],
+				"Dirt": [
+					1,
+					5
+				],
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Slime Ball": [
+					3,
+					5
+				],
+				"Copper Ore": [
+					3,
+					5
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Slime Ball": [
+					15,
+					25
+				],
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Emerald": 1
+			}
 		}
 	},
 	"rollingcactus": {
@@ -843,10 +2360,44 @@
 		"spd": 275,
 		"effects": [],
 		"drops": {
-			"Common": {"Cactus": 1, "Sand": [5,15], "Copper Bar": 1},
-			"Uncommon": {"Cactus": [2,4], "Sand": [20,40], "Copper Bar": [2,4]},
-			"Rare": {"Cactus": [4,6], "Copper Bar": [4,6]},
-			"Very Rare": {"Cactus": [40,60]}
+			"Common": {
+				"Cactus": 1,
+				"Sand": [
+					5,
+					15
+				],
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Cactus": [
+					2,
+					4
+				],
+				"Sand": [
+					20,
+					40
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Cactus": [
+					4,
+					6
+				],
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Cactus": [
+					40,
+					60
+				]
+			}
 		}
 	},
 	"tortoise": {
@@ -860,10 +2411,38 @@
 		"spd": 50,
 		"effects": [],
 		"drops": {
-			"Common": {"Turtle Shell": 1, "Copper Ore": 1, "Copper Bar": 1},
-			"Uncommon": {"Turtle Shell": [1,2], "Copper Ore": [2,4], "Copper Bar": [2,4]},
-			"Rare": {"Turtle Shell": [3,4], "Copper Bar": [4,6]},
-			"Very Rare": {"Emerald": 1}
+			"Common": {
+				"Turtle Shell": 1,
+				"Copper Ore": 1,
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Turtle Shell": [
+					1,
+					2
+				],
+				"Copper Ore": [
+					2,
+					4
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Turtle Shell": [
+					3,
+					4
+				],
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Emerald": 1
+			}
 		}
 	},
 	"beetle": {
@@ -877,10 +2456,38 @@
 		"spd": 150,
 		"effects": [],
 		"drops": {
-			"Common": {"Beetle Husk": [1,3], "Copper Ore": 1, "Copper Bar": 1},
-			"Uncommon": {"Beetle Husk": [2,4], "Copper Ore": [2,4], "Copper Bar": [2,4]},
-			"Rare": {"Violet Husk": 1, "Copper Bar": [4,6]},
-			"Very Rare": {"Emerald": 1}
+			"Common": {
+				"Beetle Husk": [
+					1,
+					3
+				],
+				"Copper Ore": 1,
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Beetle Husk": [
+					2,
+					4
+				],
+				"Copper Ore": [
+					2,
+					4
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Violet Husk": 1,
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Emerald": 1
+			}
 		}
 	},
 	"viciousmelon": {
@@ -894,10 +2501,41 @@
 		"spd": 25,
 		"effects": [],
 		"drops": {
-			"Common": {"Water Melon": [1,3], "Copper Ore": 1, "Copper Bar": 1},
-			"Uncommon": {"Water Melon": [2,4], "Copper Ore": [2,4], "Copper Bar": [2,4]},
-			"Rare": {"Water Melon": [4,6], "Copper Bar": [4,6]},
-			"Very Rare": {"Emerald": 1}
+			"Common": {
+				"Water Melon": [
+					1,
+					3
+				],
+				"Copper Ore": 1,
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Water Melon": [
+					2,
+					4
+				],
+				"Copper Ore": [
+					2,
+					4
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Water Melon": [
+					4,
+					6
+				],
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Emerald": 1
+			}
 		}
 	},
 	"venushumantrap": {
@@ -911,10 +2549,41 @@
 		"spd": 5,
 		"effects": [],
 		"drops": {
-			"Common": {"Vine": [1,3], "Copper Ore": 1, "Copper Bar": 1},
-			"Uncommon": {"Vine": [2,4], "Copper Ore": [2,4], "Copper Bar": [2,4]},
-			"Rare": {"Vine": [4,6], "Copper Bar": [4,6]},
-			"Very Rare": {"Emerald": 1}
+			"Common": {
+				"Vine": [
+					1,
+					3
+				],
+				"Copper Ore": 1,
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Vine": [
+					2,
+					4
+				],
+				"Copper Ore": [
+					2,
+					4
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Vine": [
+					4,
+					6
+				],
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Emerald": 1
+			}
 		}
 	},
 	"piranha": {
@@ -928,10 +2597,44 @@
 		"spd": 300,
 		"effects": [],
 		"drops": {
-			"Common": {"Raw Cod": [1,3], "Piranha": 1, "Copper Bar": 1},
-			"Uncommon": {"Raw Salmon": [2,4], "Piranha": [2,4], "Copper Bar": [2,4]},
-			"Rare": {"Squid": [4,6], "Copper Bar": [4,6]},
-			"Very Rare": {"Shrimp Shrimp": [4,6]}
+			"Common": {
+				"Raw Cod": [
+					1,
+					3
+				],
+				"Piranha": 1,
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Raw Salmon": [
+					2,
+					4
+				],
+				"Piranha": [
+					2,
+					4
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Squid": [
+					4,
+					6
+				],
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Shrimp Shrimp": [
+					4,
+					6
+				]
+			}
 		}
 	},
 	"shark": {
@@ -945,10 +2648,44 @@
 		"spd": 275,
 		"effects": [],
 		"drops": {
-			"Common": {"Raw Cod": [1,3], "Copper Ore": 1, "Copper Bar": 1},
-			"Uncommon": {"Raw Salmon": [2,4], "Copper Ore": [2,4], "Copper Bar": [2,4]},
-			"Rare": {"Squid": [4,6], "Copper Bar": [4,6]},
-			"Very Rare": {"Shrimp Shrimp": [4,6]}
+			"Common": {
+				"Raw Cod": [
+					1,
+					3
+				],
+				"Copper Ore": 1,
+				"Copper Bar": 1
+			},
+			"Uncommon": {
+				"Raw Salmon": [
+					2,
+					4
+				],
+				"Copper Ore": [
+					2,
+					4
+				],
+				"Copper Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Squid": [
+					4,
+					6
+				],
+				"Copper Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Shrimp Shrimp": [
+					4,
+					6
+				]
+			}
 		}
 	},
 	"alchemist": {
@@ -960,12 +2697,42 @@
 		"mhp": 300,
 		"def": 50,
 		"spd": 150,
-		"effects": ["Multi Hit"],
+		"effects": [
+			"Multi Hit"
+		],
 		"drops": {
-			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Microwave": 3, "Gold Bow": 1, "Iron Bar": [2,4]},
-			"Rare": {"Microwave": [4,6], "Iron Bar": [4,6]},
-			"Very Rare": {"Microwave": [10,20]}
+			"Common": {
+				"Bread": [
+					2,
+					5
+				],
+				"Iron Ore": 1,
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Microwave": 3,
+				"Gold Bow": 1,
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Microwave": [
+					4,
+					6
+				],
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Microwave": [
+					10,
+					20
+				]
+			}
 		}
 	},
 	"necromancer": {
@@ -979,10 +2746,41 @@
 		"spd": 150,
 		"effects": [],
 		"drops": {
-			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Microwave": 3, "Iron Ore": [2,4], "Iron Bar": [2,4]},
-			"Rare": {"Microwave": [4,6], "Iron Bar": [4,6]},
-			"Very Rare": {"Microwave": [10,20]}
+			"Common": {
+				"Bread": [
+					2,
+					5
+				],
+				"Iron Ore": 1,
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Microwave": 3,
+				"Iron Ore": [
+					2,
+					4
+				],
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Microwave": [
+					4,
+					6
+				],
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Microwave": [
+					10,
+					20
+				]
+			}
 		}
 	},
 	"anguishedsoul": {
@@ -996,10 +2794,41 @@
 		"spd": 450,
 		"effects": [],
 		"drops": {
-			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Microwave": 2, "Iron Ore": [2,4], "Iron Bar": [2,4]},
-			"Rare": {"Microwave": [3,5], "Iron Bar": [4,6]},
-			"Very Rare": {"Microwave": [10,20]}
+			"Common": {
+				"Bread": [
+					2,
+					5
+				],
+				"Iron Ore": 1,
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Microwave": 2,
+				"Iron Ore": [
+					2,
+					4
+				],
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Microwave": [
+					3,
+					5
+				],
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Microwave": [
+					10,
+					20
+				]
+			}
 		}
 	},
 	"armedcultist": {
@@ -1013,10 +2842,38 @@
 		"spd": 150,
 		"effects": [],
 		"drops": {
-			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Microwave": 2, "Dagger": 1, "Iron Bar": [2,4]},
-			"Rare": {"Microwave": [3,5], "Iron Bar": [4,6]},
-			"Very Rare": {"Microwave": [10,20]}
+			"Common": {
+				"Bread": [
+					2,
+					5
+				],
+				"Iron Ore": 1,
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Microwave": 2,
+				"Dagger": 1,
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Microwave": [
+					3,
+					5
+				],
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Microwave": [
+					10,
+					20
+				]
+			}
 		}
 	},
 	"frozencultist": {
@@ -1030,10 +2887,41 @@
 		"spd": 150,
 		"effects": [],
 		"drops": {
-			"Common": {"Bread": [2,5], "Ice": 1, "Iron Bar": 1},
-			"Uncommon": {"Microwave": 2, "Ice": [2,4], "Iron Bar": [2,4]},
-			"Rare": {"Microwave": [3,5], "Iron Bar": [4,6]},
-			"Very Rare": {"Microwave": [10,20]}
+			"Common": {
+				"Bread": [
+					2,
+					5
+				],
+				"Ice": 1,
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Microwave": 2,
+				"Ice": [
+					2,
+					4
+				],
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Microwave": [
+					3,
+					5
+				],
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Microwave": [
+					10,
+					20
+				]
+			}
 		}
 	},
 	"meditatingcultist": {
@@ -1047,10 +2935,41 @@
 		"spd": 150,
 		"effects": [],
 		"drops": {
-			"Common": {"Bread": [2,5], "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Microwave": 1, "Iron Ore": [2,4], "Iron Bar": [2,4]},
-			"Rare": {"Microwave": [2,4], "Iron Bar": [4,6]},
-			"Very Rare": {"Microwave": [10,20]}
+			"Common": {
+				"Bread": [
+					2,
+					5
+				],
+				"Iron Ore": 1,
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Microwave": 1,
+				"Iron Ore": [
+					2,
+					4
+				],
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Microwave": [
+					2,
+					4
+				],
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Microwave": [
+					10,
+					20
+				]
+			}
 		}
 	},
 	"sphinx": {
@@ -1064,10 +2983,38 @@
 		"spd": 250,
 		"effects": [],
 		"drops": {
-			"Common": {"Leather": 1, "Sand": [1,5], "Iron Bar": 1},
-			"Uncommon": {"Mining Charm": 1, "Leather": [2,4], "Iron Bar": [2,4]},
-			"Rare": {"Gold Bar": 2, "Iron Bar": [4,6]},
-			"Very Rare": {"Gold Bar": [50, 100]}
+			"Common": {
+				"Leather": 1,
+				"Sand": [
+					1,
+					5
+				],
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Mining Charm": 1,
+				"Leather": [
+					2,
+					4
+				],
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Gold Bar": 2,
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Gold Bar": [
+					50,
+					100
+				]
+			}
 		}
 	},
 	"mummy": {
@@ -1081,10 +3028,32 @@
 		"spd": 100,
 		"effects": [],
 		"drops": {
-			"Common": {"Chum": 1, "Sand": [1,5], "Iron Bar": 1},
-			"Uncommon": {"Mining Charm": 1, "Leather": 1, "Iron Bar": [2,4]},
-			"Rare": {"Iron Pickaxe": 1, "Iron Bar": [4,6]},
-			"Very Rare": {"The Spade": 1}
+			"Common": {
+				"Chum": 1,
+				"Sand": [
+					1,
+					5
+				],
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Mining Charm": 1,
+				"Leather": 1,
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Iron Pickaxe": 1,
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"The Spade": 1
+			}
 		}
 	},
 	"sandserpent": {
@@ -1098,10 +3067,38 @@
 		"spd": 325,
 		"effects": [],
 		"drops": {
-			"Common": {"Chum": 1, "Sand": [1,5], "Iron Bar": 1},
-			"Uncommon": {"Mining Charm": 1, "Leather": 1, "Iron Bar": [2,4]},
-			"Rare": {"String": [20,40], "Iron Bar": [4,6]},
-			"Very Rare": {"Silk Cloth": [2,4]}
+			"Common": {
+				"Chum": 1,
+				"Sand": [
+					1,
+					5
+				],
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Mining Charm": 1,
+				"Leather": 1,
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"String": [
+					20,
+					40
+				],
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Silk Cloth": [
+					2,
+					4
+				]
+			}
 		}
 	},
 	"brinebound": {
@@ -1115,10 +3112,32 @@
 		"spd": 125,
 		"effects": [],
 		"drops": {
-			"Common": {"Chum": [1,5], "Water Bottle": 1, "Iron Bar": 1},
-			"Uncommon": {"Fishing Cap": 1, "Leather": 1, "Iron Bar": [2,4]},
-			"Rare": {"Shrimp Shrimp": 1, "Iron Bar": [4,6]},
-			"Very Rare": {"Super Rod": 1}
+			"Common": {
+				"Chum": [
+					1,
+					5
+				],
+				"Water Bottle": 1,
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Fishing Cap": 1,
+				"Leather": 1,
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Shrimp Shrimp": 1,
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"Super Rod": 1
+			}
 		}
 	},
 	"zombie": {
@@ -1132,10 +3151,29 @@
 		"spd": 125,
 		"effects": [],
 		"drops": {
-			"Common": {"Chum": 1, "Iron Ore": 1, "Iron Bar": 1},
-			"Uncommon": {"Mining Charm": 1, "Leather": 1, "Iron Bar": [2,4]},
-			"Rare": {"Iron Pickaxe": 1, "Iron Bar": [4,6]},
-			"Very Rare": {"The Spade": 1}
+			"Common": {
+				"Chum": 1,
+				"Iron Ore": 1,
+				"Iron Bar": 1
+			},
+			"Uncommon": {
+				"Mining Charm": 1,
+				"Leather": 1,
+				"Iron Bar": [
+					2,
+					4
+				]
+			},
+			"Rare": {
+				"Iron Pickaxe": 1,
+				"Iron Bar": [
+					4,
+					6
+				]
+			},
+			"Very Rare": {
+				"The Spade": 1
+			}
 		}
 	}
 }

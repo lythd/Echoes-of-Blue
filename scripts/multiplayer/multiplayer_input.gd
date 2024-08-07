@@ -3,7 +3,7 @@ extends MultiplayerSynchronizer
 @onready var player = $".."
 
 var input_direction
-var username = ""
+var username
 
 func _ready():
 	if get_multiplayer_authority() != multiplayer.get_unique_id():

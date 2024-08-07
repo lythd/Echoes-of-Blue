@@ -1,52 +1,54 @@
 {
-    "armorpenetratingrocket": {
-        "blunt": 150,
-        "effects": [],
-        "name": "Armor Penetrating Rocket",
-        "piercing": -1
-    },
-    "cometfragment": {
-        "blunt": -1,
-        "effects": ["Critical Chance"],
-        "name": "Comet Fragment",
-        "piercing": 250
-    },
-    "bonearrow": {
-        "blunt": -1,
-        "effects": [
-            "Critical Chance"
-        ],
-        "name": "Bone Arrow",
-        "piercing": 10
-    },
-    "emeraldarrow": {
-        "blunt": -1,
-        "effects": [],
-        "name": "Emerald Arrow",
-        "piercing": 25
-    },
-    "explosiverocket": {
-        "blunt": -1,
-        "effects": [],
-        "name": "Explosive Rocket",
-        "piercing": 200
-    },
-    "woodenarrow": {
-        "blunt": -1,
-        "effects": [],
-        "name": "Wooden Arrow",
-        "piercing": 5
-    },
-    "pipebomb": {
-        "blunt": 50,
-        "effects": [],
-        "name": "Pipe Bomb",
-        "piercing": 50
-    },
-    "molotovcocktail": {
-        "blunt": -1,
-        "effects": [],
-        "name": "Molotov Cocktail",
-        "piercing": 150
-    }
+	"armorpenetratingrocket": {
+		"blunt": 150,
+		"effects": [],
+		"name": "Armor Penetrating Rocket",
+		"piercing": -1
+	},
+	"cometfragment": {
+		"blunt": -1,
+		"effects": [
+			"Critical Chance"
+		],
+		"name": "Comet Fragment",
+		"piercing": 250
+	},
+	"bonearrow": {
+		"blunt": -1,
+		"effects": [
+			"Critical Chance"
+		],
+		"name": "Bone Arrow",
+		"piercing": 10
+	},
+	"emeraldarrow": {
+		"blunt": -1,
+		"effects": [],
+		"name": "Emerald Arrow",
+		"piercing": 25
+	},
+	"explosiverocket": {
+		"blunt": -1,
+		"effects": [],
+		"name": "Explosive Rocket",
+		"piercing": 200
+	},
+	"woodenarrow": {
+		"blunt": -1,
+		"effects": [],
+		"name": "Wooden Arrow",
+		"piercing": 5
+	},
+	"pipebomb": {
+		"blunt": 50,
+		"effects": [],
+		"name": "Pipe Bomb",
+		"piercing": 50
+	},
+	"molotovcocktail": {
+		"blunt": -1,
+		"effects": [],
+		"name": "Molotov Cocktail",
+		"piercing": 150
+	}
 }

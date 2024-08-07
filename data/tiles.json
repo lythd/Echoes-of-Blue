@@ -1,650 +1,650 @@
 {
-	"Pyro Grass" : {
+	"Pyro Grass": {
 		"description": "Grass adapted to this hot region.",
 		"drop": "dirt",
 		"count": 1
 	},
-	"Pyro Soil" : {
+	"Pyro Soil": {
 		"description": "Soil adapted to this hot region.",
 		"drop": "dirt",
 		"count": 1
 	},
-	"Blackstone" : {
+	"Blackstone": {
 		"description": "Stones burnt up from this hot region.",
 		"drop": "blackstone",
 		"count": 1
 	},
-	"Fire" : {
+	"Fire": {
 		"description": "Yeowch one might say.",
 		"drop": "",
 		"count": 0
 	},
-	"Smoke Bush" : {
+	"Smoke Bush": {
 		"description": "Burning bush? Burnt bush.",
 		"drop": "smokewood",
 		"count": 2
 	},
-	"Lava" : {
+	"Lava": {
 		"description": "Tasty soup.",
 		"drop": "",
 		"count": 0
 	},
-	"Hellstone" : {
+	"Hellstone": {
 		"description": "Is this actually from hell? Probably not.",
 		"drop": "hellstone",
 		"count": 1
 	},
-	"Blood Sage" : {
+	"Blood Sage": {
 		"description": "Not actually made of blood believe it or not.",
 		"drop": "",
 		"count": 0
 	},
-	"Smoke Tree" : {
+	"Smoke Tree": {
 		"description": "This wood can withstand fire.",
 		"drop": "smokewood",
 		"count": 5
 	},
-	"Surface Gold Ore" : {
+	"Surface Gold Ore": {
 		"description": "Who woulda thought you would find gold here?",
 		"drop": "goldore",
 		"count": 1
 	},
-	"Pyro Tall Grass" : {
+	"Pyro Tall Grass": {
 		"description": "Someone needs to mow their lawn.",
 		"drop": "",
 		"count": 0
 	},
-	"Ash" : {
+	"Ash": {
 		"description": "Shhh",
 		"drop": "ash",
 		"count": 1
 	},
-	"Smooth Ash" : {
+	"Smooth Ash": {
 		"description": "Probably feels nice to walk on.",
 		"drop": "ash",
 		"count": 1
 	},
-	"Bones" : {
+	"Bones": {
 		"description": "I guess this means someone died here.",
 		"drop": "bone",
 		"count": 3
 	},
-	"Fossil" : {
+	"Fossil": {
 		"description": "What kind of animal was this?",
 		"drop": "bone",
 		"count": 10
 	},
-	"Burnt Tall Grass" : {
+	"Burnt Tall Grass": {
 		"description": "This is why you don't mow your lawn with a flamethrower.",
 		"drop": "",
 		"count": 0
 	},
-	"Basalt" : {
+	"Basalt": {
 		"description": "My favorite igneous rock.",
 		"drop": "basalt",
 		"count": 1
 	},
-	"Grass" : {
+	"Grass": {
 		"description": "The grass is greener on the other side.",
 		"drop": "dirt",
 		"count": 1
 	},
-	"Dirt" : {
+	"Dirt": {
 		"description": "This feels... dirty.",
 		"drop": "dirt",
 		"count": 1
 	},
-	"Ice" : {
+	"Ice": {
 		"description": "Hockey anyone?",
 		"drop": "ice",
 		"count": 1
 	},
-	"Tall Grass" : {
+	"Tall Grass": {
 		"description": "Someone needs to mow their lawn.",
 		"drop": "",
 		"count": 0
 	},
-	"Bush" : {
+	"Bush": {
 		"description": "Could do with a hedge for my house. Oh actually I can't afford a house. Or a hedge.",
 		"drop": "wood",
 		"count": 2
 	},
-	"Oak Tree" : {
+	"Oak Tree": {
 		"description": "Good for wood veneer.",
 		"drop": "wood",
 		"count": 5
 	},
-	"Snowglobe" : {
+	"Snowglobe": {
 		"description": "It's winter year round in there.",
 		"drop": "",
 		"count": 0
 	},
-	"Water" : {
+	"Water": {
 		"description": "Midnight. Drinking water. Yes.",
 		"drop": "",
 		"count": 0
 	},
-	"Sunflower" : {
+	"Sunflower": {
 		"description": "Sunflowers always face the sun, well I only made one sprite for them so I guess the sun is always south.",
 		"drop": "",
 		"count": 0
 	},
-	"Wheat" : {
+	"Wheat": {
 		"description": "Agriculture was the most monumental turning point in human history. Or maybe not I'm just saying stuff.",
 		"drop": "wheat",
 		"count": 3
 	},
-	"Autumn Oak Tree" : {
+	"Autumn Oak Tree": {
 		"description": "It's that time of year.",
 		"drop": "wood",
 		"count": 5
 	},
-	"Sign" : {
+	"Sign": {
 		"description": "Sometimes all you need is a sign.",
 		"drop": "",
 		"count": 0
 	},
-	"Blue Flax" : {
+	"Blue Flax": {
 		"description": "Would you really add your favorite flower to the game and barely any others? Yes, yes I would.",
 		"drop": "",
 		"count": 0
 	},
-	"Snowpile" : {
+	"Snowpile": {
 		"description": "Call the kids its a snowday!",
 		"drop": "",
 		"count": 0
 	},
-	"Rubber Tree" : {
+	"Rubber Tree": {
 		"description": "You can probably get some rubber out of them.",
 		"drop": "wood",
 		"count": 5
 	},
-	"Hot Chocolate" : {
+	"Hot Chocolate": {
 		"description": "There are marshmallows in here.",
 		"drop": "",
 		"count": 0
 	},
-	"Jungle Grass" : {
+	"Jungle Grass": {
 		"description": "This grass is pretty damn green.",
 		"drop": "dirt",
 		"count": 1
 	},
-	"Mud" : {
+	"Mud": {
 		"description": "It's like imagine dirt was wet, wouldn't that be fun?",
 		"drop": "dirt",
 		"count": 1
 	},
-	"Pumpkin" : {
+	"Pumpkin": {
 		"description": "For some reason someone around here doesn't like you farming pumpkins.",
 		"drop": "pumpkin",
 		"count": 0
 	},
-	"Watermelon" : {
+	"Watermelon": {
 		"description": "Sometimes watermelon don't want to be farmed.",
 		"drop": "watermelon",
 		"count": 5
 	},
-	"Jungle Bush" : {
+	"Jungle Bush": {
 		"description": "I feel like something could easily be hiding in here.",
 		"drop": "wood",
 		"count": 2
 	},
-	"Mahogany Tree" : {
+	"Mahogany Tree": {
 		"description": "Nothing like good ol sturdy mahogany.",
 		"drop": "wood",
 		"count": 5
 	},
-	"Jungle Tall Grass" : {
+	"Jungle Tall Grass": {
 		"description": "The jungle grows restless...",
 		"drop": "",
 		"count": 0
 	},
-	"Jungle Water" : {
+	"Jungle Water": {
 		"description": "The Amazon is possibly the longest river in the world.",
 		"drop": "",
 		"count": 0
 	},
-	"Mango Tree" : {
+	"Mango Tree": {
 		"description": "Reminds me of a certain youtuber.",
 		"drop": "wood",
 		"count": 5
 	},
-	"Mahogany Log" : {
+	"Mahogany Log": {
 		"description": "I think it fell over.",
 		"drop": "wood",
 		"count": 4
 	},
-	"Sugarcane" : {
+	"Sugarcane": {
 		"description": "Taste good, I guess its the sugar.",
 		"drop": "sugarcane",
 		"count": 3
 	},
-	"Swamp" : {
+	"Swamp": {
 		"description": "In a while crocodile.",
 		"drop": "",
 		"count": 0
 	},
-	"Swamp Leaves" : {
+	"Swamp Leaves": {
 		"description": "Just some leaves idk what you expected me to say.",
 		"drop": "",
 		"count": 0
 	},
-	"Mangrove Tree" : {
+	"Mangrove Tree": {
 		"description": "Did you know there are three types of mangroves?",
 		"drop": "wood",
 		"count": 5
 	},
-	"Swamp Water" : {
+	"Swamp Water": {
 		"description": "I dare you to take a swim in it.",
 		"drop": "",
 		"count": 0
 	},
-	"Lilypad" : {
+	"Lilypad": {
 		"description": "Aw just a cute little lilypad.",
 		"drop": "",
 		"count": 0
 	},
-	"Mangrove Log" : {
+	"Mangrove Log": {
 		"description": "I think it fell over.",
 		"drop": "wood",
 		"count": 4
 	},
-	"Sky" : {
+	"Sky": {
 		"description": "Did you know that the sky is blue because it's feeling sad? Maybe check up on it sometimes.",
 		"drop": "",
 		"count": 0
 	},
-	"Cloud" : {
+	"Cloud": {
 		"description": "A cloud.",
 		"drop": "cloud",
 		"count": 1
 	},
-	"Storm Cloud" : {
+	"Storm Cloud": {
 		"description": "A fierce cloud.",
 		"drop": "cloud",
 		"count": 1
 	},
-	"Lightning" : {
+	"Lightning": {
 		"description": "Just lightning don't mind me.",
 		"drop": "",
 		"count": 0
 	},
-	"Sand" : {
+	"Sand": {
 		"description": "It's course, and rough, and it gets everywhere.",
 		"drop": "sand",
 		"count": 1
 	},
-	"Seashells" : {
+	"Seashells": {
 		"description": "She sells seashells on the sea shore.",
 		"drop": "seashell",
 		"count": 3
 	},
-	"Cactus" : {
+	"Cactus": {
 		"description": "Cactus string sand.",
 		"drop": "cactus",
 		"count": 3
 	},
-	"Coconut Tree" : {
+	"Coconut Tree": {
 		"description": "You think you fell out of a coconut tree?",
 		"drop": "wood",
 		"count": 5
 	},
-	"Clear Water" : {
+	"Clear Water": {
 		"description": "Nothing like some beautiful water to swim in.",
 		"drop": "",
 		"count": 0
 	},
-	"Pina Colada" : {
+	"Pina Colada": {
 		"description": "It's a game why not take a vacation?",
 		"drop": "",
 		"count": 0
 	},
-	"Chalk Soil" : {
+	"Chalk Soil": {
 		"description": "I guess they have to get chalk from somewhere.",
 		"drop": "dirt",
 		"count": 1
 	},
-	"Stone" : {
+	"Stone": {
 		"description": "Brock.",
 		"drop": "stone",
 		"count": 1
 	},
-	"Limestone" : {
+	"Limestone": {
 		"description": "You could make a house out of this. I mean sea creatures do.",
 		"drop": "limestone",
 		"count": 1
 	},
-	"Gravel" : {
+	"Gravel": {
 		"description": "There's no flint, stop looking.",
 		"drop": "gravel",
 		"count": 1
 	},
-	"Pebbles" : {
+	"Pebbles": {
 		"description": "You could throw them at someone.",
 		"drop": "stone",
 		"count": 1
 	},
-	"Twigs" : {
+	"Twigs": {
 		"description": "Whoever finds the biggest stick wins.",
 		"drop": "wood",
 		"count": 1
 	},
-	"Rock Flower" : {
+	"Rock Flower": {
 		"description": "What do you mean this doesn't really exist?",
 		"drop": "stone",
 		"count": 1
 	},
-	"Rail" : {
+	"Rail": {
 		"description": "Useful for transporting things, though maybe not in this state.",
 		"drop": "wood",
 		"count": 1
 	},
-	"Torch" : {
+	"Torch": {
 		"description": "Useful for seeing things",
 		"drop": "torch",
 		"count": 1
 	},
-	"Boulder" : {
+	"Boulder": {
 		"description": "You know you want to push me up a mountain.",
 		"drop": "stone",
 		"count": 3
 	},
-	"Coal Ore Boulder" : {
+	"Coal Ore Boulder": {
 		"description": "Santa?",
 		"drop": "coalore",
 		"count": 1
 	},
-	"Coal Ore" : {
+	"Coal Ore": {
 		"description": "Santa?",
 		"drop": "coalore",
 		"count": 1
 	},
-	"Tin Ore" : {
+	"Tin Ore": {
 		"description": "Lucky you.",
 		"drop": "tinore",
 		"count": 1
 	},
-	"Copper Ore" : {
+	"Copper Ore": {
 		"description": "Lucky you.",
 		"drop": "copperore",
 		"count": 1
 	},
-	"Iron Ore Boulder" : {
+	"Iron Ore Boulder": {
 		"description": "Lucky you.",
 		"drop": "ironore",
 		"count": 1
 	},
-	"Iron Ore" : {
+	"Iron Ore": {
 		"description": "Lucky you.",
 		"drop": "ironore",
 		"count": 1
 	},
-	"Silver Ore Boulder" : {
+	"Silver Ore Boulder": {
 		"description": "Lucky you.",
 		"drop": "silverore",
 		"count": 1
 	},
-	"Silver Ore" : {
+	"Silver Ore": {
 		"description": "Lucky you.",
 		"drop": "silverore",
 		"count": 1
 	},
-	"Gold Ore Boulder" : {
+	"Gold Ore Boulder": {
 		"description": "Lucky you.",
 		"drop": "goldore",
 		"count": 1
 	},
-	"Gold Ore" : {
+	"Gold Ore": {
 		"description": "Lucky you.",
 		"drop": "goldore",
 		"count": 1
 	},
-	"Ruby Ore" : {
+	"Ruby Ore": {
 		"description": "Lucky you.",
 		"drop": "ruby",
 		"count": 1
 	},
-	"Diamond Ore Boulder" : {
+	"Diamond Ore Boulder": {
 		"description": "Lucky you.",
 		"drop": "diamond",
 		"count": 1
 	},
-	"Diamond Ore" : {
+	"Diamond Ore": {
 		"description": "Lucky you.",
 		"drop": "diamond",
 		"count": 1
 	},
-	"Emerald Ore Boulder" : {
+	"Emerald Ore Boulder": {
 		"description": "Lucky you.",
 		"drop": "emerald",
 		"count": 1
 	},
-	"Emerald Ore" : {
+	"Emerald Ore": {
 		"description": "Lucky you.",
 		"drop": "emerald",
 		"count": 1
 	},
-	"Titanium Ore" : {
+	"Titanium Ore": {
 		"description": "Lucky you.",
 		"drop": "titaniumore",
 		"count": 1
 	},
-	"Vulrinth Ore" : {
+	"Vulrinth Ore": {
 		"description": "Lucky you.",
 		"drop": "vulrinthore",
 		"count": 1
 	},
-	"Path" : {
+	"Path": {
 		"description": "Connecting buildings with ease!",
 		"drop": "dirt",
 		"count": 1
 	},
-	"Carriage Floor" : {
+	"Carriage Floor": {
 		"description": "A nice sturdy floor to take you where you want to go.",
 		"drop": "",
 		"count": 0
 	},
-	"Carriage" : {
+	"Carriage": {
 		"description": "A nice sturdy carriage to take you where you want to go.",
 		"drop": "",
 		"count": 0
 	},
-	"Piggy Bank" : {
+	"Piggy Bank": {
 		"description": "Did you know if you save a quarter a day for a year you will have saved $10k?",
 		"drop": "",
 		"count": 0
 	},
-	"Safe" : {
+	"Safe": {
 		"description": "This safe isn't tied down so someone could just steal the safe. But at least it looks secure!",
 		"drop": "",
 		"count": 0
 	},
-	"Sleeping Mat" : {
+	"Sleeping Mat": {
 		"description": "Zzzz",
 		"drop": "",
 		"count": 0
 	},
-	"Gravestone" : {
+	"Gravestone": {
 		"description": "Pay your respects.",
 		"drop": "gravestone",
 		"count": 1
 	},
-	"Window" : {
+	"Window": {
 		"description": "All the better to see you with.",
 		"drop": "window",
 		"count": 1
 	},
-	"Wood Floor" : {
+	"Wood Floor": {
 		"description": "A humble floor.",
 		"drop": "woodfloor",
 		"count": 1
 	},
-	"Stone Floor" : {
+	"Stone Floor": {
 		"description": "A strong floor.",
 		"drop": "stonefloor",
 		"count": 1
 	},
-	"Limestone Floor" : {
+	"Limestone Floor": {
 		"description": "A pretty floor.",
 		"drop": "limestonefloor",
 		"count": 1
 	},
-	"Iron Floor" : {
+	"Iron Floor": {
 		"description": "A shiny floor.",
 		"drop": "ironfloor",
 		"count": 1
 	},
-	"Wood Wall" : {
+	"Wood Wall": {
 		"description": "A humble wall.",
 		"drop": "woodwall",
 		"count": 1
 	},
-	"Stone Wall" : {
+	"Stone Wall": {
 		"description": "A strong wall.",
 		"drop": "stonewall",
 		"count": 1
 	},
-	"Limestone Wall" : {
+	"Limestone Wall": {
 		"description": "A pretty wall.",
 		"drop": "limestonewall",
 		"count": 1
 	},
-	"Iron Wall" : {
+	"Iron Wall": {
 		"description": "A shiny wall.",
 		"drop": "ironwall",
 		"count": 1
 	},
-	"Wood Pole" : {
+	"Wood Pole": {
 		"description": "A humble pole.",
 		"drop": "woodpole",
 		"count": 1
 	},
-	"Stone Pole" : {
+	"Stone Pole": {
 		"description": "A strong pole.",
 		"drop": "stonepole",
 		"count": 1
 	},
-	"Limestone Pole" : {
+	"Limestone Pole": {
 		"description": "A pretty pole.",
 		"drop": "limestonepole",
 		"count": 1
 	},
-	"Iron Pole" : {
+	"Iron Pole": {
 		"description": "A shiny pole.",
 		"drop": "ironpole",
 		"count": 1
 	},
-	"Wood Door" : {
+	"Wood Door": {
 		"description": "A humble door.",
 		"drop": "wooddoor",
 		"count": 1
 	},
-	"Stone Door" : {
+	"Stone Door": {
 		"description": "A strong door.",
 		"drop": "stonedoor",
 		"count": 1
 	},
-	"Limestone Door" : {
+	"Limestone Door": {
 		"description": "A pretty door.",
 		"drop": "limestonedoor",
 		"count": 1
 	},
-	"Iron Door" : {
+	"Iron Door": {
 		"description": "A shiny door.",
 		"drop": "irondoor",
 		"count": 1
 	},
-	"Wood Fence" : {
+	"Wood Fence": {
 		"description": "A humble fence.",
 		"drop": "woodfence",
 		"count": 1
 	},
-	"Stone Fence" : {
+	"Stone Fence": {
 		"description": "A strong fence.",
 		"drop": "stonefence",
 		"count": 1
 	},
-	"Limestone Fence" : {
+	"Limestone Fence": {
 		"description": "A pretty fence.",
 		"drop": "limestonefence",
 		"count": 1
 	},
-	"Iron Fence" : {
+	"Iron Fence": {
 		"description": "A shiny fence.",
 		"drop": "ironfence",
 		"count": 1
 	},
-	"Wood Gate" : {
+	"Wood Gate": {
 		"description": "A humble gate.",
 		"drop": "woodgate",
 		"count": 1
 	},
-	"Stone Gate" : {
+	"Stone Gate": {
 		"description": "A strong gate.",
 		"drop": "stonegate",
 		"count": 1
 	},
-	"Limestone Gate" : {
+	"Limestone Gate": {
 		"description": "A pretty gate.",
-		"drop": "limestonegate,
+		"drop": "limestonegate",
 		"count": 1
 	},
-	"Iron Gate" : {
+	"Iron Gate": {
 		"description": "A shiny gate.",
 		"drop": "irongate",
 		"count": 1
 	},
-	"Stall" : {
+	"Stall": {
 		"description": "People from all over the island will open up stalls to sell various items or offer services.",
 		"drop": "",
 		"count": 0
 	},
-	"Plane" : {
+	"Plane": {
 		"description": "Planes are a rare sight on Blue Island.",
 		"drop": "",
 		"count": 0
 	},
-	"Beanstalk" : {
+	"Beanstalk": {
 		"description": "Well Jack has to replenish his shop somehow!",
 		"drop": "",
 		"count": 0
 	},
-	"Sand Toys" : {
+	"Sand Toys": {
 		"description": "Oh to be young again.",
 		"drop": "",
 		"count": 0
 	},
-	"Dungeon Background" : {
+	"Dungeon Background": {
 		"description": "",
 		"drop": "",
 		"count": 0
 	},
-	"Dungeon Floor" : {
+	"Dungeon Floor": {
 		"description": "Careful where you step.",
 		"drop": "",
 		"count": 0
 	},
-	"Dungeon Wall" : {
+	"Dungeon Wall": {
 		"description": "These walls look old, but definitely sturdy.",
 		"drop": "",
 		"count": 0
 	},
-	"Dungeon Pot" : {
+	"Dungeon Pot": {
 		"description": "Treasure?",
 		"drop": "",
 		"count": 0
 	},
-	"Dungeon Chest" : {
+	"Dungeon Chest": {
 		"description": "Treasure!",
 		"drop": "",
 		"count": 0
 	},
-	"Dungeon Cell" : {
+	"Dungeon Cell": {
 		"description": "The poor souls in here.",
 		"drop": "",
 		"count": 0
 	},
-	"Dungeon Stairs" : {
+	"Dungeon Stairs": {
 		"description": "Ascend to heights never seen before!",
 		"drop": "",
 		"count": 0

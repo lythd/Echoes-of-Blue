@@ -63,7 +63,7 @@
 			"bronzebar": 25
 		}
 	},
-	"batterystation": { 
+	"batterystation": {
 		"name": "Battery Station",
 		"description": "If there's no good source of power, why not bring it in from somewhere else?",
 		"power": -10,
@@ -78,7 +78,7 @@
 			"ironbar": 5
 		}
 	},
-	"batterycharger": { 
+	"batterycharger": {
 		"name": "Battery Charger",
 		"description": "If you've got extra power, why not send it somewhere else?",
 		"power": 10,

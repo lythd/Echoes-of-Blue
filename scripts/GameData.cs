@@ -9,8 +9,11 @@ public partial class GameData : Node
 	public string PlayerName { get; set; }
 	
 	public override void _Ready() {
-		if(!_initialized) ResetData();
-		_initialized = true;
+		if(!_initialized) {
+			_initialized = true;
+			return
+		}
+		ResetData();
 	}
 	
 	public void ResetData()
