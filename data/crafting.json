@@ -1,987 +1,1416 @@
 {
-	"armorpiercingrocket": {
+	"ARMOR_PIERCING_ROCKET": {
 		"amount": 1,
-		"category": "rocket",
 		"inputs": {
-			"moltensulfur": 10,
-			"titaniumbar": 20
+			"MOLTEN_SULFUR": 10,
+			"TITANIUM_BAR": 20
 		},
 		"rocketrequired": true
 	},
-	"batteringram": {
+	"BATTERING_RAM": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"ironbar": 20
+			"IRON_BAR": 20
 		}
 	},
-	"packedexperience": {
+	"PACKED_EXPERIENCE": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"experience": 100
+			"EXPERIENCE": 100
 		}
 	},
-	"denseexperience": {
+	"DENSE_EXPERIENCE": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"packedexperience": 100
+			"PACKED_EXPERIENCE": 100
 		}
 	},
-	"binoculars": {
+	"BINOCULARS": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"glass": 5,
-			"ironbar": 5
+			"GLASS": 5,
+			"IRON_BAR": 5
 		}
 	},
-	"glowingworm": {
+	"GLOWING_WORM": {
 		"amount": 1,
-		"category": "bait",
 		"inputs": {
-			"worm": 1,
-			"manacrystal": 2
+			"WORM": 1,
+			"MANA_CRYSTAL": 2
 		}
 	},
-	"flyingfish": {
+	"FLYING_FISH": {
 		"amount": 1,
-		"category": "bait",
 		"inputs": {
-			"rawcod": 1,
-			"cloud": 25,
-			"string": 50,
-			"sugar": 25,
-			"manacrystal": 5
+			"RAW_COD": 1,
+			"CLOUD": 25,
+			"STRING": 50,
+			"SUGAR": 25,
+			"MANA_CRYSTAL": 5
 		}
 	},
-	"glowingcod": {
+	"GLOWING_COD": {
 		"amount": 1,
-		"category": "bait",
 		"inputs": {
-			"worm": 1,
-			"manacrystal": 20
+			"WORM": 1,
+			"MANA_CRYSTAL": 20
 		}
 	},
-	"blueringedoctopus": {
+	"BLUE_RINGED_OCTOPUS": {
 		"amount": 1,
-		"category": "bait",
 		"inputs": {
-			"squid": 1,
-			"manacrystal": 200
+			"SQUID": 1,
+			"MANA_CRYSTAL": 200
 		}
 	},
-	"bonearrow": {
+	"BONE_ARROW": {
 		"amount": 5,
-		"category": "arrow",
 		"inputs": {
-			"bone": 1
+			"BONE": 1
 		}
 	},
-	"bonechestplate": {
+	"BONE_CHESTPLATE": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"bone": 8
+			"BONE": 8
 		}
 	},
-	"bonering": {
+	"BONE_RING": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"bone": 5
+			"BONE": 5
 		}
 	},
-	"bread": {
+	"BREAD": {
 		"amount": 1,
-		"category": "food",
 		"inputs": {
-			"wheat": 3
+			"WHEAT": 3
 		}
 	},
-	"breadbundle": {
+	"BREAD_BUNDLE": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"bread": 10
+			"BREAD": 10
 		}
 	},
-	"bronzepickaxe": {
+	"BRONZE_PICKAXE": {
 		"amount": 1,
-		"category": "pickaxe",
 		"inputs": {
-			"bronzebar": 8,
-			"wood": 2
+			"BRONZE_BAR": 8,
+			"WOOD": 2
 		}
 	},
-	"cactusshield": {
+	"CACTUS_SHIELD": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"cactus": 10,
-			"shield": 1
+			"CACTUS": 10,
+			"SHIELD": 1
 		}
 	},
-	"cake": {
+	"CAKE": {
 		"amount": 1,
-		"category": "food",
 		"inputs": {
-			"wheat": 6
+			"WHEAT": 6
 		}
 	},
-	"chain": {
+	"CHAIN": {
 		"amount": 3,
-		"category": "industrial",
 		"inputs": {
-			"screw": 6
+			"SCREW": 6
 		}
 	},
-	"chainchestplate": {
+	"CHAIN_CHESTPLATE": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"chain": 8
+			"CHAIN": 8
 		}
 	},
-	"copperpickaxe": {
+	"COPPER_PICKAXE": {
 		"amount": 1,
-		"category": "pickaxe",
 		"inputs": {
-			"copperbar": 6,
-			"wood": 2
+			"COPPER_BAR": 6,
+			"WOOD": 2
 		}
 	},
-	"dagger": {
+	"DAGGER": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"ironbar": 15,
-			"silverbar": 5,
-			"wood": 5
+			"IRON_BAR": 15,
+			"SILVER_BAR": 5,
+			"WOOD": 5
 		}
 	},
-	"densechestplate": {
+	"DENSE_CHESTPLATE": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"silverbar": 4,
-			"titaniumbar": 4
+			"SILVER_BAR": 4,
+			"TITANIUM_BAR": 4
 		}
 	},
-	"diamondaxe": {
+	"DIAMOND_AXE": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"diamond": 3,
-			"wood": 2
+			"DIAMOND": 3,
+			"WOOD": 2
 		}
 	},
-	"diamondboots": {
+	"DIAMOND_BOOTS": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"diamond": 4
+			"DIAMOND": 4
 		}
 	},
-	"diamondchestplate": {
+	"DIAMOND_CHESTPLATE": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"diamond": 8
+			"DIAMOND": 8
 		}
 	},
-	"diamondpickaxe": {
+	"DIAMOND_PICKAXE": {
 		"amount": 1,
-		"category": "pickaxe",
 		"inputs": {
-			"diamond": 16,
-			"wood": 2
+			"DIAMOND": 16,
+			"WOOD": 2
 		}
 	},
-	"diamondsword": {
+	"DIAMOND_SWORD": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"orechunk": 2,
-			"wood": 2
+			"DIAMOND": 2,
+			"WOOD": 2
 		}
 	},
-	"dualbow": {
+	"DUAL_BOW": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"goldbow": 2,
-			"titaniumbar": 3
+			"GOLD_BOW": 2,
+			"TITANIUM_BAR": 3
 		}
 	},
-	"emeraldarrow": {
+	"EMERALD_ARROW": {
 		"amount": 5,
-		"category": "arrow",
 		"inputs": {
-			"emerald": 1
+			"EMERALD": 1
 		}
 	},
-	"emeraldpickaxe": {
+	"EMERALD_PICKAXE": {
 		"amount": 1,
-		"category": "pickaxe",
 		"inputs": {
-			"emerald": 18,
-			"wood": 2
+			"EMERALD": 18,
+			"WOOD": 2
 		}
 	},
-	"emeraldsquid": {
+	"EMERALD_SQUID": {
 		"amount": 1,
-		"category": "bait",
 		"inputs": {
-			"emerald": 20,
-			"squid": 1
+			"EMERALD": 20,
+			"SQUID": 1
 		}
 	},
-	"emeraldstaff": {
+	"EMERALD_STAFF": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"emerald": 1,
-			"manacrystal": 1,
-			"silverbar": 20
+			"EMERALD": 1,
+			"MANA_CRYSTAL": 1,
+			"SILVER_BAR": 20
 		}
 	},
-	"emeraldwand": {
+	"EMERALD_WAND": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"emerald": 1,
-			"manacrystal": 1,
-			"silverbar": 10
+			"EMERALD": 1,
+			"MANA_CRYSTAL": 1,
+			"SILVER_BAR": 10
 		}
 	},
-	"enchantedshield": {
+	"ENCHANTED_SHIELD": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"evenife": 1,
-			"shield": 1
+			"EVENIFE": 1,
+			"SHIELD": 1
 		}
 	},
-	"enchantedsword": {
+	"ENCHANTED_SWORD": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"diamondsword": 1,
-			"evenife": 1
+			"DIAMOND_SWORD": 1,
+			"EVENIFE": 1
 		}
 	},
-	"evenife": {
+	"EVENIFE": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"diamond": 5,
-			"emerald": 5,
-			"silverbar": 10
+			"DIAMOND": 5,
+			"EMERALD": 5,
+			"SILVER_BAR": 10
 		}
 	},
-	"explosiverocket": {
+	"EXPLOSIVE_ROCKET": {
 		"amount": 1,
-		"category": "rocket",
 		"inputs": {
-			"moltensulfur": 20,
-			"titaniumbar": 10
+			"MOLTEN_SULFUR": 20,
+			"TITANIUM_BAR": 10
 		},
 		"rocketrequired": true
 	},
-	"fishingcap": {
+	"FISHING_CAP": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"leather": 5
+			"LEATHER": 5
 		}
 	},
-	"flamethrower": {
+	"FLAMETHROWER": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"moltensulfur": 10,
-			"bronzebar": 25
+			"MOLTEN_SULFUR": 10,
+			"BRONZE_BAR": 25
 		}
 	},
-	"floralarmor": {
+	"FLORAL_ARMOR": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"algae": 25,
-			"manacrystal": 1,
-			"vine": 25,
-			"wood": 25
+			"ALGAE": 25,
+			"MANA_CRYSTAL": 1,
+			"VINE": 25,
+			"WOOD": 25
 		}
 	},
-	"gauntlet": {
+	"GAUNTLET": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"ironbar": 25
+			"IRON_BAR": 25
 		}
 	},
-	"glass": {
+	"GLASS": {
 		"amount": 2,
-		"category": "generic",
 		"inputs": {
-			"coal": 1,
-			"sand": 2
+			"COAL": 1,
+			"SAND": 2
 		}
 	},
-	"goldaxe": {
+	"GOLD_AXE": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"goldbar": 3,
-			"wood": 2
+			"GOLD_BAR": 3,
+			"WOOD": 2
 		}
 	},
-	"goldbow": {
+	"GOLD_BOW": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"goldbar": 3,
-			"string": 3
+			"GOLD_BAR": 3,
+			"STRING": 3
 		}
 	},
-	"goldbracelet": {
+	"GOLD_BRACELET": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"goldbar": 5
+			"GOLD_BAR": 5
 		}
 	},
-	"goldgoldfish": {
+	"GOLD_GOLDFISH": {
 		"amount": 1,
-		"category": "bait",
 		"inputs": {
-			"goldbar": 1,
-			"goldfish": 1
+			"GOLD_BAR": 1,
+			"GOLDFISH": 1
 		}
 	},
-	"goldpickaxe": {
+	"GOLD_PICKAXE": {
 		"amount": 1,
-		"category": "pickaxe",
 		"inputs": {
-			"goldbar": 14,
-			"wood": 2
+			"GOLD_BAR": 14,
+			"WOOD": 2
 		}
 	},
-	"goldsword": {
+	"GOLD_SWORD": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"goldbar": 2,
-			"wood": 2
+			"GOLD_BAR": 2,
+			"WOOD": 2
 		}
 	},
-	"goodrod": {
+	"GOOD_ROD": {
 		"amount": 1,
-		"category": "rod",
 		"inputs": {
-			"ironbar": 5,
-			"string": 3
+			"IRON_BAR": 5,
+			"STRING": 3
 		}
 	},
-	"healbell": {
+	"HEAL_BELL": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"emerald": 5,
-			"silverbar": 20
+			"EMERALD": 5,
+			"SILVER_BAR": 20
 		}
 	},
-	"ilmango": {
+	"ILMANGO": {
 		"amount": 1,
-		"category": "bait",
 		"inputs": {
-			"ironbar": 3,
-			"mango": 1
+			"IRON_BAR": 3,
+			"MANGO": 1
 		}
 	},
-	"ironaxe": {
+	"IRON_AXE": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"ironbar": 3,
-			"wood": 2
+			"IRON_BAR": 3,
+			"WOOD": 2
 		}
 	},
-	"ironboots": {
+	"IRON_BOOTS": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"ironbar": 4
+			"IRON_BAR": 4
 		}
 	},
-	"ironchestplate": {
+	"IRON_CHESTPLATE": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"ironbar": 8
+			"IRON_BAR": 8
 		}
 	},
-	"ironpickaxe": {
+	"IRON_PICKAXE": {
 		"amount": 1,
-		"category": "pickaxe",
 		"inputs": {
-			"ironbar": 10,
-			"wood": 2
+			"IRON_BAR": 10,
+			"WOOD": 2
 		}
 	},
-	"ironsword": {
+	"IRON_SWORD": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"ironbar": 2,
-			"wood": 2
+			"IRON_BAR": 2,
+			"WOOD": 2
 		}
 	},
-	"katana": {
+	"KATANA": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"ironbar": 20,
-			"silverbar": 10,
-			"wood": 10
+			"IRON_BAR": 20,
+			"SILVER_BAR": 10,
+			"WOOD": 10
 		}
 	},
-	"lavaprooffishinghook": {
+	"LAVAPROOF_FISHING_HOOK": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"moltensulfur": 1,
-			"ironbar": 5
+			"MOLTEN_SULFUR": 1,
+			"IRON_BAR": 5
 		}
 	},
-	"leather": {
+	"LEATHER": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"filetmignon": 1
+			"FILET_MIGNON": 1
 		}
 	},
-	"magiccrystal": {
+	"MAGIC_CRYSTAL": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"manacrystal": 2000
+			"MANA_CRYSTAL": 2000
 		}
 	},
-	"magicfishingcap": {
+	"MAGIC_FISHING_CAP": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"fishingcap": 1,
-			"manacrystal": 1
+			"FISHING_CAP": 1,
+			"MANA_CRYSTAL": 1
 		}
 	},
-	"magicguard": {
+	"MAGIC_GUARD": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"emerald": 1,
-			"manacrystal": 1,
-			"titaniumbar": 5
+			"EMERALD": 1,
+			"MANA_CRYSTAL": 1,
+			"TITANIUM_BAR": 5
 		}
 	},
-	"mininghelmet": {
+	"MINING_HELMET": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"ironbar": 5,
-			"torch": 5
+			"IRON_BAR": 5,
+			"TORCH": 5
 		}
 	},
-	"rockhelmet": {
+	"ROCK_HELMET": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"mininghelmet": 1,
-			"rockfish": 1
+			"MINING_HELMET": 1,
+			"ROCKFISH": 1
 		}
 	},
-	"mudpie": {
+	"MUDPIE": {
 		"amount": 1,
-		"category": "food",
 		"inputs": {
-			"dirt": 5,
-			"pumpkin pie": 1
+			"DIRT": 5,
+			"PUMPKIN_PIE": 1
 		}
 	},
-	"cometlance": {
+	"COMET_LANCE": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"cometfragment": 2,
-			"wood": 1
+			"COMET_FRAGMENT": 2,
+			"WOOD": 1
 		}
 	},
-	"cometarmor": {
+	"COMET_ARMOR": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"cometfragment": 5
+			"COMET_FRAGMENT": 5
 		}
 	},
-	"starlightgoggles": {
+	"STARLIGHT_GOGGLES": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"cometfragment": 1,
-			"glass": 10
+			"COMET_FRAGMENT": 1,
+			"GLASS": 10
 		}
 	},
-	"starlauncher": {
+	"STAR_LAUNCHER": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"cometfragment": 1,
-			"rocketlauncher": 1
+			"COMET_FRAGMENT": 1,
+			"ROCKET_LAUNCHER": 1
 		}
 	},
-	"meteorstaff": {
+	"METEOR_STAFF": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"cometfragment": 2,
-			"manacrystal": 5
+			"COMET_FRAGMENT": 2,
+			"MANA_CRYSTAL": 5
 		}
 	},
-	"vulrinthaxe": {
+	"VULRINTH_AXE": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"vulrinthbar": 3,
-			"wood": 2
+			"VULRINTH_BAR": 3,
+			"WOOD": 2
 		}
 	},
-	"vulrinthhelmet": {
+	"VULRINTH_HELMET": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"vulrinthbar": 5
+			"VULRINTH_BAR": 5
 		}
 	},
-	"vulrinthpickaxe": {
+	"VULRINTH_PICKAXE": {
 		"amount": 1,
-		"category": "pickaxe",
 		"inputs": {
-			"vulrinthbar": 20,
-			"wood": 2
+			"VULRINTH_BAR": 20,
+			"WOOD": 2
 		}
 	},
-	"vulrinthsword": {
+	"VULRINTH_SWORD": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"vulrinthbar": 2,
-			"wood": 2
+			"VULRINTH_BAR": 2,
+			"WOOD": 2
 		}
 	},
-	"vulrinthworm": {
+	"VULRINTH_WORM": {
 		"amount": 1,
-		"category": "bait",
 		"inputs": {
-			"vulrinthbar": 1,
-			"worm": 1
+			"VULRINTH_BAR": 1,
+			"WORM": 1
 		}
 	},
-	"oldrod": {
+	"OLD_ROD": {
 		"amount": 1,
-		"category": "rod",
 		"inputs": {
-			"string": 3,
-			"wood": 5
+			"STRING": 3,
+			"WOOD": 5
 		}
 	},
-	"pickaxe": {
+	"PICKAXE": {
 		"amount": 1,
-		"category": "pickaxe",
 		"inputs": {
-			"stone": 4,
-			"wood": 2
+			"STONE": 4,
+			"WOOD": 2
 		}
 	},
-	"portablewall": {
+	"PORTABLE_WALL": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"ironbar": 10,
-			"stone": 20
+			"IRON_BAR": 10,
+			"STONE": 20
 		}
 	},
-	"powerflower": {
+	"POWER_FLOWER": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"algae": 5,
-			"manacrystal": 1,
-			"vine": 5,
-			"wood": 5
+			"ALGAE": 5,
+			"MANA_CRYSTAL": 1,
+			"VINE": 5,
+			"WOOD": 5
 		}
 	},
-	"pumpkinpie": {
+	"PUMPKIN_PIE": {
 		"amount": 1,
-		"category": "food",
 		"inputs": {
-			"egg": 1,
-			"pumpkin": 1,
-			"sugar": 1
+			"EGG": 1,
+			"PUMPKIN": 1,
+			"SUGAR": 1
 		}
 	},
-	"rocketlauncher": {
+	"ROCKET_LAUNCHER": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"moltensulfur": 50,
-			"titaniumbar": 50
+			"MOLTEN_SULFUR": 50,
+			"TITANIUM_BAR": 50
 		},
 		"rocketrequired": true
 	},
-	"screw": {
+	"SCREW": {
 		"amount": 1,
-		"category": "industrial",
 		"inputs": {
-			"ironbar": 1
+			"IRON_BAR": 1
 		}
 	},
-	"torch": {
+	"TORCH": {
 		"amount": 1,
-		"category": "mining",
 		"inputs": {
-			"coal": 1,
-			"wood": 1
+			"COAL": 1,
+			"WOOD": 1
 		}
 	},
-	"seafooddinner": {
+	"SEAFOOD_DINNER": {
 		"amount": 1,
-		"category": "bait",
 		"inputs": {
-			"cookedcod": 20,
-			"cookedsalmon": 20,
-			"piranha": 10,
-			"rockfish": 1,
-			"goldfish": 2,
-			"pufferfish": 10,
-			"silverbar": 10,
-			"squid": 5
+			"COOKED_COD": 20,
+			"COOKED_SALMON": 20,
+			"PIRANHA": 10,
+			"ROCKFISH": 1,
+			"GOLDFISH": 2,
+			"PUFFERFISH": 10,
+			"SILVER_BAR": 10,
+			"SQUID": 5
 		}
 	},
-	"shield": {
+	"SHIELD": {
 		"amount": 1,
-		"category": "accessory",
 		"inputs": {
-			"ironbar": 1,
-			"wood": 6
+			"IRON_BAR": 1,
+			"WOOD": 6
 		}
 	},
-	"shurikens": {
+	"SHURIKENS": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"ironbar": 5,
-			"silverbar": 5
+			"IRON_BAR": 5,
+			"SILVER_BAR": 5
 		}
 	},
-	"siliconwafer": {
+	"SILICON_WAFER": {
 		"amount": 1,
-		"category": "industrial",
 		"inputs": {
-			"rawsilicon": 1
+			"RAW_SILICON": 1
 		}
 	},
-	"silverpickaxe": {
+	"SILVER_PICKAXE": {
 		"amount": 1,
-		"category": "pickaxe",
 		"inputs": {
-			"silverbar": 12,
-			"wood": 2
+			"SILVER_BAR": 12,
+			"WOOD": 2
 		}
 	},
-	"sledgehammer": {
+	"SLEDGEHAMMER": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"ironbar": 50,
-			"screw": 1,
-			"wood": 50
+			"IRON_BAR": 50,
+			"SCREW": 1,
+			"WOOD": 50
 		}
 	},
-	"spear": {
+	"SPEAR": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"goldbar": 10,
-			"ironbar": 15
+			"GOLD_BAR": 10,
+			"IRON_BAR": 15
 		}
 	},
-	"stone": {
+	"STONE": {
 		"amount": 1,
-		"category": "mining",
 		"inputs": {
-			"orechunk": 1
+			"ORE_CHUNK": 1
 		}
 	},
-	"stoneaxe": {
+	"STONE_AXE": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"stone": 3,
-			"wood": 2
+			"STONE": 3,
+			"WOOD": 2
 		}
 	},
-	"stonesword": {
+	"STONE_SWORD": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"stone": 2,
-			"wood": 2
+			"STONE": 2,
+			"WOOD": 2
 		}
 	},
-	"sugar": {
+	"SUGAR": {
 		"amount": 1,
-		"category": "food",
 		"inputs": {
-			"sugarcane": 1
+			"SUGAR_CANE": 1
 		}
 	},
-	"superrod": {
+	"SUPER_ROD": {
 		"amount": 1,
-		"category": "rod",
 		"inputs": {
-			"goldbar": 5,
-			"string": 3
+			"GOLD_BAR": 5,
+			"STRING": 3
 		}
 	},
-	"temmiespi": {
+	"TEMMIES_PI": {
 		"amount": 1,
-		"category": "food",
 		"inputs": {
-			"pumpkinpie": 1
+			"PUMPKIN_PIE": 1
 		}
 	},
-	"thornschestplate": {
+	"THORNS_CHESTPLATE": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"diamondchestplate": 1,
-			"thorn": 5
+			"DIAMOND_CHESTPLATE": 1,
+			"THORN": 5
 		}
 	},
-	"tinbow": {
+	"TIN_BOW": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"string": 3,
-			"tinbar": 3
+			"STRING": 3,
+			"TIN_BAR": 3
 		}
 	},
-	"titaniumchestplate": {
+	"TITANIUM_CHESTPLATE": {
 		"amount": 1,
-		"category": "armor",
 		"inputs": {
-			"titaniumbar": 8
+			"TITANIUM_BAR": 8
 		}
 	},
-	"woodbow": {
+	"WOOD_BOW": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"string": 3,
-			"wood": 3
+			"STRING": 3,
+			"WOOD": 3
 		}
 	},
-	"woodenarrow": {
+	"WOODEN_ARROW": {
 		"amount": 5,
-		"category": "arrow",
 		"inputs": {
-			"wood": 1
+			"WOOD": 1
 		}
 	},
-	"woodfloor": {
+	"WOOD_FLOOR": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"wood": 5
+			"WOOD": 5
 		}
 	},
-	"stonefloor": {
+	"STONE_FLOOR": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"stone": 5
+			"STONE": 5
 		}
 	},
-	"limestonefloor": {
+	"LIMESTONE_FLOOR": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"limestone": 5
+			"LIMESTONE": 5
 		}
 	},
-	"iron": {
+	"IRON_WALL": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"ironbar": 5
+			"IRON_BAR": 5
 		}
 	},
-	"woodwall": {
+	"WOOD_WALL": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"wood": 5
+			"WOOD": 5
 		}
 	},
-	"stonewall": {
+	"STONE_WALL": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"stone": 5
+			"STONE": 5
 		}
 	},
-	"limestonewall": {
+	"LIMESTONE_WALL": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"limestone": 5
+			"LIMESTONE": 5
 		}
 	},
-	"ironwall": {
+	"IRON_WALL": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"ironbar": 5
+			"IRON_BAR": 5
 		}
 	},
-	"wooddoor": {
+	"WOOD_DOOR": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"wood": 5
+			"WOOD": 5
 		}
 	},
-	"stonedoor": {
+	"STONE_DOOR": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"stone": 5
+			"STONE": 5
 		}
 	},
-	"limestonedoor": {
+	"LIMESTONE_DOOR": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"limestone": 5
+			"LIMESTONE": 5
 		}
 	},
-	"irondoor": {
+	"IRON_DOOR": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"ironbar": 5
+			"IRON_BAR": 5
 		}
 	},
-	"woodpole": {
+	"WOOD_POLE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"wood": 5
+			"WOOD": 5
 		}
 	},
-	"stonepole": {
+	"STONE_POLE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"stone": 5
+			"STONE": 5
 		}
 	},
-	"limestonepole": {
+	"LIMESTONE_POLE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"limestone": 5
+			"LIMESTONE": 5
 		}
 	},
-	"ironpole": {
+	"IRON_POLE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"ironbar": 5
+			"IRON_BAR": 5
 		}
 	},
-	"woodfence": {
+	"WOOD_FENCE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"wood": 5
+			"WOOD": 5
 		}
 	},
-	"stonefence": {
+	"STONE_FENCE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"stone": 5
+			"STONE": 5
 		}
 	},
-	"limestonefence": {
+	"LIMESTONE_FENCE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"limestone": 5
+			"LIMESTONE": 5
 		}
 	},
-	"ironfence": {
+	"IRON_FENCE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"ironbar": 5
+			"IRON_BAR": 5
 		}
 	},
-	"woodgate": {
+	"WOOD_GATE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"wood": 5
+			"WOOD": 5
 		}
 	},
-	"stonegate": {
+	"STONE_GATE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"stone": 5
+			"STONE": 5
 		}
 	},
-	"limestonegate": {
+	"LIMESTONE_GATE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"limestone": 5
+			"LIMESTONE": 5
 		}
 	},
-	"irongate": {
+	"IRON_GATE": {
 		"amount": 1,
-		"category": "generic",
 		"inputs": {
-			"ironbar": 5
+			"IRON_BAR": 5
 		}
 	},
-	"shiv": {
+	"SHIV": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"ironbar": 15,
-			"wood": 5
+			"IRON_BAR": 15,
+			"WOOD": 5
 		}
 	},
-	"crowbar": {
+	"CROWBAR": {
 		"amount": 1,
-		"category": "weapon",
 		"inputs": {
-			"ironbar": 20
+			"IRON_BAR": 20
+		}
+	},
+	"COAL_BURNER": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 1,
+			"STONE": 10
+		}
+	},
+	"OIL_BURNER": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 1,
+			"STONE": 10
+		}
+	},
+	"SOLAR_PANEL": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 1,
+			"GLASS": 10,
+			"DIAMOND": 1
+		}
+	},
+	"WINDMILL": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 1,
+			"TIN_BAR": 10
+		}
+	},
+	"GEOTHERMAL_POWER_PLANT": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 3,
+			"BRONZE_BAR": 25
+		}
+	},
+	"BATTERY_STATION": {
+		"amount": 1,
+		"inputs": {
+			"COPPER_WIRING": 5,
+			"IRON_BAR": 5
+		}
+	},
+	"BATTERY_CHARGER": {
+		"amount": 1,
+		"inputs": {
+			"COPPER_WIRING": 5,
+			"IRON_BAR": 5
+		}
+	},
+	"TREE_CHOPPER_9000": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_SAW": 1,
+			"BASIC_MACHINE_PART": 1,
+			"IRON_BAR": 5
+		}
+	},
+	"TREE_CHOPPER_9001": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_SAW": 1,
+			"BASIC_MACHINE_PART": 1,
+			"BRONZE_BAR": 5
+		}
+	},
+	"EXCAVATOR": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 1,
+			"TIN_BAR": 25
+		}
+	},
+	"AUTOMATIC_PLASTIC_SHOVEL": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 1,
+			"RUBBER": 15
+		}
+	},
+	"JERRYS_TRUCK": {
+		"amount": 1,
+		"inputs": {
+			"RUBBER": 5,
+			"BASIC_MACHINE_PART": 1,
+			"IRON_BAR": 25
+		}
+	},
+	"BLACKSTONE_QUARRY": {
+		"amount": 1,
+		"inputs": {
+			"STONE_PICKAXE": 1,
+			"BASIC_MACHINE_PART": 10,
+			"SMOKE_WOOD": 250
+		}
+	},
+	"STONE_QUARRY": {
+		"amount": 1,
+		"inputs": {
+			"STONE_PICKAXE": 1,
+			"BASIC_MACHINE_PART": 10,
+			"WOOD": 250
+		}
+	},
+	"EARLY_BIRD": {
+		"amount": 1,
+		"inputs": {
+			"EGG": 8
+		}
+	},
+	"ROBOTIC_EARLY_BIRD": {
+		"amount": 1,
+		"inputs": {
+			"TIN_BAR": 5,
+			"GOLD_WIRING": 3
+		}
+	},
+	"CHICKEN_COOP": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 40,
+			"BRONZE_BAR": 5,
+			"EGG": 80
+		}
+	},
+	"AUTOMATIC_CACTUS_FARM": {
+		"amount": 1,
+		"inputs": {
+			"CACTUS": 10,
+			"BASIC_MACHINE_PART": 1,
+			"SAND": 50
+		}
+	},
+	"AUTOMATIC_SUGARCANE_FARM": {
+		"amount": 1,
+		"inputs": {
+			"SUGARCANE": 10,
+			"BASIC_MACHINE_PART": 1,
+			"SAND": 50
+		}
+	},
+	"MANGO_TREE_SHAKER": {
+		"amount": 1,
+		"inputs": {
+			"MANGO": 10,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"COCONUT_TREE_SHAKER": {
+		"amount": 1,
+		"inputs": {
+			"COCONUT": 10,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"AUTOMATIC_WATERMELON_FARM": {
+		"amount": 1,
+		"inputs": {
+			"WATERMELON": 10,
+			"BASIC_MACHINE_PART": 1,
+			"SAND": 50
+		}
+	},
+	"GIANT_PUMPKIN_FARM": {
+		"amount": 1,
+		"inputs": {
+			"PUMPKIN_SEED": 20
+		}
+	},
+	"ALIEN_CROP_CIRCLE": {
+		"amount": 1,
+		"inputs": {
+			"BONE": 100,
+			"MANA_CRYSTAL": 1
+		}
+	},
+	"BACONATOR": {
+		"amount": 1,
+		"inputs": {
+			"IRON_SWORD": 1,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"WOOLY_WHEEL_OF_DOOM": {
+		"amount": 1,
+		"inputs": {
+			"IRON_SWORD": 1,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"COW_CHAMBER": {
+		"amount": 1,
+		"inputs": {
+			"IRON_SWORD": 1,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"SHEEP_PYRE": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 50
+		}
+	},
+	"THE_DELUXE_FISH_SLAYER_COMPOSITE_PRO": {
+		"amount": 1,
+		"inputs": {
+			"STRING": 50,
+			"IRON_BAR": 5,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"RUBBER_TAPPER": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 5
+		}
+	},
+	"VOLCANO_VANQUISHER": {
+		"amount": 1,
+		"inputs": {
+			"IRON_PICKAXE": 1,
+			"BRONZE_BAR": 5,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"VACUUM_CLEANER": {
+		"amount": 1,
+		"inputs": {
+			"TIN_BAR": 15,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"LOOM": {
+		"amount": 1,
+		"inputs": {
+			"STRING": 25,
+			"WOOD": 15,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"SILICON_EXTRACTOR": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 25,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"OIL_DRILLING_RIG": {
+		"amount": 1,
+		"inputs": {
+			"COPPER_BAR": 25,
+			"BASIC_MACHINE_PART": 3
+		}
+	},
+	"DEEP_QUARRY": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_PICKAXE": 1,
+			"BASIC_MACHINE_PART": 10,
+			"WOOD": 250
+		}
+	},
+	"SENTIENT_MINECART": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_PICKAXE": 1,
+			"BASIC_MACHINE_PART": 1,
+			"IRON_BAR": 5
+		}
+	},
+	"GOBLIN_MINER": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_PICKAXE": 1,
+			"MANA_CRYSTAL": 1,
+			"GOLD_ORE": 5,
+			"MUTTON": 5
+		}
+	},
+	"VILLAGER_MINER": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_PICKAXE": 1,
+			"MANA_CRYSTAL": 1,
+			"EMERALD": 1,
+			"MUTTON": 5
+		}
+	},
+	"DIAMOND_COMPRESSOR": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 12,
+			"TITANIUM_BAR": 45,
+			"BASIC_MACHINE_PART": 30,
+			"INSULATED_WIRING": 750,
+			"SCREW": 1300
+		}
+	},
+	"DIAMOND_SAW_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 2,
+			"BASIC_MACHINE_PART": 1,
+			"INSULATED_WIRING": 20,
+			"SCREW": 50
+		}
+	},
+	"ORE_EXTRACTOR": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_SAW": 1,
+			"GENERATOR": 2,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 20,
+			"COPPER_WIRING": 20,
+			"SCREW": 80
+		}
+	},
+	"COPPER_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"TIN_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"BRONZE_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 1,
+			"BASIC_MACHINE_PART": 3,
+			"INSULATED_WIRING": 50,
+			"SCREW": 200
+		}
+	},
+	"IRON_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 2,
+			"BASIC_MACHINE_PART": 3,
+			"INSULATED_WIRING": 75,
+			"SCREW": 300
+		}
+	},
+	"SILVER_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 2,
+			"BASIC_MACHINE_PART": 4,
+			"INSULATED_WIRING": 100,
+			"SCREW": 400
+		}
+	},
+	"GOLD_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 3,
+			"BASIC_MACHINE_PART": 4,
+			"INSULATED_WIRING": 125,
+			"SCREW": 500
+		}
+	},
+	"TITANIUM_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 3,
+			"BASIC_MACHINE_PART": 5,
+			"INSULATED_WIRING": 150,
+			"SCREW": 600
+		}
+	},
+	"BREAD_MILL": {
+		"amount": 1,
+		"inputs": {
+			"MILL": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"GOLDIFIER": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"COD_COOKER": {
+		"amount": 1,
+		"inputs": {
+			"MICROWAVE": 1
+		}
+	},
+	"SALMON_COOKER": {
+		"amount": 1,
+		"inputs": {
+			"MICROWAVE": 1
+		}
+	},
+	"MICROWAVE_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"SILICON_FABRICATOR": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 2,
+			"SOLDREING_IRON": 4,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"SCREW_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"COPPER_WIRE_CUTTER": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"WIRE_INSULATOR": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 2,
+			"GOLD_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"GOLD_WIRE_CUTTER": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"ADVANCED_MACHINE_PART": 2,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 75,
+			"SCREW": 200
+		}
+	},
+	"BASIC_MACHINE_PART_MAKER": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 60,
+			"TIN_BAR": 25,
+			"COPPER_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"ADVANCED_MACHINE_PART_MAKER": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"GENERATOR_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"SOLDERING_IRON_MAKER": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 3,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"MILL_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 1,
+			"BASIC_MACHINE_PART": 4,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"INDUSTRIAL_PRESS_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"ADVANCED_MACHINE_PART": 5,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"PLASMA_CUTTER_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"ADVANCED_MACHINE_PART": 5,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"TANK_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 5,
+			"PLASMA_CUTTER": 5,
+			"ADVANCED_MACHINE_PART": 10,
+			"INSULATED_WIRING": 250,
+			"SCREW": 1000
+		}
+	},
+	"SPACE_ROCKET_ASSEMBLER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 10,
+			"PLASMA_CUTTER": 10,
+			"ADVANCED_MACHINE_PART": 20,
+			"GOLD_WIRING": 50,
+			"INSULATED_WIRING": 250,
+			"SCREW": 1000
+		}
+	},
+	"GRAPPLING_HOOK_MAKER": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 1
 		}
 	}
 }

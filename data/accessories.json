@@ -1,316 +1,271 @@
 {
-	"unholywings": {
+	"UNHOLY_WINGS": {
 		"durability": 250,
 		"effects": [
-			"Evil",
-			"Wings"
+			"EVIL",
+			"WINGS"
 		],
-		"name": "Unholy Wings"
 	},
-	"scalywings": {
+	"SCALY_WINGS": {
 		"durability": 250,
 		"effects": [
-			"Hard",
-			"Wings"
+			"HARD",
+			"WINGS"
 		],
-		"name": "Scaly Wings"
 	},
-	"photonwings": {
+	"PHOTON_WINGS": {
 		"durability": 250,
 		"effects": [
-			"Light Speed",
-			"Wings"
+			"LIGHT_SPEED",
+			"WINGS"
 		],
-		"name": "Photon Wings"
 	},
-	"crystalwings": {
+	"CRYSTAL_WINGS": {
 		"durability": 250,
 		"effects": [
-			"Mana",
-			"Wings"
+			"MANA",
+			"WINGS"
 		],
-		"name": "Crystal Wings"
 	},
-	"holywings": {
+	"HOLY_WINGS": {
 		"durability": 250,
 		"effects": [
-			"Blessed",
-			"Wings"
+			"BLESSED",
+			"WINGS"
 		],
-		"name": "Holy Wings"
 	},
-	"beetlemasterpotion": {
+	"BEETLE_MASTER_POTION": {
 		"durability": 1,
 		"effects": [
-			"Beetled"
+			"BEETLED"
 		],
-		"name": "Beetle Master Potion"
 	},
-	"binoculars": {
+	"BINOCULARS": {
 		"durability": 20,
 		"effects": [
-			"Surprise"
+			"SURPRISE"
 		],
-		"name": "Binoculars"
 	},
-	"bonering": {
+	"BONE_RING": {
 		"durability": 10,
 		"effects": [
-			"Critical Chance"
+			"CRITICAL_CHANCE"
 		],
-		"name": "Bone Ring"
 	},
-	"breadbundle": {
+	"BREAD_BUNDLE": {
 		"durability": 1,
 		"effects": [
-			"More Health"
+			"MORE_HEALTH"
 		],
-		"name": "Bread Bundle"
 	},
-	"cactuspotion": {
+	"CACTUS_POTION": {
 		"durability": 1,
 		"effects": [
-			"Cactusificated"
+			"CACTUSIFICATED"
 		],
-		"name": "Cactus Potion"
 	},
-	"cactusshield": {
+	"CACTUS_SHIELD": {
 		"durability": 5,
 		"effects": [
-			"Prickly Shield"
 		],
-		"name": "Cactus Shield"
 	},
-	"chum": {
+	"CHUM": {
 		"durability": 1,
 		"effects": [
-			"Fishing Buff"
+			"FISHING_BUFF"
 		],
-		"name": "Chum"
 	},
-	"experience": {
+	"EXPERIENCE": {
 		"durability": 1,
 		"effects": [
-			"Weakly Buffed"
+			"WEAKLY_BUFFED"
 		],
-		"name": "Experience"
 	},
-	"packedexperience": {
+	"PACKED_EXPERIENCE": {
 		"durability": 1,
 		"effects": [
-			"Buffed"
+			"BUFFED"
 		],
-		"name": "Packed Experience"
 	},
-	"denseexperience": {
+	"DENSE_EXPERIENCE": {
 		"durability": 1,
 		"effects": [
-			"Strongly Buffed"
+			"STRONGLY_BUFFED"
 		],
-		"name": "Dense Experience"
 	},
-	"fishingpotion": {
+	"FISHING_POTION": {
 		"durability": 1,
 		"effects": [
-			"Fishing Boost"
+			"FISHING_BOOST"
 		],
-		"name": "Fishing Potion"
 	},
-	"gauntlet": {
+	"GAUNTLET": {
 		"durability": 20,
 		"effects": [
-			"Raw Power"
+			"RAW_POWER"
 		],
-		"name": "Gauntlet"
 	},
-	"goldbracelet": {
+	"GOLD_BRACELET": {
 		"durability": 15,
 		"effects": [
-			"Golden"
+			"GOLDEN"
 		],
-		"name": "Gold Bracelet"
 	},
-	"grapplinghook": {
+	"GRAPPLING_HOOK": {
 		"durability": 500,
 		"effects": [
-			"Hooked On"
+			"HOOKED_ON"
 		],
-		"name": "Grappling Hook"
 	},
-	"healbell": {
+	"HEAL_BELL": {
 		"durability": 5,
 		"effects": [
-			"Heal Up"
+			"HEAL_UP"
 		],
-		"name": "Heal Bell"
 	},
-	"ironpotion": {
+	"IRON_POTION": {
 		"durability": 1,
 		"effects": [
-			"Ironified"
+			"IRONIFIED"
 		],
-		"name": "Iron Potion"
 	},
-	"lavaprooffishinghook": {
+	"LAVAPROOF_FISHING_HOOK": {
 		"durability": 20,
 		"effects": [
-			"Lava Fishing"
+			"LAVA_FISHING"
 		],
-		"name": "Lavaproof Fishing Hook"
 	},
-	"leather": {
+	"LEATHER": {
 		"durability": 20,
 		"effects": [
-			"Tough"
+			"TOUGH"
 		],
-		"name": "Leather"
 	},
-	"magicguard": {
+	"MAGIC_GUARD": {
 		"durability": 5,
 		"effects": [
-			"Magic Guard"
+			"MAGIC_GUARD"
 		],
-		"name": "Magic Guard"
 	},
-	"manacrystal": {
+	"MANA_CRYSTAL": {
 		"durability": -1,
 		"effects": [
-			"Mana"
+			"MANA"
 		],
-		"name": "Mana Crystal"
 	},
-	"miningcharm": {
+	"MINING_CHARM": {
 		"durability": 20000,
 		"effects": [
-			"Mining Buff"
+			"MINING_BUFF"
 		],
-		"name": "Mining Charm"
 	},
-	"luckycoin": {
+	"LUCKY_COIN": {
 		"durability": -1,
 		"effects": [
-			"Lucky"
+			"LUCKY"
 		],
-		"name": "Lucky Coin"
 	},
-	"miningpotion": {
+	"MINING_POTION": {
 		"durability": 1,
 		"effects": [
-			"Mining Boost"
+			"MINING_BOOST"
 		],
-		"name": "Mining Potion"
 	},
-	"portablewall": {
+	"PORTABLE_WALL": {
 		"durability": 5,
 		"effects": [
-			"Wall"
+			"WALL"
 		],
-		"name": "Portable Wall"
 	},
-	"shield": {
+	"SHIELD": {
 		"durability": 50,
 		"effects": [
-			"Shielded",
-			"Breakable"
+			"SHIELDED",
+			"BREAKABLE"
 		],
-		"name": "Shield"
 	},
-	"silkcloth": {
+	"SILK_CLOTH": {
 		"durability": -1,
 		"effects": [
-			"Sacrificial"
+			"SACRIFICIAL"
 		],
-		"name": "Silk Cloth"
 	},
-	"silkystring": {
+	"SILKY_STRING": {
 		"durability": 100,
 		"effects": [
-			"Silky"
+			"SILKY"
 		],
-		"name": "Silky String"
 	},
-	"strengthpotion": {
+	"STRENGTH_POTION": {
 		"durability": 1,
 		"effects": [
-			"Strength"
+			"STRENGTH"
 		],
-		"name": "Strength Potion"
 	},
-	"turtlemasterpotion": {
+	"TURTLE_MASTER_POTION": {
 		"durability": 1,
 		"effects": [
-			"Turtled"
+			"TURTLED"
 		],
-		"name": "Turtle Master Potion"
 	},
-	"jetpack": {
+	"JETPACK": {
 		"durability": 75,
 		"effects": [
-			"Jetpack"
+			"JETPACK"
 		],
-		"name": "Jetpack"
 	},
-	"holographicdecoy": {
+	"HOLOGRAPHIC_DECOY": {
 		"durability": 30,
 		"effects": [
-			"Holographic Decoy"
+			"HOLOGRAPHIC_DECOY"
 		],
-		"name": "Holographic Decoy"
 	},
-	"energyshield": {
+	"ENERGY_SHIELD": {
 		"durability": 50,
 		"effects": [
-			"Energy Shield"
+			"ENERGY_SHIELD"
 		],
-		"name": "Energy Shield"
 	},
-	"magnet": {
+	"MAGNET": {
 		"durability": 500,
 		"effects": [
-			"Magnetized"
+			"MAGNETIZED"
 		],
-		"name": "Magnet"
 	},
-	"magnetpotion": {
+	"MAGNET_POTION": {
 		"durability": 1,
 		"effects": [
-			"Magnetized"
+			"MAGNETIZED"
 		],
-		"name": "Magnet Potion"
 	},
-	"lightningpotion": {
+	"LIGHTNING_POTION": {
 		"durability": 1,
 		"effects": [
-			"Blessing of Zeus"
+			"BLESSING_OF_ZEUS"
 		],
-		"name": "Lightning Potion"
 	},
-	"fireresistancepotion": {
+	"FIRE_RESISTANCE_POTION": {
 		"durability": 1,
 		"effects": [
-			"Fire Resistant"
+			"FIRE_RESISTANT"
 		],
-		"name": "Fire Resistance Potion"
 	},
-	"waterwalkingpotion": {
+	"WATER_WALKING_POTION": {
 		"durability": 1,
 		"effects": [
-			"Water Walking"
+			"WATER_WALKING"
 		],
-		"name": "Water Walking Potion"
 	},
-	"invisibilitypotion": {
+	"INVISIBILITY_POTION": {
 		"durability": 1,
 		"effects": [
-			"Invisible"
+			"INVISIBLE"
 		],
-		"name": "Invisibility Potion"
 	},
-	"cocktail": {
+	"COCKTAIL": {
 		"durability": 1,
 		"effects": [
-			"Cocktail"
+			"COCKTAIL"
 		],
-		"name": "Cocktail"
 	}
 }

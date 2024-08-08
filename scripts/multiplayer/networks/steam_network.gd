@@ -6,7 +6,7 @@ var _players_spawn_node
 var _hosted_lobby_id = 0
 
 const LOBBY_NAME = "SDOFUNzDOU3"
-const LOBBY_MODE = "CoOP"
+const LOBBY_MODE = "CO_OP"
 
 func  _ready():
 	Steam.lobby_created.connect(_on_lobby_created.bind())

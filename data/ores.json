@@ -1,46 +1,37 @@
 {
-	"coal": {
-		"name": "Coal",
+	"COAL": {
 		"reducedtier": 0,
 		"tier": 0
 	},
-	"copperore": {
-		"name": "Copper Ore",
+	"COPPER_ORE": {
 		"reducedtier": 0,
 		"tier": 0
 	},
-	"diamond": {
-		"name": "Diamond",
+	"DIAMOND": {
 		"reducedtier": 5,
 		"tier": 7
 	},
-	"emerald": {
-		"name": "Emerald",
+	"EMERALD": {
 		"reducedtier": 6,
 		"tier": 8
 	},
-	"goldore": {
-		"name": "Gold Ore",
+	"GOLD_ORE": {
 		"reducedtier": 4,
 		"tier": 6
 	},
-	"ironore": {
-		"name": "Iron Ore",
+	"IRON_ORE": {
 		"reducedtier": 2,
 		"tier": 2
 	},
-	"orechunk": {
-		"name": "Ore Chunk",
+	"ORE_CHUNK": {
 		"reducedtier": 0,
 		"tier": 0
 	},
-	"silverore": {
-		"name": "Silver Ore",
+	"SILVER_ORE": {
 		"reducedtier": 3,
 		"tier": 5
 	},
-	"tinore": {
-		"name": "Tin Ore",
+	"TIN_ORE": {
 		"reducedtier": 1,
 		"tier": 1
 	}

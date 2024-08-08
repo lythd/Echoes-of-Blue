@@ -1,74 +1,74 @@
 {
-	"beetlemasterpotion": {
+	"BEETLE_MASTER_POTION": {
 		"amount": 1,
 		"inputs": {
-			"beetlehusk": 5,
-			"manacrystal": 2,
-			"waterbottle": 1
+			"BEETLE_HUSK": 5,
+			"MANA_CRYSTAL": 2,
+			"WATER_BOTTLE": 1
 		}
 	},
-	"cactuspotion": {
+	"CACTUS_POTION": {
 		"amount": 1,
 		"inputs": {
-			"cactus": 25,
-			"manacrystal": 2,
-			"waterbottle": 1
+			"CACTUS": 25,
+			"MANA_CRYSTAL": 2,
+			"WATER_BOTTLE": 1
 		}
 	},
-	"fishingpotion": {
+	"FISHING_POTION": {
 		"amount": 1,
 		"inputs": {
-			"manacrystal": 2,
-			"silkystring": 1,
-			"waterbottle": 1
+			"MANA_CRYSTAL": 2,
+			"SILKY_STRING": 1,
+			"WATER_BOTTLE": 1
 		}
 	},
-	"miningpotion": {
+	"MINING_POTION": {
 		"amount": 1,
 		"inputs": {
-			"manacrystal": 2,
-			"miningcharm": 1,
-			"waterbottle": 1
+			"MANA_CRYSTAL": 2,
+			"MINING_CHARM": 1,
+			"WATER_BOTTLE": 1
 		}
 	},
-	"ironpotion": {
+	"IRON_POTION": {
 		"amount": 1,
 		"inputs": {
-			"ironbar": 5,
-			"manacrystal": 2,
-			"waterbottle": 1
+			"IRON_BAR": 5,
+			"MANA_CRYSTAL": 2,
+			"WATER_BOTTLE": 1
 		}
 	},
-	"strengthpotion": {
+	"STRENGTH_POTION": {
 		"amount": 1,
 		"inputs": {
-			"moltensulfur": 1,
-			"manacrystal": 2,
-			"waterbottle": 1
+			"MOLTEN_SULFUR": 1,
+			"MANA_CRYSTAL": 2,
+			"WATER_BOTTLE": 1
 		}
 	},
-	"turtlemasterpotion": {
+	"TURTLE_MASTER_POTION": {
 		"amount": 1,
 		"inputs": {
-			"manacrystal": 2,
-			"turtleshell": 1,
-			"waterbottle": 1
+			"MANA_CRYSTAL": 2,
+			"TURTLE_SHELL": 1,
+			"WATER_BOTTLE": 1
 		}
 	},
-	"magnetpotion": {
+	"MAGNET_POTION": {
 		"amount": 1,
 		"inputs": {
-			"magnet": 1,
-			"manacrystal": 2,
-			"waterbottle": 1
+			"MAGNET": 1,
+			"MANA_CRYSTAL": 2,
+			"WATER_BOTTLE": 1
 		}
 	},
-	"lightningpotion": {
+	"LIGHTNING_POTION": {
 		"amount": 1,
 		"inputs": {
-			"cloud": 500,
-			"manacrystal": 2,
-			"waterbottle": 1
+			"CLOUD": 500,
+			"MANA_CRYSTAL": 2,
+			"WATER_BOTTLE": 1
 		}
 	}
 }

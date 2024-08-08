@@ -1,135 +1,129 @@
 {
-	"bonechestplate": {
+	"BONE_CHESTPLATE": {
 		"defense": 150,
 		"durability": 20,
 		"effects": [
-			"Critical Chance",
-			"Ranger"
+			"CRITICAL_CHANCE",
+			"RANGER"
 		],
-		"name": "Bone Chestplate"
+		"priority": 0
 	},
-	"chainmailchestplate": {
+	"CHAINMAIL_CHESTLATE": {
 		"defense": 150,
 		"durability": 20,
 		"effects": [
-			"Light Weight",
-			"Slash"
+			"LIGHT_WEIGHT",
+			"SLASH"
 		],
-		"name": "Chainmail Chestplate"
+		"priority": 0
 	},
-	"densechestplate": {
+	"DENSE_CHESTPLATE": {
 		"defense": 300,
 		"durability": 20,
 		"effects": [
-			"Dense"
+			"DENSE"
 		],
-		"name": "Dense Chestplate"
+		"priority": 0
 	},
-	"diamondboots": {
+	"DIAMOND_BOOTS": {
 		"defense": 90,
 		"durability": 5,
-		"effects": [
-			"Goes First"
-		],
-		"name": "Diamond Boots"
+		"effects": [],
+		"priority": 1
 	},
-	"diamondchestplate": {
+	"DIAMOND_CHESTPLATE": {
 		"defense": 360,
 		"durability": 10,
 		"effects": [],
-		"name": "Diamond Chestplate"
+		"priority": 0
 	},
-	"fishingcap": {
+	"FISHING_CAP": {
 		"defense": 10,
 		"durability": 20,
 		"effects": [
-			"Fishing Buff"
+			"FISHING_BUFF"
 		],
-		"name": "Fishing Cap"
+		"priority": 0
 	},
-	"floralarmor": {
+	"FLORAL_ARMOR": {
 		"defense": 80,
 		"durability": 20,
 		"effects": [
-			"Regenerator"
+			"REGENERATOR"
 		],
-		"name": "Floral Armor"
+		"priority": 0
 	},
-	"ironboots": {
+	"IRON_BOOTS": {
 		"defense": 50,
 		"durability": 10,
-		"effects": [
-			"Goes First"
-		],
-		"name": "Iron Boots"
+		"effects": [],
+		"priority": 1
 	},
-	"ironchestplate": {
+	"IRON_CHESTPLATE": {
 		"defense": 200,
 		"durability": 20,
 		"effects": [],
-		"name": "Iron Chestplate"
+		"priority": 0
 	},
-	"magicfishingcap": {
+	"MAGIC_FISHING_CAP": {
 		"defense": 10,
 		"durability": 30,
 		"effects": [
-			"Strong Fishing Buff"
+			"STRONG_FISHING_BUFF"
 		],
-		"name": "Magic Fishing Cap"
+		"priority": 0
 	},
-	"mininghelmet": {
+	"MINING_HELMET": {
 		"defense": 50,
 		"durability": 50,
 		"effects": [
-			"Mining Buff"
+			"MINING_BUFF"
 		],
-		"name": "Mining Helmet"
+		"priority": 0
 	},
-	"rockhelmet": {
+	"ROCK_HELMET": {
 		"defense": 150,
 		"durability": 150,
 		"effects": [
-			"Strong Mining Buff"
+			"STRONG_MINING_BUFF"
 		],
-		"name": "Rock Helmet"
+		"priority": 0
 	},
-	"vulrinthhelmet": {
+	"VULRINTH_HELMET": {
 		"defense": 450,
 		"durability": 20,
 		"effects": [],
-		"name": "Vulrinth Helmet"
+		"priority": 0
 	},
-	"cometarmor": {
+	"COMET_ARMOR": {
 		"defense": 400,
 		"durability": 500,
 		"effects": [
-			"Critical Chance"
+			"CRITICAL_CHANCE"
 		],
-		"name": "Comet Armor"
+		"priority": 0
 	},
-	"starlightgoggles": {
+	"STARLIGHT_GOGGLES": {
 		"defense": 40,
 		"durability": 250,
 		"effects": [
-			"Starlight",
-			"Critical Chance"
+			"STARLIGHT",
+			"CRITICAL_CHANCE"
 		],
-		"name": "Starlight Goggles"
+		"priority": 0
 	},
-	"thornschestplate": {
+	"THORNS_CHESTPLATE": {
 		"defense": 340,
 		"durability": 4,
 		"effects": [
-			"Thorns Damage"
+			"THORNS_DAMAGE"
 		],
-		"name": "Thorns Chestplate"
+		"priority": 0
 	},
-	"titaniumchestplate": {
+	"TITANIUM_CHESTPLATE": {
 		"defense": 500,
 		"durability": 100,
-		"effects": [
-			"Goes Last"
-		],
-		"name": "Titanium Chestplate"
+		"effects": [],
+		"priority": -1
 	}
 }

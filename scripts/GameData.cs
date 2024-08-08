@@ -16,10 +16,24 @@ public partial class GameData : Node
 		ResetData();
 	}
 	
+	public Dictionary LoadDict(string name) {
+		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
+		var fileContent = file.GetAsText();
+		file.Close();
+		return Json.Parse(fileContent);
+	}
+	
+	public List LoadList(string name) {
+		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
+		var fileContent = file.GetAsText();
+		file.Close();
+		return Json.Parse(fileContent);
+	}
+	
 	public void ResetData()
 	{
 		string[] locations = {"CrossRoads","WitchesSwamp","Haven","Jungle","Rubberport","Smithlands","Mines","Forests","SilkRoad","SkyCity","FishingVille","Mineshaft","Fields","DyronixsLair","DungeonCity","IncendiumKeep","BeastsDen","PortCity","AshenValleys"};
 		PlayerLocation = locations[Random.Shared.Next(locations.Length)];
-		PlayerName = "Amber";
+		PlayerName = tr("DEFAULT_NAME");
 	}
 }

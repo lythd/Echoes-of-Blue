@@ -1,54 +1,46 @@
 {
-	"armorpenetratingrocket": {
+	"ARMOR_PENETRATING_ROCKET": {
 		"blunt": 150,
 		"effects": [],
-		"name": "Armor Penetrating Rocket",
 		"piercing": -1
 	},
-	"cometfragment": {
+	"COMET_FRAGMENT": {
 		"blunt": -1,
 		"effects": [
-			"Critical Chance"
+			"CRITICAL_CHANCE"
 		],
-		"name": "Comet Fragment",
 		"piercing": 250
 	},
-	"bonearrow": {
+	"BONE_ARROW": {
 		"blunt": -1,
 		"effects": [
-			"Critical Chance"
+			"CRITICAL_CHANCE"
 		],
-		"name": "Bone Arrow",
 		"piercing": 10
 	},
-	"emeraldarrow": {
+	"EMERALD_ARROW": {
 		"blunt": -1,
 		"effects": [],
-		"name": "Emerald Arrow",
 		"piercing": 25
 	},
-	"explosiverocket": {
+	"EXPLOSIVE_ROCKET": {
 		"blunt": -1,
 		"effects": [],
-		"name": "Explosive Rocket",
 		"piercing": 200
 	},
-	"woodenarrow": {
+	"WOODEN_ARROW": {
 		"blunt": -1,
 		"effects": [],
-		"name": "Wooden Arrow",
 		"piercing": 5
 	},
-	"pipebomb": {
+	"PIPE_BOMB": {
 		"blunt": 50,
 		"effects": [],
-		"name": "Pipe Bomb",
 		"piercing": 50
 	},
-	"molotovcocktail": {
+	"MOLOTOV_COCKTAIL": {
 		"blunt": -1,
 		"effects": [],
-		"name": "Molotov Cocktail",
 		"piercing": 150
 	}
 }

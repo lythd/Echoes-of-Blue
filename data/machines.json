@@ -1,0 +1,758 @@
+{
+	"COAL_BURNER": {
+		"power": -10,
+		"consumed": {
+			"COAL": 10
+		},
+		"extracted": {},
+		"produced": {},
+		"duration": 30
+	},
+	"OIL_BURNER": {
+		"power": -10,
+		"consumed": {
+			"LAMP_OIL": 10
+		},
+		"extracted": {},
+		"produced": {},
+		"duration": 30
+	},
+	"SOLAR_PANEL": {
+		"power": -1,
+		"consumed": {
+			"SUN": 1
+		},
+		"extracted": {},
+		"produced": {},
+		"duration": 30
+	},
+	"WINDMILL": {
+		"power": -1,
+		"consumed": {
+			"WIND": 1
+		},
+		"extracted": {},
+		"produced": {},
+		"duration": 30
+	},
+	"GEOTHERMAL_POWER_PLANT": {
+		"power": -10,
+		"consumed": {},
+		"extracted": {},
+		"produced": {},
+		"duration": 30
+	},
+	"BATTERY_STATION": {
+		"power": -10,
+		"consumed": {
+			"CHARGED_BATTERY": 10
+		},
+		"extracted": {},
+		"produced": {
+			"BATTERY": 10
+		},
+		"duration": 30
+	},
+	"BATTERY_CHARGER": {
+		"power": 10,
+		"consumed": {
+			"BATTERY": 10
+		},
+		"extracted": {},
+		"produced": {
+			"CHARGED_BATTERY": 10
+		},
+		"duration": 30
+	},
+	"TREE_CHOPPER_9000": {
+		"power": 3,
+		"consumed": {},
+		"extracted": {
+			"WOOD": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"TREE_CHOPPER_9001": {
+		"power": 3,
+		"consumed": {},
+		"extracted": {
+			"SMOKE_WOOD": 9
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"EXCAVATOR": {
+		"power": 4,
+		"consumed": {},
+		"extracted": {
+			"DIRT": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"AUTOMATIC_PLASTIC_SHOVEL": {
+		"power": 1,
+		"consumed": {},
+		"extracted": {
+			"SAND": 3
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"JERRYS_TRUCK": {
+		"power": 1,
+		"consumed": {},
+		"extracted": {
+			"ICE": 2
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"BLACKSTONE_QUARRY": {
+		"power": 25,
+		"consumed": {},
+		"extracted": {
+			"BLACKSTONE": 75
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"STONE_QUARRY": {
+		"power": 25,
+		"consumed": {},
+		"extracted": {
+			"STONE": 100
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"EARLY_BIRD": {
+		"power": 0,
+		"consumed": {
+			"WORM": 1
+		},
+		"extracted": {
+			"WORM": 1
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"ROBOTIC_EARLY_BIRD": {
+		"power": 1,
+		"consumed": {},
+		"extracted": {
+			"WORM": 2
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"CHICKEN_COOP": {
+		"power": 4,
+		"consumed": {},
+		"extracted": {
+			"EGG": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"AUTOMATIC_CACTUS_FARM": {
+		"power": 1,
+		"consumed": {},
+		"extracted": {
+			"CACTUS": 2
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"AUTOMATIC_SUGARCANE_FARM": {
+		"power": 1,
+		"consumed": {},
+		"extracted": {
+			"SUGARCANE": 2
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"MANGO_TREE_SHAKER": {
+		"power": 2,
+		"consumed": {},
+		"extracted": {
+			"MANGO": 5
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"COCONUT_TREE_SHAKER": {
+		"power": 2,
+		"consumed": {},
+		"extracted": {
+			"COCONUT": 5
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"AUTOMATIC_WATERMELON_FARM": {
+		"power": 1,
+		"consumed": {},
+		"extracted": {
+			"WATERMELON": 1
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"GIANT_PUMPKIN_FARM": {
+		"power": 0,
+		"consumed": {},
+		"extracted": {
+			"PUMPKIN": 16,
+			"PUMPKIN_SEED": 4
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"ALIEN_CROP_CIRCLE": {
+		"power": 0,
+		"consumed": {},
+		"extracted": {
+			"WHEAT": 100
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"BACONATOR": {
+		"power": 3,
+		"consumed": {},
+		"extracted": {
+			"BACON": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"WOOLY_WHEEL_OF_DOOM": {
+		"power": 3,
+		"consumed": {},
+		"extracted": {
+			"MUTTON": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"COW_CHAMBER": {
+		"power": 3,
+		"consumed": {},
+		"extracted": {
+			"FILET_MIGNON": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"SHEEP_PYRE": {
+		"power": 0,
+		"consumed": {
+			"COAL": 5
+		},
+		"extracted": {
+			"MUTTON": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"THE_DELUXE_FISH_SLAYER_COMPOSITE_PRO": {
+		"power": 10,
+		"consumed": {},
+		"extracted": {
+			"RAW_COD": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"RUBBER_TAPPER": {
+		"power": 0,
+		"consumed": {},
+		"extracted": {
+			"RUBBER": 1
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"VOLCANO_VANQUISHER": {
+		"power": 3,
+		"consumed": {},
+		"extracted": {
+			"HELLSTONE": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"VACUUM_CLEANER": {
+		"power": 1,
+		"consumed": {},
+		"extracted": {
+			"CLOUD": 2
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"LOOM": {
+		"power": 50,
+		"consumed": {},
+		"extracted": {
+			"SILK_CLOTH": 1
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"SILICON_EXTRACTOR": {
+		"power": 3,
+		"consumed": {},
+		"extracted": {
+			"RAW_SILICON": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"OIL_DRILLING_RIG": {
+		"power": 7,
+		"consumed": {},
+		"extracted": {
+			"LAMP_OIL": 10
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"DEEP_QUARRY": {
+		"power": 200,
+		"consumed": {},
+		"extracted": {
+			"STONE": 100,
+			"COAL": 25,
+			"IRON_ORE": 10,
+			"SILVER_ORE": 5,
+			"GOLD_ORE": 3,
+			"DIAMOND": 2,
+			"EMERALD": 1
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"SENTIENT_MINECART": {
+		"power": 250,
+		"consumed": {},
+		"extracted": {
+			"DIAMOND": 2,
+			"EMERALD": 1
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"GOBLIN_MINER": {
+		"power": 0,
+		"consumed": {
+			"GOLD_ORE": 3,
+			"DIAMOND": 1
+		},
+		"extracted": {
+			"DIAMOND": 1,
+			"EMERALD": 1
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"VILLAGER_MINER": {
+		"power": 0,
+		"consumed": {
+			"MUTTON": 25
+		},
+		"extracted": {
+			"GOLD_ORE": 3,
+			"DIAMOND": 2,
+			"EMERALD": 1
+		},
+		"produced": {},
+		"duration": 30
+	},
+	"DIAMOND_COMPRESSOR": {
+		"power": 42,
+		"consumed": {
+			"COAL": 50
+		},
+		"extracted": {},
+		"produced": {
+			"DIAMOND": 1
+		},
+		"duration": 10
+	},
+	"DIAMOND_SAW_FACTORY": {
+		"power": 3,
+		"consumed": {
+			"DIAMOND": 5,
+			"SILVER_BAR": 5,
+			"TITANIUM_BAR": 5,
+			"LAMP_OIL": 5
+		},
+		"extracted": {},
+		"produced": {
+			"DIAMOND_SAW": 1
+		},
+		"duration": 2
+	},
+	"ORE_EXTRACTOR": {
+		"power": 0,
+		"consumed": {
+			"ORE_CHUNK": 20,
+			"LAMP_OIL": 2
+		},
+		"extracted": {},
+		"produced": {
+			"COPPER_ORE": 10,
+			"IRON_ORE": 5
+		},
+		"duration": 1
+	},
+	"COPPER_MOLDER": {
+		"power": 3,
+		"consumed": {
+			"COPPER_ORE": 10,
+			"COAL": 2
+		},
+		"extracted": {},
+		"produced": {
+			"COPPER_BAR": 10
+		},
+		"duration": 1
+	},
+	"TIN_MOLDER": {
+		"power": 3,
+		"consumed": {
+			"TIN_ORE": 10,
+			"COAL": 2
+		},
+		"extracted": {},
+		"produced": {
+			"TIN_BAR": 10
+		},
+		"duration": 1
+	},
+	"BRONZE_MOLDER": {
+		"power": 4,
+		"consumed": {
+			"COPPER_BAR": 7,
+			"TIN_BAR": 3,
+			"COAL": 3
+		},
+		"extracted": {},
+		"produced": {
+			"BRONZE_BAR": 10
+		},
+		"duration": 1
+	},
+	"IRON_MOLDER": {
+		"power": 5,
+		"consumed": {
+			"IRON_ORE": 10,
+			"COAL": 3
+		},
+		"extracted": {},
+		"produced": {
+			"IRON_BAR": 10
+		},
+		"duration": 1
+	},
+	"SILVER_MOLDER": {
+		"power": 6,
+		"consumed": {
+			"SILVER_ORE": 10,
+			"COAL": 4
+		},
+		"extracted": {},
+		"produced": {
+			"SILVER_BAR": 10
+		},
+		"duration": 1
+	},
+	"GOLD_MOLDER": {
+		"power": 7,
+		"consumed": {
+			"GOLD_ORE": 10,
+			"COAL": 4
+		},
+		"extracted": {},
+		"produced": {
+			"GOLD_BAR": 10
+		},
+		"duration": 1
+	},
+	"TITANIUM_MOLDER": {
+		"power": 8,
+		"consumed": {
+			"TITANIUM_ORE": 10,
+			"COAL": 5
+		},
+		"extracted": {},
+		"produced": {
+			"TITANIUM_BAR": 10
+		},
+		"duration": 1
+	},
+	"BREAD_MILL": {
+		"power": 3,
+		"consumed": {
+			"WHEAT": 1,
+			"COAL": 1
+		},
+		"extracted": {},
+		"produced": {
+			"BREAD": 1
+		},
+		"duration": 1
+	},
+	"GOLDIFIER": {
+		"power": 2,
+		"consumed": {
+			"FILET_MIGNON": 10,
+			"GOLD_BAR": 1
+		},
+		"extracted": {},
+		"produced": {
+			"GOLDEN_STEAK": 10
+		},
+		"duration": 2
+	},
+	"COD_COOKER": {
+		"power": 1,
+		"consumed": {
+			"RAW_COD": 1
+		},
+		"extracted": {},
+		"produced": {
+			"COOKED_COD": 1
+		},
+		"duration": 2
+	},
+	"SALMON_COOKER": {
+		"power": 1,
+		"consumed": {
+			"RAW_SALMON": 1
+		},
+		"extracted": {},
+		"produced": {
+			"COOKED_SALMON": 1
+		},
+		"duration": 2
+	},
+	"MICROWAVE_FACTORY": {
+		"power": 3,
+		"consumed": {
+			"IRON_BAR": 10,
+			"COPPER_WIRING": 20,
+			"LAMP_OIL": 15,
+			"SILICON_WAFER": 5
+		},
+		"extracted": {},
+		"produced": {
+			"MICROWAVE": 1
+		},
+		"duration": 10
+	},
+	"SILICON_FABRICATOR": {
+		"power": 7,
+		"consumed": {
+			"RAW_SILICON": 10,
+			"SILVER_BAR": 1,
+			"LAMP_OIL": 3
+		},
+		"extracted": {},
+		"produced": {
+			"SILICON_WAFER": 25
+		},
+		"duration": 15
+	},
+	"SCREW_FACTORY": {
+		"power": 3,
+		"consumed": {
+			"IRON_BAR": 1,
+			"LAMP_OIL": 1
+		},
+		"extracted": {},
+		"produced": {
+			"SCREW": 50
+		},
+		"duration": 1
+	},
+	"COPPER_WIRE_CUTTER": {
+		"power": 3,
+		"consumed": {
+			"COPPER_BAR": 1,
+			"LAMP_OIL": 1
+		},
+		"extracted": {},
+		"produced": {
+			"COPPER_WIRING": 10
+		},
+		"duration": 1
+	},
+	"WIRE_INSULATOR": {
+		"power": 2,
+		"consumed": {
+			"COPPER_WIRING": 10,
+			"RUBBER": 2
+		},
+		"extracted": {},
+		"produced": {
+			"INSULATED_WIRING": 10
+		},
+		"duration": 1
+	},
+	"GOLD_WIRE_CUTTER": {
+		"power": 5,
+		"consumed": {
+			"GOLD_BAR": 1,
+			"LAMP_OIL": 1
+		},
+		"extracted": {},
+		"produced": {
+			"GOLD_WIRING": 10
+		},
+		"duration": 1
+	},
+	"BASIC_MACHINE_PART_MAKER": {
+		"power": 1,
+		"consumed": {
+			"IRON_BAR": 60,
+			"TIN_BAR": 25,
+			"COPPER_WIRING": 25
+		},
+		"extracted": {},
+		"produced": {
+			"BASIC_MACHINE_PART": 1
+		},
+		"duration": 5
+	},
+	"ADVANCED_MACHINE_PART_MAKER": {
+		"power": 2,
+		"consumed": {
+			"BASIC_MACHINE_PART": 1,
+			"TITANIUM_BAR": 60,
+			"SILICON_WAFER": 10,
+			"GOLD_WIRING": 25
+		},
+		"extracted": {},
+		"produced": {
+			"ADVANCED_MACHINE_PART": 1
+		},
+		"duration": 10
+	},
+	"GENERATOR_FACTORY": {
+		"power": 2,
+		"consumed": {
+			"BRONZE_BAR": 60,
+			"IRON_BAR": 10
+		},
+		"extracted": {},
+		"produced": {
+			"GENERATOR": 1
+		},
+		"duration": 5
+	},
+	"SOLDERING_IRON_MAKER": {
+		"power": 4,
+		"consumed": {
+			"SILVER_BAR": 2,
+			"BRONZE_BAR": 2,
+			"EMERALD": 1,
+			"LAMP_OIL": 10
+		},
+		"extracted": {},
+		"produced": {
+			"SOLDERING_IRON": 1
+		},
+		"duration": 2
+	},
+	"MILL_FACTORY": {
+		"power": 5,
+		"consumed": {
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100,
+			"COAL": 100
+		},
+		"extracted": {},
+		"produced": {
+			"MILL": 1
+		},
+		"duration": 10
+	},
+	"INDUSTRAL_PRESS_FACTORY": {
+		"power": 5,
+		"consumed": {
+			"GENERATOR": 1,
+			"BASIC_MACHINE_PART": 1,
+			"COPPER_WIRING": 25,
+			"SCREW": 100,
+			"DIAMOND": 1,
+			"COAL": 30
+		},
+		"extracted": {},
+		"produced": {
+			"INDUSTRIAL_PRESS": 1
+		},
+		"duration": 15
+	},
+	"PLASMA_CUTTER_FACTORY": {
+		"power": 5,
+		"consumed": {
+			"GENERATOR": 1,
+			"ADVANCED_MACHINE_PART": 1,
+			"GOLD_WIRING": 25,
+			"SCREW": 100,
+			"LAMP_OIL": 3
+		},
+		"extracted": {},
+		"produced": {
+			"PLASMA_CUTTER": 1
+		},
+		"duration": 15
+	},
+	"TANK_FACTORY": {
+		"power": 20,
+		"consumed": {
+			"GENERATOR": 5,
+			"TITANIUM_BAR": 100,
+			"COAL": 500,
+			"LAMP_OIL": 500
+		},
+		"extracted": {},
+		"produced": {
+			"TANK": 1
+		},
+		"duration": 20
+	},
+	"SPACE_ROCKET_ASSEMBLER": {
+		"power": 40,
+		"consumed": {
+			"GENERATOR": 10,
+			"SILVER_BAR": 200,
+			"COAL": 1000,
+			"LAMP_OIL": 1000
+		},
+		"extracted": {},
+		"produced": {
+			"SPACE_ROCKET": 1
+		},
+		"duration": 25
+	},
+	"GRAPPLING_HOOK_MAKER": {
+		"power": 1,
+		"consumed": {
+			"IRON_BAR": 10,
+			"RUBBER": 2,
+			"GENERATOR": 1
+		},
+		"extracted": {},
+		"produced": {
+			"GRAPPLING_HOOK": 1
+		},
+		"duration": 2
+	}
+}

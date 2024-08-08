@@ -1,158 +1,158 @@
 {
-	"bread": {
+	"BREAD": {
 		"energy": 4,
-		"name": "Bread"
+		"health": 0
 	},
-	"breadbundle": {
+	"BREAD_BUNDLE": {
 		"energy": 45,
-		"name": "Bread Bundle"
+		"health": 25
 	},
-	"cactus": {
+	"CACTUS": {
 		"energy": 11,
-		"name": "Cactus"
+		"health": -3
 	},
-	"cake": {
+	"CAKE": {
 		"energy": 10,
-		"name": "Cake"
+		"health": 0
 	},
-	"caramelscream": {
+	"CARAMELS_CREAM": {
 		"energy": 5,
-		"name": "Caramel's Cream"
+		"health": 0
 	},
-	"chum": {
-		"energy": -1,
-		"name": "Chum"
-	},
-	"cookedcod": {
-		"energy": 30,
-		"name": "Cooked Cod"
-	},
-	"cookedsalmon": {
-		"energy": 50,
-		"name": "Cooked Salmon"
-	},
-	"cookie": {
-		"energy": 4,
-		"name": "Cookie"
-	},
-	"emeraldsquid": {
-		"energy": 3000,
-		"name": "Emerald Squid"
-	},
-	"filetmignon": {
-		"energy": 225,
-		"name": "Filet Mignon"
-	},
-	"goldensteak": {
-		"energy": 175,
-		"name": "Golden Steak"
-	},
-	"goldfish": {
-		"energy": 10,
-		"name": "Goldfish"
-	},
-	"goldgoldfish": {
-		"energy": 100,
-		"name": "Gold Goldfish"
-	},
-	"mango": {
-		"energy": 11,
-		"name": "Mango"
-	},
-	"coconut": {
-		"energy": 11,
-		"name": "Coconut"
-	},
-	"milk": {
-		"energy": 4,
-		"name": "Milk"
-	},
-	"moldybread": {
+	"CHUM": {
 		"energy": -10,
-		"name": "Moldy Bread"
+		"health": 0
 	},
-	"mudpie": {
-		"energy": 1,
-		"name": "Mud Pie"
+	"COOKED_COD": {
+		"energy": 30,
+		"health": 0
 	},
-	"mutton": {
-		"energy": 100,
-		"name": "Mutton"
-	},
-	"bacon": {
-		"energy": 24,
-		"name": "Bacon"
-	},
-	"vulrinthworm": {
-		"energy": 5000,
-		"name": "Vulrinth Worm"
-	},
-	"potato": {
-		"energy": 10,
-		"name": "Potato"
-	},
-	"pufferfish": {
-		"energy": -100,
-		"name": "Pufferfish"
-	},
-	"pumpkin": {
-		"energy": 15,
-		"name": "Pumpkin"
-	},
-	"pumpkinpie": {
-		"energy": 45,
-		"name": "Pumpkin Pie"
-	},
-	"rawcod": {
-		"energy": 3,
-		"name": "Raw Cod"
-	},
-	"rawsalmon": {
-		"energy": 5,
-		"name": "Raw Salmon"
-	},
-	"piranha": {
-		"energy": 10,
-		"name": "Piranha"
-	},
-	"rockfish": {
-		"energy": 15,
-		"name": "Rockfish"
-	},
-	"roastedturkey": {
-		"energy": 20,
-		"name": "Roasted Turkey"
-	},
-	"seafooddinner": {
-		"energy": 40000,
-		"name": "Seafood Dinner"
-	},
-	"sealmeat": {
-		"energy": 25,
-		"name": "Seal Meat"
-	},
-	"squid": {
-		"energy": 300,
-		"name": "Squid"
-	},
-	"temmiespi": {
+	"COOKED_SALMON": {
 		"energy": 50,
-		"name": "Temmie's Pi"
+		"health": 0
 	},
-	"vodka": {
+	"COOKIE": {
+		"energy": 4,
+		"health": 0
+	},
+	"EMERALD_SQUID": {
+		"energy": 3000,
+		"health": 0
+	},
+	"FILET_MIGNON": {
+		"energy": 225,
+		"health": 0
+	},
+	"GOLDEN_STEAK": {
+		"energy": 175,
+		"health": 0
+	},
+	"GOLDFISH": {
 		"energy": 10,
-		"name": "Vodka"
+		"health": 0
 	},
-	"watermelon": {
+	"GOLD_GOLDFISH": {
+		"energy": 100,
+		"health": 0
+	},
+	"MANGO": {
+		"energy": 11,
+		"health": 0
+	},
+	"COCONUT": {
+		"energy": 11,
+		"health": 0
+	},
+	"MILK": {
+		"energy": 4,
+		"health": 1
+	},
+	"MOLDY_BREAD": {
+		"energy": -10,
+		"health": -10
+	},
+	"MUD_PIE": {
+		"energy": 1,
+		"health": -1
+	},
+	"MUTTON": {
+		"energy": 100,
+		"health": 0
+	},
+	"BACON": {
+		"energy": 24,
+		"health": 0
+	},
+	"VULRINTH_WORM": {
+		"energy": 5000,
+		"health": 0
+	},
+	"POTATO": {
+		"energy": 10,
+		"health": 0
+	},
+	"PUFFERFISH": {
+		"energy": 50,
+		"health": -50
+	},
+	"PUMPKIN": {
+		"energy": 15,
+		"health": 0
+	},
+	"PUMPKIN_PIE": {
+		"energy": 45,
+		"health": 0
+	},
+	"RAW_COD": {
+		"energy": 3,
+		"health": -1
+	},
+	"RAW_SALMON": {
+		"energy": 5,
+		"health": -1
+	},
+	"PIRANHA": {
+		"energy": 10,
+		"health": 0
+	},
+	"ROCKFISH": {
+		"energy": 15,
+		"health": -15
+	},
+	"ROASTED_TURKEY": {
+		"energy": 20,
+		"health": 0
+	},
+	"SEAFOOD_DINNER": {
+		"energy": 40000,
+		"health": 25
+	},
+	"SEAL_MEAT": {
+		"energy": 25,
+		"health": 0
+	},
+	"SQUID": {
+		"energy": 300,
+		"health": 0
+	},
+	"TEMMIES_PI": {
+		"energy": 50,
+		"health": 0
+	},
+	"VODKA": {
+		"energy": 10,
+		"health": -3
+	},
+	"WATERMELON": {
 		"energy": 19,
-		"name": "Water Melon"
+		"health": 0
 	},
-	"wheat": {
+	"WHEAT": {
 		"energy": 1,
-		"name": "Wheat"
+		"health": 0
 	},
-	"worm": {
+	"WORM": {
 		"energy": 1,
-		"name": "Worm"
+		"health": 0
 	}
 }

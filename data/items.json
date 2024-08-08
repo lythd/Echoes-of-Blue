@@ -1,1750 +1,1327 @@
 {
-	"Glowing Eye": {
-		"category": "generic",
-		"description": "I wouldn't hang on to that for too long, its former owner might come after you. Let's just say you wouldn't want that.",
-		"price": 0
-	},
-	"Dragon Heart": {
-		"category": "generic",
-		"description": "A truly priceless trophy item.",
+	"GLOWING_EYE": {
+		"categories": ["GENERIC"],
 		"price": 0
-	},
-	"Crown": {
-		"category": "generic",
-		"description": "A truly majestic trophy item.",
+	},
+	"DRAGON_HEART": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"CROWN": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"DRAGON_EGG": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"COMMAND_BLOCK": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"WOOD": {
+		"starting_amount": 100000,
+		"categories": ["GENERIC"],
+		"price": 5
+	},
+	"SMOKE_WOOD": {
+		"starting_amount": 1000,
+		"categories": ["GENERIC"],
+		"price": 25
+	},
+	"TORCH": {
+		"starting_amount": 25000,
+		"categories": ["GENERIC"],
+		"price": 5
+	},
+	"SEASHELL": {
+		"starting_amount": 25000,
+		"categories": ["GENERIC"],
+		"price": 15
+	},
+	"DIRT": {
+		"starting_amount": 100000,
+		"categories": ["GENERIC"],
+		"price": 1
+	},
+	"SAND": {
+		"starting_amount": 100000,
+		"categories": ["GENERIC"],
+		"price": 5
+	},
+	"ASH": {
+		"starting_amount": 100000,
+		"categories": ["GENERIC"],
+		"price": 10
+	},
+	"GLASS": {
+		"starting_amount": 10000,
+		"categories": ["GENERIC"],
+		"price": 100
+	},
+	"OBSIDIAN": {
+		"starting_amount": 10000,
+		"categories": ["GENERIC"],
+		"price": 1000
+	},
+	"WATER_BOTTLE": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"CLOUD": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"THORN": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"VINE": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"MYSTERIOUS_SHARD": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"PUMPKIN_SEED": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"BONE": {
+		"starting_amount": 10000,
+		"categories": ["GENERIC"],
+		"price": 150
+	},
+	"STRING": {
+		"starting_amount": 10000,
+		"categories": ["GENERIC"],
+		"price": 50
+	},
+	"MOLTEN_SULFUR": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"SLIME_BALL": {
+		"starting_amount": 10000,
+		"categories": ["GENERIC"],
+		"price": 150
+	},
+	"ALGAE": {
+		"starting_amount": 10000,
+		"categories": ["GENERIC"],
+		"price": 30
+	},
+	"BEETLE_HUSK": {
+		"starting_amount": 1000,
+		"categories": ["GENERIC"],
+		"price": 30
+	},
+	"VIOLET_HUSK": {
+		"starting_amount": 150,
+		"categories": ["GENERIC"],
+		"price": 1500
+	},
+	"TURTLE_SHELL": {
+		"starting_amount": 100,
+		"categories": ["GENERIC"],
+		"price": 90
+	},
+	"SEAL_HIDE": {
+		"starting_amount": 25,
+		"categories": ["GENERIC"],
+		"price": 40
+	},
+	"ICE": {
+		"starting_amount": 10000,
+		"categories": ["GENERIC"],
+		"price": 250
+	},
+	"HELLSTONE": {
+		"starting_amount": 5000,
+		"categories": ["GENERIC"],
+		"price": 40
+	},
+	"VULRINTH_BAR": {
+		"starting_amount": 100,
+		"categories": ["GENERIC"],
+		"price": 20000
+	},
+	"MAGIC_CRYSTAL": {
+		"starting_amount": 10,
+		"categories": ["GENERIC"],
+		"price": 1000000
+	},
+	"XBOX_SERIES_X": {
+		"starting_amount": 100,
+		"categories": ["GENERIC"],
+		"price": 1000
+	},
+	"BLUES_BALD_HEAD": {
+		"starting_amount": 100,
+		"categories": ["GENERIC"],
+		"price": 300
+	},
+	"PAPER": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"BOOK": {
+		"categories": ["GENERIC"],
+		"price": 0
+	},
+	"WOOD_FLOOR": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"STONE_FLOOR": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"LIMESTONE_FLOOR": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"IRON_FLOOR": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"WOOD_WALL": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"STONE_WALL": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"LIMESTONE_WALL": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"IRON_WALL": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"WOOD_DOOR": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"STONE_DOOR": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"LIMESTONE_DOOR": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"IRON_DOOR": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"WOOD_POLE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"STONE_POLE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"LIMESTONE_POLE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"IRON_POLE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"WOOD_FENCE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"STONE_FENCE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"LIMESTONE_FENCE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"IRON_FENCE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"WOOD_GATE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"STONE_GATE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"LIMESTONE_GATE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"IRON_GATE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"GRAVESTONE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"WINDOW": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"SIGN": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"HOT_CHOCOLATE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"SNOW_GLOBE": {
+		"categories": ["BUILDING"],
+		"price": 0
+	},
+	"VODKA": {
+		"starting_amount": 10000,
+		"categories": ["FOOD"],
+		"price": 0
+	},
+	"POTATO": {
+		"starting_amount": 10000,
+		"categories": ["FOOD"],
+		"price": 0
+	},
+	"COOKIE": {
+		"starting_amount": 10000,
+		"categories": ["FOOD"],
+		"price": 0
+	},
+	"MILK": {
+		"starting_amount": 10000,
+		"categories": ["FOOD"],
+		"price": 0
+	},
+	"BREAD": {
+		"starting_amount": 10000,
+		"categories": ["FOOD"],
+		"price": 20
+	},
+	"COOKED_COD": {
+		"starting_amount": 1000,
+		"categories": ["FOOD"],
+		"price": 20
+	},
+	"COOKED_SALMON": {
+		"starting_amount": 1000,
+		"categories": ["FOOD"],
+		"price": 40
+	},
+	"ROCKFISH": {
+		"starting_amount": 25,
+		"categories": ["FOOD"],
+		"price": 7500
+	},
+	"PIRANHA": {
+		"starting_amount": 1000,
+		"categories": ["FOOD"],
+		"price": 75
+	},
+	"WATERMELON": {
+		"starting_amount": 20000,
+		"categories": ["FOOD"],
+		"price": 10
+	},
+	"PUMPKIN": {
+		"starting_amount": 20000,
+		"categories": ["FOOD"],
+		"price": 10
+	},
+	"COCONUT": {
+		"starting_amount": 20000,
+		"categories": ["FOOD"],
+		"price": 10
+	},
+	"SUGAR_CANE": {
+		"starting_amount": 20000,
+		"categories": ["FOOD"],
+		"price": 4
+	},
+	"SUGAR": {
+		"starting_amount": 20000,
+		"categories": ["FOOD"],
+		"price": 5
+	},
+	"EGG": {
+		"starting_amount": 20000,
+		"categories": ["FOOD"],
+		"price": 5
+	},
+	"PUMPKIN_PIE": {
+		"starting_amount": 2000,
+		"categories": ["FOOD"],
+		"price": 20
+	},
+	"MUD_PIE": {
+		"starting_amount": 2000,
+		"categories": ["FOOD"],
+		"price": 25
+	},
+	"CACTUS": {
+		"starting_amount": 2000,
+		"categories": ["FOOD"],
+		"price": 10
+	},
+	"FILET_MIGNON": {
+		"starting_amount": 100,
+		"categories": ["FOOD"],
+		"price": 64
+	},
+	"MICROWAVE": {
+		"starting_amount": 1000,
+		"categories": ["FOOD"],
+		"price": 850
+	},
+	"GOLDEN_STEAK": {
+		"starting_amount": 1000,
+		"categories": ["FOOD"],
+		"price": 80
+	},
+	"MUTTON": {
+		"starting_amount": 1000,
+		"categories": ["FOOD"],
+		"price": 40
+	},
+	"BACON": {
+		"starting_amount": 10000,
+		"categories": ["FOOD"],
+		"price": 100
+	},
+	"CARAMELS_CREAM": {
+		"categories": ["FOOD"],
+		"price": 0
+	},
+	"TEMMIES_PI": {
+		"categories": ["FOOD"],
+		"price": 0
+	},
+	"ROASTED_TURKEY": {
+		"starting_amount": 100,
+		"categories": ["FOOD"],
+		"price": 8
+	},
+	"MOLDY_BREAD": {
+		"starting_amount": 100,
+		"categories": ["FOOD"],
+		"price": 1
+	},
+	"SEAL_MEAT": {
+		"starting_amount": 100,
+		"categories": ["FOOD"],
+		"price": 100
+	},
+	"CAKE": {
+		"categories": ["FOOD"],
+		"price": 0
+	},
+	"WHEAT": {
+		"starting_amount": 500000,
+		"categories": ["FOOD"],
+		"price": 100
+	},
+	"PICKAXE": {
+		"starting_amount": 1000,
+		"categories": ["PICKAXE"],
+		"price": 20
+	},
+	"COPPER_PICKAXE": {
+		"starting_amount": 900,
+		"categories": ["PICKAXE"],
+		"price": 72
+	},
+	"BRONZE_PICKAXE": {
+		"starting_amount": 700,
+		"categories": ["PICKAXE"],
+		"price": 160
+	},
+	"IRON_PICKAXE": {
+		"starting_amount": 600,
+		"categories": ["PICKAXE"],
+		"price": 300
+	},
+	"SILVER_PICKAXE": {
+		"starting_amount": 500,
+		"categories": ["PICKAXE"],
+		"price": 840
+	},
+	"GOLD_PICKAXE": {
+		"starting_amount": 400,
+		"categories": ["PICKAXE"],
+		"price": 1360
+	},
+	"DIAMOND_PICKAXE": {
+		"starting_amount": 300,
+		"categories": ["PICKAXE"],
+		"price": 4000
+	},
+	"EMERALD_PICKAXE": {
+		"starting_amount": 200,
+		"categories": ["PICKAXE"],
+		"price": 8100
+	},
+	"VULRINTH_PICKAXE": {
+		"starting_amount": 100,
+		"categories": ["PICKAXE"],
+		"price": 360000
+	},
+	"TITANIUM_BAR": {
+		"starting_amount": 5000,
+		"categories": ["MINING"],
+		"price": 165
+	},
+	"TITANIUM_ORE": {
+		"starting_amount": 5000,
+		"categories": ["MINING"],
+		"price": 200
+	},
+	"EMERALD": {
+		"starting_amount": 1000,
+		"categories": ["MINING"],
+		"price": 500
+	},
+	"DIAMOND": {
+		"starting_amount": 2000,
+		"categories": ["MINING"],
+		"price": 300
+	},
+	"GOLD_BAR": {
+		"starting_amount": 5000,
+		"categories": ["MINING"],
+		"price": 100
+	},
+	"GOLD_ORE": {
+		"starting_amount": 5000,
+		"categories": ["MINING"],
+		"price": 80
+	},
+	"SILVER_BAR": {
+		"starting_amount": 7000,
+		"categories": ["MINING"],
+		"price": 85
+	},
+	"SILVER_ORE": {
+		"starting_amount": 7000,
+		"categories": ["MINING"],
+		"price": 65
+	},
+	"IRON_BAR": {
+		"starting_amount": 25000,
+		"categories": ["MINING"],
+		"price": 40
+	},
+	"IRON_ORE": {
+		"starting_amount": 25000,
+		"categories": ["MINING"],
+		"price": 35
+	},
+	"BRONZE_BAR": {
+		"starting_amount": 15000,
+		"categories": ["MINING"],
+		"price": 25
+	},
+	"TIN_BAR": {
+		"starting_amount": 20000,
+		"categories": ["MINING"],
+		"price": 20
+	},
+	"TIN_ORE": {
+		"starting_amount": 20000,
+		"categories": ["MINING"],
+		"price": 15
+	},
+	"COPPER_BAR": {
+		"starting_amount": 50000,
+		"categories": ["MINING"],
+		"price": 16
+	},
+	"COPPER_ORE": {
+		"starting_amount": 50000,
+		"categories": ["MINING"],
+		"price": 15
+	},
+	"COAL": {
+		"starting_amount": 250000,
+		"categories": ["MINING"],
+		"price": 4
+	},
+	"ORE_CHUNK": {
+		"starting_amount": 1000000,
+		"categories": ["MINING"],
+		"price": 5
+	},
+	"STONE": {
+		"starting_amount": 500000,
+		"categories": ["MINING"],
+		"price": 6
+	},
+	"GRAVEL": {
+		"starting_amount": 500000,
+		"categories": ["MINING"],
+		"price": 4
+	},
+	"LIMESTONE": {
+		"starting_amount": 500000,
+		"categories": ["MINING"],
+		"price": 8
+	},
+	"BLACKSTONE": {
+		"starting_amount": 5000,
+		"categories": ["MINING"],
+		"price": 30
+	},
+	"BASALT": {
+		"starting_amount": 5000,
+		"categories": ["MINING"],
+		"price": 45
+	},
+	"LAPIS_LAZULI": {
+		"categories": ["MINING"],
+		"price": 0
+	},
+	"AMBER": {
+		"categories": ["MINING"],
+		"price": 0
+	},
+	"INCA_ROSE": {
+		"categories": ["MINING"],
+		"price": 0
+	},
+	"MALACHITE": {
+		"categories": ["MINING"],
+		"price": 0
+	},
+	"JASPER": {
+		"categories": ["MINING"],
+		"price": 0
+	},
+	"OPAL": {
+		"categories": ["MINING"],
+		"price": 0
+	},
+	"TURQUOISE": {
+		"categories": ["MINING"],
+		"price": 0
+	},
+	"LAMP_OIL": {
+		"starting_amount": 100,
+		"categories": ["INDUSTRIAL"],
+		"price": 10
+	},
+	"BASIC_MACHINE_PART": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"INDUSTRIAL_PRESS": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"PLASMA_CUTTER": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"SCREW": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"CHAIN": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"ADVANCED_MACHINE_PART": {
+		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
-	"Dragon Egg": {
-		"category": "generic",
-		"description": "A one of a kind trophy.",
+	"DIAMOND_SAW": {
+		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
-	"Command Block": {
-		"category": "generic",
-		"description": "How did you get this???",
+	"GENERATOR": {
+		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
-	"Wood": {
-		"bought": 100000,
-		"category": "generic",
-		"description": "Used in crafting, can be obtained from a forest.",
-		"price": 5,
-		"sold": 100000
-	},
-	"Smoke Wood": {
-		"bought": 1000,
-		"category": "generic",
-		"description": "Wood from a fireproof tree found in pyroclast. Or maybe it just already burnt down who knows.",
-		"price": 25,
-		"sold": 1000
+	"SOLDERING_IRON": {
+		"starting_amount": 4000,
+		"categories": ["INDUSTRIAL"],
+		"price": 10000
 	},
-	"Torch": {
-		"bought": 25000,
-		"category": "generic",
-		"description": "Pretty important to uh see.",
-		"price": 5,
-		"sold": 25000
-	},
-	"Sea Shell": {
-		"bought": 25000,
-		"category": "generic",
-		"description": "Used to be used as currency, now they are just pretty thing for decoration, or maybe you could still use it as currency nothing stopping you.",
-		"price": 15,
-		"sold": 25000
-	},
-	"Dirt": {
-		"bought": 100000,
-		"category": "generic",
-		"description": "Dirt cheap!",
-		"price": 1,
-		"sold": 100000
-	},
-	"Sand": {
-		"bought": 100000,
-		"category": "generic",
-		"description": "Used in crafting, can be obtained from a beach or desert... obviously.",
-		"price": 5,
-		"sold": 100000
-	},
-	"Ash": {
-		"bought": 100000,
-		"category": "generic",
-		"description": "Used in uh nothing. Ash!",
-		"price": 10,
-		"sold": 100000
-	},
-	"Glass": {
-		"bought": 10000,
-		"category": "generic",
-		"description": "Smelted from sand, you can see through it!",
-		"price": 10,
-		"sold": 10000
-	},
-	"Obsidian": {
-		"bought": 10000,
-		"category": "generic",
-		"description": "A hard stone formed when lava cools.",
-		"price": 100,
-		"sold": 10000
-	},
-	"Water Bottle": {
-		"category": "generic",
-		"description": "Well that's not a fish! Sea glass sure looks different to regular glass. Water bottles are commonly fished up in most places.",
-		"price": 0
-	},
-	"Cloud": {
-		"category": "generic",
-		"description": "A piece of cloud that fell from the sky.",
-		"price": 0
-	},
-	"Thorn": {
-		"category": "generic",
-		"description": "Found uncommonly by fishing in the jungle. Pointy!",
-		"price": 0
-	},
-	"Vine": {
-		"category": "generic",
-		"description": "An uncommon drop from jungle enemies. Twisty!",
-		"price": 0
-	},
-	"Mysterious Shard": {
-		"category": "generic",
-		"description": "A weird material, perhaps it could be useful in constructing a dangerous machine.",
-		"price": 0
-	},
-	"Pumpkin Seed": {
-		"category": "generic",
-		"description": "Closely guarded by the Pumpkin Horseman, these seeds allow you to grow pumpkins.",
-		"price": 0
-	},
-	"Bone": {
-		"bought": 10000,
-		"category": "generic",
-		"description": "Dropped by skeletons, some cultures see it as taboo, others make sure to utilise it wherever they can.",
-		"price": 15,
-		"sold": 10000
-	},
-	"String": {
-		"bought": 10000,
-		"category": "generic",
-		"description": "Spider silk, although cheap it becomes expensive to gather the quantities needed for clothing.",
-		"price": 5,
-		"sold": 10000
-	},
-	"Molten Sulfur": {
-		"category": "generic",
-		"description": "Molten Sulfur has a unique relationship with making things burn \u2728toxicly\u2728.",
-		"price": 0
-	},
-	"Slime Ball": {
-		"bought": 10000,
-		"category": "generic",
-		"description": "A sticky ball of slime.",
-		"price": 15,
-		"sold": 10000
-	},
-	"Algae": {
-		"bought": 10000,
-		"category": "generic",
-		"description": "Found uncommonly in most bodies of water. Since it's a plant, maybe magic could transform it into a flower?",
-		"price": 3,
-		"sold": 10000
-	},
-	"Beetle Husk": {
-		"bought": 1000,
-		"category": "generic",
-		"description": "Found rarely by fishing in jungles, these husks limit their speed, but greatly increase their defense. I wonder if it could be used by humans?",
-		"price": 30,
-		"sold": 1000
-	},
-	"Violet Husk": {
-		"bought": 150,
-		"category": "generic",
-		"description": "Found rarely from beetles in jungles, these husks are useful as a purple dye.",
-		"price": 1500,
-		"sold": 150
-	},
-	"Turtle Shell": {
-		"bought": 100,
-		"category": "generic",
-		"description": "Found very rarely by fishing in jungles, these shells limit their offense and speed, but drastically increase their defense. I wonder if it could be used by humans?",
-		"price": 90,
-		"sold": 100
+	"RAW_SILICON": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"SILICON_WAFER": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"RUBBER": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"CHARGED_BATTERY": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"BATTERY": {
+		"starting_amount": 10000,
+		"categories": ["INDUSTRIAL"],
+		"price": 400
+	},
+	"INSULATED_WIRING": {
+		"starting_amount": 40000,
+		"categories": ["INDUSTRIAL"],
+		"price": 2000
+	},
+	"GOLD_WIRING": {
+		"starting_amount": 10000,
+		"categories": ["INDUSTRIAL"],
+		"price": 1000
+	},
+	"MILL": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"T34": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"SPACE_ROCKET": {
+		"categories": ["INDUSTRIAL"],
+		"price": 0
+	},
+	"OLD_ROD": {
+		"starting_amount": 2500,
+		"categories": ["ROD"],
+		"price": 2500
+	},
+	"GOOD_ROD": {
+		"starting_amount": 1500,
+		"categories": ["ROD"],
+		"price": 1500
+	},
+	"SUPER_ROD": {
+		"starting_amount": 500,
+		"categories": ["ROD"],
+		"price": 450
+	},
+	"SILK_ROD": {
+		"categories": ["ROD"],
+		"price": 0
+	},
+	"STONE_SWORD": {
+		"starting_amount": 5000,
+		"categories": ["WEAPON"],
+		"price": 10
+	},
+	"STONE_AXE": {
+		"starting_amount": 5000,
+		"categories": ["WEAPON"],
+		"price": 15
+	},
+	"IRON_SWORD": {
+		"starting_amount": 5000,
+		"categories": ["WEAPON"],
+		"price": 60
+	},
+	"IRON_AXE": {
+		"starting_amount": 5000,
+		"categories": ["WEAPON"],
+		"price": 90
+	},
+	"GOLD_SWORD": {
+		"starting_amount": 500,
+		"categories": ["WEAPON"],
+		"price": 180
+	},
+	"GOLD_AXE": {
+		"starting_amount": 500,
+		"categories": ["WEAPON"],
+		"price": 270
+	},
+	"DIAMOND_SWORD": {
+		"starting_amount": 500,
+		"categories": ["WEAPON"],
+		"price": 500
+	},
+	"DIAMOND_AXE": {
+		"starting_amount": 500,
+		"categories": ["WEAPON"],
+		"price": 750
+	},
+	"COMET_LANCE": {
+		"categories": ["WEAPON"],
+		"price": 0
+	},
+	"VULRINTH_SWORD": {
+		"starting_amount": 500,
+		"categories": ["WEAPON"],
+		"price": 36000
+	},
+	"VULRINTH_AXE": {
+		"starting_amount": 500,
+		"categories": ["WEAPON"],
+		"price": 54000
 	},
-	"Seal Hide": {
-		"bought": 25,
-		"category": "generic",
-		"description": "Very warm, might make a good coat. Limited supply, so high price fluctuations.",
-		"price": 40,
-		"sold": 25
+	"ENCHANTED_SWORD": {
+		"categories": ["WEAPON"],
+		"price": 0
+	},
+	"ENCHANTED_SHIELD": {
+		"categories": ["WEAPON"],
+		"price": 0
+	},
+	"BATTERING_RAM": {
+		"categories": ["WEAPON"],
+		"price": 0
+	},
+	"SHURIKENS": {
+		"categories": ["WEAPON"],
+		"price": 0
 	},
-	"Ice": {
-		"bought": 10000,
-		"category": "generic",
-		"description": "Did you know there are many different solid phases of water?",
-		"price": 25,
-		"sold": 10000
+	"KATANA": {
+		"categories": ["WEAPON"],
+		"price": 0
 	},
-	"Hellstone": {
-		"bought": 5000,
-		"category": "generic",
-		"description": "Magma has pierced through this rock, be careful around it. Hot like hell!",
-		"price": 40,
-		"sold": 5000
+	"EVENIFE": {
+		"categories": ["WEAPON"],
+		"price": 0
 	},
-	"Vulrinth Bar": {
-		"bought": 100,
-		"category": "generic",
-		"description": "The most luxurious of collectibles. Afforded only by those that are the master of stonks. It's an investors dream.",
-		"price": 20000,
-		"sold": 100
+	"SLEDGEHAMMER": {
+		"categories": ["WEAPON"],
+		"price": 0
 	},
-	"Magic Crystal": {
-		"bought": 10,
-		"category": "generic",
-		"description": "This is a very magical crystal, it is said to give a special role to those who can afford it. (dm a manager for the role)",
-		"price": 1000000,
-		"sold": 10
+	"SPEAR": {
+		"categories": ["WEAPON"],
+		"price": 0
 	},
-	"Xbox Series X": {
-		"bought": 100,
-		"category": "generic",
-		"description": "Plays Halo pretty fine.",
-		"price": 1000,
-		"sold": 100
+	"DAGGER": {
+		"categories": ["WEAPON"],
+		"price": 0
 	},
-	"Blue's Bald Head": {
-		"bought": 100,
-		"category": "generic",
-		"description": "The bald head of a bald person.",
-		"price": 300,
-		"sold": 100
+	"CROWBAR": {
+		"categories": ["WEAPON"],
+		"price": 0
 	},
-	"Wood Floor": {
-		"category": "generic",
-		"description": "A humble floor.",
+	"SHIV": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Stone Floor": {
-		"category": "generic",
-		"description": "A strong floor.",
+	"BRASS_KNUCKLES": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Limestone Floor": {
-		"category": "generic",
-		"description": "A pretty floor.",
+	"BROKEN_BOTTLE": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Iron Floor": {
-		"category": "generic",
-		"description": "A shiny floor.",
+	"METAL_PIPE": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Wood Wall": {
-		"category": "generic",
-		"description": "A humble wall.",
+	"SEISMOMETER": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Stone Wall": {
-		"category": "generic",
-		"description": "A strong wall.",
+	"EXTENDABLE_ARM": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Limestone Wall": {
-		"category": "generic",
-		"description": "A pretty wall.",
+	"THE_SPADE": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Iron Wall": {
-		"category": "generic",
-		"description": "A shiny wall.",
+	"SPRINGY_SPRING": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Wood Door": {
-		"category": "generic",
-		"description": "A humble door.",
+	"TRUE_GOLD_AXE": {
+		"categories": ["WEAPON"],
 		"price": 0
+	},
+	"EMERALD_WAND": {
+		"starting_amount": 500,
+		"categories": ["WEAPON"],
+		"price": 1650
 	},
-	"Stone Door": {
-		"category": "generic",
-		"description": "A strong door.",
+	"EMERALD_STAFF": {
+		"starting_amount": 500,
+		"categories": ["WEAPON"],
+		"price": 2350
+	},
+	"FLAMETHROWER": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Limestone Door": {
-		"category": "generic",
-		"description": "A pretty door.",
+	"POWER_FLOWER": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Iron Door": {
-		"category": "generic",
-		"description": "A shiny door.",
+	"FLUTE": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Wood Pole": {
-		"category": "generic",
-		"description": "A humble pole.",
+	"METEOR_STAFF": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Stone Pole": {
-		"category": "generic",
-		"description": "A strong pole.",
+	"MASTER_BOLT": {
+		"categories": ["WEAPON"],
 		"price": 0
+	},
+	"WOOD_BOW": {
+		"starting_amount": 2500,
+		"categories": ["WEAPON"],
+		"price": 1500
+	},
+	"TIN_BOW": {
+		"starting_amount": 1500,
+		"categories": ["WEAPON"],
+		"price": 600
 	},
-	"Limestone Pole": {
-		"category": "generic",
-		"description": "A pretty pole.",
+	"GOLD_BOW": {
+		"starting_amount": 500,
+		"categories": ["WEAPON"],
+		"price": 270
+	},
+	"DUAL_BOW": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Iron Pole": {
-		"category": "generic",
-		"description": "A shiny pole.",
+	"ROCKET_LAUNCHER": {
+		"categories": ["WEAPON"],
 		"price": 0
 	},
-	"Wood Fence": {
-		"category": "generic",
-		"description": "A humble fence.",
+	"STAR_LAUNCHER": {
+		"categories": ["WEAPON"],
 		"price": 0
+	},
+	"IRON_BOOTS": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 120
+	},
+	"IRON_CHESTPLATE": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 240
+	},
+	"DIAMOND_BOOTS": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 1000
 	},
-	"Stone Fence": {
-		"category": "generic",
-		"description": "A strong fence.",
+	"DIAMOND_CHESTPLATE": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 2000
+	},
+	"THORNS_CHESTPLATE": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 3000
+	},
+	"TITANIUM_CHESTPLATE": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 1200
+	},
+	"DENSE_CHESTPLATE": {
+		"categories": ["ARMOR"],
 		"price": 0
+	},
+	"VULRINTH_HELMET": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 90000
 	},
-	"Limestone Fence": {
-		"category": "generic",
-		"description": "A pretty fence.",
+	"COMET_ARMOR": {
+		"categories": ["ARMOR"],
 		"price": 0
 	},
-	"Iron Fence": {
-		"category": "generic",
-		"description": "A shiny fence.",
+	"STARLIGHT_GOGGLES": {
+		"categories": ["ARMOR"],
 		"price": 0
 	},
-	"Wood Gate": {
-		"category": "generic",
-		"description": "A humble gate.",
+	"FLORAL_ARMOR": {
+		"categories": ["ARMOR"],
 		"price": 0
 	},
-	"Stone Gate": {
-		"category": "generic",
-		"description": "A strong gate.",
+	"BONE_CHESTPLATE": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 100
+	},
+	"CHAINMAIL_CHESTPLATE": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 400
+	},
+	"MINING_HELMET": {
+		"starting_amount": 500,
+		"categories": ["MINING", "ARMOR"],
+		"price": 150
+	},
+	"ROCK_HELMET": {
+		"categories": ["MINING", "ARMOR"],
 		"price": 0
+	},
+	"FISHING_CAP": {
+		"starting_amount": 500,
+		"categories": ["ARMOR"],
+		"price": 250
 	},
-	"Limestone Gate": {
-		"category": "generic",
-		"description": "A pretty gate.",
+	"MAGIC_FISHING_CAP": {
+		"categories": ["ARMOR"],
 		"price": 0
 	},
-	"Iron Gate": {
-		"category": "generic",
-		"description": "A shiny gate.",
+	"LEATHER": {
+		"starting_amount": 2500,
+		"categories": ["ACCESSORY"],
+		"price": 5000
+	},
+	"GRAPPLING_HOOK": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Gravestone": {
-		"category": "generic",
-		"description": "The dead like to be buried properly.",
+	"EXPERIENCE": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Window": {
-		"category": "generic",
-		"description": "All the better to see you with.",
+	"PACKED_EXPERIENCE": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Paper": {
-		"category": "generic",
-		"description": "The first true papermaking process is attributed to Cai Lun, a Chinese court official, in the first century CE.",
+	"DENSE_EXPERIENCE": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Book": {
-		"category": "generic",
-		"description": "The first libraries were made to archive the earliest forms of writing, clay tablets written in the cuneiform script from 2600 BCE.",
+	"UNHOLY_WINGS": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Vodka": {
-		"bought": 10000,
-		"category": "food",
-		"description": "A drink not normally found here.",
-		"price": 0,
-		"sold": 10000
+	"SCALY_WINGS": {
+		"categories": ["ACCESSORY"],
+		"price": 0
 	},
-	"Potato": {
-		"bought": 10000,
-		"category": "food",
-		"description": "A food not normally found here.",
-		"price": 0,
-		"sold": 10000
+	"PHOTON_WINGS": {
+		"categories": ["ACCESSORY"],
+		"price": 0
 	},
-	"Cookie": {
-		"bought": 10000,
-		"category": "food",
-		"description": "A nice tasty cookie.",
-		"price": 0,
-		"sold": 10000
+	"CRYSTAL_WINGS": {
+		"categories": ["ACCESSORY"],
+		"price": 0
 	},
-	"Milk": {
-		"bought": 10000,
-		"category": "food",
-		"description": "A nice tasty bucket of milk.",
-		"price": 0,
-		"sold": 10000
+	"HOLY_WINGS": {
+		"categories": ["ACCESSORY"],
+		"price": 0
 	},
-	"Bread": {
-		"bought": 10000,
-		"category": "food",
-		"description": "A nice tasty loaf of bread.",
-		"price": 2,
-		"sold": 10000
+	"CACTUS_SHIELD": {
+		"starting_amount": 500,
+		"categories": ["ACCESSORY"],
+		"price": 100
 	},
-	"Cooked Cod": {
-		"bought": 1000,
-		"category": "food",
-		"description": "Nice some cooked fish.",
-		"price": 20,
-		"sold": 1000
-	},
-	"Cooked Salmon": {
-		"bought": 1000,
-		"category": "food",
-		"description": "Nice some cooked fish.",
-		"price": 40,
-		"sold": 1000
-	},
-	"Rockfish": {
-		"bought": 25,
-		"category": "food",
-		"description": "A rare ancient fish with tough rock-like armor, found deep underground.",
-		"price": 7500,
-		"sold": 25
-	},
-	"Piranha": {
-		"bought": 1000,
-		"category": "food",
-		"description": "An aggressive fish found in the jungle.",
-		"price": 75,
-		"sold": 1000
-	},
-	"Watermelon": {
-		"bought": 20000,
-		"category": "food",
-		"description": "A juicy slice of watermelon.",
-		"price": 10,
-		"sold": 20000
-	},
-	"Pumpkin": {
-		"bought": 20000,
-		"category": "food",
-		"description": "Halloween decoration and food.",
-		"price": 10,
-		"sold": 20000
-	},
-	"Coconut": {
-		"bought": 20000,
-		"category": "food",
-		"description": "You think you just fell out of a coconut tree?",
-		"price": 10,
-		"sold": 20000
-	},
-	"Sugar Cane": {
-		"bought": 20000,
-		"category": "food",
-		"description": "Tasty yum food.",
-		"price": 4,
-		"sold": 20000
-	},
-	"Sugar": {
-		"bought": 20000,
-		"category": "food",
-		"description": "Tasty yum food.",
-		"price": 5,
-		"sold": 20000
-	},
-	"Egg": {
-		"bought": 20000,
-		"category": "food",
-		"description": "What came first the chicken or the egg?",
-		"price": 5,
-		"sold": 20000
-	},
-	"Pumpkin Pie": {
-		"bought": 2000,
-		"category": "food",
-		"description": "Tasty yum food.",
-		"price": 20,
-		"sold": 2000
-	},
-	"Mud Pie": {
-		"bought": 2000,
-		"category": "food",
-		"description": "Maybe not so tasty, but you can still eat it.",
-		"price": 25,
-		"sold": 2000
-	},
-	"Cactus": {
-		"bought": 2000,
-		"category": "food",
-		"description": "Cactus club!",
-		"price": 10,
-		"sold": 2000
-	},
-	"Filet Mignon": {
-		"bought": 100,
-		"category": "food",
-		"description": "Best energy for your money, but limited supply.",
-		"price": 64,
-		"sold": 100
-	},
-	"Microwave": {
-		"bought": 1000,
-		"category": "food",
-		"description": "It's a microwave, it uses the electromagnetic spectrum to heat your food.",
-		"price": 850,
-		"sold": 1000
-	},
-	"Golden Steak": {
-		"bought": 1000,
-		"category": "food",
-		"description": "A high quality steak with gold flakes in it.",
-		"price": 80,
-		"sold": 1000
-	},
-	"Mutton": {
-		"bought": 1000,
-		"category": "food",
-		"description": "Tasty mutton to eat.",
-		"price": 40,
-		"sold": 1000
-	},
-	"Bacon": {
-		"bought": 10000,
-		"category": "food",
-		"description": "Tasty bacon to eat.",
-		"price": 10,
-		"sold": 10000
-	},
-	"Caramel's Cream": {
-		"category": "food",
-		"description": "Cream of Caramel, smells suspiciously of seal.",
-		"price": 0
-	},
-	"Temmie's Pi": {
-		"category": "food",
-		"description": "3.1415926535...",
-		"price": 0
-	},
-	"Roasted Turkey": {
-		"bought": 100,
-		"category": "food",
-		"description": "Good for showing thanks during Thanksgiving.",
-		"price": 8,
-		"sold": 100
-	},
-	"Moldy Bread": {
-		"bought": 100,
-		"category": "food",
-		"description": "Literally trash, why would you buy this?",
-		"price": 1,
-		"sold": 100
-	},
-	"Seal Meat": {
-		"bought": 100,
-		"category": "food",
-		"description": "Slightly delicious, not that nutritious. Infuriates seal squad members.",
-		"price": 100,
-		"sold": 100
-	},
-	"Cake": {
-		"category": "food",
-		"description": "Very tasty, not very nutritious though",
-		"price": 0
-	},
-	"Wheat": {
-		"bought": 500000,
-		"category": "food",
-		"description": "Can be crafted in to bread and cake, but poor energy on its own.",
-		"price": 1,
-		"sold": 500000
-	},
-	"Pickaxe": {
-		"bought": 1000,
-		"category": "pickaxe",
-		"description": "Used to mine, more info in /pickaxes.",
-		"price": 20,
-		"sold": 1000
-	},
-	"Copper Pickaxe": {
-		"bought": 900,
-		"category": "pickaxe",
-		"description": "Used to mine, more info in /pickaxes.",
-		"price": 72,
-		"sold": 900
-	},
-	"Bronze Pickaxe": {
-		"bought": 700,
-		"category": "pickaxe",
-		"description": "Used to mine, more info in /pickaxes.",
-		"price": 160,
-		"sold": 700
-	},
-	"Iron Pickaxe": {
-		"bought": 600,
-		"category": "pickaxe",
-		"description": "Used to mine, more info in /pickaxes.",
-		"price": 300,
-		"sold": 600
-	},
-	"Silver Pickaxe": {
-		"bought": 500,
-		"category": "pickaxe",
-		"description": "Used to mine, more info in /pickaxes.",
-		"price": 840,
-		"sold": 500
-	},
-	"Gold Pickaxe": {
-		"bought": 400,
-		"category": "pickaxe",
-		"description": "Used to mine, more info in /pickaxes.",
-		"price": 1360,
-		"sold": 400
-	},
-	"Diamond Pickaxe": {
-		"bought": 300,
-		"category": "pickaxe",
-		"description": "Used to mine, more info in /pickaxes.",
-		"price": 4000,
-		"sold": 300
-	},
-	"Emerald Pickaxe": {
-		"bought": 200,
-		"category": "pickaxe",
-		"description": "Used to mine, more info in /pickaxes.",
-		"price": 8100,
-		"sold": 200
-	},
-	"Vulrinth Pickaxe": {
-		"bought": 100,
-		"category": "pickaxe",
-		"description": "Used to mine, more info in /pickaxes.",
-		"price": 360000,
-		"sold": 100
-	},
-	"Titanium Bar": {
-		"bought": 5000,
-		"category": "mining",
-		"description": "The refined form of a slightly less common metal.",
-		"price": 165,
-		"sold": 15000
-	},
-	"Titanium Ore": {
-		"bought": 5000,
-		"category": "mining",
-		"description": "The basic form of a slightly less common metal.",
-		"price": 200,
-		"sold": 15000
-	},
-	"Emerald": {
-		"bought": 1000,
-		"category": "mining",
-		"description": "A good item to buy and sell, fluctuates a ton like silver.",
-		"price": 500,
-		"sold": 1000
-	},
-	"Diamond": {
-		"bought": 2000,
-		"category": "mining",
-		"description": "Expensive investment, rarely fluctuates, when it does sure to be good though.",
-		"price": 300,
-		"sold": 2000
-	},
-	"Gold Bar": {
-		"bought": 5000,
-		"category": "mining",
-		"description": "Gold bar. Show off your wealth with this! Stable price, can hold a fair amount.",
-		"price": 100,
-		"sold": 5000
-	},
-	"Gold Ore": {
-		"bought": 5000,
-		"category": "mining",
-		"description": "Basic form of a rare metal.",
-		"price": 80,
-		"sold": 5000
-	},
-	"Silver Bar": {
-		"bought": 7000,
-		"category": "mining",
-		"description": "A bar of silver. Shiny. Worth less than gold, but fluctuates more. Investors love.",
-		"price": 85,
-		"sold": 7000
-	},
-	"Silver Ore": {
-		"bought": 7000,
-		"category": "mining",
-		"description": "Basic form of a fairly rare metal.",
-		"price": 65,
-		"sold": 7000
-	},
-	"Iron Bar": {
-		"bought": 25000,
-		"category": "mining",
-		"description": "A bar of iron. Used for industrial purposes.",
-		"price": 40,
-		"sold": 25000
-	},
-	"Iron Ore": {
-		"bought": 25000,
-		"category": "mining",
-		"description": "Basic form of a useful industrial metal.",
-		"price": 35,
-		"sold": 25000
-	},
-	"Bronze Bar": {
-		"bought": 15000,
-		"category": "mining",
-		"description": "The first alloy.",
-		"price": 25,
-		"sold": 15000
-	},
-	"Tin Bar": {
-		"bought": 20000,
-		"category": "mining",
-		"description": "The refined form of a common metal.",
-		"price": 20,
-		"sold": 20000
-	},
-	"Tin Ore": {
-		"bought": 20000,
-		"category": "mining",
-		"description": "From the far away lands of tinland, my dealer wont tell me where he gets it from.",
-		"price": 15,
-		"sold": 20000
-	},
-	"Copper Bar": {
-		"bought": 50000,
-		"category": "mining",
-		"description": "Copper Bar. Cheap, stable price. Good metal for machines and electronics.",
-		"price": 16,
-		"sold": 50000
-	},
-	"Copper Ore": {
-		"bought": 50000,
-		"category": "mining",
-		"description": "Basic form of a pretty common metal.",
-		"price": 15,
-		"sold": 50000
-	},
-	"Coal": {
-		"bought": 250000,
-		"category": "mining",
-		"description": "A cheap industrial fuel.",
-		"price": 4,
-		"sold": 250000
-	},
-	"Ore Chunk": {
-		"bought": 1000000,
-		"category": "mining",
-		"description": "A junk piece of ore that cannot be used, or can it?",
-		"price": 5,
-		"sold": 1000000
-	},
-	"Stone": {
-		"bought": 500000,
-		"category": "mining",
-		"description": "Just a piece of stone.",
-		"price": 6,
-		"sold": 500000
-	},
-	"Gravel": {
-		"bought": 500000,
-		"category": "mining",
-		"description": "I love gravel.",
-		"price": 4,
-		"sold": 500000
-	},
-	"Limestone": {
-		"bought": 500000,
-		"category": "mining",
-		"description": "It's like stone but prettier.",
-		"price": 8,
-		"sold": 500000
-	},
-	"Blackstone": {
-		"bought": 5000,
-		"category": "mining",
-		"description": "A burnt piece of stone from pyroclast.",
-		"price": 30,
-		"sold": 5000
-	},
-	"Basalt": {
-		"bought": 5000,
-		"category": "mining",
-		"description": "A piece of igneous stone from pyroclast.",
-		"price": 45,
-		"sold": 5000
-	},
-	"Lapis Lazuli": {
-		"category": "mining",
-		"description": "A beautiful rare blue stone.",
-		"price": 0
-	},
-	"Amber": {
-		"category": "mining",
-		"description": "A beautiful rare blue stone.",
-		"price": 0
-	},
-	"Inca Rose": {
-		"category": "mining",
-		"description": "A beautiful rare pink stone; rhodachrosite.",
-		"price": 0
-	},
-	"Malachite": {
-		"category": "mining",
-		"description": "A beautiful rare green stone.",
-		"price": 0
-	},
-	"Jasper": {
-		"category": "mining",
-		"description": "A beautiful rare orange stone.",
-		"price": 0
-	},
-	"Opal": {
-		"category": "mining",
-		"description": "A beautiful rare white stone.",
-		"price": 0
-	},
-	"Turquoise": {
-		"category": "mining",
-		"description": "A beautiful rare turquoise (literally) stone.",
-		"price": 0
-	},
-	"Lamp Oil": {
-		"bought": 100,
-		"category": "industrial",
-		"description": "Lamp oil, fluctuates pretty heavily, a solid choice for starting investors.",
-		"price": 10,
-		"sold": 100
-	},
-	"Basic Machine Part": {
-		"category": "industrial",
-		"description": "A basic part for making machines in factories.",
-		"price": 0
-	},
-	"Industrial Press": {
-		"category": "industrial",
-		"description": "Important part for making any factory to produce bars. Runs on coal.",
-		"price": 0
-	},
-	"Plasma Cutter": {
-		"category": "industrial",
-		"description": "Important part for making any factory to cut metal. Runs on lamp oil.",
-		"price": 0
-	},
-	"Screw": {
-		"category": "industrial",
-		"description": "A basic item for making any part for a factory.",
-		"price": 0
-	},
-	"Chain": {
-		"category": "industrial",
-		"description": "Used for.. well.. whenever you need a chain!",
-		"price": 0
-	},
-	"Advanced Machine Part": {
-		"category": "industrial",
-		"description": "An advanced part for making machines in factories.",
-		"price": 0
-	},
-	"Diamond Saw": {
-		"category": "industrial",
-		"description": "An important part for cutting in factories.",
-		"price": 0
-	},
-	"Generator": {
-		"category": "industrial",
-		"description": "An important part for making machines in factories.",
-		"price": 0
-	},
-	"Soldering Iron": {
-		"bought": 4000,
-		"category": "industrial",
-		"description": "An important part for making certain machines in factories.",
-		"price": 1000,
-		"sold": 4000
-	},
-	"Raw Silicon": {
-		"category": "industrial",
-		"description": "A useful element for advanced machines.",
-		"price": 0
-	},
-	"Silicon Wafer": {
-		"category": "industrial",
-		"description": "A useful item for making advanced parts.",
-		"price": 0
-	},
-	"Rubber": {
-		"category": "industrial",
-		"description": "A useful item for making insulated wires.",
-		"price": 0
-	},
-	"Charged Battery": {
-		"category": "industrial",
-		"description": "A useful way to transfer power between its source and its sink.",
-		"price": 0
-	},
-	"Battery": {
-		"bought": 10000,
-		"category": "industrial",
-		"description": "A useful way to transfer power between its source and its sink.",
-		"price": 40,
-		"sold": 10000
-	},
-	"Insulated Wiring": {
-		"bought": 40000,
-		"category": "industrial",
-		"description": "A basic item for connecting machines.",
-		"price": 20,
-		"sold": 40000
-	},
-	"Gold Wiring": {
-		"bought": 10000,
-		"category": "industrial",
-		"description": "An advanced item for making advanced machines.",
-		"price": 100,
-		"sold": 10000
-	},
-	"Mill": {
-		"category": "industrial",
-		"description": "Important part for making food.",
-		"price": 0
-	},
-	"Panzer 4": {
-		"category": "industrial",
-		"description": "Incase you ever want to take over a country. Do not try at home.",
-		"price": 0
-	},
-	"Falcon Heavy Rocket": {
-		"category": "industrial",
-		"description": "Wanna go to space? Go ahead! Who knows what else you can do with rocketry...",
-		"price": 0
-	},
-	"Old Rod": {
-		"bought": 2500,
-		"category": "rod",
-		"description": "A beginner fishing rod, here!",
-		"price": 25,
-		"sold": 2500
-	},
-	"Good Rod": {
-		"bought": 1500,
-		"category": "rod",
-		"description": "An intermediate fishing rod, voila!",
-		"price": 150,
-		"sold": 1500
-	},
-	"Super Rod": {
-		"bought": 500,
-		"category": "rod",
-		"description": "An advanced fishing rod, behold!",
-		"price": 450,
-		"sold": 500
-	},
-	"Silk Rod": {
-		"category": "rod",
-		"description": "A special fishing rod, since it has a silk line it will never break!",
-		"price": 0
-	},
-	"Stone Sword": {
-		"bought": 5000,
-		"category": "weapon",
-		"description": "This weapon will slice up a few things, although it is fragile.",
-		"price": 10,
-		"sold": 5000
-	},
-	"Stone Axe": {
-		"bought": 5000,
-		"category": "weapon",
-		"description": "This hefty weapon will put a dent into a few things, although it is fragile.",
-		"price": 15,
-		"sold": 5000
-	},
-	"Iron Sword": {
-		"bought": 5000,
-		"category": "weapon",
-		"description": "Produced by smiths since the ancient times, this weapon sill slice up some things.",
-		"price": 60,
-		"sold": 5000
-	},
-	"Iron Axe": {
-		"bought": 5000,
-		"category": "weapon",
-		"description": "Produced by smiths since the ancient times, this hefty weapon will put a dent into some things",
-		"price": 90,
-		"sold": 5000
-	},
-	"Gold Sword": {
-		"bought": 500,
-		"category": "weapon",
-		"description": "This weapon will slice up a lot of things, and has a chance to do something special; breaks easily",
-		"price": 180,
-		"sold": 500
-	},
-	"Gold Axe": {
-		"bought": 500,
-		"category": "weapon",
-		"description": "This hefty weapon will put a dent into a lot of things, and has a chance to do something special; breaks easily.",
-		"price": 270,
-		"sold": 500
-	},
-	"Diamond Sword": {
-		"bought": 500,
-		"category": "weapon",
-		"description": "The blue glimmer will put fear into enemies, this weapon will slice up most things.",
-		"price": 500,
-		"sold": 500
-	},
-	"Diamond Axe": {
-		"bought": 500,
-		"category": "weapon",
-		"description": "The blue glimmer will put fear into enemies, this hefty weapon will put a dent into most things.",
-		"price": 750,
-		"sold": 500
-	},
-	"Comet Lance": {
-		"category": "weapon",
-		"description": "A celestial weapon, this weapon will pierce anything.",
-		"price": 0
-	},
-	"Vulrinth Sword": {
-		"bought": 500,
-		"category": "weapon",
-		"description": "A weapon fit for a God, this weapon will slice up anything.",
-		"price": 36000,
-		"sold": 500
-	},
-	"Vulrinth Axe": {
-		"bought": 500,
-		"category": "weapon",
-		"description": "A weapon fit for a God, this hefty weapon will put a dent into anything.",
-		"price": 54000,
-		"sold": 500
-	},
-	"Enchanted Sword": {
-		"category": "weapon",
-		"description": "An enchanted sword that even the strongest warriors will fear.",
-		"price": 0
-	},
-	"Enchanted Shield": {
-		"category": "weapon",
-		"description": "An enchanted shield that even the strongest warriors will fear.",
-		"price": 0
-	},
-	"Battering Ram": {
-		"category": "weapon",
-		"description": "You may get some strange looks bringing this into a fight, but they won't be laughing soon.",
-		"price": 0
-	},
-	"Shurikens": {
-		"category": "weapon",
-		"description": "Overwhelms your enemy with a swarm of shurikens before they can react.",
-		"price": 0
-	},
-	"Katana": {
-		"category": "weapon",
-		"description": "An ancient weapon, the faster you move, the stronger it swings.",
-		"price": 0
-	},
-	"Evenife": {
-		"category": "weapon",
-		"description": "Evens out attack and defense.",
-		"price": 0
-	},
-	"Sledgehammer": {
-		"category": "weapon",
-		"description": "A strong swing from this can handle any form of armored enemy; breaks easily.",
-		"price": 0
-	},
-	"Spear": {
-		"category": "weapon",
-		"description": "This weapon goes first and does a fair amount of damage, this decimated the ancient legions of the past.",
-		"price": 0
-	},
-	"Dagger": {
-		"category": "weapon",
-		"description": "A favorite of assassins and thieves, does a lot of damage if it catches you off guard.",
-		"price": 0
-	},
-	"Crowbar": {
-		"category": "weapon",
-		"description": "A favorite of burglars, stuns the target.",
-		"price": 0
-	},
-	"Shiv": {
-		"category": "weapon",
-		"description": "I mean this was made by an inmate surely you have better options?",
-		"price": 0
-	},
-	"Brass Knuckles": {
-		"category": "weapon",
-		"description": "Amplifies your punches, you would not want to be on the receiving end of one of these.",
-		"price": 0
-	},
-	"Broken Bottle": {
-		"category": "weapon",
-		"description": "Nothing hurts more than shards of broken glass in your skin.",
-		"price": 0
-	},
-	"Metal Pipe": {
-		"category": "weapon",
-		"description": "Fresh from your neighbors toilet is a metal pipe ready to knock you out!",
-		"price": 0
-	},
-	"Seismometer": {
-		"category": "weapon",
-		"description": "Do I really need to check if earthquakes are happening? Wait, why is this in the weapons category? Oh.",
-		"price": 0
-	},
-	"Extendable Arm": {
-		"category": "weapon",
-		"description": "Lucy made this to solve the age old problem of wanting to grab things but not wanting to get out of bed.",
-		"price": 0
-	},
-	"The Spade": {
-		"category": "weapon",
-		"description": "If you see a zombie with this, prepare for a strong thud.",
-		"price": 0
-	},
-	"Springy Spring": {
-		"category": "weapon",
-		"description": "A while ago a flood damaged a spring factory, many byproducts ran off into the river. Boiiing!",
-		"price": 0
-	},
-	"True Gold Axe": {
-		"category": "weapon",
-		"description": "A weapon forged and wielded by Karkothian Brutes, who knows how they made it so light weight.",
-		"price": 0
-	},
-	"Emerald Wand": {
-		"bought": 500,
-		"category": "weapon",
-		"description": "Used by wizards in the past to defend against foreign invaders. Shoots many smaller sparks.",
-		"price": 1650,
-		"sold": 500
-	},
-	"Emerald Staff": {
-		"bought": 500,
-		"category": "weapon",
-		"description": "YOU SHALL NOT PASS! Shoots a big spark.",
-		"price": 2350,
-		"sold": 500
-	},
-	"Flamethrower": {
-		"category": "weapon",
-		"description": "Mwahahaha!",
-		"price": 0
-	},
-	"Power Flower": {
-		"category": "weapon",
-		"description": "A magic weapon that gets stronger every turn, this rainbow flower was often given as a sign of love in magic communities. It used to naturally occur, now it can only be crafted with magic.",
-		"price": 0
-	},
-	"Flute": {
-		"category": "weapon",
-		"description": "Plays a soothing melody, yet its notes are deadly, heavy rain took this flute from a live performance in Sky City into a lake.",
-		"price": 0
-	},
-	"Meteor Staff": {
-		"category": "weapon",
-		"description": "A celestial weapon, this weapon will rain mayhem onto the battlefield.",
-		"price": 0
-	},
-	"Master Bolt": {
-		"category": "weapon",
-		"description": "A godly weapon used by Zeus himself.",
-		"price": 0
-	},
-	"Wood Bow": {
-		"bought": 2500,
-		"category": "weapon",
-		"description": "A beginner bow, superiory archery often was the main reason for success in ancient battles.",
-		"price": 15,
-		"sold": 2500
-	},
-	"Tin Bow": {
-		"bought": 1500,
-		"category": "weapon",
-		"description": "An intermediate bow, superiory archery often was the main reason for success in ancient battles.",
-		"price": 60,
-		"sold": 1500
-	},
-	"Gold Bow": {
-		"bought": 500,
-		"category": "weapon",
-		"description": "An advanced bow, superiory archery often was the main reason for success in ancient battles.",
-		"price": 270,
-		"sold": 500
-	},
-	"Dual Bow": {
-		"category": "weapon",
-		"description": "A special bow that shoots twice, superiory archery often was the main reason for success in ancient battles.",
-		"price": 0
-	},
-	"Rocket Launcher": {
-		"category": "weapon",
-		"description": "Fighting is so last century, once you have mastered rocketry, you can blow your enemies up instead!",
-		"price": 0
-	},
-	"Star Launcher": {
-		"category": "weapon",
-		"description": "A celestial weapon, this weapon will annihilate your enemies.",
-		"price": 0
-	},
-	"Iron Boots": {
-		"bought": 500,
-		"category": "armor",
-		"description": "Produced by smiths since the ancient times, this armor is light.",
-		"price": 120,
-		"sold": 500
-	},
-	"Iron Chestplate": {
-		"bought": 500,
-		"category": "armor",
-		"description": "Produced by smiths since the ancient times, this armor can stand some blows.",
-		"price": 240,
-		"sold": 500
-	},
-	"Diamond Boots": {
-		"bought": 500,
-		"category": "armor",
-		"description": "The blue gimmer will put fear into enemies, this armor is light and strong.",
-		"price": 1000,
-		"sold": 500
-	},
-	"Diamond Chestplate": {
-		"bought": 500,
-		"category": "armor",
-		"description": "The blue gimmer will put fear into enemies, this armor can stand most blows.",
-		"price": 2000,
-		"sold": 500
-	},
-	"Thorns Chestplate": {
-		"bought": 500,
-		"category": "armor",
-		"description": "Sacrificed a bit of protection for the extra damage from the thorns.",
-		"price": 3000,
-		"sold": 500
-	},
-	"Titanium Chestplate": {
-		"bought": 500,
-		"category": "armor",
-		"description": "Made of solid titanium nothing will get through this, although it can slow you down.",
-		"price": 1200,
-		"sold": 500
-	},
-	"Dense Chestplate": {
-		"category": "armor",
-		"description": "Made of a silver-titanium alloy this armor is unusually dense.",
-		"price": 0
-	},
-	"Vulrinth Helmet": {
-		"bought": 500,
-		"category": "armor",
-		"description": "Armor fit for a God, this armor can stand all blows.",
-		"price": 90000,
-		"sold": 500
-	},
-	"Comet Armor": {
-		"category": "armor",
-		"description": "Celestial armor, this armor can stand all blows.",
-		"price": 0
-	},
-	"Starlight Goggles": {
-		"category": "armor",
-		"description": "Celestial equipment, these goggles help you mine and fish.",
-		"price": 0
-	},
-	"Floral Armor": {
-		"category": "armor",
-		"description": "You wouldn't think a wreath of flowers provides much defense, and you would be right, but it does heal you up pretty good! Its flowers used to naturally occur, now it can only be crafted with magic.",
-		"price": 0
-	},
-	"Bone Chestplate": {
-		"bought": 500,
-		"category": "armor",
-		"description": "Made from bones, this chestplate feels taboo, but it has some special benefits.",
-		"price": 100,
-		"sold": 500
-	},
-	"Chainmail Chestplate": {
-		"bought": 500,
-		"category": "armor",
-		"description": "Made from chains, this armor is light weight, but it also benefits piercing damage.",
-		"price": 400,
-		"sold": 500
-	},
-	"Mining Helmet": {
-		"bought": 500,
-		"category": "armor",
-		"description": "Buffs double ore chance.",
-		"price": 150,
-		"sold": 500
-	},
-	"Rock Helmet": {
-		"category": "armor",
-		"description": "Strongly buffs double ore chance.",
-		"price": 0
-	},
-	"Fishing Cap": {
-		"bought": 500,
-		"category": "armor",
-		"description": "Buffs fishing strength.",
-		"price": 250,
-		"sold": 500
-	},
-	"Magic Fishing Cap": {
-		"category": "armor",
-		"description": "Strongly buffs fishing strength.",
-		"price": 0
-	},
-	"Leather": {
-		"bought": 2500,
-		"category": "accessory",
-		"description": "Buffs max health and defense.",
-		"price": 50,
-		"sold": 2500
-	},
-	"Grappling Hook": {
-		"category": "accessory",
-		"description": "Buffs speed and damage.",
-		"price": 0
-	},
-	"Experience": {
-		"category": "accessory",
-		"description": "Gives a weak buff to every stat, drops when killing an enemy; consumable.",
-		"price": 0
-	},
-	"Packed Experience": {
-		"category": "accessory",
-		"description": "Gives a buff to every stat, drops when killing an enemy; consumable.",
-		"price": 0
-	},
-	"Dense Experience": {
-		"category": "accessory",
-		"description": "Gives a strong buff to every stat, drops when killing an enemy; consumable.",
-		"price": 0
-	},
-	"Unholy Wings": {
-		"category": "accessory",
-		"description": "Wings let you fly to new places, these special wings are attracted to devil rays confusing it for their former masters.",
-		"price": 0
-	},
-	"Scaly Wings": {
-		"category": "accessory",
-		"description": "Wings let you fly to new places, these special wings are dropped by Dragons.",
-		"price": 0
-	},
-	"Photon Wings": {
-		"category": "accessory",
-		"description": "Wings let you fly to new places, these special wings are dropped by Solar Flares.",
-		"price": 0
-	},
-	"Crystal Wings": {
-		"category": "accessory",
-		"description": "Wings let you fly to new places, these special wings are dropped by Sky Sorcerers.",
-		"price": 0
-	},
-	"Holy Wings": {
-		"category": "accessory",
-		"description": "Wings let you fly to new places, these special wings are dropped by Hallowed Creatures.",
-		"price": 0
-	},
-	"Cactus Shield": {
-		"bought": 500,
-		"category": "accessory",
-		"description": "It's a prickly shield, breaks fairly easily.",
-		"price": 100,
-		"sold": 500
-	},
-	"Shield": {
-		"bought": 500,
-		"category": "accessory",
-		"description": "Prevents some attacks from going first, however it is weak to strong attacks.",
-		"price": 60,
-		"sold": 500
+	"SHIELD": {
+		"starting_amount": 500,
+		"categories": ["ACCESSORY"],
+		"price": 60
 	},
-	"Bread Bundle": {
-		"bought": 5000,
-		"category": "accessory",
-		"description": "Gives extra health; consumable.",
-		"price": 20,
-		"sold": 5000
+	"BREAD_BUNDLE": {
+		"starting_amount": 5000,
+		"categories": ["FOOD", "ACCESSORY"],
+		"price": 20
 	},
-	"Gauntlet": {
-		"category": "accessory",
-		"description": "You can feel the raw power coming from this gauntlet.",
+	"GAUNTLET": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Heal Bell": {
-		"category": "accessory",
-		"description": "A special bell that regenerates your health.",
+	"HEAL_BELL": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Portable Wall": {
-		"category": "accessory",
-		"description": "You may get some strange looks bringing this into a fight, but the only damage that will go through this is emotional.",
+	"PORTABLE_WALL": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Binoculars": {
-		"category": "accessory",
-		"description": "\"Mystify, mislead, and surprise the enemy\" - Sun Tzu",
+	"BINOCULARS": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Gold Bracelet": {
-		"bought": 100,
-		"category": "accessory",
-		"description": "An impressive piece of old jewelry. Loses hp but increases defense and damage.",
-		"price": 450,
-		"sold": 100
+	"GOLD_BRACELET": {
+		"starting_amount": 100,
+		"categories": ["ACCESSORY"],
+		"price": 450
 	},
-	"Bone Ring": {
-		"bought": 500,
-		"category": "accessory",
-		"description": "Made from bones, this was a common piece of jewelry long long ago.",
-		"price": 50,
-		"sold": 500
+	"BONE_RING": {
+		"starting_amount": 500,
+		"categories": ["ACCESSORY"],
+		"price": 50
 	},
-	"Silk Cloth": {
-		"bought": 5000,
-		"category": "accessory",
-		"description": "Whenever your weapon or armor would break, this gets used instead; one time use.",
-		"price": 1000,
-		"sold": 5000
+	"SILK_CLOTH": {
+		"starting_amount": 5000,
+		"categories": ["ACCESSORY"],
+		"price": 1000
 	},
-	"Mana Crystal": {
-		"bought": 2500,
-		"category": "accessory",
-		"description": "The only way for us puny humans to use magic weapons, this is crystallised magic; consumable.",
-		"price": 500,
-		"sold": 2500
+	"MANA_CRYSTAL": {
+		"starting_amount": 2500,
+		"categories": ["ACCESSORY"],
+		"price": 50000
 	},
-	"Magic Guard": {
-		"category": "accessory",
-		"description": "Reduces incoming magic damage.",
+	"MAGIC_GUARD": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Silky String": {
-		"category": "accessory",
-		"description": "An extra silky string! Use this and your fishing line will never break.",
+	"SILKY_STRING": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Chum": {
-		"category": "accessory",
-		"description": "Ew! Buffs fishing strength.",
+	"CHUM": {
+		"categories": ["FOOD", "ACCESSORY"],
 		"price": 0
 	},
-	"Lavaproof Fishing Hook": {
-		"category": "accessory",
-		"description": "Allows you to fish in lava!",
+	"LAVAPROOF_FISHING_HOOK": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Mining Charm": {
-		"category": "accessory",
-		"description": "Buffs double ore chance.",
+	"MINING_CHARM": {
+		"categories": ["MINING", "ACCESSORY"],
 		"price": 0
 	},
-	"Lucky Coin": {
-		"category": "accessory",
-		"description": "This strange indestructible coin makes its holder extra lucky!",
+	"LUCKY_COIN": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Jetpack": {
-		"category": "accessory",
-		"description": "The best defense is flying over the enemies.",
+	"JETPACK": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Holographic Decoy": {
-		"category": "accessory",
-		"description": "Distract enemies with a decoy! Useful to get a moment to breathe.",
+	"HOLOGRAPHIC_DECOY": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Energy Shield": {
-		"category": "accessory",
-		"description": "Keep your problems at bay with this energy shield!",
+	"ENERGY_SHIELD": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Magnet": {
-		"category": "accessory",
-		"description": "Sexy! Actually maybe a different type of attractive.",
+	"MAGNET": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Strength Potion": {
-		"category": "accessory",
-		"description": "Buffs all types of damage; consumable.",
+	"STRENGTH_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Cactus Potion": {
-		"category": "accessory",
-		"description": "Doubles piercing damage; consumable.",
+	"CACTUS_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Iron Potion": {
-		"category": "accessory",
-		"description": "Buffs blunt damage and defense; consumable.",
+	"IRON_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Turtle Master Potion": {
-		"category": "accessory",
-		"description": "Triples defense, but halves speed and halves attack; consumable.",
+	"TURTLE_MASTER_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Beetle Master Potion": {
-		"category": "accessory",
-		"description": "Doubles defense, but halves speed; consumable.",
+	"BEETLE_MASTER_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Mining Potion": {
-		"category": "accessory",
-		"description": "Boosts double ore chance; consumable.",
+	"MINING_POTION": {
+		"categories": ["MINING", "ACCESSORY"],
 		"price": 0
 	},
-	"Fishing Potion": {
-		"category": "accessory",
-		"description": "Boosts fishing power and only consumes less bait; consumable.",
+	"FISHING_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Magnet Potion": {
-		"category": "accessory",
-		"description": "It's like a magnet, but in potion form! Consumable.",
+	"MAGNET_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Lightning Potion": {
-		"category": "accessory",
-		"description": "Drinking this gives you Zeus' blessing to strike lightning! Consumable.",
+	"LIGHTNING_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Fire Resistance Potion": {
-		"category": "accessory",
-		"description": "Becomes immune to fire and lava; consumable.",
+	"FIRE_RESISTANCE_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Water Walking Potion": {
-		"category": "accessory",
-		"description": "Made from a distilled bearded canaanite man; consumable.",
+	"WATER_WALKING_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Invisibility Potion": {
-		"category": "accessory",
-		"description": "I've mastered the ability of standing so incredibly still\u2026 that I become invisible to the eye. Consumable.",
+	"INVISIBILITY_POTION": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Cocktail": {
-		"category": "accessory",
-		"description": "You won't know what you get until you drink it! Consumable.",
+	"COCKTAIL": {
+		"categories": ["ACCESSORY"],
 		"price": 0
 	},
-	"Wooden Arrow": {
-		"bought": 25000,
-		"category": "arrow",
-		"description": "A cheap arrow, superiory archery often was the main reason for success in ancient battles.",
-		"price": 1,
-		"sold": 25000
+	"WOODEN_ARROW": {
+		"starting_amount": 25000,
+		"categories": ["AMMO", "ARROW"],
+		"price": 1
 	},
-	"Bone Arrow": {
-		"bought": 15000,
-		"category": "arrow",
-		"description": "A sharp arrow, superiory archery often was the main reason for success in ancient battles.",
-		"price": 3,
-		"sold": 15000
+	"BONE_ARROW": {
+		"starting_amount": 15000,
+		"categories": ["AMMO", "ARROW"],
+		"price": 300
 	},
-	"Emerald Arrow": {
-		"bought": 5000,
-		"category": "arrow",
-		"description": "An expensive arrow, superiory archery often was the main reason for success in ancient battles.",
-		"price": 90,
-		"sold": 5000
+	"EMERALD_ARROW": {
+		"starting_amount": 5000,
+		"categories": ["AMMO", "ARROW"],
+		"price": 90
 	},
-	"Armor Penetrating Rocket": {
-		"category": "rocket",
-		"description": "Once you have mastered rocketry, its time to blow through some armor!",
+	"ARMOR_PENETRATING_ROCKET": {
+		"categories": ["AMMO", "ROCKET"],
 		"price": 0
 	},
-	"Explosive Rocket": {
-		"category": "rocket",
-		"description": "Once you have mastered rocketry, its time for a massive explosion!",
+	"EXPLOSIVE_ROCKET": {
+		"categories": ["AMMO", "ROCKET"],
 		"price": 0
 	},
-	"Comet Fragment": {
-		"category": "cometfragment",
-		"description": "A celestial fragment, can be crafted into various weapons and armors, as well as used as ammo.",
+	"COMET_FRAGMENT": {
+		"categories": ["AMMO", "COMET_FRAGMENT"],
 		"price": 0
 	},
-	"Pipe Bomb": {
-		"category": "improvisedexplosive",
-		"description": "Do not try at home.",
+	"PIPE_BOMB": {
+		"categories": ["AMMO", "IMPROVISED_EXPLOSIVE"],
 		"price": 0
 	},
-	"Molotov Cocktail": {
-		"category": "improvisedexplosive",
-		"description": "Do not confuse with regular cocktails.",
+	"MOLOTOV_COCKTAIL": {
+		"categories": ["AMMO", "IMPROVISED_EXPLOSIVE"],
 		"price": 0
 	},
-	"Worm": {
-		"bought": 10000,
-		"category": "bait",
-		"description": "Eww a worm. Can be used as bait.",
-		"price": 5,
-		"sold": 10000
+	"WORM": {
+		"starting_amount": 10000,
+		"categories": ["FOOD", "BAIT"],
+		"price": 50
 	},
-	"Mango": {
-		"bought": 2000,
-		"category": "bait",
-		"description": "A nice juicy fruit found in jungles. Can be used as bait.",
-		"price": 10,
-		"sold": 2000
+	"MANGO": {
+		"starting_amount": 2000,
+		"categories": ["FOOD", "BAIT"],
+		"price": 10
 	},
-	"Ilmango": {
-		"bought": 2000,
-		"category": "bait",
-		"description": "Hey guys, welcome back to another scicraft episode!",
-		"price": 100,
-		"sold": 2000
+	"ILMANGO": {
+		"starting_amount": 2000,
+		"categories": ["FOOD", "BAIT"],
+		"price": 100
 	},
-	"Raw Cod": {
-		"bought": 1000,
-		"category": "bait",
-		"description": "Ew who eats raw fish. Can be used as bait.",
-		"price": 10,
-		"sold": 1000
+	"RAW_COD": {
+		"starting_amount": 1000,
+		"categories": ["FOOD", "BAIT"],
+		"description": "",
+		"price": 10
 	},
-	"Raw Salmon": {
-		"bought": 1000,
-		"category": "bait",
-		"description": "Ew who eats raw fish. Can be used as bait.",
-		"price": 20,
-		"sold": 1000
+	"RAW_SALMON": {
+		"starting_amount": 1000,
+		"categories": ["FOOD", "BAIT"],
+		"price": 20
 	},
-	"Pufferfish": {
-		"bought": 1000,
-		"category": "bait",
-		"description": "Is this safe to eat? Can be used as bait.",
-		"price": 100,
-		"sold": 1000
+	"PUFFERFISH": {
+		"starting_amount": 1000,
+		"categories": ["FOOD", "BAIT"],
+		"price": 100
 	},
-	"Goldfish": {
-		"category": "bait",
-		"description": "Mommy can we get one? Good bait.",
+	"GOLDFISH": {
+		"categories": ["FOOD", "BAIT"],
 		"price": 0
 	},
-	"Gold Goldfish": {
-		"category": "bait",
-		"description": "Not to be confused with the elusive Gold Gold Goldfish. Top tier bait.",
+	"GOLD_GOLDFISH": {
+		"categories": ["FOOD", "BAIT"],
 		"price": 0
 	},
-	"Squid": {
-		"bought": 1000,
-		"category": "bait",
-		"description": "A small piece of expensive squid meat. Top tier bait.",
-		"price": 200,
-		"sold": 1000
+	"SQUID": {
+		"starting_amount": 1000,
+		"categories": ["FOOD", "BAIT"],
+		"price": 200
 	},
-	"Seafood Dinner": {
-		"bought": 500,
-		"category": "bait",
-		"description": "Oo la la! Top tier dinner, top tier bait.",
-		"price": 15000,
-		"sold": 500
+	"SEAFOOD_DINNER": {
+		"starting_amount": 500,
+		"categories": ["FOOD", "BAIT"],
+		"price": 15000
 	},
-	"Emerald Squid": {
-		"bought": 250,
-		"category": "bait",
-		"description": "A small piece of squid meat stuffed full with emeralds, if it wasn't expensive before it definitely is now. Top tier bait.",
-		"price": 9200,
-		"sold": 250
+	"EMERALD_SQUID": {
+		"starting_amount": 250,
+		"categories": ["FOOD", "FOOD", "BAIT"],
+		"price": 92000
 	},
-	"Vulrinth Worm": {
-		"bought": 100,
-		"category": "bait",
-		"description": "This worm is living lavishly that's for sure. Top tier bait.",
-		"price": 20000,
-		"sold": 100
+	"VULRINTH_WORM": {
+		"starting_amount": 100,
+		"categories": ["FOOD", "BAIT"],
+		"price": 20000
 	},
-	"Glowing Worm": {
-		"bought": 500,
-		"category": "bait",
-		"description": "A worm infused with magic. Super bait.",
-		"price": 1000,
-		"sold": 500
+	"GLOWING_WORM": {
+		"starting_amount": 500,
+		"categories": ["FOOD", "BAIT"],
+		"price": 1000
 	},
-	"Flying Fish": {
-		"bought": 500,
-		"category": "bait",
-		"description": "A fish that learnt to fly, can be made with magic. Super bait.",
-		"price": 5000,
-		"sold": 500
+	"FLYING_FISH": {
+		"starting_amount": 500,
+		"categories": ["FOOD", "BAIT"],
+		"price": 5000
 	},
-	"Glowing Cod": {
-		"bought": 250,
-		"category": "bait",
-		"description": "A cod infused with magic. Super bait.",
-		"price": 10000,
-		"sold": 250
+	"GLOWING_COD": {
+		"starting_amount": 250,
+		"categories": ["FOOD", "BAIT"],
+		"price": 100000
 	},
-	"Shrimp Shrimp": {
-		"bought": 250,
-		"category": "bait",
-		"description": "I think it's just a normal shrimp. Super bait.",
-		"price": 25000,
-		"sold": 250
+	"SHRIMP_SHRIMP": {
+		"starting_amount": 250,
+		"categories": ["FOOD", "BAIT"],
+		"price": 250000
 	},
-	"Flying Squid": {
-		"bought": 250,
-		"category": "bait",
-		"description": "A squid that learnt to fly. Super bait.",
-		"price": 50000,
-		"sold": 250
+	"FLYING_SQUID": {
+		"starting_amount": 250,
+		"categories": ["FOOD", "BAIT"],
+		"price": 500000
 	},
-	"Blue Ringed Octopus": {
-		"bought": 100,
-		"category": "bait",
-		"description": "An octopus infused with magic. Super bait.",
-		"price": 100000,
-		"sold": 100
+	"BLUE_RINGED_OCTOPUS": {
+		"starting_amount": 100,
+		"categories": ["FOOD", "BAIT"],
+		"price": 100000
 	},
-	"Star Fish": {
-		"bought": 100,
-		"category": "bait",
-		"description": "This alien species evolved to protect their comet, not to be confused with starfish. Super bait.",
-		"price": 250000,
-		"sold": 100
+	"STAR_FISH": {
+		"starting_amount": 100,
+		"categories": ["FOOD", "BAIT"],
+		"price": 250000
 	},
-	"Devil Ray": {
-		"bought": 100,
-		"category": "bait",
-		"description": "This ray flew from hell. Super bait.",
-		"price": 500000,
-		"sold": 100
+	"DEVIL_RAY": {
+		"starting_amount": 100,
+		"categories": ["FOOD", "BAIT"],
+		"price": 500000
 	},
-	"Wind Vane": {
-		"category": "utility",
-		"description": "Allows you to summon or clear any gusty weather.",
+	"WIND_VANE": {
+		"categories": ["UTILITY"],
 		"price": 0
 	},
-	"Rain Gauge": {
-		"category": "utility",
-		"description": "Allows you to summon or clear the rain in the skies.",
+	"RAIN_GAUGE": {
+		"categories": ["UTILITY"],
 		"price": 0
 	},
-	"Thermometer": {
-		"category": "utility",
-		"description": "Temporarily changes seasons.",
+	"THERMOMETER": {
+		"categories": ["UTILITY"],
 		"price": 0
 	},
-	"Sundial": {
-		"category": "utility",
-		"description": "Temporarily changes the time of day.",
+	"SUNDIAL": {
+		"categories": ["UTILITY"],
 		"price": 0
 	},
-	"20\" Path Master Ultra": {
-		"category": "utility",
-		"description": "Digs paths like never before! I refrained from calling this an edging shovel.",
+	"PATH_MASTER_ULTRA": {
+		"categories": ["UTILITY"],
 		"price": 0
 	}
 }

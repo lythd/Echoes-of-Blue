@@ -1,27 +1,27 @@
-Pyro Grass,Pyro Soil,Lava,Surface Gold Ore,Hellstone,Blackstone,,,Fire,Smoke Bush,,,,,,,Path,Carriage Floor,,,,,,,Carriage,Carriage{V},Carriage{V},Carriage{V},Carriage{V},,,
-,,,,,,,,Blood Sage,Smoke Tree,,,,,,,Wood Floor,Stone Floor,Limestone Floor,Iron Floor,,,,,Carriage{V},Carriage{V},Piggy Bank,Safe,Carriage{V},,,
-,,,,,,,,Pyro Tall Grass,,,,,,,,,,,,,,,,Carriage{V},Carriage{V},Carriage{V},Sleeping Mat,Carriage{V},,,
-Ash,Smooth Ash,,,,,,,Bones,Fossil{V},Fossil{V},,,,,,,,,,,,,,,Carriage{V},Carriage{V},Carriage{V},Carriage{V},,,
-,,,,,,,,Burnt Tall Grass,Fossil{V},Fossil{V},,,,,,,,,,,,,,Sign{V},Sign{V},Sign{V},Sign{V},Gravestone,,,
-,,,,,,,,Basalt,Fossil{V},Fossil,,,,,,,,,,,,,,Wood Pole,Stone Pole,Limestone Pole,Iron Pole,Wood Fence,Stone Fence,Limestone Fence,Iron Fence
-Grass,Dirt,Water,Ice,,,,,Tall Grass,Bush,Oak Tree,Snowglobe,,,,,,,,,,,,,Wood Gate,Stone Gate,Limestone Gate,Iron Gate,Wood Gate{V},Stone Gate{V},Limestone Gate{V},Iron Gate{V}
-,,,,,,,,Sunflower,Wheat,Autumn Oak Tree,Sign,,,,,,,,,,,,,Wood Pole,Stone Pole,Limestone Pole,Iron Pole,Window,,,
-,,,,,,,,Blue Flax,Snowpile,Rubber Tree,Hot Chocolate,,,,,,,,,,,,,Wood Pole,Stone Pole,Limestone Pole,Iron Pole,,,,
-Jungle Grass,Mud,Jungle Water,,,,,,Pumpkin{V}/Watermelon{V},Jungle Bush,Mahogany Tree,Jungle Tall Grass,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall,Stall{V}
-,,,,,,,,Pumpkin{V},Watermelon{V},Mango Tree{V},Mahogany Log,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V}
-,,,,,,,,Pumpkin,Watermelon,Mango Tree,Sugarcane,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V}
-Swamp,Swamp{V},Swamp Water,,,,,,Swamp Leaves{V},Swamp Leaves,Mangrove Tree,,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V},Stall{V}
-,,,,,,,,Lilypad{V},Lilypad,Mangrove Log,,,,,,,,,,,,,,Stall{V},Stall{V},Stall{V},,,,,
-,,,,,,,,Lilypad{V},Lilypad{V},,,,,,,,,,,,,,,Beanstalk,Sand Toys,Plane{V},Plane{V},Plane{V},Plane,,
-Sky,Cloud{V},Storm Cloud{V},,,,,,Cloud,Storm Cloud,Lightning{V},,,,,,,,,,,,,,,,Plane{V},Plane{V},Plane{V},,,
-,,,,,,,,Cloud{V},Storm Cloud{V},Lightning{V},,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,Cloud{V},Storm Cloud{V},Lightning{V},,,,,,,,,,,,,,,,,,,,,
-,Sand,Clear Water,,,,,,Seashells{V},Cactus{V},Coconut Tree{V},,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,Seashells,Cactus,Coconut Tree,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,Piña Colada,Coconut Tree{V},Coconut Tree{V},,,,,,,,,,,,,,,,,,,,,
-Chalk Soil,Stone,Limestone,Gravel,,,,,Pebbles,Boulder,Silver Ore Boulder,Emerald Ore Boulder,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,Twigs,Coal Ore Boulder,Gold Ore Boulder,Rail,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,Rock Flower,Iron Ore Boulder,Diamond Ore Boulder,Torch,,,,,,,,,,,,,,,,,,,,
-Coal Ore,Tin Ore,Copper Ore,Iron Ore,,,,,,,,,,,,,Dungeon Background,Dungeon Floor,Dungeon Wall,,,,,,Dungeon Pot,Dungeon Chest,Dungeon Cell,Dungeon Stairs,,,,
-Silver Ore,Gold Ore,Ruby Ore,Diamond Ore,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Emerald Ore,Titanium Ore,Vulrinth Ore,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PYRO_GRASS,PYRO_SOIL,LAVA,SURFACE_GOLD_ORE,HELLSTONE,BLACKSTONE,,,FIRE,SMOKE_BUSH,,,,,,,PATH,CARRIAGE_FLOOR,,,,,,,CARRIAGE,CARRIAGE{V},CARRIAGE{V},CARRIAGE{V},CARRIAGE{V},,,
+,,,,,,,,BLOOD_SAGE,SMOKE_TREE,,,,,,,WOOD_FLOOR,STONE_FLOOR,LIMESTONE_FLOOR,IRON_FLOOR,,,,,CARRIAGE{V},CARRIAGE{V},PIGGY_BANK,SAFE,CARRIAGE{V},,,
+,,,,,,,,PYRO_TALL_GRASS,,,,,,,,,,,,,,,,CARRIAGE{V},CARRIAGE{V},CARRIAGE{V},SLEEPING_MAT,CARRIAGE{V},,,
+ASH,SMOOTH_ASH,,,,,,,BONES,FOSSIL{V},FOSSIL{V},,,,,,,,,,,,,,,CARRIAGE{V},CARRIAGE{V},CARRIAGE{V},CARRIAGE{V},,,
+,,,,,,,,BURNT_TALL_GRASS,FOSSIL{V},FOSSIL{V},,,,,,,,,,,,,,SIGN{V},SIGN{V},SIGN{V},SIGN{V},GRAVESTONE,,,
+,,,,,,,,BASALT,FOSSIL{V},FOSSIL,,,,,,,,,,,,,,WOOD_POLE,STONE_POLE,LIMESTONE_POLE,IRON_POLE,WOOD_FENCE,STONE_FENCE,LIMSTONE_FENCE,IRON_FENCE
+GRASS,DIRT,WATER,ICE,,,,,TALL_GRASS,BUSH,OAK_TREE,SNOW_GLOBE,,,,,,,,,,,,,WOOD_GATE,STONE_GATE,LIMESTONE_GATE,IRON_GATE,WOOD_GATE{V},STONE_GATE{V},LIMESTONE_GATE{V},IRON_GATE{V}
+,,,,,,,,SUNFLOWER,WHEAT,AUTUMN_OAK_TREE,SIGN,,,,,,,,,,,,,WOOD_POLE,STONE_POLE,LIMESTONE_POLE,IRON_POLE,WINDOW,,,
+,,,,,,,,BLUE_FLAX,SNOW_PILE,RUBBER_TREE,HOT_CHOCOLATE,,,,,,,,,,,,,WOOD_DOOR,STONE_DOOR,LIMESTONE_DOOR,IRON_DOOR,WOOD_DOOR{V},STONE_DOOR{V},LIMESTONE_DOOR{V},IRON_DOOR{V}
+JUNGLE_GRASS,MUD,JUNGLE_WATER,,,,,,PUMPKIN{V}/WATERMELON{V},JUNGLE_BUSH,MAHOGANY_TREE,JUNGLE_TALL_GRASS,,,,,,,,,,,,,STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL,STALL{V}
+,,,,,,,,PUMPKIN{V},WATERMELON{V},MANGO_TREE{V},MAHOGANY_LOG,,,,,,,,,,,,,STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V}
+,,,,,,,,PUMPKIN,WATERMELON,MANGO_TREE,SUGARCANE,,,,,,,,,,,,,STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V}
+SWAMP,SWAMP{V},SWAMP_WATER,,,,,,SWAMP_LEAVES{V},SWAMP_LEAVES,MANGROVE_TREE,,,,,,,,,,,,,,STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V},STALL{V}
+,,,,,,,,LILYPAD{V},LILYPAD,MANGROVE_LOG,,,,,,,,,,,,,,STALL{V},STALL{V},STALL{V},,,,,
+,,,,,,,,LILYPAD{V},LILYPAD{V},,,,,,,,,,,,,,,BEANSTALK,SAND_TOYS,PLANE{V},PLANE{V},PLANE{V},PLANE,,
+SKY,CLOUD{V},STORM_CLOUD{V},,,,,,CLOUD,STORM_CLOUD{V},STORM_CLOUD,,,,,,,,,,,,,,,,PLANE{V},PLANE{V},PLANE{V},,,
+,,,,,,,,CLOUD{V},STORM_CLOUD{V},STORM_CLOUD{V},,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,CLOUD{V},STORM_CLOUD{V},STORM_CLOUD{V},,,,,,,,,,,,,,,,,,,,,
+,SAND,CLEAR_WATER,,,,,,SEASHELLS{V},CACTUS{V},COCONUT_TREE{V},,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,SEASHELLS,CACTUS,COCONUT_TREE,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,PINA_COLADA,COCONUT_TREE{V},COCONUT_TREE{V},,,,,,,,,,,,,,,,,,,,,
+CHALK_SOIL,STONE,LIMESTONE,GRAVEL,,,,,PEBBLES,BOULDER,SILVER_ORE_BOULDER,EMERALD_ORE_BOULDER,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,TWIGS,COAL_ORE_BOULDER,GOLD_ORE_BOULDER,RAIL,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,ROCK_FLOWER,IRON_ORE_BOULDER,DIAMOND_ORE_BOULDER,TORCH,,,,,,,,,,,,,,,,,,,,
+COAL_ORE,TIN_ORE,COPPER_ORE,IRON_ORE,,,,,,,,,,,,,DUNGEON_BACKGROUND,DUNGEON_FLOOR,DUNGEON_WALL,,,,,,DUNGEON_POT,DUNGEON_CHEST,DUNGEON_CELL,DUNGEON_STAIRS,,,,
+SILVER_ORE,GOLD_ORE,RUBY_ORE,DIAMOND_ORE,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EMERALD_ORE,TITANIUM_ORE,VULRINTH_ORE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

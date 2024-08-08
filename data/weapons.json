@@ -1,410 +1,384 @@
 {
-	"batteringram": {
+	"BATTERING_RAM": {
 		"blunt": 50,
 		"durability": 500,
 		"effects": [
-			"Speed Boost"
+			"SPEED_BOOST"
 		],
-		"name": "Battering Ram",
-		"piercing": -1
+		"piercing": -1,
+		"priority": 0
 	},
-	"dagger": {
+	"DAGGER": {
 		"blunt": -1,
 		"durability": 2,
 		"effects": [
-			"Surprise"
+			"SURPRISE"
 		],
-		"name": "Dagger",
-		"piercing": 60
+		"piercing": 60,
+		"priority": 0
 	},
-	"diamondaxe": {
+	"DIAMOND_AXE": {
 		"blunt": 100,
 		"durability": 5,
-		"effects": [
-			"Goes Last"
-		],
-		"name": "Diamond Axe",
-		"piercing": 400
+		"effects": [],
+		"piercing": 400,
+		"priority": -1
 	},
-	"diamondsword": {
+	"DIAMOND_SWORD": {
 		"blunt": 25,
 		"durability": 10,
 		"effects": [],
-		"name": "Diamond Sword",
-		"piercing": 225
+		"piercing": 225,
+		"priority": 0
 	},
-	"dualbow": {
+	"DUAL_BOW": {
 		"blunt": -1,
 		"durability": 15,
 		"effects": [
-			"Bow",
-			"Goes First",
-			"Double Hit"
+			"BOW",
+			"DOUBLE_HIT"
 		],
-		"name": "Dual Bow",
-		"piercing": 100
+		"piercing": 100,
+		"priority": 1
 	},
-	"emeraldstaff": {
+	"EMERALD_STAFF": {
 		"blunt": -1,
 		"durability": 20,
 		"effects": [
-			"Magic"
+			"MAGIC"
 		],
-		"name": "Emerald Staff",
-		"piercing": 200
+		"piercing": 200,
+		"priority": 0
 	},
-	"emeraldwand": {
+	"EMERALD_WAND": {
 		"blunt": -1,
 		"durability": 2000,
 		"effects": [
-			"Magic",
-			"Multi Hit"
+			"MAGIC",
+			"MULTI_HIT"
 		],
-		"name": "Emerald Wand",
-		"piercing": 75
+		"piercing": 75,
+		"priority": 0
 	},
-	"enchantedshield": {
+	"ENCHANTED_SHIELD": {
 		"blunt": 150,
 		"durability": 50,
 		"effects": [
-			"Block",
-			"Critical Chance"
+			"BLOCK",
+			"CRITICAL_CHANCE"
 		],
-		"name": "Enchanted Shield",
-		"piercing": 50
+		"piercing": 50,
+		"priority": 0
 	},
-	"enchantedsword": {
+	"ENCHANTED_SWORD": {
 		"blunt": 50,
 		"durability": 50,
 		"effects": [
-			"Goes First",
-			"Critical Chance"
+			"CRITICAL_CHANCE"
 		],
-		"name": "Enchanted Sword",
-		"piercing": 200
+		"piercing": 200,
+		"priority": 1
 	},
-	"evenife": {
+	"EVENIFE": {
 		"blunt": -1,
 		"durability": 10,
 		"effects": [
-			"Even Out"
+			"EVEN_OUT"
 		],
-		"name": "Evenife",
-		"piercing": 25
+		"piercing": 25,
+		"priority": 0
 	},
-	"fist": {
+	"FIST": {
 		"blunt": 25,
 		"durability": -1,
 		"effects": [
-			"Fist"
+			"HANDS"
 		],
-		"name": "Fist",
-		"piercing": -1
+		"piercing": -1,
+		"priority": 0
 	},
-	"flamethrower": {
+	"FLAMETHROWER": {
 		"blunt": -1,
 		"durability": 10,
 		"effects": [
-			"Magic",
-			"Counter Magic"
+			"MAGIC",
+			"COUNTER MAGIC"
 		],
-		"name": "Flamethrower",
-		"piercing": 350
+		"piercing": 350,
+		"priority": 0
 	},
-	"meteorstaff": {
+	"METEOR_STAFF": {
 		"blunt": -1,
 		"durability": 25,
 		"effects": [
-			"Magic",
-			"Always Goes Last",
-			"Critical Chance"
+			"MAGIC",
+			"CRITICAL_CHANCE"
 		],
-		"name": "Meteor Staff",
-		"piercing": 400
+		"piercing": 400,
+		"priority": -2
 	},
-	"masterbolt": {
+	"MASTER_BOLT": {
 		"blunt": -1,
 		"durability": 25,
 		"effects": [
-			"Magic",
-			"Goes First"
+			"MAGIC"
 		],
-		"name": "Master Bolt",
-		"piercing": 300
+		"piercing": 300,
+		"priority": 1
 	},
-	"flute": {
+	"FLUTE": {
 		"blunt": -1,
 		"durability": 2000,
 		"effects": [
-			"Magic",
-			"Always Goes First",
-			"Soothing"
+			"MAGIC",
+			"SOOTHING"
 		],
-		"name": "Flute",
-		"piercing": 100
+		"piercing": 100,
+		"priority": 2
 	},
-	"goldaxe": {
+	"GOLD_AXE": {
 		"blunt": 80,
 		"durability": 2,
 		"effects": [
-			"Goes Last",
-			"Critical Chance"
+			"CRITICAL CHANCE"
 		],
-		"name": "Gold Axe",
-		"piercing": 320
+		"piercing": 320,
+		"priority": -1
 	},
-	"goldbow": {
+	"GOLD_BOW": {
 		"blunt": -1,
 		"durability": 5,
 		"effects": [
-			"Bow",
-			"Goes First",
-			"Critical Chance"
+			"BOW",
+			"CRITICAL CHANCE"
 		],
-		"name": "Gold Bow",
-		"piercing": 175
+		"piercing": 175,
+		"priority": 1
 	},
-	"goldsword": {
+	"GOLD_SWORD": {
 		"blunt": 20,
 		"durability": 3,
 		"effects": [
-			"Critical Chance"
+			"CRITICAL CHANCE"
 		],
-		"name": "Gold Sword",
-		"piercing": 180
+		"piercing": 180,
+		"priority": 0
 	},
-	"ironaxe": {
+	"IRON_AXE": {
 		"blunt": 60,
 		"durability": 5,
-		"effects": [
-			"Goes Last"
-		],
-		"name": "Iron Axe",
-		"piercing": 240
+		"effects": [],
+		"piercing": 240,
+		"priority": -1
 	},
-	"ironsword": {
+	"IRON_SWORD": {
 		"blunt": 15,
 		"durability": 10,
 		"effects": [],
-		"name": "Iron Sword",
-		"piercing": 135
+		"piercing": 135,
+		"priority": 0
 	},
-	"katana": {
+	"KATANA": {
 		"blunt": -1,
 		"durability": 500,
 		"effects": [
-			"Speed Boost",
-			"Sharp"
+			"SPEED BOOST",
+			"SHARP"
 		],
-		"name": "Katana",
-		"piercing": 50
+		"piercing": 50,
+		"priority": 0
 	},
-	"vulrinthaxe": {
+	"VULRINTH_AXE": {
 		"blunt": 300,
 		"durability": 10,
-		"effects": [
-			"Goes Last"
-		],
-		"name": "vulrinth Axe",
-		"piercing": 1200
+		"effects": [],
+		"piercing": 1200,
+		"priority": -1
 	},
-	"vulrinthsword": {
+	"VULRINTH_SWORD": {
 		"blunt": 75,
 		"durability": 20,
 		"effects": [],
-		"name": "vulrinth Sword",
-		"piercing": 675
+		"piercing": 675,
+		"priority": 0
 	},
-	"cometlance": {
+	"COMET_LANCE": {
 		"blunt": -1,
 		"durability": 25,
 		"effects": [
-			"Critical Chance",
-			"Speed Boost"
+			"CRITICAL_CHANCE",
+			"SPEED_BOOST"
 		],
-		"name": "Comet Lance",
-		"piercing": 500
+		"piercing": 500,
+		"priority": 0
 	},
-	"powerflower": {
+	"POWER_FLOWER": {
 		"blunt": -1,
 		"durability": 15,
 		"effects": [
-			"Magic",
-			"Power Up"
+			"MAGIC",
+			"POWER_UP"
 		],
-		"name": "Power Flower",
-		"piercing": 150
+		"piercing": 150,
+		"priority": 0
 	},
-	"rocketlauncher": {
+	"ROCKET_LAUNCHER": {
 		"blunt": -1,
 		"durability": 5,
-		"effects": [
-			"Rocket Launcher",
-			"Always Goes Last"
-		],
-		"name": "Rocket Launcher",
-		"piercing": 400
+		"effects": [],
+		"piercing": 400,
+		"priority": -2
 	},
-	"starlauncher": {
+	"STAR_LAUNCHER": {
 		"blunt": -1,
 		"durability": 25,
 		"effects": [
-			"Star Launcher",
-			"Critical Chance"
+			"STAR_LAUNCHER",
+			"CRITICAL_CHANCE"
 		],
-		"name": "Star Launcher",
-		"piercing": 350
+		"piercing": 350,
+		"priority": 0
 	},
-	"shurikens": {
+	"SHURIKENS": {
 		"blunt": -1,
 		"durability": 1,
 		"effects": [
-			"Goes First",
-			"Multi Hit",
-			"Critical Chance"
+			"MULTI_HIT",
+			"CRITICAL_CHANCE"
 		],
-		"name": "Shurikens",
-		"piercing": 50
+		"piercing": 50,
+		"priority": 1
 	},
-	"sledgehammer": {
+	"SLEDGEHAMMER": {
 		"blunt": 150,
 		"durability": 2,
 		"effects": [
-			"Defense Basher"
+			"DEFENSE_BASHER"
 		],
-		"name": "Sledgehammer",
-		"piercing": -1
+		"piercing": -1,
+		"priority": 0
 	},
-	"spear": {
+	"SPEAR": {
 		"blunt": -1,
 		"durability": 3,
-		"effects": [
-			"Goes First"
-		],
-		"name": "Spear",
-		"piercing": 150
+		"effects": [],
+		"piercing": 150,
+		"priority": 1
 	},
-	"springyspring": {
+	"SPRINGY_SPRING": {
 		"blunt": 5,
 		"durability": 808,
 		"effects": [
-			"Really Always Goes Last",
-			"Elastic Potential"
+			"ELASTIC_POTENTIAL"
 		],
-		"name": "Springy Spring",
-		"piercing": -1
+		"piercing": -1,
+		"priority": -100
 	},
-	"stoneaxe": {
+	"STONE_AXE": {
 		"blunt": 40,
 		"durability": 500,
 		"effects": [
-			"Fragile",
-			"Goes Last"
+			"FRAGILE"
 		],
-		"name": "Stone Axe",
-		"piercing": 160
+		"piercing": 160,
+		"priority": 0
 	},
-	"stonesword": {
+	"STONE_SWORD": {
 		"blunt": 10,
 		"durability": 500,
 		"effects": [
-			"Fragile"
+			"FRAGILE"
 		],
-		"name": "Stone Sword",
-		"piercing": 90
+		"piercing": 90,
+		"priority": 0
 	},
-	"thespade": {
+	"THE_SPADE": {
 		"blunt": 250,
 		"durability": 25,
-		"effects": [
-			"Goes Last"
-		],
-		"name": "The Spade",
-		"piercing": -1
+		"effects": [],
+		"piercing": -1,
+		"priority": -1
 	},
-	"tinbow": {
+	"TIN_BOW": {
 		"blunt": -1,
 		"durability": 40,
 		"effects": [
-			"Bow",
-			"Goes First"
+			"BOW"
 		],
-		"name": "Tin Bow",
-		"piercing": 125
+		"piercing": 125,
+		"priority": 0
 	},
-	"truegoldaxe": {
+	"TRUE_GOLD_AXE": {
 		"blunt": 70,
 		"durability": 5,
 		"effects": [
-			"Light Weight",
-			"Critical Chance"
+			"LIGHT_WEIGHT",
+			"CRITICAL_CHANCE"
 		],
-		"name": "True Gold Axe",
-		"piercing": 280
+		"piercing": 280,
+		"priority": 0
 	},
-	"woodbow": {
+	"WOOD_BOW": {
 		"blunt": -1,
 		"durability": 20,
 		"effects": [
-			"Bow",
-			"Goes First"
+			"BOW"
 		],
-		"name": "Wood Bow",
-		"piercing": 75
+		"piercing": 75,
+		"priority": 1
 	},
-	"shiv": {
+	"SHIV": {
 		"blunt": -1,
 		"durability": 5,
 		"effects": [],
-		"name": "Shiv",
 		"piercing": 50
 	},
-	"crowbar": {
+	"CROWBAR": {
 		"blunt": 40,
 		"durability": 15,
 		"effects": [
-			"Stun"
+			"STUN"
 		],
-		"name": "Crowbar",
-		"piercing": -1
+		"piercing": -1,
+		"priority": 0
 	},
-	"brassknuckles": {
+	"BRASS_KNUCKLES": {
 		"blunt": 75,
 		"durability": 50,
 		"effects": [],
-		"name": "Brass Knuckles",
-		"piercing": 25
+		"piercing": 25,
+		"priority": 0
 	},
-	"brokenbottle": {
+	"BROKEN_BOTTLE": {
 		"blunt": -1,
 		"durability": 3,
 		"effects": [],
-		"name": "Broken Bottle",
-		"piercing": 175
+		"piercing": 175,
+		"priority": 0
 	},
-	"metalpipe": {
+	"METAL_PIPE": {
 		"blunt": 100,
 		"durability": 5,
 		"effects": [],
-		"name": "Metal Pipe",
-		"piercing": -1
+		"piercing": -1,
+		"priority": 0
 	},
-	"seismometer": {
+	"SEISMOMETER": {
 		"blunt": 300,
 		"durability": 500,
 		"effects": [
-			"Seismometer"
+			"SEISMOMETER"
 		],
-		"name": "Seismometer",
-		"piercing": -1
+		"piercing": -1,
+		"priority": 0
 	},
-	"extendablearm": {
+	"EXTENDABLE_ARM": {
 		"blunt": 75,
 		"durability": 500,
 		"effects": [
-			"Extendable Arm"
+			"EXTENDABLE_ARM"
 		],
-		"name": "Extendable Arm",
-		"piercing": -1
+		"piercing": -1,
+		"priority": 0
 	}
 }

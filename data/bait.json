@@ -1,124 +1,104 @@
 {
-	"glowingworm": {
-		"drop": "Glowing Cod",
+	"GLOWING_WORM": {
+		"drop": "GLOWING_COD",
 		"effects": [],
-		"fp": 60,
-		"name": "Glowing Worm"
+		"fp": 60
 	},
-	"flyingfish": {
-		"drop": "Flying Squid",
+	"FLYING_FISH": {
+		"drop": "FLYING_SQUID",
 		"effects": [],
-		"fp": 80,
-		"name": "Flying Fish"
+		"fp": 80
 	},
-	"glowingcod": {
-		"drop": "Blue Ringed Octopus",
+	"GLOWING_COD": {
+		"drop": "BLUE_RINGED_OCTOPUS",
 		"effects": [],
-		"fp": 100,
-		"name": "Glowing Cod"
+		"fp": 100
 	},
-	"shrimpshrimp": {
-		"drop": "Star Fish",
+	"SHRIMP_SHRIMP": {
+		"drop": "STAR_FISH",
 		"effects": [],
-		"fp": 120,
-		"name": "Shrimp Shrimp"
+		"fp": 120
 	},
-	"flyingsquid": {
-		"drop": "Devil Ray",
+	"FLYING_SQUID": {
+		"drop": "DEVIL_RAY",
 		"effects": [],
-		"fp": 140,
-		"name": "Flying Squid"
+		"fp": 140
 	},
-	"blueringedoctopus": {
-		"drop": "Glowing Eye",
+	"BLUE_RINGED_OCTOPUS": {
+		"drop": "GLOWING_EYE",
 		"effects": [],
-		"fp": 160,
-		"name": "Blue Ringed Octopus"
+		"fp": 160
 	},
-	"starfish": {
-		"drop": "Comet Fragment",
+	"STAR_FISH": {
+		"drop": "COMET_FRAGMENT",
 		"effects": [],
-		"fp": 180,
-		"name": "Star Fish"
+		"fp": 180
 	},
-	"devilray": {
-		"drop": "Unholy Wings",
+	"DEVIL_RAY": {
+		"drop": "UNHOLY_WINGS",
 		"effects": [
-			"Scary"
+			"SCARY"
 		],
-		"fp": 200,
-		"name": "Devil Ray"
+		"fp": 200
 	},
-	"emeraldsquid": {
-		"drop": "None",
+	"EMERALD_SQUID": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 150,
-		"name": "Emerald Squid"
+		"fp": 150
 	},
-	"goldfish": {
-		"drop": "None",
+	"GOLDFISH": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 25,
-		"name": "Goldfish"
+		"fp": 25
 	},
-	"goldgoldfish": {
-		"drop": "None",
+	"GOLD_GOLDFISH": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 50,
-		"name": "Gold Goldfish"
+		"fp": 50
 	},
-	"ilmango": {
-		"drop": "None",
+	"ILMANGO": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 20,
-		"name": "Ilmango"
+		"fp": 20
 	},
-	"mango": {
-		"drop": "None",
+	"MANGO": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 10,
-		"name": "Mango"
+		"fp": 10
 	},
-	"vulrinthworm": {
-		"drop": "None",
+	"VULRINTH_WORM": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 200,
-		"name": "Netherite Worm"
+		"fp": 200
 	},
-	"pufferfish": {
-		"drop": "None",
+	"PUFFERFISH": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 10,
-		"name": "Pufferfish"
+		"fp": 10
 	},
-	"rawcod": {
-		"drop": "None",
+	"RAW_COD": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 10,
-		"name": "Raw Cod"
+		"fp": 10
 	},
-	"rawsalmon": {
-		"drop": "None",
+	"RAW_SALMON": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 15,
-		"name": "Raw Salmon"
+		"fp": 15
 	},
-	"seafooddinner": {
-		"drop": "None",
+	"SEAFOOD_DINNER": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 100,
-		"name": "Seafood Dinner"
+		"fp": 100
 	},
-	"squid": {
-		"drop": "None",
+	"SQUID": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 50,
-		"name": "Squid"
+		"fp": 50
 	},
-	"worm": {
-		"drop": "None",
+	"WORM": {
+		"drop": "NONE",
 		"effects": [],
-		"fp": 5,
-		"name": "Worm"
+		"fp": 5
 	}
 }
