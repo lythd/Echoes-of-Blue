@@ -92,7 +92,7 @@
 		"count": 5
 	},
 	"SNOW_GLOBE": {
-		"drop": "NONE",
+		"drop": "SNOW_GLOBE",
 		"count": 0
 	},
 	"WATER": {
@@ -112,7 +112,7 @@
 		"count": 5
 	},
 	"SIGN": {
-		"drop": "NONE",
+		"drop": "SIGN",
 		"count": 0
 	},
 	"BLUE_FLAX": {
@@ -128,7 +128,7 @@
 		"count": 5
 	},
 	"HOT_CHOCOLATE": {
-		"drop": "NONE",
+		"drop": "HOT_CHOCOLATE",
 		"count": 0
 	},
 	"JUNGLE_GRASS": {
