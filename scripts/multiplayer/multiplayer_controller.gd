@@ -30,7 +30,30 @@ var tile_is_slippery = false
 		player_id = id
 		$InputSynchronizer.set_multiplayer_authority(id)
 
+@export var start_max_health : int = 20
+
+@export var health: int:
+	get:
+		return health
+	set(value):
+		health = value
+		%HealthBar.value = health
+		
+@export var max_health: int:
+	get:
+		return max_health
+	set(value):
+		max_health = value
+		%HealthBar.min_value = 3. * max_health/(6. - %HealthBar.size.x)
+		%HealthBar.max_value = max_health - %HealthBar.min_value
+		if health > max_health:
+			health = max_health
+
+
 func _ready():
+	if get_multiplayer_authority() == multiplayer.get_unique_id() || !MultiplayerManager.multiplayer_mode_enabled:
+		max_health = start_max_health
+		health = start_max_health
 	if in_control():
 		var game_node = get_node_or_null("/root/Game")
 		if game_node != null:
@@ -132,6 +155,7 @@ func press_sneak():
 func attack():
 	crying = false;angried = false;shocked = false
 	attacking = !attacking
+	health -= 1;
 
 func cry():
 	angried = false;shocked = false

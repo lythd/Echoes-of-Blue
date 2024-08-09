@@ -80,3 +80,4 @@ res://localization/game_localization.bg_BG.translation
 res://localization/game_localization.he_IL.translation
 res://localization/game_localization.ar.translation
 res://localization/game_localization.bs_BS.translation
+res://scripts/multiplayer/multiplayer_controller.gd

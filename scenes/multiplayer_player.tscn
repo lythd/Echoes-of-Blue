@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dg6viorw2o3l4"]
+[gd_scene load_steps=9 format=3 uid="uid://dg6viorw2o3l4"]
 
 [ext_resource type="Script" path="res://scripts/multiplayer/multiplayer_controller.gd" id="1_ij7lf"]
 [ext_resource type="Script" path="res://scripts/multiplayer/multiplayer_input.gd" id="2_75sn2"]
 [ext_resource type="PackedScene" uid="uid://bltgi20a35aro" path="res://scenes/character.tscn" id="3_ogou4"]
+[ext_resource type="Texture2D" uid="uid://bm36uudwodk7j" path="res://assets/sprites/progress_bar_under.png" id="4_i6yqx"]
+[ext_resource type="Texture2D" uid="uid://bmdwwry120wyf" path="res://assets/sprites/progress_bar_progress.png" id="5_u5rb5"]
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_bcfu3"]
 properties/0/path = NodePath(".:player_id")
@@ -119,6 +121,12 @@ properties/36/replication_mode = 1
 properties/37/path = NodePath("Character:SkinVal")
 properties/37/spawn = true
 properties/37/replication_mode = 1
+properties/38/path = NodePath(".:health")
+properties/38/spawn = true
+properties/38/replication_mode = 1
+properties/39/path = NodePath(".:max_health")
+properties/39/spawn = true
+properties/39/replication_mode = 1
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_kgm8b"]
 properties/0/path = NodePath("InputSynchronizer:input_direction")
@@ -137,6 +145,7 @@ z_index = 5
 y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_ij7lf")
+start_max_health = 10
 
 [node name="PlayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_bcfu3")
@@ -173,5 +182,22 @@ offset_bottom = -19.0
 grow_horizontal = 2
 grow_vertical = 2
 horizontal_alignment = 1
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -12.0
+offset_top = -25.0
+offset_right = 12.0
+offset_bottom = -17.0
+step = 0.0
+value = 50.0
+nine_patch_stretch = true
+stretch_margin_left = 4
+stretch_margin_top = 4
+stretch_margin_right = 4
+stretch_margin_bottom = 4
+texture_under = ExtResource("4_i6yqx")
+texture_progress = ExtResource("5_u5rb5")
+tint_progress = Color(0, 0.77, 0.0256666, 1)
 
 [connection signal="timeout" from="RespawnTimer" to="." method="_respawn"]

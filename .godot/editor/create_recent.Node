@@ -1,3 +1,5 @@
+TextureProgressBar
+Sprite2D
 Node2D
 TextureRect
 SubViewport
@@ -7,8 +9,6 @@ Control
 Button
 AnimationPlayer
 Node
-Sprite2D
 AnimatedSprite2D
 TileMap
 RichTextLabel
-MultiplayerSpawner
