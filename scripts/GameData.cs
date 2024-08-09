@@ -16,8 +16,9 @@ public partial class GameData : Node
 		if(_initialized) return;
 		_initialized = true;
 		ResetData();
-		var loaded = LoadDict<Location>("locations");
+		var loaded = LoadList<GameEffect>("effects");
 		GD.Print($"Json: `{JsonConvert.SerializeObject(loaded, Formatting.Indented)}`");
+		GD.Print($"Name: {loaded[0].Name}, Desc: {loaded[0].Desc}");
 		//var loadedSingle = JsonConvert.DeserializeObject<Range>("4");
 		//GD.Print($"Json: `{JsonConvert.SerializeObject(loadedSingle, Formatting.Indented)}`, Value: `{loadedSingle.Value}`, Max: `{loadedSingle.MaxValue}`, Min: `{loadedSingle.MinValue}`");
 		//var loadedRange = JsonConvert.DeserializeObject<Range>("[3, 6]");

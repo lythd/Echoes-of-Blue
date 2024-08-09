@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 
 public class Item
 {
-	[JsonProperty("starting_amount", DefaultValueHandling = DefaultValueHandling.Ignore)]
+	[JsonProperty("starting_amount")]
 	public int StartingAmount { get; set; }
 	[JsonProperty("categories")]
 	public List<string> Categories { get; set; }

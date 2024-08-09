@@ -1,21 +1,26 @@
 {
 	"GLOWING_EYE": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"DRAGON_HEART": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"CROWN": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"DRAGON_EGG": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"COMMAND_BLOCK": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
@@ -65,26 +70,32 @@
 		"price": 1000
 	},
 	"WATER_BOTTLE": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"CLOUD": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"THORN": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"VINE": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"MYSTERIOUS_SHARD": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"PUMPKIN_SEED": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
@@ -99,6 +110,7 @@
 		"price": 50
 	},
 	"MOLTEN_SULFUR": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
@@ -163,126 +175,157 @@
 		"price": 300
 	},
 	"PAPER": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"BOOK": {
+		"starting_amount": -1,
 		"categories": ["GENERIC"],
 		"price": 0
 	},
 	"WOOD_FLOOR": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"STONE_FLOOR": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"LIMESTONE_FLOOR": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"IRON_FLOOR": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"WOOD_WALL": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"STONE_WALL": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"LIMESTONE_WALL": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"IRON_WALL": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"WOOD_DOOR": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"STONE_DOOR": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"LIMESTONE_DOOR": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"IRON_DOOR": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"WOOD_POLE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"STONE_POLE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"LIMESTONE_POLE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"IRON_POLE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"WOOD_FENCE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"STONE_FENCE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"LIMESTONE_FENCE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"IRON_FENCE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"WOOD_GATE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"STONE_GATE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"LIMESTONE_GATE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"IRON_GATE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"GRAVESTONE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"WINDOW": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"SIGN": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"HOT_CHOCOLATE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
 	"SNOW_GLOBE": {
+		"starting_amount": -1,
 		"categories": ["BUILDING"],
 		"price": 0
 	},
@@ -402,10 +445,12 @@
 		"price": 100
 	},
 	"CARAMELS_CREAM": {
+		"starting_amount": -1,
 		"categories": ["FOOD"],
 		"price": 0
 	},
 	"TEMMIES_PI": {
+		"starting_amount": -1,
 		"categories": ["FOOD"],
 		"price": 0
 	},
@@ -425,6 +470,7 @@
 		"price": 100
 	},
 	"CAKE": {
+		"starting_amount": -1,
 		"categories": ["FOOD"],
 		"price": 0
 	},
@@ -589,30 +635,37 @@
 		"price": 45
 	},
 	"LAPIS_LAZULI": {
+		"starting_amount": -1,
 		"categories": ["MINING"],
 		"price": 0
 	},
 	"AMBER": {
+		"starting_amount": -1,
 		"categories": ["MINING"],
 		"price": 0
 	},
 	"INCA_ROSE": {
+		"starting_amount": -1,
 		"categories": ["MINING"],
 		"price": 0
 	},
 	"MALACHITE": {
+		"starting_amount": -1,
 		"categories": ["MINING"],
 		"price": 0
 	},
 	"JASPER": {
+		"starting_amount": -1,
 		"categories": ["MINING"],
 		"price": 0
 	},
 	"OPAL": {
+		"starting_amount": -1,
 		"categories": ["MINING"],
 		"price": 0
 	},
 	"TURQUOISE": {
+		"starting_amount": -1,
 		"categories": ["MINING"],
 		"price": 0
 	},
@@ -622,34 +675,42 @@
 		"price": 10
 	},
 	"BASIC_MACHINE_PART": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"INDUSTRIAL_PRESS": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"PLASMA_CUTTER": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"SCREW": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"CHAIN": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"ADVANCED_MACHINE_PART": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"DIAMOND_SAW": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"GENERATOR": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
@@ -659,18 +720,22 @@
 		"price": 10000
 	},
 	"RAW_SILICON": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"SILICON_WAFER": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"RUBBER": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"CHARGED_BATTERY": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
@@ -690,14 +755,17 @@
 		"price": 1000
 	},
 	"MILL": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"T34": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
 	"SPACE_ROCKET": {
+		"starting_amount": -1,
 		"categories": ["INDUSTRIAL"],
 		"price": 0
 	},
@@ -717,6 +785,7 @@
 		"price": 450
 	},
 	"SILK_ROD": {
+		"starting_amount": -1,
 		"categories": ["ROD"],
 		"price": 0
 	},
@@ -761,6 +830,7 @@
 		"price": 750
 	},
 	"COMET_LANCE": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
@@ -775,78 +845,97 @@
 		"price": 54000
 	},
 	"ENCHANTED_SWORD": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"ENCHANTED_SHIELD": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"BATTERING_RAM": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"SHURIKENS": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"KATANA": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"EVENIFE": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"SLEDGEHAMMER": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"SPEAR": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"DAGGER": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"CROWBAR": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"SHIV": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"BRASS_KNUCKLES": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"BROKEN_BOTTLE": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"METAL_PIPE": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"SEISMOMETER": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"EXTENDABLE_ARM": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"THE_SPADE": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"SPRINGY_SPRING": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"TRUE_GOLD_AXE": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
@@ -861,22 +950,27 @@
 		"price": 2350
 	},
 	"FLAMETHROWER": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"POWER_FLOWER": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"FLUTE": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"METEOR_STAFF": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"MASTER_BOLT": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
@@ -896,14 +990,17 @@
 		"price": 270
 	},
 	"DUAL_BOW": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"ROCKET_LAUNCHER": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
 	"STAR_LAUNCHER": {
+		"starting_amount": -1,
 		"categories": ["WEAPON"],
 		"price": 0
 	},
@@ -938,6 +1035,7 @@
 		"price": 1200
 	},
 	"DENSE_CHESTPLATE": {
+		"starting_amount": -1,
 		"categories": ["ARMOR"],
 		"price": 0
 	},
@@ -947,14 +1045,17 @@
 		"price": 90000
 	},
 	"COMET_ARMOR": {
+		"starting_amount": -1,
 		"categories": ["ARMOR"],
 		"price": 0
 	},
 	"STARLIGHT_GOGGLES": {
+		"starting_amount": -1,
 		"categories": ["ARMOR"],
 		"price": 0
 	},
 	"FLORAL_ARMOR": {
+		"starting_amount": -1,
 		"categories": ["ARMOR"],
 		"price": 0
 	},
@@ -974,6 +1075,7 @@
 		"price": 150
 	},
 	"ROCK_HELMET": {
+		"starting_amount": -1,
 		"categories": ["MINING", "ARMOR"],
 		"price": 0
 	},
@@ -983,6 +1085,7 @@
 		"price": 250
 	},
 	"MAGIC_FISHING_CAP": {
+		"starting_amount": -1,
 		"categories": ["ARMOR"],
 		"price": 0
 	},
@@ -992,38 +1095,47 @@
 		"price": 5000
 	},
 	"GRAPPLING_HOOK": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"EXPERIENCE": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"PACKED_EXPERIENCE": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"DENSE_EXPERIENCE": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"UNHOLY_WINGS": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"SCALY_WINGS": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"PHOTON_WINGS": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"CRYSTAL_WINGS": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"HOLY_WINGS": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
@@ -1043,18 +1155,22 @@
 		"price": 20
 	},
 	"GAUNTLET": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"HEAL_BELL": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"PORTABLE_WALL": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"BINOCULARS": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
@@ -1079,94 +1195,117 @@
 		"price": 50000
 	},
 	"MAGIC_GUARD": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"SILKY_STRING": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"CHUM": {
+		"starting_amount": -1,
 		"categories": ["FOOD", "ACCESSORY"],
 		"price": 0
 	},
 	"LAVAPROOF_FISHING_HOOK": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"MINING_CHARM": {
+		"starting_amount": -1,
 		"categories": ["MINING", "ACCESSORY"],
 		"price": 0
 	},
 	"LUCKY_COIN": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"JETPACK": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"HOLOGRAPHIC_DECOY": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"ENERGY_SHIELD": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"MAGNET": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"STRENGTH_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"CACTUS_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"IRON_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"TURTLE_MASTER_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"BEETLE_MASTER_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"MINING_POTION": {
+		"starting_amount": -1,
 		"categories": ["MINING", "ACCESSORY"],
 		"price": 0
 	},
 	"FISHING_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"MAGNET_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"LIGHTNING_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"FIRE_RESISTANCE_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"WATER_WALKING_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"INVISIBILITY_POTION": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
 	"COCKTAIL": {
+		"starting_amount": -1,
 		"categories": ["ACCESSORY"],
 		"price": 0
 	},
@@ -1186,22 +1325,27 @@
 		"price": 90
 	},
 	"ARMOR_PENETRATING_ROCKET": {
+		"starting_amount": -1,
 		"categories": ["AMMO", "ROCKET"],
 		"price": 0
 	},
 	"EXPLOSIVE_ROCKET": {
+		"starting_amount": -1,
 		"categories": ["AMMO", "ROCKET"],
 		"price": 0
 	},
 	"COMET_FRAGMENT": {
+		"starting_amount": -1,
 		"categories": ["AMMO", "COMET_FRAGMENT"],
 		"price": 0
 	},
 	"PIPE_BOMB": {
+		"starting_amount": -1,
 		"categories": ["AMMO", "IMPROVISED_EXPLOSIVE"],
 		"price": 0
 	},
 	"MOLOTOV_COCKTAIL": {
+		"starting_amount": -1,
 		"categories": ["AMMO", "IMPROVISED_EXPLOSIVE"],
 		"price": 0
 	},
@@ -1237,10 +1381,12 @@
 		"price": 100
 	},
 	"GOLDFISH": {
+		"starting_amount": -1,
 		"categories": ["FOOD", "BAIT"],
 		"price": 0
 	},
 	"GOLD_GOLDFISH": {
+		"starting_amount": -1,
 		"categories": ["FOOD", "BAIT"],
 		"price": 0
 	},
@@ -1305,22 +1451,27 @@
 		"price": 500000
 	},
 	"WIND_VANE": {
+		"starting_amount": -1,
 		"categories": ["UTILITY"],
 		"price": 0
 	},
 	"RAIN_GAUGE": {
+		"starting_amount": -1,
 		"categories": ["UTILITY"],
 		"price": 0
 	},
 	"THERMOMETER": {
+		"starting_amount": -1,
 		"categories": ["UTILITY"],
 		"price": 0
 	},
 	"SUNDIAL": {
+		"starting_amount": -1,
 		"categories": ["UTILITY"],
 		"price": 0
 	},
 	"PATH_MASTER_ULTRA": {
+		"starting_amount": -1,
 		"categories": ["UTILITY"],
 		"price": 0
 	}

@@ -40,3 +40,7 @@ res://scripts/serialization/Resource.cs
 res://scripts/serialization/Rod.cs
 res://scripts/serialization/Tile.cs
 res://scripts/serialization/Weapon.cs
+res://scripts/game/GameEntity.cs
+res://scripts/game/GameCountry.cs
+res://scripts/game/GameEffect.cs
+res://scripts/serialization/GameConverter.cs
