@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 public partial class GameData : Node
 {
@@ -15,8 +16,12 @@ public partial class GameData : Node
 		if(_initialized) return;
 		_initialized = true;
 		ResetData();
-		var loaded = LoadList<Country>("countries");
+		var loaded = LoadDict<Location>("locations");
 		GD.Print($"Json: `{JsonConvert.SerializeObject(loaded, Formatting.Indented)}`");
+		//var loadedSingle = JsonConvert.DeserializeObject<Range>("4");
+		//GD.Print($"Json: `{JsonConvert.SerializeObject(loadedSingle, Formatting.Indented)}`, Value: `{loadedSingle.Value}`, Max: `{loadedSingle.MaxValue}`, Min: `{loadedSingle.MinValue}`");
+		//var loadedRange = JsonConvert.DeserializeObject<Range>("[3, 6]");
+		//GD.Print($"Json: `{JsonConvert.SerializeObject(loadedRange, Formatting.Indented)}`, Value: `{loadedRange.Value}`, Max: `{loadedRange.MaxValue}`, Min: `{loadedRange.MinValue}`");
 	}
 	
 	public T LoadWhole<T>(string name) {
@@ -48,6 +53,82 @@ public partial class GameData : Node
 	}
 }
 
+public class RangeConverter : JsonConverter
+{
+	public override bool CanConvert(Type objectType)
+	{
+		return objectType == typeof(Range);
+	}
+
+	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+	{
+		if (reader.TokenType == JsonToken.Integer)
+		{
+			Range instance = new();
+			instance.SingleValue = (long)reader.Value;
+			instance.IsRange = false;
+			return instance;
+		}
+		else if (reader.TokenType == JsonToken.StartArray)
+		{
+			Range instance = new();
+			JArray array = JArray.Load(reader);
+			List<long> list = new List<long>();
+			foreach (JToken item in array) list.Add(item.ToObject<long>(serializer));
+			instance.RangeValues = list;
+			instance.IsRange = true;
+			return instance;
+		}
+		throw new JsonSerializationException("Invalid token type");
+	}
+
+	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+	{
+		Range instance = value as Range;
+		if (instance != null)
+		{
+			if (instance.IsRange) serializer.Serialize(writer, instance.RangeValues);
+			else serializer.Serialize(writer, (long) instance.SingleValue);
+		}
+		else throw new JsonSerializationException("Value cannot be null");
+	}
+}
+
+public class IntConverter<T> : JsonConverter where T : class
+{
+	public override bool CanConvert(Type objectType)
+	{
+		return objectType == typeof(T);
+	}
+
+	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+	{
+		if (reader.TokenType == JsonToken.Integer)
+		{
+			T instance = Activator.CreateInstance<T>();
+			PropertyInfo property = typeof(T).GetProperty("Value", BindingFlags.Instance | BindingFlags.Public);
+			if (property != null)
+			{
+				property.SetValue(instance, (long)reader.Value);
+			}
+			return instance;
+		}
+		throw new JsonSerializationException("Invalid token type");
+	}
+
+	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+	{
+		T instance = value as T;
+		if (instance != null)
+		{
+			PropertyInfo property = typeof(T).GetProperty("Value", BindingFlags.Instance | BindingFlags.Public);
+			if (property != null) serializer.Serialize(writer, (long) property.GetValue(instance));
+			else throw new JsonSerializationException("Value cannot be null");
+		}
+		else throw new JsonSerializationException("Value cannot be null");
+	}
+}
+
 public class StringConverter<T> : JsonConverter where T : class
 {
 	public override bool CanConvert(Type objectType)
@@ -60,7 +141,7 @@ public class StringConverter<T> : JsonConverter where T : class
 		if (reader.TokenType == JsonToken.String)
 		{
 			T instance = Activator.CreateInstance<T>();
-			PropertyInfo property = typeof(T).GetProperty("Name", BindingFlags.Instance | BindingFlags.Public);
+			PropertyInfo property = typeof(T).GetProperty("Value", BindingFlags.Instance | BindingFlags.Public);
 			if (property != null)
 			{
 				property.SetValue(instance, (string)reader.Value);
@@ -75,11 +156,49 @@ public class StringConverter<T> : JsonConverter where T : class
 		T instance = value as T;
 		if (instance != null)
 		{
-			PropertyInfo property = typeof(T).GetProperty("Name", BindingFlags.Instance | BindingFlags.Public);
+			PropertyInfo property = typeof(T).GetProperty("Value", BindingFlags.Instance | BindingFlags.Public);
 			if (property != null) serializer.Serialize(writer, (string) property.GetValue(instance));
 			else throw new JsonSerializationException("Value cannot be null");
 		}
 		else throw new JsonSerializationException("Value cannot be null");
+	}
+}
+
+[JsonConverter(typeof(RangeConverter))]
+public class Range
+{
+	public long SingleValue { get; set; }
+	public List<long> RangeValues { get; set; }
+	public bool IsRange { get; set; }
+	
+	public long Value
+	{
+		get {
+			if(IsRange) return new Random().NextLong(RangeValues[0], RangeValues[1]+1);
+			return SingleValue;
+		}
+		
+		private set {}
+	}
+	
+	public long MaxValue
+	{
+		get {
+			if(IsRange) return RangeValues[1];
+			return SingleValue;
+		}
+		
+		private set {}
+	}
+	
+	public long MinValue
+	{
+		get {
+			if(IsRange) return RangeValues[0];
+			return SingleValue;
+		}
+		
+		private set {}
 	}
 }
 
@@ -156,7 +275,7 @@ public class Category
 [JsonConverter(typeof(StringConverter<Country>))]
 public class Country
 {
-	public string Name { get; set; }
+	public string Value { get; set; }
 }
 
 public class CraftingRecipe
@@ -167,9 +286,10 @@ public class CraftingRecipe
 	public Dictionary<string, int> Inputs { get; set; }
 }
 
+[JsonConverter(typeof(StringConverter<Effect>))]
 public class Effect
 {
-	public string Name { get; set; }
+	public string Value { get; set; }
 }
 
 public class Food
@@ -182,7 +302,7 @@ public class Food
 
 public class Item
 {
-	[JsonProperty("starting_amount")]
+	[JsonProperty("starting_amount", DefaultValueHandling = DefaultValueHandling.Ignore)]
 	public int StartingAmount { get; set; }
 	[JsonProperty("categories")]
 	public List<string> Categories { get; set; }
@@ -205,13 +325,13 @@ public class Location
 	[JsonProperty("wind")]
 	public int Wind { get; set; }
 	[JsonProperty("resources")]
-	public Dictionary<string, List<int>> Resources { get; set; }
+	public Dictionary<string, List<Range>> Resources { get; set; }
 	[JsonProperty("fighting")]
 	public Dictionary<string, List<string>> Fighting { get; set; }
 	[JsonProperty("fishing")]
-	public Dictionary<string, Dictionary<string, List<int>>> Fishing { get; set; }
+	public Dictionary<string, Dictionary<string, Range>> Fishing { get; set; }
 	[JsonProperty("mining")]
-	public Dictionary<string, Dictionary<string, List<int>>> Mining { get; set; }
+	public Dictionary<string, Dictionary<string, Range>> Mining { get; set; }
 }
 
 public class Machine
@@ -245,7 +365,7 @@ public class Mob
 	[JsonProperty("effects")]
 	public List<string> Effects { get; set; }
 	[JsonProperty("drops")]
-	public Dictionary<string, Dictionary<string, List<int>>> Drops { get; set; }
+	public Dictionary<string, Dictionary<string, Range>> Drops { get; set; }
 }
 
 public class Ore
@@ -263,7 +383,7 @@ public class Pickaxe
 	[JsonProperty("durability")]
 	public int Durability { get; set; }
 	[JsonProperty("tier")]
-	public int Tier { get; set; }
+	public long Tier { get; set; }
 }
 
 public class Placing
@@ -272,9 +392,10 @@ public class Placing
 	public string Tile { get; set; }
 }
 
+[JsonConverter(typeof(IntConverter<Resource>))]
 public class Resource
 {
-	public int Number { get; set; }
+	public long Value { get; set; }
 }
 
 public class Rod

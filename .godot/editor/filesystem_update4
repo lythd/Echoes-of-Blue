@@ -13,3 +13,4 @@ res://scenes/map.tscn
 res://scenes/test.tscn
 res://scripts/Map.cs
 res://scripts/Character.cs
+res://scripts/stuff/RandomExtensionMethods.cs
