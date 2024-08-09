@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Newtonsoft.Json;
 
 public partial class GameData : Node
@@ -14,8 +15,15 @@ public partial class GameData : Node
 		if(_initialized) return;
 		_initialized = true;
 		ResetData();
-		var categories = LoadDict<Category>("categories");
-		GD.Print($"Json: `{JsonConvert.SerializeObject(categories, Formatting.Indented)}`");
+		var loaded = LoadList<Country>("countries");
+		GD.Print($"Json: `{JsonConvert.SerializeObject(loaded, Formatting.Indented)}`");
+	}
+	
+	public T LoadWhole<T>(string name) {
+		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
+		var fileContent = file.GetAsText();
+		file.Close();
+		return JsonConvert.DeserializeObject<T>(fileContent);
 	}
 	
 	public Dictionary<string, T> LoadDict<T>(string name) {
@@ -37,6 +45,41 @@ public partial class GameData : Node
 		string[] locations = {"CrossRoads","WitchesSwamp","Haven","Jungle","Rubberport","Smithlands","Mines","Forests","SilkRoad","SkyCity","FishingVille","Mineshaft","Fields","DyronixsLair","DungeonCity","IncendiumKeep","BeastsDen","PortCity","AshenValleys"};
 		PlayerLocation = locations[Random.Shared.Next(locations.Length)];
 		PlayerName = Tr("DEFAULT_NAME");
+	}
+}
+
+public class StringConverter<T> : JsonConverter where T : class
+{
+	public override bool CanConvert(Type objectType)
+	{
+		return objectType == typeof(T);
+	}
+
+	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+	{
+		if (reader.TokenType == JsonToken.String)
+		{
+			T instance = Activator.CreateInstance<T>();
+			PropertyInfo property = typeof(T).GetProperty("Name", BindingFlags.Instance | BindingFlags.Public);
+			if (property != null)
+			{
+				property.SetValue(instance, (string)reader.Value);
+			}
+			return instance;
+		}
+		throw new JsonSerializationException("Invalid token type");
+	}
+
+	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+	{
+		T instance = value as T;
+		if (instance != null)
+		{
+			PropertyInfo property = typeof(T).GetProperty("Name", BindingFlags.Instance | BindingFlags.Public);
+			if (property != null) serializer.Serialize(writer, (string) property.GetValue(instance));
+			else throw new JsonSerializationException("Value cannot be null");
+		}
+		else throw new JsonSerializationException("Value cannot be null");
 	}
 }
 
@@ -110,12 +153,13 @@ public class Category
 	public bool Show { get; set; }
 }
 
+[JsonConverter(typeof(StringConverter<Country>))]
 public class Country
 {
 	public string Name { get; set; }
 }
 
-public class CraftingRecipes
+public class CraftingRecipe
 {
 	[JsonProperty("amount")]
 	public int Amount { get; set; }
@@ -228,9 +272,8 @@ public class Placing
 	public string Tile { get; set; }
 }
 
-public class Resources
+public class Resource
 {
-	public string Name { get; set; }
 	public int Number { get; set; }
 }
 
