@@ -718,7 +718,7 @@
 			"LIMESTONE": 5
 		}
 	},
-	"IRON_WALL": {
+	"IRON_FLOOR": {
 		"amount": 1,
 		"inputs": {
 			"IRON_BAR": 5

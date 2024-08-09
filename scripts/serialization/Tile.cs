@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 public class Tile
 {
 	[JsonProperty("drop")]
-	public string Drop { get; set; }
+	public GameItem Drop { get; set; }
 	[JsonProperty("count")]
 	public int Count { get; set; }
 }

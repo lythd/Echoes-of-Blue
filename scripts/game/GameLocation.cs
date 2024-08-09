@@ -35,4 +35,16 @@ public class GameLocation : GameEntity
 
 		return item;
 	}
+	
+	public bool Exists { get => GameData.Instance.GetLocation(this) != null; private set {} }
+	public string ConflictAtStart { get => GameData.Instance.GetLocation(this)?.ConflictAtStart ?? "foreign"; private set {} }
+	public GameCountry ControllerAtStart { get => GameData.Instance.GetLocation(this)?.ControllerAtStart ?? GameCountry.Get("NONE"); private set {} }
+	public bool Lava { get => GameData.Instance.GetLocation(this)?.Lava ?? false; private set {} }
+	public bool Air { get => GameData.Instance.GetLocation(this)?.Air ?? false; private set {} }
+	public int Sun { get => GameData.Instance.GetLocation(this)?.Sun ?? -1; private set {} }
+	public int Wind { get => GameData.Instance.GetLocation(this)?.Wind ?? -1; private set {} }
+	public Dictionary<GameItem, List<Range>> Resources { get => GameData.Instance.GetLocation(this)?.Resources ?? new Dictionary<GameItem, List<Range>>(); private set {} }
+	public Dictionary<string, List<GameMob>> Fighting { get => GameData.Instance.GetLocation(this)?.Fighting ?? new Dictionary<string, List<GameMob>>(); private set {} }
+	public Dictionary<string, Dictionary<GameItem, Range>> Fishing { get => GameData.Instance.GetLocation(this)?.Fishing ?? new Dictionary<string, Dictionary<GameItem, Range>>(); private set {} }
+	public Dictionary<string, Dictionary<GameItem, Range>> Mining { get => GameData.Instance.GetLocation(this)?.Mining ?? new Dictionary<string, Dictionary<GameItem, Range>>(); private set {} }
 }

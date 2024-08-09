@@ -35,4 +35,8 @@ public class GameTile : GameEntity
 
 		return item;
 	}
+	
+	public bool Exists { get => GameData.Instance.GetTile(this) != null; private set {} }
+	public GameItem Drop { get => GameData.Instance.GetTile(this)?.Drop ?? GameItem.Get("NONE"); private set {} }
+	public int Count { get => GameData.Instance.GetTile(this)?.Count ?? 0; private set {} }
 }

@@ -35,4 +35,6 @@ public class GameEffect : GameEntity
 
 		return item;
 	}
+	
+	public bool Exists { get => GameData.Instance.HasEffect(this); private set {} }
 }

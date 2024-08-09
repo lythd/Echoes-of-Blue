@@ -17,6 +17,17 @@ had to do one tiny change,
 ->
 `if (str[0] == '\"' && str[str.Length-1] == '\"') return str.Substring(1, str.Length - 2);`
 
+as well as adding this to help me debug
+try
+{
+	[...]
+}
+catch (ThrowAddingDuplicateWithKeyArgumentException e) {
+	throw new JsonException($"Json Dictionary has a duplicate key {key}.");
+	Console.WriteLine($"Error: {e.Message}");
+	Console.WriteLine($"Stack Trace: {e.StackTrace}");
+}
+
 */
 
 /// <summary>
@@ -107,7 +118,16 @@ public class JsonCustomKeyDictionaryObjectConverter : JsonConverter
 				if (value != null) throw new JsonException($"Json Dictionary value read {reader.ReadAsString()} but already has value {value}");
 				value = serializer.Deserialize(reader, dictionaryTypes[1]);
 
-				res.Add(key, value);
+				try
+				{
+					res.Add(key, value);
+				}
+				catch (ArgumentException e) {
+					Console.WriteLine($"Error: {e.Message}");
+					Console.WriteLine($"Stack Trace: {e.StackTrace}");
+					throw new JsonException($"Json Dictionary has a duplicate key {key}.");
+				}
+				
 				key = null;
 				value = null;
 			}

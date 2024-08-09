@@ -35,4 +35,14 @@ public class GameMob : GameEntity
 
 		return item;
 	}
+	
+	public bool Exists { get => GameData.Instance.GetMob(this) != null; private set {} }
+	public string Type { get => GameData.Instance.GetMob(this)?.Type ?? "ENEMY"; private set {} }
+	public int PiercingDamage { get => GameData.Instance.GetMob(this)?.PiercingDamage ?? -1; private set {} }
+	public int BluntDamage { get => GameData.Instance.GetMob(this)?.BluntDamage ?? -1; private set {} }
+	public int MaximumHealth { get => GameData.Instance.GetMob(this)?.MaximumHealth ?? -1; private set {} }
+	public int Defense { get => GameData.Instance.GetMob(this)?.Defense ?? -1; private set {} }
+	public int Speed { get => GameData.Instance.GetMob(this)?.Speed ?? -1; private set {} }
+	public List<GameEffect> Effects { get => GameData.Instance.GetMob(this)?.Effects ?? new List<GameEffect>(); private set {} }
+	public Dictionary<string, Dictionary<GameItem, Range>> Drops { get => GameData.Instance.GetMob(this)?.Drops ?? new Dictionary<string, Dictionary<GameItem, Range>>(); private set {} }
 }

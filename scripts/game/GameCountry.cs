@@ -35,4 +35,6 @@ public class GameCountry : GameEntity
 
 		return item;
 	}
+	
+	public bool Exists { get => GameData.Instance.HasCountry(this); private set {} }
 }

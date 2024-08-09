@@ -64,7 +64,7 @@ public partial class Map : Node2D
 			_cursor.Texture = _atlasTexture;
 			_cursorEnabled = false;
 			_transitionTimer.Start();
-			GameData.Instance.PlayerLocation = _locationName;
+			GameData.Instance.PlayerLocation = GameLocation.Get(_locationName);
 		}
 	}
 	
@@ -81,7 +81,7 @@ public partial class Map : Node2D
 				Vector2I tileCoords = new Vector2I(x, y);
 				TileData tileData = _tileMap.GetCellTileData(0, tileCoords);
 				if(tileData == null || ((string)tileData.GetCustomData("LocationName")).Length == 0) continue;
-				if (GameData.Instance.PlayerLocation.Equals((string)tileData.GetCustomData("LocationName")))
+				if (GameData.Instance.PlayerLocation.Id.Equals((string)tileData.GetCustomData("LocationName")))
 				{
 					_flag.Position = MapToGlobal(tileCoords*2) - _tileSize*new Vector2(2.8f,-0.8f); // proof by i fiddled around with the values until it was perfect
 					return;

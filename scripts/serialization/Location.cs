@@ -10,7 +10,7 @@ public class Location
 	[JsonProperty("conflict_at_start")]
 	public string ConflictAtStart { get; set; }
 	[JsonProperty("controller_at_start")]
-	public string ControllerAtStart { get; set; }
+	public GameCountry ControllerAtStart { get; set; }
 	[JsonProperty("lava")]
 	public bool Lava { get; set; }
 	[JsonProperty("air")]

@@ -20,7 +20,7 @@ public class Mob
 	[JsonProperty("spd")]
 	public int Speed { get; set; }
 	[JsonProperty("effects")]
-	public List<string> Effects { get; set; }
+	public List<GameEffect> Effects { get; set; }
 	[JsonProperty("drops")]
 	public Dictionary<string, Dictionary<GameItem, Range>> Drops { get; set; }
 }

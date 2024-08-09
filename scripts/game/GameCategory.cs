@@ -35,4 +35,7 @@ public class GameCategory : GameEntity
 
 		return item;
 	}
+	
+	public bool Exists { get => GameData.Instance.GetCategory(this) != null; private set {} }
+	public bool Show { get => GameData.Instance.GetCategory(this)?.Show ?? false; private set {} }
 }

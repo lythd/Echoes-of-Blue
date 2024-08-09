@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 public class Bait
 {
 	[JsonProperty("drop")]
-	public string Drop { get; set; }
+	public GameItem Drop { get; set; }
 	[JsonProperty("effects")]
 	public List<GameEffect> Effects { get; set; }
 	[JsonProperty("fp")]
