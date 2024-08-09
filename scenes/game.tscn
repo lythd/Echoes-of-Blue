@@ -1880,7 +1880,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Title" parent="SteamHUD/Panel" index="1"]
-text = "TITLE"
+text = "TITLE_FORMATTED"
 
 [node name="Single Player" parent="SteamHUD/Panel/Options" index="0"]
 text = "SINGLEPLAYER"

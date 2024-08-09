@@ -193,3 +193,4 @@
 /home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/ExportDebug/linux-x64/Echoes of Blue.pdb
 /home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/ExportDebug/linux-x64/Echoes of Blue.genruntimeconfig.cache
 /home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/obj/ExportDebug/linux-x64/ref/Echoes of Blue.dll
+/home/raven/Documents/Coding/Godot Projects/Echoes of Blue/.godot/mono/temp/bin/ExportDebug/linux-x64/Newtonsoft.Json.dll

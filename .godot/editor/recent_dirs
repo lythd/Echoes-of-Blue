@@ -1,6 +1,7 @@
-res://localization
 /home/raven/Documents/Coding/Godot Projects/Echoes of Blue
+res://assets
 res://assets/sprites
+res://localization
 res://scenes
 res://scripts/multiplayer/steam
 res://scripts/multiplayer

@@ -10,10 +10,12 @@ config_version=5
 
 [application]
 
-config/name="Echoes of Blue"
+config/name="TITLE"
+config/version="v0.0.2d"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "C#")
-config/icon="res://icon.png"
+boot_splash/image="res://assets/bootscreen.png"
+config/icon="res://assets/game_icon.png"
 
 [autoload]
 
@@ -23,7 +25,11 @@ SteamManager="*res://scripts/multiplayer/steam/steam_manager.gd"
 
 [display]
 
+window/size/mode=4
+window/size/borderless=true
+window/size/extend_to_title=true
 window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="res://assets/game_cursor_default.png"
 
 [dotnet]
 
