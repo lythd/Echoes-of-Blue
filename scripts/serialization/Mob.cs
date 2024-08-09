@@ -22,5 +22,5 @@ public class Mob
 	[JsonProperty("effects")]
 	public List<string> Effects { get; set; }
 	[JsonProperty("drops")]
-	public Dictionary<string, Dictionary<string, Range>> Drops { get; set; }
+	public Dictionary<string, Dictionary<GameItem, Range>> Drops { get; set; }
 }

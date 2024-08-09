@@ -8,15 +8,15 @@ using Newtonsoft.Json.Linq;
 public class Banned
 {
 	[JsonProperty("godlike")]
-	public List<string> Godlike { get; set; }
+	public List<GameItem> Godlike { get; set; }
 	[JsonProperty("inappropriate")]
-	public List<string> Inappropriate { get; set; }
+	public List<GameItem> Inappropriate { get; set; }
 	[JsonProperty("armorchoices")]
-	public List<string> ArmorChoices { get; set; }
+	public List<GameItem> ArmorChoices { get; set; }
 	[JsonProperty("weaponchoices")]
-	public List<string> WeaponChoices { get; set; }
+	public List<GameItem> WeaponChoices { get; set; }
 	[JsonProperty("contraband")]
-	public List<string> Contraband { get; set; }
+	public List<GameItem> Contraband { get; set; }
 	[JsonProperty("overpowered")]
-	public List<string> Overpowered { get; set; }
+	public List<GameItem> Overpowered { get; set; }
 }

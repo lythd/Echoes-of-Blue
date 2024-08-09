@@ -12,7 +12,7 @@ public class Weapon
 	[JsonProperty("durability")]
 	public int Durability { get; set; }
 	[JsonProperty("effects")]
-	public List<string> Effects { get; set; }
+	public List<GameEffect> Effects { get; set; }
 	[JsonProperty("pdmg")]
 	public int PiercingDamage { get; set; }
 	[JsonProperty("priority")]

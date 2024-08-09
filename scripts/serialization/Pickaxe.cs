@@ -12,5 +12,5 @@ public class Pickaxe
 	[JsonProperty("durability")]
 	public int Durability { get; set; }
 	[JsonProperty("tier")]
-	public long Tier { get; set; }
+	public int Tier { get; set; }
 }

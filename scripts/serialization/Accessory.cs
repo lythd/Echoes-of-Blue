@@ -10,5 +10,5 @@ public class Accessory
 	[JsonProperty("durability")]
 	public int Durability { get; set; }
 	[JsonProperty("effects")]
-	public List<string> Effects { get; set; }
+	public List<GameEffect> Effects { get; set; }
 }

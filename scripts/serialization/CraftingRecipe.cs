@@ -10,5 +10,5 @@ public class CraftingRecipe
 	[JsonProperty("amount")]
 	public int Amount { get; set; }
 	[JsonProperty("inputs")]
-	public Dictionary<string, int> Inputs { get; set; }
+	public Dictionary<GameItem, int> Inputs { get; set; }
 }

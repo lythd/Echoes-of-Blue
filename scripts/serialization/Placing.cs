@@ -8,5 +8,5 @@ using Newtonsoft.Json.Linq;
 public class Placing
 {
 	[JsonProperty("tile")]
-	public string Tile { get; set; }
+	public GameTile Tile { get; set; }
 }

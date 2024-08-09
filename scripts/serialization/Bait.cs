@@ -10,7 +10,7 @@ public class Bait
 	[JsonProperty("drop")]
 	public string Drop { get; set; }
 	[JsonProperty("effects")]
-	public List<string> Effects { get; set; }
+	public List<GameEffect> Effects { get; set; }
 	[JsonProperty("fp")]
 	public int FishingPower { get; set; }
 }

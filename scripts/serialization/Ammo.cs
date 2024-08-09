@@ -10,7 +10,7 @@ public class Ammo
 	[JsonProperty("blunt")]
 	public int BluntDamage { get; set; }
 	[JsonProperty("effects")]
-	public List<string> Effects { get; set; }
+	public List<GameEffect> Effects { get; set; }
 	[JsonProperty("piercing")]
 	public int PiercingDamage { get; set; }
 }

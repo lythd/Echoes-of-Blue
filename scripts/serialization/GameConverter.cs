@@ -14,12 +14,12 @@ public class GameConverter<T> : JsonConverter where T : class
 
 	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
 	{
-		if (reader.TokenType == JsonToken.String)
+		if (reader.TokenType == JsonToken.String || reader.TokenType == JsonToken.PropertyName)
 		{
 			Type t = typeof(T);
 			MethodInfo methodInfo = t.GetMethod("Get", BindingFlags.Static | BindingFlags.Public);
 			if (methodInfo != null) return methodInfo.Invoke(null, new string[]{(string)reader.Value});
-			else throw new MissingMethodException($"The method 'Get' does not exist on type '{t.FullName}'.");
+			else throw new MissingMethodException($"The method 'Get' does not exist on type '{t.FullName}'."); //this should never run but just incase
 		}
 		else throw new JsonSerializationException("Invalid token type");
 	}

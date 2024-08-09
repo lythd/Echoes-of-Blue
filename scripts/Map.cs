@@ -26,13 +26,10 @@ public partial class Map : Node2D
 	private Rect2 _cursorReady = new Rect2(224, 896, 16, 16);
 	private Rect2 _cursorSelected = new Rect2(208, 896, 16, 16);
 	
-	private GameData _gameData;
-	
 	public GodotObject Controller;
 	
 	public override void _Ready()
 	{
-		_gameData = GetNode<GameData>("/root/GameData");
 		_tileMap = GetNode<TileMap>("TileMap");
 		_cursor = GetNode<Sprite2D>("Canvas/Cursor");
 		_flag = GetNode<AnimatedSprite2D>("Flag");
@@ -67,7 +64,7 @@ public partial class Map : Node2D
 			_cursor.Texture = _atlasTexture;
 			_cursorEnabled = false;
 			_transitionTimer.Start();
-			_gameData.PlayerLocation = _locationName;
+			GameData.Instance.PlayerLocation = _locationName;
 		}
 	}
 	
@@ -76,7 +73,7 @@ public partial class Map : Node2D
 	}
 
 	private void SetFlag() {
-		//sets _flag.Position to whatever tile has the same "LocationName" custom data layer as _gameData.PlayerLocation
+		//sets _flag.Position to whatever tile has the same "LocationName" custom data layer as GameData.Instance.PlayerLocation
 		for (int x = -_tileMap.GetUsedRect().Size.X/2; x < _tileMap.GetUsedRect().Size.X/2; x++)
 		{
 			for (int y = -_tileMap.GetUsedRect().Size.Y/2; y < _tileMap.GetUsedRect().Size.Y/2; y++)
@@ -84,7 +81,7 @@ public partial class Map : Node2D
 				Vector2I tileCoords = new Vector2I(x, y);
 				TileData tileData = _tileMap.GetCellTileData(0, tileCoords);
 				if(tileData == null || ((string)tileData.GetCustomData("LocationName")).Length == 0) continue;
-				if (_gameData.PlayerLocation.Equals((string)tileData.GetCustomData("LocationName")))
+				if (GameData.Instance.PlayerLocation.Equals((string)tileData.GetCustomData("LocationName")))
 				{
 					_flag.Position = MapToGlobal(tileCoords*2) - _tileSize*new Vector2(2.8f,-0.8f); // proof by i fiddled around with the values until it was perfect
 					return;

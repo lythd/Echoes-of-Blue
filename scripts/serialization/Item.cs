@@ -10,7 +10,7 @@ public class Item
 	[JsonProperty("starting_amount")]
 	public int StartingAmount { get; set; }
 	[JsonProperty("categories")]
-	public List<string> Categories { get; set; }
+	public List<GameCategory> Categories { get; set; }
 	[JsonProperty("price")]
 	public int Price { get; set; }
 }

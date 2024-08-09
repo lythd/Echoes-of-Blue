@@ -44,3 +44,11 @@ res://scripts/game/GameEntity.cs
 res://scripts/game/GameCountry.cs
 res://scripts/game/GameEffect.cs
 res://scripts/serialization/GameConverter.cs
+res://scripts/game/GameCategory.cs
+res://scripts/game/GameItem.cs
+res://scripts/game/GameLocation.cs
+res://scripts/game/GameMachine.cs
+res://scripts/game/GameMob.cs
+res://scripts/game/GameTile.cs
+res://scripts/stuff/CustomDictionary.cs
+res://scripts/stuff/JsonCustomKeyDictionaryObjectConverter.cs

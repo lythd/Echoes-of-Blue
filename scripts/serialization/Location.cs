@@ -20,11 +20,11 @@ public class Location
 	[JsonProperty("wind")]
 	public int Wind { get; set; }
 	[JsonProperty("resources")]
-	public Dictionary<string, List<Range>> Resources { get; set; }
+	public Dictionary<GameItem, List<Range>> Resources { get; set; }
 	[JsonProperty("fighting")]
-	public Dictionary<string, List<string>> Fighting { get; set; }
+	public Dictionary<string, List<GameMob>> Fighting { get; set; }
 	[JsonProperty("fishing")]
-	public Dictionary<string, Dictionary<string, Range>> Fishing { get; set; }
+	public Dictionary<string, Dictionary<GameItem, Range>> Fishing { get; set; }
 	[JsonProperty("mining")]
-	public Dictionary<string, Dictionary<string, Range>> Mining { get; set; }
+	public Dictionary<string, Dictionary<GameItem, Range>> Mining { get; set; }
 }
