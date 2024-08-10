@@ -81,3 +81,16 @@ res://localization/game_localization.he_IL.translation
 res://localization/game_localization.ar.translation
 res://localization/game_localization.bs_BS.translation
 res://scripts/multiplayer/multiplayer_controller.gd
+res://scenes/attack.tscn
+res://scripts/Attack.cs
+res://scripts/DamageableEntity.cs
+res://Enemy.cs
+res://scenes/enemy.tscn
+res://scripts/multiplayer/multiplayer_manager.gd
+res://scripts/multiplayer/MultiplayerManager.cs
+res://scripts/Player.cs
+res://scripts/multiplayer/multiplayer_input.gd
+res://scripts/InputSynchronizer.cs
+res://scripts/multiplayer/steam/SteamManager.cs
+res://scripts/game_manager.gd
+res://scenes/game.gd

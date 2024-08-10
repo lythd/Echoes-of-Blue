@@ -23,10 +23,10 @@ func _on_game_manager_update_pickers():
 
 func connect_player_signals(player):
 	print("Connecting player signals...")
-	player.show_all.connect(_on_show_all)
-	player.sync_character.connect(_on_sync_character)
-	player.add_map.connect(_on_add_map)
-	player.check_tile_properties.connect(_on_check_tile_properties)
+	player.ShowAll.connect(_on_show_all)
+	player.SyncCharacter.connect(_on_sync_character)
+	player.AddMap.connect(_on_add_map)
+	player.CheckTileProperties.connect(_on_check_tile_properties)
 
 func _on_show_all(show_all):
 	$Players.visible = show_all
@@ -36,7 +36,7 @@ func _on_sync_character(player):
 	var character_pick = get_character()
 	var parts = ["Eyes", "Hair", "Skin", "Shirt", "Hands", "Pants", "Shoes"]
 	for part in parts:
-		player.get_input_synchronizer().call_character.rpc(character_pick.call("GetHSV", part), part)
+		player.InputSynchronizer.CallCharacterRpc(character_pick.call("GetHSV", part), part)
 
 func _on_add_map(map):
 	add_child(map, true)
@@ -48,4 +48,4 @@ func _on_check_tile_properties(global_position_player, multiplayer_controller):
 	var top_tile_data = tile_map.get_cell_tile_data(1, tile_coords)
 	var bot_tile_slippery = bool(bot_tile_data.get_custom_data("slippery")) if bot_tile_data != null else false
 	var top_tile_slippery = bool(top_tile_data.get_custom_data("slippery")) if top_tile_data != null else false
-	multiplayer_controller.tile_is_slippery = bot_tile_slippery || top_tile_slippery
+	multiplayer_controller.TileIsSlippery = bot_tile_slippery || top_tile_slippery

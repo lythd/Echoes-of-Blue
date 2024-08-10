@@ -26,7 +26,7 @@ public partial class Map : Node2D
 	private Rect2 _cursorReady = new Rect2(224, 896, 16, 16);
 	private Rect2 _cursorSelected = new Rect2(208, 896, 16, 16);
 	
-	public GodotObject Controller;
+	public Player Player;
 	
 	public override void _Ready()
 	{
@@ -69,7 +69,7 @@ public partial class Map : Node2D
 	}
 	
 	public void DoSceneTransition() {
-		Controller.Call("come_back_from_map");
+		Player.ComeBackFromMap();
 	}
 
 	private void SetFlag() {

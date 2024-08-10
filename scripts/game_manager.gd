@@ -18,27 +18,27 @@ func _ready():
 	%SteamHUD.get_node("Panel/VersionInfo").append_text("[center]" + MultiplayerManager.GAME_VERSION + "#" + MultiplayerManager.GAME_HASH.substr(0,8) + "[/center]")
 
 func start_solo():
-	MultiplayerManager.multiplayer_mode_enabled = false
+	MultiplayerManager.MultiplayerModeEnabled = false
 	print("Start single player pressed")
 	%SteamHUD.hide()
 	%Customizer.hide()
 	var id = -1
 	print("Player %s joined the game!" % id)
 	var player_to_add = multiplayer_scene.instantiate()
-	player_to_add.player_id = id
+	player_to_add.SetPlayerId(id)
 	player_to_add.name = str(id)
 	%NetworkManager._players_spawn_node.add_child(player_to_add, true)
 	
 
 func become_host():
-	MultiplayerManager.multiplayer_mode_enabled = true
+	MultiplayerManager.MultiplayerModeEnabled = true
 	print("Become host pressed")
 	%SteamHUD.hide()
 	%Customizer.hide()
 	%NetworkManager.become_host()
 	
 func join_as_client():
-	MultiplayerManager.multiplayer_mode_enabled = true
+	MultiplayerManager.MultiplayerModeEnabled = true
 	print("Join as another player")
 	join_lobby()
 
@@ -46,7 +46,7 @@ func use_steam():
 	print("Using Steam!")
 	%SteamHUD.show()
 	%Customizer.show()
-	SteamManager.initialize_steam()
+	SteamManager.InitializeSteam()
 	Steam.lobby_match_list.connect(_on_lobby_match_list)
 	%NetworkManager.active_network_type = %NetworkManager.MULTIPLAYER_NETWORK_TYPE.STEAM
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://dg6viorw2o3l4"]
 
-[ext_resource type="Script" path="res://scripts/multiplayer/multiplayer_controller.gd" id="1_ij7lf"]
-[ext_resource type="Script" path="res://scripts/multiplayer/multiplayer_input.gd" id="2_75sn2"]
+[ext_resource type="Script" path="res://scripts/Player.cs" id="1_h70bd"]
+[ext_resource type="Script" path="res://scripts/InputSynchronizer.cs" id="2_ny1g5"]
 [ext_resource type="PackedScene" uid="uid://bltgi20a35aro" path="res://scenes/character.tscn" id="3_ogou4"]
 [ext_resource type="Texture2D" uid="uid://bm36uudwodk7j" path="res://assets/sprites/progress_bar_under.png" id="4_i6yqx"]
 [ext_resource type="Texture2D" uid="uid://bmdwwry120wyf" path="res://assets/sprites/progress_bar_progress.png" id="5_u5rb5"]
@@ -129,10 +129,10 @@ properties/39/spawn = true
 properties/39/replication_mode = 1
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_kgm8b"]
-properties/0/path = NodePath("InputSynchronizer:input_direction")
+properties/0/path = NodePath("InputSynchronizer:InputDirection")
 properties/0/spawn = true
 properties/0/replication_mode = 1
-properties/1/path = NodePath("InputSynchronizer:username")
+properties/1/path = NodePath("InputSynchronizer:Username")
 properties/1/spawn = true
 properties/1/replication_mode = 2
 
@@ -144,15 +144,14 @@ height = 14.0
 z_index = 5
 y_sort_enabled = true
 collision_layer = 2
-script = ExtResource("1_ij7lf")
-start_max_health = 10
+script = ExtResource("1_h70bd")
 
 [node name="PlayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_bcfu3")
 
 [node name="InputSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_kgm8b")
-script = ExtResource("2_75sn2")
+script = ExtResource("2_ny1g5")
 
 [node name="Character" parent="." instance=ExtResource("3_ogou4")]
 position = Vector2(0, -8)
@@ -200,4 +199,4 @@ texture_under = ExtResource("4_i6yqx")
 texture_progress = ExtResource("5_u5rb5")
 tint_progress = Color(0, 0.77, 0.0256666, 1)
 
-[connection signal="timeout" from="RespawnTimer" to="." method="_respawn"]
+[connection signal="timeout" from="RespawnTimer" to="." method="Respawn"]
