@@ -12,7 +12,7 @@ func _build_multiplayer_network():
 	if not active_network:
 		print("Setting active_network")
 		
-		MultiplayerManager.multiplayer_mode_enabled = true
+		MultiplayerManager.MultiplayerModeEnabled = true
 		
 		match active_network_type:
 			MULTIPLAYER_NETWORK_TYPE.STEAM:
@@ -29,7 +29,7 @@ func _set_active_network(active_network_scene):
 
 func become_host(is_dedicated_server = false):
 	_build_multiplayer_network()
-	MultiplayerManager.host_mode_enabled = true if is_dedicated_server == false else false
+	MultiplayerManager.HostModeEnabled = true if is_dedicated_server == false else false
 	active_network.become_host()
 	
 func join_as_client(lobby_id = 0) -> bool:

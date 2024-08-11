@@ -33,8 +33,15 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	// PROPERTIES/FIELDS //
 	public const double SPEED = 75.0;
 	
-	private Godot.Vector2 _direction;
+	[Export]
+	public Godot.Vector2 Direction { get; set; }
 	
+	[Export]
+	public string Username
+	{
+		get => _usernameLabel?.Text ?? "";
+		set { if(_usernameLabel!=null) _usernameLabel.Text = value; }
+	}
 	[Export]
 	public bool Sneaking = false;
 	[Export]
@@ -76,6 +83,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		set
 		{
 			_health = value;
+			if(_healthBar == null) return;
 			_healthBar.Value = _health;
 		}
 	}
@@ -89,6 +97,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		set
 		{
 			_maxHealth = value;
+			if(_healthBar == null) return;
 			_healthBar.MinValue = 3.0f * _maxHealth/(6.0f - _healthBar.Size.X);
 			_healthBar.MaxValue = _maxHealth - _healthBar.MinValue;
 			if(Health > _maxHealth) Health = _maxHealth;
@@ -114,6 +123,19 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		_respawnTimer = GetNode<Timer>("RespawnTimer");
 		InputSynchronizer = GetNode<MultiplayerSynchronizer>("InputSynchronizer") as InputSynchronizer;
 		
+		//unfortunately this does not work :c
+		//var sync = GetNode<MultiplayerSynchronizer>("PlayerSynchronizer");
+		//foreach(var prop in new string[] {"Direction", "position"})
+		//{
+			//sync.ReplicationConfig.AddProperty($".:{prop}");
+			//sync.ReplicationConfig.PropertySetReplicationMode($".:{prop}", SceneReplicationConfig.ReplicationMode.Always);
+		//}
+		//foreach(var prop in new string[] {"Damage", "PlayerId", "Sneaking", "Attacking", "Crying", "Angried", "Shocked", "MapOpen", "Alive", "TileIsSlippery", "Username", "Health", "MaxHealth"})
+		//{
+			//sync.ReplicationConfig.AddProperty($".:{prop}");
+			//sync.ReplicationConfig.PropertySetReplicationMode($".:{prop}", SceneReplicationConfig.ReplicationMode.OnChange);
+		//}
+		
 		if(IsHost) {
 			MaxHealth = StartMaxHealth;
 			Health = StartMaxHealth;
@@ -135,7 +157,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		ApplyMovementFromInput();
 		ApplyAnimations();
 
-		if(_usernameLabel != null && GameData.Instance.PlayerName != "") _usernameLabel.Text = GameData.Instance.PlayerName;
+		if(_usernameLabel != null && GameData.Instance.PlayerName != "") Username = GameData.Instance.PlayerName;
 	}
 	
 	
@@ -177,22 +199,22 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	
 	public void ApplyAnimations()
 	{
-		if(_direction.X > 0) _character.Scale = new Vector2(1, 1);
-		else if(_direction.X < 0) _character.Scale = new Vector2(-1, 1);
+		if(Direction.X > 0) _character.Scale = new Vector2(1, 1);
+		else if(Direction.X < 0) _character.Scale = new Vector2(-1, 1);
 		if(Attacking) _character.Play("Attack");
 		else if(Crying) _character.Play("Cry");
 		else if(Angried) _character.Play("Angry");
 		else if(Shocked) _character.Play("Shock");
 		else if(Sneaking) _character.Play("Sneak");
-		else if(_direction != Vector2.Zero) _character.Play("Run");
+		else if(Direction != Vector2.Zero) _character.Play("Run");
 		else _character.Play("Idle");
 	}
 
 	public void ApplyMovementFromInput()
 	{
-		_direction = IsMultiplayer ? InputSynchronizer.InputDirection : Input.GetVector("move_left", "move_right", "move_up", "move_down");
+		Direction = IsMultiplayer ? InputSynchronizer.InputDirection : Input.GetVector("move_left", "move_right", "move_up", "move_down");
 		if(IsMultiplayer) GameData.Instance.PlayerName = InputSynchronizer.Username;
-		if(MapOpen) _direction = Vector2.Zero;
+		if(MapOpen) Direction = Vector2.Zero;
 		
 		// client side controls
 		if(IsOwner && Input.IsActionJustPressed("map")) PressMap();
@@ -206,9 +228,9 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		if(!IsMultiplayer && Input.IsActionJustPressed("shock")) Shock();
 		
 		var speed = Sneaking ? SPEED/3.0f : SPEED;
-		if(_direction != Vector2.Zero)
+		if(Direction != Vector2.Zero)
 		{
-			Velocity = _direction * (float)speed;
+			Velocity = Direction * (float)speed;
 			Crying = false; Angried = false; Shocked = false;
 		}
 		else if(TileIsSlippery) Velocity = new Vector2((float)Mathf.MoveToward(Velocity.X, 0, speed), (float)Mathf.MoveToward(Velocity.Y, 0, speed));

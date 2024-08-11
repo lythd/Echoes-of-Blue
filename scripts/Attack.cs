@@ -30,7 +30,6 @@ public partial class Attack : AnimatedSprite2D
 	
 	private void _on_area_2d_body_entered(Node2D body)
 	{
-		if (body is Player p && p != Source) p.Health -= Damage;
 		if (body is IDamageableEntity e && e != Source) e.Health -= Damage;
 	}
 	

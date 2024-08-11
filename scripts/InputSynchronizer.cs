@@ -35,26 +35,31 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 		if(Input.IsActionJustPressed("shock")) Rpc(nameof(Shock));
 	}
 
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void Sneak()
 	{
 		if(Multiplayer.IsServer()) _player.PressSneak();
 	}
 
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void Attack()
 	{
 		if(Multiplayer.IsServer()) _player.Attack();
 	}
 
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void Cry()
 	{
 		if(Multiplayer.IsServer()) _player.Cry();
 	}
 
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void Angry()
 	{
 		if(Multiplayer.IsServer()) _player.Angry();
 	}
 
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void Shock()
 	{
 		if(Multiplayer.IsServer()) _player.Shock();
@@ -65,6 +70,7 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 		Rpc(nameof(SetMapOpen), val);
 	}
 
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void SetMapOpen(bool val)
 	{
 		if(Multiplayer.IsServer()) _player.MapOpen = val;
@@ -75,6 +81,7 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 		Rpc(nameof(CallCharacter), color, part);
 	}
 
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void CallCharacter(Color color, string part)
 	{
 		if(Multiplayer.IsServer()) _player.CallCharacter(color, part);

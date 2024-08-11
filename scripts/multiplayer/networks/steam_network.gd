@@ -18,11 +18,11 @@ func become_host():
 	multiplayer.peer_disconnected.connect(_del_player)
 	
 	Steam.lobby_joined.connect(_on_lobby_joined.bind())
-	Steam.createLobby(Steam.LOBBY_TYPE_PUBLIC, SteamManager.lobby_max_members)
+	Steam.createLobby(Steam.LOBBY_TYPE_PUBLIC, SteamManager.LobbyMaxMembers)
 	
 func join_as_client(lobby_id) -> bool:
 	print("Joining lobby %s" % lobby_id)
-	var same_ver = MultiplayerManager.compare_versions(Steam.getLobbyData(lobby_id, "version"), Steam.getLobbyData(lobby_id, "hash"))
+	var same_ver = MultiplayerManager.CompareVersions(Steam.getLobbyData(lobby_id, "version"), Steam.getLobbyData(lobby_id, "hash"))
 	if same_ver:
 		Steam.lobby_joined.connect(_on_lobby_joined.bind())
 		Steam.joinLobby(int(lobby_id))
@@ -114,7 +114,7 @@ func _add_player_to_game(id: int):
 	print("Player %s joined the game!" % id)
 	
 	var player_to_add = multiplayer_scene.instantiate()
-	player_to_add.player_id = id
+	player_to_add.PlayerId = id
 	player_to_add.name = str(id)
 	_players_spawn_node.add_child(player_to_add, true)
 	

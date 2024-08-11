@@ -94,3 +94,5 @@ res://scripts/InputSynchronizer.cs
 res://scripts/multiplayer/steam/SteamManager.cs
 res://scripts/game_manager.gd
 res://scenes/game.gd
+res://scripts/multiplayer/networks/network_manager.gd
+res://scripts/multiplayer/networks/steam_network.gd
