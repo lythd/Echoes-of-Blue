@@ -1,5 +1,6 @@
 using System;
 using EchoesofBlue.scripts.multiplayer;
+using EchoesofBlue.scripts.stuff;
 using Godot;
 
 namespace EchoesofBlue.scripts;
@@ -90,6 +91,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		set
 		{
 			_health = value;
+			if(_health <= 0) MarkDead();
 			if(_healthBar == null) return;
 			_healthBar.Value = _health;
 		}
@@ -150,9 +152,8 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 			Health = StartMaxHealth;
 		}
 		
-		var gameNode = GetNodeOrNull<Node2D>("/root/Game");
-		if(gameNode != null) gameNode.Call("connect_player_signals", this);
-		else GD.Print("Running player standalone!");
+		GetNodeOrNull<Node2D>("/root/Game")?.Call("connect_player_signals", this);
+
 		if(IsOwner) EmitSignal(SignalName.SyncCharacter, this);
 		
 		SetCamera();
@@ -161,11 +162,14 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	public override void _PhysicsProcess(double delta)
 	{
 		if(IsOwner) EmitSignal(SignalName.CheckTileProperties, GlobalPosition, this);
-		if(IsHost && !Alive) SetAlive();
+		//if(IsHost && !Alive) SetAlive();
 		ApplyMovementFromInput();
 		ApplyAnimations();
 
 		if(_usernameLabel != null && GameData.Instance.PlayerName != "") Username = GameData.Instance.PlayerName;
+		
+		if(IsHost && IsOwner && Input.IsActionJustPressed("debug_spawn_enemy"))
+			GetNodeOrNull<Node2D>("/root/Game")?.Call("spawn_enemy", Position + new Random().NextVector()*50);
 	}
 	
 	
@@ -257,13 +261,10 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 
 	public void Attack()
 	{
-		GD.Print("Player.Attack()");
 		if(Attacking) return;
 		_character.Play("Attack");
 		Crying = false; Angried = false; Shocked = false;
-		//Health -= 1;
 		if(IsHost) EmitSignal(SignalName.DoAttack, this, PlayerId, Flip, Damage, Position);
-		GD.Print("Signal emitted");
 	}
 	
 	public void TakeAttack(Attack attack)
@@ -322,6 +323,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 
 	public void MarkDead()
 	{
+		_attack.QueueFree();
 		Alive = false;
 		_collision.SetDeferred("disabled", true);
 		_respawnTimer.Start();
@@ -331,10 +333,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	{
 		Position = MultiplayerManager.Instance.RespawnPoint;
 		_collision.SetDeferred("disabled", false);
-	}
-
-	public void SetAlive()
-	{
+		Health = MaxHealth;
 		Alive = true;
 		Engine.TimeScale = 1.0;
 	}

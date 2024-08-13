@@ -30,3 +30,4 @@ res://scripts/nodes/InputSynchronizer.cs
 res://scenes/test_collision.tscn
 res://scenes/TestPlayer.gd
 res://scenes/TestThing.gd
+res://scripts/game.gd

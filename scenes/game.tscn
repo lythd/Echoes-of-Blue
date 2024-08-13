@@ -1777,9 +1777,10 @@ shader = ExtResource("10_joiu5")
 [sub_resource type="ViewportTexture" id="ViewportTexture_ybnpy"]
 viewport_path = NodePath("Map/SubViewport")
 
-[node name="Game" type="Node2D" node_paths=PackedStringArray("_attacks_spawn_node")]
+[node name="Game" type="Node2D" node_paths=PackedStringArray("_attacks_spawn_node", "_enemies_spawn_node")]
 script = ExtResource("1_rnbs3")
 _attacks_spawn_node = NodePath("Attacks")
+_enemies_spawn_node = NodePath("Enemies")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -1806,6 +1807,15 @@ spawn_limit = 100
 
 [node name="Attacks" type="Node2D" parent="."]
 z_index = 6
+position = Vector2(329, 469)
+
+[node name="EnemySpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://scenes/enemy.tscn")
+spawn_path = NodePath("../Enemies")
+spawn_limit = 100
+
+[node name="Enemies" type="Node2D" parent="."]
+z_index = 4
 position = Vector2(329, 469)
 
 [node name="Map" type="Node2D" parent="."]
@@ -1920,35 +1930,6 @@ offset_bottom = 380.0
 unique_name_in_owner = true
 position = Vector2(75, 95)
 scale = Vector2(8, 8)
-SpecialInd = null
-HairInd = null
-EyesInd = null
-HandsInd = null
-ShirtInd = null
-PantsInd = null
-ShoesInd = null
-SkinInd = null
-HairHue = null
-HairSat = null
-HairVal = null
-EyesHue = null
-EyesSat = null
-EyesVal = null
-HandsHue = null
-HandsSat = null
-HandsVal = null
-ShirtHue = null
-ShirtSat = null
-ShirtVal = null
-PantsHue = null
-PantsSat = null
-PantsVal = null
-ShoesHue = null
-ShoesSat = null
-ShoesVal = null
-SkinHue = null
-SkinSat = null
-SkinVal = null
 
 [node name="Random" type="Button" parent="Customizer/Panel"]
 layout_mode = 0

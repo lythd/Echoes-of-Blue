@@ -13,7 +13,7 @@ public partial class Attack : Node2D
 	public int Damage { get; set; }
 	
 	[Export]
-	public int PlayerId { get; set; }
+	public int Id { get; set; }
 	
 	public IDamageableEntity Source { get; set; }
 	
@@ -28,14 +28,12 @@ public partial class Attack : Node2D
 	
 	public override void _Ready()
 	{
-		GD.Print($" > ready {PlayerId} {Multiplayer.GetUniqueId()}");
 		if(!IsHost)
 		{
 			SetProcess(false);
 			SetPhysicsProcess(false);
 			return;
 		}
-		GD.Print(" > processing");
 		Source.TakeAttack(this);
 	}
 	
@@ -45,18 +43,27 @@ public partial class Attack : Node2D
 		Flip = Source.Flip;
 	}
 	
+	/*public void ReceiveSource(IDamageableEntity source)
+	{
+		Source = source;
+	}*/
+	
+	// TODO : remove these once I get rid of the gdscript code and use the above, gdscript just hates idamgeableentity idk
 	public void ReceiveSource(Player source)
 	{
-		if(source is IDamageableEntity e) Source = e;
+		Source = source;
+	}
+	
+	public void ReceiveSourceEnemy(Enemy source)
+	{
+		Source = source;
 	}
 	
 	private void _on_area_2d_body_entered(Node2D body)
 	{
 		if (!IsHost) return;
-		GD.Print(" > body entered");
 		if (body is not IDamageableEntity e || e == Source) return;
 		e.Health -= Damage;
-		GD.Print($" > Damaging entity by {Damage}, now at {e.Health} health!");
 	}
 	
 	private void _on_timer_timeout()

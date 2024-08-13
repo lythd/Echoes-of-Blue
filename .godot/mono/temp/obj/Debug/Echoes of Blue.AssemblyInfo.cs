@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Echoes of Blue")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74cab042188a06c7b29ac7000892be992e781c33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3fe30543f3e8b85a20be4aee236b504435ecfd0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Echoes of Blue")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Echoes of Blue")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

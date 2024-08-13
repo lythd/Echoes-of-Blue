@@ -30,11 +30,7 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 	public override void _Process(double delta)
 	{
 		if(Input.IsActionJustPressed("sneak")) Rpc(nameof(Sneak));
-		if(Input.IsActionJustPressed("attack"))
-		{
-			Rpc(nameof(Attack));
-			GD.Print("Sent rpc attack");
-		}
+		if(Input.IsActionJustPressed("attack")) Rpc(nameof(Attack));
 		if(Input.IsActionJustPressed("cry")) Rpc(nameof(Cry));
 		if(Input.IsActionJustPressed("angry")) Rpc(nameof(Angry));
 		if(Input.IsActionJustPressed("shock")) Rpc(nameof(Shock));
@@ -49,7 +45,6 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void Attack()
 	{
-		GD.Print($"Attack rpc executed! {Multiplayer.IsServer()}");
 		if(Multiplayer.IsServer()) _player.Attack();
 	}
 

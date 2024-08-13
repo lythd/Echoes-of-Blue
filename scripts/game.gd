@@ -3,7 +3,9 @@ extends Node2D
 @onready var game_manager = $GameManager
 
 @export var _attacks_spawn_node: Node2D
+@export var _enemies_spawn_node: Node2D
 var attack_scene = preload("res://scenes/attack.tscn")
+var enemy_scene = preload("res://scenes/enemy.tscn")
 
 func _ready():
 	TranslationServer.set_locale("es_ES")
@@ -31,6 +33,10 @@ func connect_player_signals(player):
 	player.AddMap.connect(_on_add_map)
 	player.CheckTileProperties.connect(_on_check_tile_properties)
 	player.DoAttack.connect(_on_attack)
+
+func connect_enemy_signals(enemy):
+	print("Connecting enemy signals...")
+	enemy.DoAttack.connect(_on_attack_enemy)
 
 func _on_show_all(show_all):
 	$Players.visible = show_all
@@ -61,6 +67,27 @@ func _on_attack(source, id: int, flip: bool, damage: int, pos: Vector2):
 	to_add.Damage = damage
 	to_add.Flip = flip
 	to_add.ReceiveSource(source)
-	to_add.PlayerId = id
+	to_add.Id = id
 	to_add.name = str(id)
 	_attacks_spawn_node.add_child(to_add, true)
+
+# i hate gdscript this is unnecessary to be different from _on_attack
+func _on_attack_enemy(source, id: int, flip: bool, damage: int, pos: Vector2):
+	print("_on_attack called")
+	var to_add = attack_scene.instantiate()
+	to_add.position = pos
+	to_add.Damage = damage
+	to_add.Flip = flip
+	to_add.ReceiveSourceEnemy(source)
+	to_add.Id = id
+	to_add.name = str(id)
+	_attacks_spawn_node.add_child(to_add, true)
+	
+func spawn_enemy(pos: Vector2):
+	print("Spawning enemy...")
+	var enemy = enemy_scene.instantiate()
+	var id = randi()
+	enemy.position = pos
+	enemy.EnemyId = id
+	enemy.name = str(id)
+	_enemies_spawn_node.add_child(enemy, true)

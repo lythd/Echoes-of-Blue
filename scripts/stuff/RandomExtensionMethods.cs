@@ -1,4 +1,5 @@
 using System;
+using Godot;
 
 namespace EchoesofBlue.scripts.stuff;
 
@@ -51,5 +52,20 @@ public static class RandomExtensionMethods
 	public static long NextLong(this Random random)
 	{
 		return random.NextLong(long.MinValue, long.MaxValue);
+	}
+
+	public static Vector2 NextVector(this Random random)
+	{
+		return new Vector2(random.NextSingle()*2f-1f, random.NextSingle()*2f-1f).Normalized();
+	}
+
+	public static float SquaredDist(this IDamageableEntity first, IDamageableEntity second)
+	{
+		return first.Pos.DistanceSquaredTo(second.Pos);
+	}
+
+	public static float Dist(this IDamageableEntity first, IDamageableEntity second)
+	{
+		return first.Pos.DistanceTo(second.Pos);
 	}
 }
