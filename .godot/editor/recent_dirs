@@ -1,10 +1,10 @@
 /home/raven/Documents/Coding/Godot Projects/Echoes of Blue
-res://scripts/nodes
+res://scenes
 res://assets/sprites
+res://scripts/nodes
 res://scripts
 res://scripts/multiplayer/steam
 res://scripts/multiplayer
-res://scenes
 res://assets
 res://localization
 res://

@@ -1,4 +1,5 @@
 using System;
+using EchoesofBlue.scripts.multiplayer;
 using Godot;
 
 namespace EchoesofBlue.scripts;
@@ -16,7 +17,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	[Signal]
 	public delegate void AddMapEventHandler(Map map);
 	[Signal]
-	public delegate void CheckTilePropertiesEventHandler(Godot.Vector2 globalPositionPlayer, Player player);
+	public delegate void CheckTilePropertiesEventHandler(Vector2 globalPositionPlayer, Player player);
 	[Signal]
 	public delegate void DoAttackEventHandler(Player source, long id, bool flip, int damage, Vector2 pos);
 	
@@ -26,7 +27,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	
 	
 	// NODES //
-	private Map _map = null;
+	private Map _map;
 	private Character _character;
 	private TextureProgressBar _healthBar;
 	private Label _usernameLabel;
@@ -42,7 +43,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	public bool Attacking => _attack != null;
 	
 	[Export]
-	public Godot.Vector2 Direction { get; set; }
+	public Vector2 Direction { get; set; }
 	
 	[Export]
 	public string Username
@@ -51,15 +52,15 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		set { if(_usernameLabel!=null) _usernameLabel.Text = value; }
 	}
 	[Export]
-	public bool Sneaking = false;
+	public bool Sneaking;
 	[Export]
-	public bool Crying = false;
+	public bool Crying;
 	[Export]
-	public bool Angried = false;
+	public bool Angried;
 	[Export]
-	public bool Shocked = false;
+	public bool Shocked;
 	[Export]
-	public bool MapOpen = false;
+	public bool MapOpen;
 	[Export]
 	public bool Alive = true;
 	[Export]
@@ -111,7 +112,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	}
 
 	[Export]
-	public int Damage { get; set; } = 20;
+	public int Damage { get; set; } = 5;
 	
 	public Vector2 Pos => Position;
 	public bool Flip
@@ -120,11 +121,11 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		set => _character.Scale = new Vector2(value ? -1 : 1, 1);
 	}
 	
-	private Attack _attack = null;
+	private Attack _attack;
 	
-	public bool IsMultiplayer => multiplayer.MultiplayerManager.Instance.MultiplayerModeEnabled;
-	public bool IsOwner => Multiplayer.GetUniqueId() == PlayerId || !multiplayer.MultiplayerManager.Instance.MultiplayerModeEnabled;
-	public bool IsHost => GetMultiplayerAuthority() == Multiplayer.GetUniqueId() || !multiplayer.MultiplayerManager.Instance.MultiplayerModeEnabled;
+	public bool IsMultiplayer => MultiplayerManager.Instance.MultiplayerModeEnabled;
+	public bool IsOwner => Multiplayer.GetUniqueId() == PlayerId || !MultiplayerManager.Instance.MultiplayerModeEnabled;
+	public bool IsHost => GetMultiplayerAuthority() == Multiplayer.GetUniqueId() || !MultiplayerManager.Instance.MultiplayerModeEnabled;
 	
 	// GODOT METHODS //
 
@@ -328,7 +329,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 
 	public void Respawn()
 	{
-		Position = multiplayer.MultiplayerManager.Instance.RespawnPoint;
+		Position = MultiplayerManager.Instance.RespawnPoint;
 		_collision.SetDeferred("disabled", false);
 	}
 

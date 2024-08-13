@@ -27,3 +27,6 @@ res://scripts/nodes/Enemy.cs
 res://scripts/nodes/Character.cs
 res://scripts/nodes/Player.cs
 res://scripts/nodes/InputSynchronizer.cs
+res://scenes/test_collision.tscn
+res://scenes/TestPlayer.gd
+res://scenes/TestThing.gd

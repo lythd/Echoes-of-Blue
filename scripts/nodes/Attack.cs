@@ -52,6 +52,7 @@ public partial class Attack : Node2D
 	
 	private void _on_area_2d_body_entered(Node2D body)
 	{
+		if (!IsHost) return;
 		GD.Print(" > body entered");
 		if (body is not IDamageableEntity e || e == Source) return;
 		e.Health -= Damage;
