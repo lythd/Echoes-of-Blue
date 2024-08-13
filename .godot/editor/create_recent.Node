@@ -1,11 +1,12 @@
+MultiplayerSynchronizer
+Node2D
+AnimatedSprite2D
 Timer
 CollisionShape2D
 Sprite2D
 CharacterBody2D
 Area2D
-AnimatedSprite2D
 TextureProgressBar
-Node2D
 TextureRect
 SubViewport
 ColorPickerButton

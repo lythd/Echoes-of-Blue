@@ -1,5 +1,7 @@
+using EchoesofBlue.scripts.game;
 using Godot;
-using System;
+
+namespace EchoesofBlue.scripts;
 
 public partial class Map : Node2D
 {
@@ -19,8 +21,8 @@ public partial class Map : Node2D
 	private Vector2 _lastDirection;
 	private float _keyRepeatTimer = 0;
 	
-	private const float _keyRepeatDelay = 0.25f;
-	private const float _keyRepeatInterval = 0.1f;
+	private const float KeyRepeatDelay = 0.25f;
+	private const float KeyRepeatInterval = 0.1f;
 	
 	private Rect2 _cursorDefault = new Rect2(240, 896, 16, 16);
 	private Rect2 _cursorReady = new Rect2(224, 896, 16, 16);
@@ -53,7 +55,7 @@ public partial class Map : Node2D
 		_keyRepeatTimer -= (float)delta;
 		Vector2 direction = Input.GetAxis("gui_left","gui_right")*Vector2.Right+Input.GetAxis("gui_up","gui_down")*Vector2.Down;
 		if(_lastDirection == Vector2.Zero || _keyRepeatTimer <= 0) {
-			_keyRepeatTimer = _lastDirection == direction ? _keyRepeatInterval : _keyRepeatDelay;
+			_keyRepeatTimer = _lastDirection == direction ? KeyRepeatInterval : KeyRepeatDelay;
 			if(_cursorEnabled) MoveCursor(direction);
 			_lastDirection = direction;
 		}
@@ -74,18 +76,17 @@ public partial class Map : Node2D
 
 	private void SetFlag() {
 		//sets _flag.Position to whatever tile has the same "LocationName" custom data layer as GameData.Instance.PlayerLocation
-		for (int x = -_tileMap.GetUsedRect().Size.X/2; x < _tileMap.GetUsedRect().Size.X/2; x++)
+		for (var x = -_tileMap.GetUsedRect().Size.X/2; x < _tileMap.GetUsedRect().Size.X/2; x++)
 		{
-			for (int y = -_tileMap.GetUsedRect().Size.Y/2; y < _tileMap.GetUsedRect().Size.Y/2; y++)
+			for (var y = -_tileMap.GetUsedRect().Size.Y/2; y < _tileMap.GetUsedRect().Size.Y/2; y++)
 			{
-				Vector2I tileCoords = new Vector2I(x, y);
-				TileData tileData = _tileMap.GetCellTileData(0, tileCoords);
+				var tileCoords = new Vector2I(x, y);
+				var tileData = _tileMap.GetCellTileData(0, tileCoords);
 				if(tileData == null || ((string)tileData.GetCustomData("LocationName")).Length == 0) continue;
-				if (GameData.Instance.PlayerLocation.Id.Equals((string)tileData.GetCustomData("LocationName")))
-				{
-					_flag.Position = MapToGlobal(tileCoords*2) - _tileSize*new Vector2(2.8f,-0.8f); // proof by i fiddled around with the values until it was perfect
-					return;
-				}
+				if (!GameData.Instance.PlayerLocation.Id.Equals((string)tileData.GetCustomData("LocationName")))
+					continue;
+				_flag.Position = MapToGlobal(tileCoords*2) - _tileSize*new Vector2(2.8f,-0.8f); // proof by i fiddled around with the values until it was perfect
+				return;
 			}
 		}
 	}
@@ -109,8 +110,8 @@ public partial class Map : Node2D
 	}
 	
 	private void UpdateCursorTexture() {
-		Vector2I tileCoords = _cursorPosition*2;
-		TileData tileData = _tileMap.GetCellTileData(0, tileCoords);
+		var tileCoords = _cursorPosition*2;
+		var tileData = _tileMap.GetCellTileData(0, tileCoords);
 		if(tileData != null) _cursorOverTown = ((bool)tileData.GetCustomData("TownTile"));
 		else _cursorOverTown = false;
 		if(tileData != null) _locationName = ((string)tileData.GetCustomData("LocationName"));

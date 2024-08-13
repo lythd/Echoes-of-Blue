@@ -1,9 +1,8 @@
-using Godot;
-using System;
 using System.Collections.Generic;
-using System.Reflection;
+using EchoesofBlue.scripts.game;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
+namespace EchoesofBlue.scripts.serialization;
 
 public class Item
 {

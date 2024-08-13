@@ -1,9 +1,9 @@
-using Godot;
 using System;
-using System.Collections.Generic;
 using System.Reflection;
+using EchoesofBlue.scripts.game;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
+namespace EchoesofBlue.scripts.serialization;
 
 public class GameConverter<T> : JsonConverter where T : class
 {
@@ -16,9 +16,9 @@ public class GameConverter<T> : JsonConverter where T : class
 	{
 		if (reader.TokenType == JsonToken.String || reader.TokenType == JsonToken.PropertyName)
 		{
-			Type t = typeof(T);
-			MethodInfo methodInfo = t.GetMethod("Get", BindingFlags.Static | BindingFlags.Public);
-			if (methodInfo != null) return methodInfo.Invoke(null, new string[]{(string)reader.Value});
+			var t = typeof(T);
+			var methodInfo = t.GetMethod("Get", BindingFlags.Static | BindingFlags.Public);
+			if (methodInfo != null) return methodInfo.Invoke(null, [(string)reader.Value]);
 			else throw new MissingMethodException($"The method 'Get' does not exist on type '{t.FullName}'."); //this should never run but just incase
 		}
 		else throw new JsonSerializationException("Invalid token type");
@@ -26,11 +26,7 @@ public class GameConverter<T> : JsonConverter where T : class
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
 	{
-		GameEntity instance = value as GameEntity;
-		if (instance != null)
-		{
-			serializer.Serialize(writer, instance.Id);
-		}
+		if (value is GameEntity instance) serializer.Serialize(writer, instance.Id);
 		else throw new JsonSerializationException("Value cannot be null");
 	}
 }

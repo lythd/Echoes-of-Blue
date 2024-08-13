@@ -1,5 +1,4 @@
-using Godot;
-using System;
+namespace EchoesofBlue.scripts.game;
 
 public class GameEntity
 {

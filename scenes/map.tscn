@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://bqoihfuaaancy"]
 
 [ext_resource type="Texture2D" uid="uid://dfh4vqvhjcdu8" path="res://assets/sprites/tileset_map.png" id="1_3emsb"]
-[ext_resource type="Script" path="res://scripts/Map.cs" id="1_410jd"]
+[ext_resource type="Script" path="res://scripts/nodes/Map.cs" id="1_b250w"]
 [ext_resource type="PackedScene" uid="uid://ciqk8lfdwbk37" path="res://scenes/cursor.tscn" id="2_sevyn"]
 [ext_resource type="Texture2D" uid="uid://dctqn4jusjfgj" path="res://assets/sprites/map_background.png" id="3_hfrs0"]
 [ext_resource type="Shader" path="res://scenes/sepia_map.gdshader" id="4_qqluj"]
@@ -3147,7 +3147,7 @@ animations = [{
 }]
 
 [node name="Map" type="Node2D"]
-script = ExtResource("1_410jd")
+script = ExtResource("1_b250w")
 
 [node name="Canvas" type="CanvasLayer" parent="."]
 

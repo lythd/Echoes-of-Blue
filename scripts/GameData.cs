@@ -1,11 +1,13 @@
-using Godot;
 using System;
-using System.Linq;
 using System.Collections.Generic;
-using System.Reflection;
-using System.Runtime.CompilerServices;
+using System.Linq;
+using EchoesofBlue.scripts.game;
+using EchoesofBlue.scripts.serialization;
+using EchoesofBlue.scripts.stuff;
+using Godot;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
+namespace EchoesofBlue.scripts;
 
 public partial class GameData : Node
 {
@@ -59,7 +61,7 @@ public partial class GameData : Node
 	public Tile GetTile(GameTile key) => _tiles.GetValueOrDefault(key);
 	public Weapon GetWeapon(GameItem key) => _weapons.GetValueOrDefault(key);
 	
-	public JsonSerializerSettings settings = new JsonSerializerSettings
+	public readonly JsonSerializerSettings Settings = new()
 	{
 		Converters = new List<JsonConverter>
 		{
@@ -99,28 +101,28 @@ public partial class GameData : Node
 		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
 		var fileContent = file.GetAsText();
 		file.Close();
-		return JsonConvert.DeserializeObject<T>(fileContent, settings);
+		return JsonConvert.DeserializeObject<T>(fileContent, Settings);
 	}
 	
 	public Dictionary<string, T> LoadDict<T>(string name) {
 		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
 		var fileContent = file.GetAsText();
 		file.Close();
-		return JsonConvert.DeserializeObject<Dictionary<string, T>>(fileContent, settings);
+		return JsonConvert.DeserializeObject<Dictionary<string, T>>(fileContent, Settings);
 	}
 	
 	public Dictionary<Tk, Tv> LoadDict<Tk,Tv>(string name) {
 		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
 		var fileContent = file.GetAsText();
 		file.Close();
-		return JsonConvert.DeserializeObject<Dictionary<Tk, Tv>>(fileContent, settings);
+		return JsonConvert.DeserializeObject<Dictionary<Tk, Tv>>(fileContent, Settings);
 	}
 	
 	public List<T> LoadList<T>(string name) {
 		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
 		var fileContent = file.GetAsText();
 		file.Close();
-		return JsonConvert.DeserializeObject<List<T>>(fileContent, settings);
+		return JsonConvert.DeserializeObject<List<T>>(fileContent, Settings);
 	}
 	
 	public void ResetData()

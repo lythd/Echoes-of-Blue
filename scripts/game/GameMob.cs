@@ -1,9 +1,10 @@
-using Godot;
-using System;
 using System.Collections.Generic;
-using System.Reflection;
+using EchoesofBlue.scripts.serialization;
+using Godot;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+using Range = EchoesofBlue.scripts.serialization.Range;
+
+namespace EchoesofBlue.scripts.game;
 
 [JsonConverter(typeof(GameConverter<GameMob>))]
 public class GameMob : GameEntity
@@ -12,37 +13,32 @@ public class GameMob : GameEntity
 		Id = id;
 	}
 	
-	private static readonly Dictionary<string, GameMob> _instances = new Dictionary<string, GameMob>();
+	private static readonly Dictionary<string, GameMob> Instances = new();
 	
 	public override string Name {
-		get { return TranslationServer.Translate($"{Id}_MOB_NAME"); }
-		
+		get => TranslationServer.Translate($"{Id}_MOB_NAME");
 		protected set {}
 	}
 	
 	public override string Desc {
-		get { return TranslationServer.Translate($"{Id}_MOB_DESC"); }
-		
+		get => TranslationServer.Translate($"{Id}_MOB_DESC");
 		protected set {}
 	}
 	
 	public static GameMob Get(string id) {
-		if (!_instances.TryGetValue(id, out GameMob item))
-		{
-			item = new GameMob(id);
-			_instances[id] = item;
-		}
-
+		if (Instances.TryGetValue(id, out var item)) return item;
+		item = new GameMob(id);
+		Instances[id] = item;
 		return item;
 	}
 	
-	public bool Exists { get => GameData.Instance.GetMob(this) != null; private set {} }
-	public string Type { get => GameData.Instance.GetMob(this)?.Type ?? "ENEMY"; private set {} }
-	public int PiercingDamage { get => GameData.Instance.GetMob(this)?.PiercingDamage ?? -1; private set {} }
-	public int BluntDamage { get => GameData.Instance.GetMob(this)?.BluntDamage ?? -1; private set {} }
-	public int MaximumHealth { get => GameData.Instance.GetMob(this)?.MaximumHealth ?? -1; private set {} }
-	public int Defense { get => GameData.Instance.GetMob(this)?.Defense ?? -1; private set {} }
-	public int Speed { get => GameData.Instance.GetMob(this)?.Speed ?? -1; private set {} }
-	public List<GameEffect> Effects { get => GameData.Instance.GetMob(this)?.Effects ?? new List<GameEffect>(); private set {} }
-	public Dictionary<string, Dictionary<GameItem, Range>> Drops { get => GameData.Instance.GetMob(this)?.Drops ?? new Dictionary<string, Dictionary<GameItem, Range>>(); private set {} }
+	public bool Exists => GameData.Instance.GetMob(this) != null;
+	public string Type => GameData.Instance.GetMob(this)?.Type ?? "ENEMY";
+	public int PiercingDamage => GameData.Instance.GetMob(this)?.PiercingDamage ?? -1;
+	public int BluntDamage => GameData.Instance.GetMob(this)?.BluntDamage ?? -1;
+	public int MaximumHealth => GameData.Instance.GetMob(this)?.MaximumHealth ?? -1;
+	public int Defense => GameData.Instance.GetMob(this)?.Defense ?? -1;
+	public int Speed => GameData.Instance.GetMob(this)?.Speed ?? -1;
+	public List<GameEffect> Effects => GameData.Instance.GetMob(this)?.Effects ?? [];
+	public Dictionary<string, Dictionary<GameItem, Range>> Drops => GameData.Instance.GetMob(this)?.Drops ?? new Dictionary<string, Dictionary<GameItem, Range>>();
 }

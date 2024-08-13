@@ -1,5 +1,6 @@
-using Godot;
 using System;
+
+namespace EchoesofBlue.scripts.stuff;
 
 public static class RandomExtensionMethods
 {
@@ -12,7 +13,7 @@ public static class RandomExtensionMethods
 	public static long NextLong(this Random random, long min, long max)
 	{
 		if (max <= min)
-			throw new ArgumentOutOfRangeException("max", "max must be > min!");
+			throw new ArgumentOutOfRangeException(nameof(max), "max must be > min!");
 
 		//Working with ulong so that modulo works correctly with values > long.MaxValue
 		ulong uRange = (ulong)(max - min);
@@ -24,7 +25,7 @@ public static class RandomExtensionMethods
 		ulong ulongRand;
 		do
 		{
-			byte[] buf = new byte[8];
+			var buf = new byte[8];
 			random.NextBytes(buf);
 			ulongRand = (ulong)BitConverter.ToInt64(buf, 0);
 		} while (ulongRand > ulong.MaxValue - ((ulong.MaxValue % uRange) + 1) % uRange);

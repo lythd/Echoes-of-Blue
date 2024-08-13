@@ -1,10 +1,10 @@
-using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Newtonsoft.Json;
 
 /*
 
@@ -30,6 +30,8 @@ catch (ThrowAddingDuplicateWithKeyArgumentException e) {
 
 */
 
+namespace EchoesofBlue.scripts.stuff;
+
 /// <summary>
 /// <para>Converter from and to <see cref="Dictionary{TKey, TValue}"/> types.</para>
 /// <para>Works with non-string key types, as long as they can be serialized as plain strings (no complex structures).</para>
@@ -46,7 +48,7 @@ public class JsonCustomKeyDictionaryObjectConverter : JsonConverter
 	public override bool CanConvert(Type objectType)
 	{
 		return typeof(IDictionary).IsAssignableFrom(objectType)
-			|| TypeImplementsGenericInterface(objectType, typeof(IDictionary<,>));
+		       || TypeImplementsGenericInterface(objectType, typeof(IDictionary<,>));
 	}
 
 	/// <summary>
@@ -58,7 +60,7 @@ public class JsonCustomKeyDictionaryObjectConverter : JsonConverter
 	private static bool TypeImplementsGenericInterface(Type concreteType, Type interfaceType)
 	{
 		return concreteType.GetInterfaces()
-			   .Any(i => i.IsGenericType && i.GetGenericTypeDefinition() == interfaceType);
+			.Any(i => i.IsGenericType && i.GetGenericTypeDefinition() == interfaceType);
 	}
 
 	/// <summary>
@@ -70,7 +72,7 @@ public class JsonCustomKeyDictionaryObjectConverter : JsonConverter
 	private static void GetDictGenericTypes(Type objectType, out Type[] dictionaryTypes, out bool isStringKey)
 	{
 		dictionaryTypes = objectType.GetGenericArguments();
-		if ((dictionaryTypes?.Length ?? 0) < 2)
+		if (dictionaryTypes is { Length: < 2 })
 			throw new InvalidOperationException($"Deserializing Json dictionary with less than two types {objectType.Name}");
 		isStringKey = dictionaryTypes[0] == typeof(string);
 	}
@@ -87,7 +89,7 @@ public class JsonCustomKeyDictionaryObjectConverter : JsonConverter
 	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
 	{
 		// Aquire reflection info & create resulting dictionary:
-		GetDictGenericTypes(objectType, out Type[] dictionaryTypes, out bool isStringKey);
+		GetDictGenericTypes(objectType, out var dictionaryTypes, out var isStringKey);
 		var res = Activator.CreateInstance(objectType) as IDictionary;
 
 		// Read each key-value-pair:
@@ -120,7 +122,7 @@ public class JsonCustomKeyDictionaryObjectConverter : JsonConverter
 
 				try
 				{
-					res.Add(key, value);
+					res?.Add(key, value);
 				}
 				catch (ArgumentException e) {
 					Console.WriteLine($"Error: {e.Message}");
@@ -146,42 +148,48 @@ public class JsonCustomKeyDictionaryObjectConverter : JsonConverter
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
 	{
 		// Aquire reflection info & get key-value-pairs:
-		Type type = value.GetType();
-		GetDictGenericTypes(type, out Type[] dictionaryTypes, out bool isStringKey);
-		IEnumerable keys = (IEnumerable)type.GetProperty("Keys").GetValue(value, null);
-		IEnumerable values = (IEnumerable)type.GetProperty("Values").GetValue(value, null);
-		IEnumerator valueEnumerator = values.GetEnumerator();
-
-		// Write each key-value-pair:
-		StringBuilder sb = new StringBuilder();
-		using (StringWriter tempWriter = new StringWriter(sb))
+		if (value != null)
 		{
+			var type = value.GetType();
+			GetDictGenericTypes(type, out _, out var isStringKey);
+			var keys = (IEnumerable)type.GetProperty("Keys")?.GetValue(value, null);
+			var values = (IEnumerable)type.GetProperty("Values")?.GetValue(value, null);
+			var valueEnumerator = values?.GetEnumerator();
+			using var valueEnumerator1 = valueEnumerator as IDisposable;
+
+			// Write each key-value-pair:
+			StringBuilder sb = new StringBuilder();
+			using var tempWriter = new StringWriter(sb);
 			writer.WriteStartObject();
-			foreach (object key in keys)
-			{
-				valueEnumerator.MoveNext();
-
-				// convert key, force serialization of non-string keys
-				string keyStr = null;
-				if (isStringKey)
+			if (keys != null)
+				foreach (var key in keys)
 				{
-					// Key is not a custom type and can be used directly
-					keyStr = (string)key;
-				}
-				else
-				{
-					sb.Clear();
-					serializer.Serialize(tempWriter, key);
-					keyStr = RemoveCapsulation(sb.ToString());
-					// TO-DO: Validate key resolves to single string, no complex structure
-				}
-				writer.WritePropertyName(keyStr);
+					if (valueEnumerator == null) continue;
+					valueEnumerator.MoveNext();
 
-				// default serialize value
-				serializer.Serialize(writer, valueEnumerator.Current);
-			}
-			writer.WriteEndObject();
+					// convert key, force serialization of non-string keys
+					string keyStr;
+					if (isStringKey)
+					{
+						// Key is not a custom type and can be used directly
+						keyStr = (string)key;
+					}
+					else
+					{
+						sb.Clear();
+						serializer.Serialize(tempWriter, key);
+						keyStr = RemoveCapsulation(sb.ToString());
+						// TO-DO: Validate key resolves to single string, no complex structure
+					}
+
+					writer.WritePropertyName(keyStr);
+
+					// default serialize value
+					serializer.Serialize(writer, valueEnumerator.Current);
+				}
 		}
+
+		writer.WriteEndObject();
 	}
 
 	/// <summary>
@@ -189,10 +197,9 @@ public class JsonCustomKeyDictionaryObjectConverter : JsonConverter
 	/// </summary>
 	/// <param name="str">String to remove encapsulation from.</param>
 	/// <returns>String without encapsulation.</returns>
-	private string RemoveCapsulation(string str)
+	private static string RemoveCapsulation(string str)
 	{
-		if (str[0] == '\"' && str[str.Length-1] == '\"') return str.Substring(1, str.Length - 2);
+		if (str[0] == '\"' && str[^1] == '\"') return str.Substring(1, str.Length - 2);
 		return str;
 	}
 }
-

@@ -1,19 +1,19 @@
 using Godot;
-using System;
+
+namespace EchoesofBlue.scripts;
 
 public partial class Character : Node2D
 {
-	
-	public static Texture2D[] SpritesheetSpecial;
-	public static Texture2D[] SpritesheetHair;
-	public static Texture2D[] SpritesheetEyes;
-	public static Texture2D[] SpritesheetHands;
-	public static Texture2D[] SpritesheetShirt;
-	public static Texture2D[] SpritesheetPants;
-	public static Texture2D[] SpritesheetShoes;
-	public static Texture2D[] SpritesheetSkin;
-	
-	public static bool loaded_sheets = false;
+	private static Texture2D[] _spritesheetSpecial;
+	private static Texture2D[] _spritesheetHair;
+	private static Texture2D[] _spritesheetEyes;
+	private static Texture2D[] _spritesheetHands;
+	private static Texture2D[] _spritesheetShirt;
+	private static Texture2D[] _spritesheetPants;
+	private static Texture2D[] _spritesheetShoes;
+	private static Texture2D[] _spritesheetSkin;
+
+	private static bool _loadedSheets;
 	
 	private Sprite2D _special;
 	private Sprite2D _hair;
@@ -35,99 +35,99 @@ public partial class Character : Node2D
 	private int _shoesInd;
 	private int _skinInd;
 	
-	private RandomNumberGenerator random = new RandomNumberGenerator();
+	private RandomNumberGenerator _random = new();
 	
 	[Export]
 	public int SpecialInd {
-		get { return _specialInd; }
+		get => _specialInd;
 		set
 		{
 			if(_special == null) return;
-			_specialInd = value % SpritesheetSpecial.Length;
-			_special.Texture = SpritesheetSpecial[_specialInd];
+			_specialInd = value % _spritesheetSpecial.Length;
+			_special.Texture = _spritesheetSpecial[_specialInd];
 		}
 	}
 	
 	[Export]
 	public int HairInd {
-		get { return _hairInd; }
+		get => _hairInd;
 		set
 		{
 			if(_hair == null) return;
-			_hairInd = value % SpritesheetHair.Length;
-			_hair.Texture = SpritesheetHair[_hairInd];
+			_hairInd = value % _spritesheetHair.Length;
+			_hair.Texture = _spritesheetHair[_hairInd];
 		}
 	}
 	
 	[Export]
 	public int EyesInd {
-		get { return _eyesInd; }
+		get => _eyesInd;
 		set
 		{
 			if(_eyes == null) return;
-			_eyesInd = value % SpritesheetEyes.Length;
-			_eyes.Texture = SpritesheetEyes[_eyesInd];
+			_eyesInd = value % _spritesheetEyes.Length;
+			_eyes.Texture = _spritesheetEyes[_eyesInd];
 		}
 	}
 	
 	[Export]
 	public int HandsInd {
-		get { return _handsInd; }
+		get => _handsInd;
 		set
 		{
 			if(_hands == null) return;
-			_handsInd = value % SpritesheetHands.Length;
-			_hands.Texture = SpritesheetHands[_handsInd];
+			_handsInd = value % _spritesheetHands.Length;
+			_hands.Texture = _spritesheetHands[_handsInd];
 		}
 	}
 	
 	[Export]
 	public int ShirtInd {
-		get { return _shirtInd; }
+		get => _shirtInd;
 		set
 		{
 			if(_shirt == null) return;
-			_shirtInd = value % SpritesheetShirt.Length;
-			_shirt.Texture = SpritesheetShirt[_shirtInd];
+			_shirtInd = value % _spritesheetShirt.Length;
+			_shirt.Texture = _spritesheetShirt[_shirtInd];
 		}
 	}
 	
 	[Export]
 	public int PantsInd {
-		get { return _pantsInd; }
+		get => _pantsInd;
 		set
 		{
 			if(_pants == null) return;
-			_pantsInd = value % SpritesheetPants.Length;
-			_pants.Texture = SpritesheetPants[_pantsInd];
+			_pantsInd = value % _spritesheetPants.Length;
+			_pants.Texture = _spritesheetPants[_pantsInd];
 		}
 	}
 	
 	[Export]
 	public int ShoesInd {
-		get { return _shoesInd; }
+		get => _shoesInd;
 		set
 		{
 			if(_shoes == null) return;
-			_shoesInd = value % SpritesheetShoes.Length;
-			_shoes.Texture = SpritesheetShoes[_shoesInd];
+			_shoesInd = value % _spritesheetShoes.Length;
+			_shoes.Texture = _spritesheetShoes[_shoesInd];
 		}
 	}
 	
 	[Export]
 	public int SkinInd {
-		get { return _skinInd; }
+		get => _skinInd;
 		set
 		{
 			if(_skin == null) return;
-			_skinInd = value % SpritesheetSkin.Length;
-			_skin.Texture = SpritesheetSkin[_skinInd];
+			_skinInd = value % _spritesheetSkin.Length;
+			_skin.Texture = _spritesheetSkin[_skinInd];
 		}
 	}
 	
 	[Export]
 	public float HairHue {
-		get { return _hair.SelfModulate.H; }
+		get => _hair.SelfModulate.H;
 		set 
 		{ 
 			if(_hair == null) return;
@@ -138,7 +138,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float HairSat {
-		get { return _hair.SelfModulate.S; }
+		get => _hair.SelfModulate.S;
 		set 
 		{ 
 			if(_hair == null) return;
@@ -149,7 +149,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float HairVal {
-		get { return _hair.SelfModulate.V; }
+		get => _hair.SelfModulate.V;
 		set 
 		{ 
 			if(_hair == null) return;
@@ -160,7 +160,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float EyesHue {
-		get { return _eyes.SelfModulate.H; }
+		get => _eyes.SelfModulate.H;
 		set 
 		{ 
 			if(_eyes == null) return;
@@ -171,7 +171,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float EyesSat {
-		get { return _eyes.SelfModulate.S; }
+		get => _eyes.SelfModulate.S;
 		set 
 		{ 
 			if(_eyes == null) return;
@@ -182,7 +182,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float EyesVal {
-		get { return _eyes.SelfModulate.V; }
+		get => _eyes.SelfModulate.V;
 		set 
 		{ 
 			if(_eyes == null) return;
@@ -193,7 +193,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float HandsHue {
-		get { return _hands.SelfModulate.H; }
+		get => _hands.SelfModulate.H;
 		set 
 		{ 
 			if(_hands == null) return;
@@ -204,7 +204,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float HandsSat {
-		get { return _hands.SelfModulate.S; }
+		get => _hands.SelfModulate.S;
 		set 
 		{ 
 			if(_hands == null) return;
@@ -215,7 +215,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float HandsVal {
-		get { return _hands.SelfModulate.V; }
+		get => _hands.SelfModulate.V;
 		set 
 		{ 
 			if(_hands == null) return;
@@ -226,7 +226,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float ShirtHue {
-		get { return _shirt.SelfModulate.H; }
+		get => _shirt.SelfModulate.H;
 		set 
 		{ 
 			if(_shirt == null) return;
@@ -237,7 +237,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float ShirtSat {
-		get { return _shirt.SelfModulate.S; }
+		get => _shirt.SelfModulate.S;
 		set 
 		{ 
 			if(_shirt == null) return;
@@ -248,7 +248,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float ShirtVal {
-		get { return _shirt.SelfModulate.V; }
+		get => _shirt.SelfModulate.V;
 		set 
 		{ 
 			if(_shirt == null) return;
@@ -259,7 +259,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float PantsHue {
-		get { return _pants.SelfModulate.H; }
+		get => _pants.SelfModulate.H;
 		set 
 		{ 
 			if(_pants == null) return;
@@ -270,7 +270,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float PantsSat {
-		get { return _pants.SelfModulate.S; }
+		get => _pants.SelfModulate.S;
 		set 
 		{ 
 			if(_pants == null) return;
@@ -281,7 +281,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float PantsVal {
-		get { return _pants.SelfModulate.V; }
+		get => _pants.SelfModulate.V;
 		set 
 		{ 
 			if(_pants == null) return;
@@ -292,7 +292,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float ShoesHue {
-		get { return _shoes.SelfModulate.H; }
+		get => _shoes.SelfModulate.H;
 		set 
 		{ 
 			if(_shoes == null) return;
@@ -303,7 +303,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float ShoesSat {
-		get { return _shoes.SelfModulate.S; }
+		get => _shoes.SelfModulate.S;
 		set 
 		{ 
 			if(_shoes == null) return;
@@ -314,7 +314,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float ShoesVal {
-		get { return _shoes.SelfModulate.V; }
+		get => _shoes.SelfModulate.V;
 		set 
 		{ 
 			if(_shoes == null) return;
@@ -325,7 +325,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float SkinHue {
-		get { return _skin.SelfModulate.H; }
+		get => _skin.SelfModulate.H;
 		set 
 		{ 
 			if(_skin == null) return;
@@ -336,7 +336,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float SkinSat {
-		get { return _skin.SelfModulate.S; }
+		get => _skin.SelfModulate.S;
 		set 
 		{ 
 			if(_skin == null) return;
@@ -347,7 +347,7 @@ public partial class Character : Node2D
 	
 	[Export]
 	public float SkinVal {
-		get { return _skin.SelfModulate.V; }
+		get => _skin.SelfModulate.V;
 		set 
 		{ 
 			if(_skin == null) return;
@@ -371,7 +371,7 @@ public partial class Character : Node2D
 	
 	public override void _Ready()
 	{
-		if(!loaded_sheets) LoadSheets();
+		if(!_loadedSheets) LoadSheets();
 		_special = GetNode<Sprite2D>("Special");
 		_hair = GetNode<Sprite2D>("Hair");
 		_eyes = GetNode<Sprite2D>("Eyes");
@@ -422,55 +422,55 @@ public partial class Character : Node2D
 	
 	// just was here to test
 	/*public override void _Process(double delta) {
-		if(Input.IsActionJustPressed("gui_accept")) {
-			PantsInd++;
-		}
-	}*/
+	if(Input.IsActionJustPressed("gui_accept")) {
+		PantsInd++;
+	}
+}*/
 	/*public override void _Process(double delta) {
-		if(Input.IsActionJustPressed("gui_accept")) {
-			Randomize();
-		}
-	}*/
+	if(Input.IsActionJustPressed("gui_accept")) {
+		Randomize();
+	}
+}*/
 	
 	public void Randomize() {
-		random.Randomize();
+		_random.Randomize();
 		
-		SpecialInd = random.RandiRange(0,SpritesheetSpecial.Length-1);
-		HairInd = random.RandiRange(0,SpritesheetHair.Length-1);
-		EyesInd = random.RandiRange(0,SpritesheetEyes.Length-1);
-		HandsInd = random.RandiRange(0,SpritesheetHands.Length-1);
-		ShirtInd = random.RandiRange(0,SpritesheetShirt.Length-1);
-		PantsInd = random.RandiRange(0,SpritesheetPants.Length-1);
-		ShoesInd = random.RandiRange(0,SpritesheetShoes.Length-1);
-		SkinInd = random.RandiRange(0,SpritesheetSkin.Length-1);
+		SpecialInd = _random.RandiRange(0,_spritesheetSpecial.Length-1);
+		HairInd = _random.RandiRange(0,_spritesheetHair.Length-1);
+		EyesInd = _random.RandiRange(0,_spritesheetEyes.Length-1);
+		HandsInd = _random.RandiRange(0,_spritesheetHands.Length-1);
+		ShirtInd = _random.RandiRange(0,_spritesheetShirt.Length-1);
+		PantsInd = _random.RandiRange(0,_spritesheetPants.Length-1);
+		ShoesInd = _random.RandiRange(0,_spritesheetShoes.Length-1);
+		SkinInd = _random.RandiRange(0,_spritesheetSkin.Length-1);
 		
-		HairHue = random.Randf();
-		HairSat = random.Randf();
-		HairVal = random.Randf();
+		HairHue = _random.Randf();
+		HairSat = _random.Randf();
+		HairVal = _random.Randf();
 		
-		EyesHue = random.Randf();
-		EyesSat = random.Randf();
-		EyesVal = random.Randf();
+		EyesHue = _random.Randf();
+		EyesSat = _random.Randf();
+		EyesVal = _random.Randf();
 		
-		HandsHue = random.Randf();
-		HandsSat = random.Randf();
-		HandsVal = random.Randf();
+		HandsHue = _random.Randf();
+		HandsSat = _random.Randf();
+		HandsVal = _random.Randf();
 		
-		ShirtHue = random.Randf();
-		ShirtSat = random.Randf();
-		ShirtVal = random.Randf();
+		ShirtHue = _random.Randf();
+		ShirtSat = _random.Randf();
+		ShirtVal = _random.Randf();
 		
-		PantsHue = random.Randf();
-		PantsSat = random.Randf();
-		PantsVal = random.Randf();
+		PantsHue = _random.Randf();
+		PantsSat = _random.Randf();
+		PantsVal = _random.Randf();
 		
-		ShoesHue = random.Randf();
-		ShoesSat = random.Randf();
-		ShoesVal = random.Randf();
+		ShoesHue = _random.Randf();
+		ShoesSat = _random.Randf();
+		ShoesVal = _random.Randf();
 		
-		SkinHue = random.Randf();
-		SkinSat = random.Randf();
-		SkinVal = random.Randf();
+		SkinHue = _random.Randf();
+		SkinSat = _random.Randf();
+		SkinVal = _random.Randf();
 	}
 	
 	public void SetInd(string name, int ind) {
@@ -611,38 +611,38 @@ public partial class Character : Node2D
 	
 	
 	public void LoadSheets() {
-		loaded_sheets = true;
-		SpritesheetSpecial = new Texture2D[]
-		{
+		_loadedSheets = true;
+		_spritesheetSpecial =
+		[
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_special.png"),
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_special2.png")
-		};
-		SpritesheetHair = new Texture2D[]
+		];
+		_spritesheetHair = new Texture2D[]
 		{
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_hair.png")
 		};
-		SpritesheetEyes = new Texture2D[]
+		_spritesheetEyes = new Texture2D[]
 		{
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_eyes.png")
 		};
-		SpritesheetHands = new Texture2D[]
+		_spritesheetHands = new Texture2D[]
 		{
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_hands.png")
 		};
-		SpritesheetShirt = new Texture2D[]
+		_spritesheetShirt = new Texture2D[]
 		{
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_shirt.png")
 		};
-		SpritesheetPants = new Texture2D[]
+		_spritesheetPants = new Texture2D[]
 		{
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_pants.png"),
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_pants2.png")
 		};
-		SpritesheetShoes = new Texture2D[]
+		_spritesheetShoes = new Texture2D[]
 		{
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_shoes.png")
 		};
-		SpritesheetSkin = new Texture2D[]
+		_spritesheetSkin = new Texture2D[]
 		{
 			(Texture2D)ResourceLoader.Load("res://assets/sprites/character_skin.png")
 		};

@@ -1,9 +1,9 @@
-using Godot;
-using System;
 using System.Collections.Generic;
-using System.Reflection;
+using EchoesofBlue.scripts.serialization;
+using Godot;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
+namespace EchoesofBlue.scripts.game;
 
 [JsonConverter(typeof(GameConverter<GameTile>))]
 public class GameTile : GameEntity
@@ -12,31 +12,26 @@ public class GameTile : GameEntity
 		Id = id;
 	}
 	
-	private static readonly Dictionary<string, GameTile> _instances = new Dictionary<string, GameTile>();
+	private static readonly Dictionary<string, GameTile> Instances = new();
 	
 	public override string Name {
-		get { return TranslationServer.Translate($"{Id}_TILE_NAME"); }
-		
+		get => TranslationServer.Translate($"{Id}_TILE_NAME");
 		protected set {}
 	}
 	
 	public override string Desc {
-		get { return TranslationServer.Translate($"{Id}_TILE_DESC"); }
-		
+		get => TranslationServer.Translate($"{Id}_TILE_DESC");
 		protected set {}
 	}
 	
 	public static GameTile Get(string id) {
-		if (!_instances.TryGetValue(id, out GameTile item))
-		{
-			item = new GameTile(id);
-			_instances[id] = item;
-		}
-
+		if (Instances.TryGetValue(id, out var item)) return item;
+		item = new GameTile(id);
+		Instances[id] = item;
 		return item;
 	}
 	
-	public bool Exists { get => GameData.Instance.GetTile(this) != null; private set {} }
-	public GameItem Drop { get => GameData.Instance.GetTile(this)?.Drop ?? GameItem.Get("NONE"); private set {} }
-	public int Count { get => GameData.Instance.GetTile(this)?.Count ?? 0; private set {} }
+	public bool Exists => GameData.Instance.GetTile(this) != null;
+	public GameItem Drop => GameData.Instance.GetTile(this)?.Drop ?? GameItem.Get("NONE");
+	public int Count => GameData.Instance.GetTile(this)?.Count ?? 0;
 }

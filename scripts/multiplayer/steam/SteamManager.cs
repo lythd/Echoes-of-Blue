@@ -1,15 +1,18 @@
-using Godot;
-using System;
 using GodotSteam;
+using Godot;
+
+namespace EchoesofBlue.scripts.multiplayer.steam;
 
 public partial class SteamManager : Node
 {
-	private static bool _initialized = false;
+	// TODO : Convert all gdscript code into c#, really annoying feeling like the project is arbitrarily split in two and having to work like inbetween like ugh
+	
+	private static bool _initialized;
 	public static SteamManager Instance { get; private set; }
 	
-	public bool IsOwned = false;
+	public bool IsOwned;
 	public int SteamAppId = 480; // Test game app id
-	public ulong SteamId = 0;
+	public ulong SteamId;
 	public string SteamUsername = "";
 
 	public int LobbyId = 0;
@@ -55,11 +58,9 @@ public partial class SteamManager : Node
 
 		GD.Print($"Steam Id is {SteamId}");
 		GD.Print($"Steam Username is {SteamUsername}");
-		
-		if(!IsOwned)
-		{
-			GD.Print("User does not own game!");
-			GetTree().Quit();
-		}
+
+		if (IsOwned) return;
+		GD.Print("User does not own game!");
+		GetTree().Quit();
 	}
 }

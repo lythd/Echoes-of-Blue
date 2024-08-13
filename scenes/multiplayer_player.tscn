@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://dg6viorw2o3l4"]
 
-[ext_resource type="Script" path="res://scripts/Player.cs" id="1_h70bd"]
-[ext_resource type="Script" path="res://scripts/InputSynchronizer.cs" id="2_ny1g5"]
+[ext_resource type="Script" path="res://scripts/nodes/Player.cs" id="1_jwmff"]
+[ext_resource type="Script" path="res://scripts/nodes/InputSynchronizer.cs" id="2_opeyo"]
 [ext_resource type="PackedScene" uid="uid://bltgi20a35aro" path="res://scenes/character.tscn" id="3_ogou4"]
 [ext_resource type="Texture2D" uid="uid://bm36uudwodk7j" path="res://assets/sprites/progress_bar_under.png" id="4_i6yqx"]
 [ext_resource type="Texture2D" uid="uid://bmdwwry120wyf" path="res://assets/sprites/progress_bar_progress.png" id="5_u5rb5"]
@@ -106,39 +106,36 @@ properties/31/replication_mode = 2
 properties/32/path = NodePath(".:Sneaking")
 properties/32/spawn = true
 properties/32/replication_mode = 2
-properties/33/path = NodePath(".:Attacking")
+properties/33/path = NodePath(".:Crying")
 properties/33/spawn = true
 properties/33/replication_mode = 2
-properties/34/path = NodePath(".:Crying")
+properties/34/path = NodePath(".:Angried")
 properties/34/spawn = true
 properties/34/replication_mode = 2
-properties/35/path = NodePath(".:Angried")
+properties/35/path = NodePath(".:Shocked")
 properties/35/spawn = true
 properties/35/replication_mode = 2
-properties/36/path = NodePath(".:Shocked")
+properties/36/path = NodePath(".:MapOpen")
 properties/36/spawn = true
 properties/36/replication_mode = 2
-properties/37/path = NodePath(".:MapOpen")
+properties/37/path = NodePath(".:Alive")
 properties/37/spawn = true
 properties/37/replication_mode = 2
-properties/38/path = NodePath(".:Alive")
+properties/38/path = NodePath(".:TileIsSlippery")
 properties/38/spawn = true
 properties/38/replication_mode = 2
-properties/39/path = NodePath(".:TileIsSlippery")
+properties/39/path = NodePath(".:PlayerId")
 properties/39/spawn = true
 properties/39/replication_mode = 2
-properties/40/path = NodePath(".:PlayerId")
+properties/40/path = NodePath(".:Health")
 properties/40/spawn = true
 properties/40/replication_mode = 2
-properties/41/path = NodePath(".:Health")
+properties/41/path = NodePath(".:MaxHealth")
 properties/41/spawn = true
 properties/41/replication_mode = 2
-properties/42/path = NodePath(".:MaxHealth")
+properties/42/path = NodePath(".:Damage")
 properties/42/spawn = true
 properties/42/replication_mode = 2
-properties/43/path = NodePath(".:Damage")
-properties/43/spawn = true
-properties/43/replication_mode = 2
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_kgm8b"]
 properties/0/path = NodePath("InputSynchronizer:InputDirection")
@@ -153,17 +150,16 @@ radius = 3.0
 height = 14.0
 
 [node name="MultiplayerPlayer" type="CharacterBody2D"]
-z_index = 5
 y_sort_enabled = true
 collision_layer = 2
-script = ExtResource("1_h70bd")
+script = ExtResource("1_jwmff")
 
 [node name="PlayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_bcfu3")
 
 [node name="InputSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_kgm8b")
-script = ExtResource("2_ny1g5")
+script = ExtResource("2_opeyo")
 
 [node name="Character" parent="." instance=ExtResource("3_ogou4")]
 position = Vector2(0, -8)

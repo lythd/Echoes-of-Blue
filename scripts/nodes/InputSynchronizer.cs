@@ -1,5 +1,6 @@
 using Godot;
-using System;
+
+namespace EchoesofBlue.scripts;
 
 public partial class InputSynchronizer : MultiplayerSynchronizer
 {
@@ -18,7 +19,7 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 		}
 
 		InputDirection = Input.GetVector("move_left", "move_right", "move_up", "move_down");
-		Username = SteamManager.Instance.SteamUsername;
+		Username = multiplayer.steam.SteamManager.Instance.SteamUsername;
 	}
 	
 	public override void _PhysicsProcess(double delta)
@@ -29,7 +30,11 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 	public override void _Process(double delta)
 	{
 		if(Input.IsActionJustPressed("sneak")) Rpc(nameof(Sneak));
-		if(Input.IsActionJustPressed("attack")) Rpc(nameof(Attack));
+		if(Input.IsActionJustPressed("attack"))
+		{
+			Rpc(nameof(Attack));
+			GD.Print("Sent rpc attack");
+		}
 		if(Input.IsActionJustPressed("cry")) Rpc(nameof(Cry));
 		if(Input.IsActionJustPressed("angry")) Rpc(nameof(Angry));
 		if(Input.IsActionJustPressed("shock")) Rpc(nameof(Shock));
@@ -44,6 +49,7 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void Attack()
 	{
+		GD.Print($"Attack rpc executed! {Multiplayer.IsServer()}");
 		if(Multiplayer.IsServer()) _player.Attack();
 	}
 

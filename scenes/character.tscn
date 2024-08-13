@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://bltgi20a35aro"]
 
-[ext_resource type="Script" path="res://scripts/Character.cs" id="1_e41aw"]
+[ext_resource type="Script" path="res://scripts/nodes/Character.cs" id="1_31rv8"]
 [ext_resource type="Texture2D" uid="uid://bs8f054hgyqqt" path="res://assets/sprites/character_special.png" id="1_ee6dl"]
 [ext_resource type="Texture2D" uid="uid://bmmpfcts2fl0x" path="res://assets/sprites/character_hair.png" id="2_f8q1b"]
 [ext_resource type="Texture2D" uid="uid://cipsiiyiiluf3" path="res://assets/sprites/character_eyes.png" id="3_81k7a"]
@@ -842,7 +842,7 @@ _data = {
 
 [node name="Character" type="Node2D"]
 y_sort_enabled = true
-script = ExtResource("1_e41aw")
+script = ExtResource("1_31rv8")
 
 [node name="Skin" type="Sprite2D" parent="."]
 self_modulate = Color(0.93, 0.761825, 0.6045, 1)
@@ -850,6 +850,7 @@ material = SubResource("ShaderMaterial_q3k7u")
 texture = ExtResource("8_m1my3")
 hframes = 8
 vframes = 8
+frame = 4
 
 [node name="Shoes" type="Sprite2D" parent="."]
 self_modulate = Color(0.35, 0.337867, 0.322, 1)
@@ -857,6 +858,7 @@ material = SubResource("ShaderMaterial_8h42t")
 texture = ExtResource("7_vmsq0")
 hframes = 8
 vframes = 8
+frame = 4
 
 [node name="Pants" type="Sprite2D" parent="."]
 self_modulate = Color(0.1316, 0.124, 0.2, 1)
@@ -864,6 +866,7 @@ material = SubResource("ShaderMaterial_d0d48")
 texture = ExtResource("6_lj7qc")
 hframes = 8
 vframes = 8
+frame = 4
 
 [node name="Shirt" type="Sprite2D" parent="."]
 self_modulate = Color(0.27, 0.1566, 0.23409, 1)
@@ -871,6 +874,7 @@ material = SubResource("ShaderMaterial_amiv7")
 texture = ExtResource("5_f0nv5")
 hframes = 8
 vframes = 8
+frame = 4
 
 [node name="Hands" type="Sprite2D" parent="."]
 self_modulate = Color(0.93, 0.761825, 0.6045, 1)
@@ -878,6 +882,7 @@ material = SubResource("ShaderMaterial_8y2rl")
 texture = ExtResource("4_2u3md")
 hframes = 8
 vframes = 8
+frame = 4
 
 [node name="Eyes" type="Sprite2D" parent="."]
 self_modulate = Color(0.87, 0.43674, 0.1479, 1)
@@ -885,6 +890,7 @@ material = SubResource("ShaderMaterial_eofnh")
 texture = ExtResource("3_81k7a")
 hframes = 8
 vframes = 8
+frame = 4
 
 [node name="Hair" type="Sprite2D" parent="."]
 self_modulate = Color(0.4, 0.2232, 0.192, 1)
@@ -892,11 +898,13 @@ material = SubResource("ShaderMaterial_3apua")
 texture = ExtResource("2_f8q1b")
 hframes = 8
 vframes = 8
+frame = 4
 
 [node name="Special" type="Sprite2D" parent="."]
 texture = ExtResource("1_ee6dl")
 hframes = 8
 vframes = 8
+frame = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

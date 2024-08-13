@@ -1,9 +1,9 @@
-using Godot;
-using System;
 using System.Collections.Generic;
-using System.Reflection;
+using EchoesofBlue.scripts.serialization;
+using Godot;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
+namespace EchoesofBlue.scripts.game;
 
 [JsonConverter(typeof(GameConverter<GameCountry>))]
 public class GameCountry : GameEntity
@@ -12,29 +12,24 @@ public class GameCountry : GameEntity
 		Id = id;
 	}
 	
-	private static readonly Dictionary<string, GameCountry> _instances = new Dictionary<string, GameCountry>();
+	private static readonly Dictionary<string, GameCountry> Instances = new();
 	
 	public override string Name {
-		get { return TranslationServer.Translate($"{Id}_COUNTRY_NAME"); }
-		
+		get => TranslationServer.Translate($"{Id}_COUNTRY_NAME");
 		protected set {}
 	}
 	
 	public override string Desc {
-		get { return TranslationServer.Translate($"{Id}_COUNTRY_DESC"); }
-		
+		get => TranslationServer.Translate($"{Id}_COUNTRY_DESC");
 		protected set {}
 	}
 	
 	public static GameCountry Get(string id) {
-		if (!_instances.TryGetValue(id, out GameCountry item))
-		{
-			item = new GameCountry(id);
-			_instances[id] = item;
-		}
-
+		if (Instances.TryGetValue(id, out var item)) return item;
+		item = new GameCountry(id);
+		Instances[id] = item;
 		return item;
 	}
 	
-	public bool Exists { get => GameData.Instance.HasCountry(this); private set {} }
+	public bool Exists => GameData.Instance.HasCountry(this);
 }

@@ -25,6 +25,7 @@ func start_solo():
 	var id = -1
 	print("Player %s joined the game!" % id)
 	var player_to_add = multiplayer_scene.instantiate()
+	player_to_add.GetShit()
 	player_to_add.SetPlayerId(id)
 	player_to_add.name = str(id)
 	%NetworkManager._players_spawn_node.add_child(player_to_add, true)

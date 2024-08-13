@@ -114,6 +114,7 @@ func _add_player_to_game(id: int):
 	print("Player %s joined the game!" % id)
 	
 	var player_to_add = multiplayer_scene.instantiate()
+	player_to_add.GetShit()
 	player_to_add.PlayerId = id
 	player_to_add.name = str(id)
 	_players_spawn_node.add_child(player_to_add, true)

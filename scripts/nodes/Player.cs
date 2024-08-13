@@ -1,8 +1,12 @@
-using Godot;
 using System;
+using Godot;
+
+namespace EchoesofBlue.scripts;
 
 public partial class Player : CharacterBody2D, IDamageableEntity
 {
+	
+	// TODO : Make IPlayerServer in here, and a PlayerMpServer and PlayerSpServer so I can divy up the code to be more organized. Separation would help code flow. Do similar for attack and enemy.
 	
 	// SIGNALS //
 	[Signal]
@@ -13,6 +17,8 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	public delegate void AddMapEventHandler(Map map);
 	[Signal]
 	public delegate void CheckTilePropertiesEventHandler(Godot.Vector2 globalPositionPlayer, Player player);
+	[Signal]
+	public delegate void DoAttackEventHandler(Player source, long id, bool flip, int damage, Vector2 pos);
 	
 	
 	// SCENES //
@@ -31,7 +37,9 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	
 	
 	// PROPERTIES/FIELDS //
-	public const double SPEED = 75.0;
+	public const double Speed = 75.0;
+	
+	public bool Attacking => _attack != null;
 	
 	[Export]
 	public Godot.Vector2 Direction { get; set; }
@@ -44,8 +52,6 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	}
 	[Export]
 	public bool Sneaking = false;
-	[Export]
-	public bool Attacking = false;
 	[Export]
 	public bool Crying = false;
 	[Export]
@@ -67,7 +73,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		set
 		{
 			_playerId = value;
-			(InputSynchronizer ?? GetNode<MultiplayerSynchronizer>("InputSynchronizer") as InputSynchronizer).SetMultiplayerAuthority(Convert.ToInt32(_playerId));
+			(InputSynchronizer ?? GetNode<MultiplayerSynchronizer>("InputSynchronizer") as InputSynchronizer)?.SetMultiplayerAuthority(Convert.ToInt32(_playerId));
 		}
 	}
 	
@@ -107,12 +113,22 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	[Export]
 	public int Damage { get; set; } = 20;
 	
-	public bool IsMultiplayer => MultiplayerManager.Instance.MultiplayerModeEnabled;
-	public bool IsOwner => Multiplayer.GetUniqueId() == PlayerId || !MultiplayerManager.Instance.MultiplayerModeEnabled;
-	public bool IsHost => GetMultiplayerAuthority() == Multiplayer.GetUniqueId() || !MultiplayerManager.Instance.MultiplayerModeEnabled;
+	public Vector2 Pos => Position;
+	public bool Flip
+	{
+		get => _character.Scale.X < 0;
+		set => _character.Scale = new Vector2(value ? -1 : 1, 1);
+	}
+	
+	private Attack _attack = null;
+	
+	public bool IsMultiplayer => multiplayer.MultiplayerManager.Instance.MultiplayerModeEnabled;
+	public bool IsOwner => Multiplayer.GetUniqueId() == PlayerId || !multiplayer.MultiplayerManager.Instance.MultiplayerModeEnabled;
+	public bool IsHost => GetMultiplayerAuthority() == Multiplayer.GetUniqueId() || !multiplayer.MultiplayerManager.Instance.MultiplayerModeEnabled;
 	
 	// GODOT METHODS //
-	public override void _Ready()
+
+	private void GetShit()
 	{
 		_mapScene = GD.Load<PackedScene>("res://scenes/map.tscn");
 		_character = GetNode<Node2D>("Character") as Character;
@@ -122,37 +138,28 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		_collision = GetNode<CollisionShape2D>("CollisionShape2D");
 		_respawnTimer = GetNode<Timer>("RespawnTimer");
 		InputSynchronizer = GetNode<MultiplayerSynchronizer>("InputSynchronizer") as InputSynchronizer;
-		
-		//unfortunately this does not work :c
-		//var sync = GetNode<MultiplayerSynchronizer>("PlayerSynchronizer");
-		//foreach(var prop in new string[] {"Direction", "position"})
-		//{
-			//sync.ReplicationConfig.AddProperty($".:{prop}");
-			//sync.ReplicationConfig.PropertySetReplicationMode($".:{prop}", SceneReplicationConfig.ReplicationMode.Always);
-		//}
-		//foreach(var prop in new string[] {"Damage", "PlayerId", "Sneaking", "Attacking", "Crying", "Angried", "Shocked", "MapOpen", "Alive", "TileIsSlippery", "Username", "Health", "MaxHealth"})
-		//{
-			//sync.ReplicationConfig.AddProperty($".:{prop}");
-			//sync.ReplicationConfig.PropertySetReplicationMode($".:{prop}", SceneReplicationConfig.ReplicationMode.OnChange);
-		//}
+	}
+	
+	public override void _Ready()
+	{
+		GetShit();
 		
 		if(IsHost) {
 			MaxHealth = StartMaxHealth;
 			Health = StartMaxHealth;
 		}
 		
-		if(IsOwner) {
-			Node2D gameNode = GetNodeOrNull<Node2D>("/root/Game");
-			if(gameNode != null) gameNode.Call("connect_player_signals", this);
-			else GD.Print("Running player standalone!");
-			EmitSignal(SignalName.SyncCharacter, this);
-		}
+		var gameNode = GetNodeOrNull<Node2D>("/root/Game");
+		if(gameNode != null) gameNode.Call("connect_player_signals", this);
+		else GD.Print("Running player standalone!");
+		if(IsOwner) EmitSignal(SignalName.SyncCharacter, this);
+		
 		SetCamera();
 	}
 
 	public override void _PhysicsProcess(double delta)
 	{
-		EmitSignal(SignalName.CheckTileProperties, GlobalPosition, this);
+		if(IsOwner) EmitSignal(SignalName.CheckTileProperties, GlobalPosition, this);
 		if(IsHost && !Alive) SetAlive();
 		ApplyMovementFromInput();
 		ApplyAnimations();
@@ -185,23 +192,24 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		else _camera.Enabled = false;
 	}
 	
-	public void PrintNodeTree(Node root_node = null, int indent = 0)
+	public void PrintNodeTree(Node rootNode = null, int indent = 0)
 	{
-		if(root_node == null) root_node = GetTree().Root;
+		if(rootNode == null) rootNode = GetTree().Root;
 		
-		string indent_str = "";
-		for(int i = 0; i < indent; i++) indent_str += "  ";
+		string indentStr = "";
+		for(int i = 0; i < indent; i++) indentStr += "  ";
 		
-		GD.Print($"{indent_str}|-- {root_node.Name}");
+		GD.Print($"{indentStr}|-- {rootNode.Name}");
 		
-		foreach(var child in root_node.GetChildren()) PrintNodeTree(child, indent+1);
+		foreach(var child in rootNode.GetChildren()) PrintNodeTree(child, indent+1);
 	}
 	
+	// TODO : use an animation tree? that way can have transitions, like the walk animation as a transition before running, and then it also not going to full speed until you run? also so emotes would go away after a certain amt of time and stuff
 	public void ApplyAnimations()
 	{
-		if(Direction.X > 0) _character.Scale = new Vector2(1, 1);
-		else if(Direction.X < 0) _character.Scale = new Vector2(-1, 1);
-		if(Attacking) _character.Play("Attack");
+		if(Direction.X > 0) Flip = false;
+		else if(Direction.X < 0) Flip = true;
+		if(Attacking) {}
 		else if(Crying) _character.Play("Cry");
 		else if(Angried) _character.Play("Angry");
 		else if(Shocked) _character.Play("Shock");
@@ -227,7 +235,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		if(!IsMultiplayer && Input.IsActionJustPressed("angry")) Angry();
 		if(!IsMultiplayer && Input.IsActionJustPressed("shock")) Shock();
 		
-		var speed = Sneaking ? SPEED/3.0f : SPEED;
+		var speed = Sneaking ? Speed/3.0f : Speed;
 		if(Direction != Vector2.Zero)
 		{
 			Velocity = Direction * (float)speed;
@@ -248,9 +256,23 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 
 	public void Attack()
 	{
+		GD.Print("Player.Attack()");
+		if(Attacking) return;
+		_character.Play("Attack");
 		Crying = false; Angried = false; Shocked = false;
-		Attacking = !Attacking;
-		Health -= 1;
+		//Health -= 1;
+		if(IsHost) EmitSignal(SignalName.DoAttack, this, PlayerId, Flip, Damage, Position);
+		GD.Print("Signal emitted");
+	}
+	
+	public void TakeAttack(Attack attack)
+	{
+		_attack = attack;
+	}
+	
+	public void ClearAttack()
+	{
+		_attack = null;
 	}
 
 	public void Cry()
@@ -279,9 +301,9 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		if(MapOpen)
 		{
 			_map = _mapScene.Instantiate() as Map;
-			_map.Player = this;
-			EmitSignal(SignalName.AddMap, _map);
-			EmitSignal(SignalName.ShowAll, false);
+			_map!.Player = this;
+			if(IsOwner) EmitSignal(SignalName.AddMap, _map);
+			if(IsOwner) EmitSignal(SignalName.ShowAll, false);
 		}
 		else ComeBackFromMap();
 	}
@@ -292,7 +314,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		_map = null;
 		MapOpen = false;
 		InputSynchronizer.SetMapOpenRpc(MapOpen);
-		EmitSignal(SignalName.ShowAll, true);
+		if(IsOwner) EmitSignal(SignalName.ShowAll, true);
 		SetCamera();
 		Input.MouseMode = Input.MouseModeEnum.Visible;
 	}
@@ -306,7 +328,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 
 	public void Respawn()
 	{
-		Position = MultiplayerManager.Instance.RespawnPoint;
+		Position = multiplayer.MultiplayerManager.Instance.RespawnPoint;
 		_collision.SetDeferred("disabled", false);
 	}
 

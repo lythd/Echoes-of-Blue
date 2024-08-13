@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://fgsdhm5pgd5k"]
 
-[ext_resource type="Script" path="res://Enemy.cs" id="1_41trx"]
+[ext_resource type="Script" path="res://scripts/nodes/Enemy.cs" id="1_p842t"]
 [ext_resource type="Texture2D" uid="uid://k700w7l820gf" path="res://icon.png" id="2_ddjmb"]
 [ext_resource type="Texture2D" uid="uid://bm36uudwodk7j" path="res://assets/sprites/progress_bar_under.png" id="3_k80yw"]
 [ext_resource type="Texture2D" uid="uid://bmdwwry120wyf" path="res://assets/sprites/progress_bar_progress.png" id="4_j15sb"]
@@ -9,7 +9,7 @@
 radius = 8.544
 
 [node name="Enemy" type="CharacterBody2D"]
-script = ExtResource("1_41trx")
+script = ExtResource("1_p842t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.1, 0.1)
