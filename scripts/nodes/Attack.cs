@@ -36,7 +36,7 @@ public partial class Attack : Node2D
 	
 	public override void _Process(double delta)
 	{
-		if (Source == null || IsInstanceValid((GodotObject)Source) || ((GodotObject)Source).IsQueuedForDeletion()) return; // can you tell i kept getting the cannot access a disposed object error lmao
+		if (Source == null || !IsInstanceValid((GodotObject)Source) || ((GodotObject)Source).IsQueuedForDeletion()) return; // can you tell i kept getting the cannot access a disposed object error lmao
 		Position = Source.Pos + new Vector2(Scale.X * Source.AttackOffset, 0);
 		Flip = Source.Flip;
 	}

@@ -71,7 +71,7 @@ public partial class Enemy : CharacterBody2D, IDamageableEntity
 	private Area2D _sightArea;
 	private Area2D _detectArea;
 
-	private IDamageableEntity Target => _sightList.Count == 0 ? null : _sightList.MinBy(e => e.SquaredDist(this));
+	private IDamageableEntity Target => _sightList == null || _sightList.Count == 0 ? null : _sightList.MinBy(e => e.SquaredDist(this));
 	
 	public const float Speed = 30.0f;
 
