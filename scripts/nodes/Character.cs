@@ -37,8 +37,7 @@ public partial class Character : Node2D
 	
 	private RandomNumberGenerator _random = new();
 	
-	[Export]
-	public int SpecialInd {
+	[Export] public int SpecialInd {
 		get => _specialInd;
 		set
 		{
@@ -48,8 +47,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public int HairInd {
+	[Export] public int HairInd {
 		get => _hairInd;
 		set
 		{
@@ -59,8 +57,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public int EyesInd {
+	[Export] public int EyesInd {
 		get => _eyesInd;
 		set
 		{
@@ -70,8 +67,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public int HandsInd {
+	[Export] public int HandsInd {
 		get => _handsInd;
 		set
 		{
@@ -81,8 +77,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public int ShirtInd {
+	[Export] public int ShirtInd {
 		get => _shirtInd;
 		set
 		{
@@ -92,8 +87,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public int PantsInd {
+	[Export] public int PantsInd {
 		get => _pantsInd;
 		set
 		{
@@ -103,8 +97,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public int ShoesInd {
+	[Export] public int ShoesInd {
 		get => _shoesInd;
 		set
 		{
@@ -114,8 +107,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public int SkinInd {
+	[Export] public int SkinInd {
 		get => _skinInd;
 		set
 		{
@@ -125,8 +117,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float HairHue {
+	[Export] public float HairHue {
 		get => _hair.SelfModulate.H;
 		set 
 		{ 
@@ -136,8 +127,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float HairSat {
+	[Export] public float HairSat {
 		get => _hair.SelfModulate.S;
 		set 
 		{ 
@@ -147,8 +137,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float HairVal {
+	[Export] public float HairVal {
 		get => _hair.SelfModulate.V;
 		set 
 		{ 
@@ -158,8 +147,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float EyesHue {
+	[Export] public float EyesHue {
 		get => _eyes.SelfModulate.H;
 		set 
 		{ 
@@ -169,8 +157,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float EyesSat {
+	[Export] public float EyesSat {
 		get => _eyes.SelfModulate.S;
 		set 
 		{ 
@@ -180,8 +167,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float EyesVal {
+	[Export] public float EyesVal {
 		get => _eyes.SelfModulate.V;
 		set 
 		{ 
@@ -191,8 +177,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float HandsHue {
+	[Export] public float HandsHue {
 		get => _hands.SelfModulate.H;
 		set 
 		{ 
@@ -202,8 +187,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float HandsSat {
+	[Export] public float HandsSat {
 		get => _hands.SelfModulate.S;
 		set 
 		{ 
@@ -213,8 +197,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float HandsVal {
+	[Export] public float HandsVal {
 		get => _hands.SelfModulate.V;
 		set 
 		{ 
@@ -224,8 +207,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float ShirtHue {
+	[Export] public float ShirtHue {
 		get => _shirt.SelfModulate.H;
 		set 
 		{ 
@@ -235,8 +217,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float ShirtSat {
+	[Export] public float ShirtSat {
 		get => _shirt.SelfModulate.S;
 		set 
 		{ 
@@ -246,8 +227,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float ShirtVal {
+	[Export] public float ShirtVal {
 		get => _shirt.SelfModulate.V;
 		set 
 		{ 
@@ -257,8 +237,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float PantsHue {
+	[Export] public float PantsHue {
 		get => _pants.SelfModulate.H;
 		set 
 		{ 
@@ -268,8 +247,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float PantsSat {
+	[Export] public float PantsSat {
 		get => _pants.SelfModulate.S;
 		set 
 		{ 
@@ -279,8 +257,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float PantsVal {
+	[Export] public float PantsVal {
 		get => _pants.SelfModulate.V;
 		set 
 		{ 
@@ -290,8 +267,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float ShoesHue {
+	[Export] public float ShoesHue {
 		get => _shoes.SelfModulate.H;
 		set 
 		{ 
@@ -301,8 +277,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float ShoesSat {
+	[Export] public float ShoesSat {
 		get => _shoes.SelfModulate.S;
 		set 
 		{ 
@@ -312,8 +287,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float ShoesVal {
+	[Export] public float ShoesVal {
 		get => _shoes.SelfModulate.V;
 		set 
 		{ 
@@ -323,8 +297,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float SkinHue {
+	[Export] public float SkinHue {
 		get => _skin.SelfModulate.H;
 		set 
 		{ 
@@ -334,8 +307,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float SkinSat {
+	[Export] public float SkinSat {
 		get => _skin.SelfModulate.S;
 		set 
 		{ 
@@ -345,8 +317,7 @@ public partial class Character : Node2D
 		}
 	}
 	
-	[Export]
-	public float SkinVal {
+	[Export] public float SkinVal {
 		get => _skin.SelfModulate.V;
 		set 
 		{ 

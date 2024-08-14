@@ -44,6 +44,10 @@ func _on_lobby_created(connection: int, lobby_id):
 		_create_host()
 	else:
 		print("Error %s with lobby %s." % [connection, lobby_id])
+		if connection == 3:
+			print("This error in particular might mean you have to restart steam and/or your computer.")
+		else:
+			print("A good bet is always to restart steam and/or your computer.")
 		var FAIL_REASON: String
 		match connection:
 			2:  FAIL_REASON = "This lobby no longer exists."

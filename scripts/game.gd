@@ -61,7 +61,6 @@ func _on_check_tile_properties(global_position_player, multiplayer_controller):
 	multiplayer_controller.TileIsSlippery = bot_tile_slippery || top_tile_slippery
 
 func _on_attack(source, id: int, flip: bool, damage: int, pos: Vector2):
-	print("_on_attack called")
 	var to_add = attack_scene.instantiate()
 	to_add.position = pos
 	to_add.Damage = damage
@@ -73,7 +72,6 @@ func _on_attack(source, id: int, flip: bool, damage: int, pos: Vector2):
 
 # i hate gdscript this is unnecessary to be different from _on_attack
 func _on_attack_enemy(source, id: int, flip: bool, damage: int, pos: Vector2):
-	print("_on_attack called")
 	var to_add = attack_scene.instantiate()
 	to_add.position = pos
 	to_add.Damage = damage

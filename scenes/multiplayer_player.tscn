@@ -136,6 +136,15 @@ properties/41/replication_mode = 2
 properties/42/path = NodePath(".:Damage")
 properties/42/spawn = true
 properties/42/replication_mode = 2
+properties/43/path = NodePath(".:Kb")
+properties/43/spawn = true
+properties/43/replication_mode = 1
+properties/44/path = NodePath(".:KbResistance")
+properties/44/spawn = true
+properties/44/replication_mode = 2
+properties/45/path = NodePath(".:KbStrength")
+properties/45/spawn = true
+properties/45/replication_mode = 2
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_kgm8b"]
 properties/0/path = NodePath("InputSynchronizer:InputDirection")

@@ -18,8 +18,8 @@ A lot prettier
 - Improved code, siGnAl Up CaLl dOWn
 - Using the data files
 - Save files (wip)
-- Health, damage, test enemy (wip)
-- Moved some gdscript code to c# and a lot of refactoring (wip)
+- Health, damage, test enemy, knockback
+- Moved some gdscript code to c# and a lot of refactoring
 
 ## v0.0.1
 

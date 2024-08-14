@@ -31,3 +31,4 @@ res://scenes/test_collision.tscn
 res://scenes/TestPlayer.gd
 res://scenes/TestThing.gd
 res://scripts/game.gd
+res://scripts/multiplayer/networks/steam_network.gd

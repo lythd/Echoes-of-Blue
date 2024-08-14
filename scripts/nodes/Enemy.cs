@@ -11,18 +11,15 @@ public partial class Enemy : CharacterBody2D, IDamageableEntity
 	[Signal]
 	public delegate void DoAttackEventHandler(Enemy source, long id, bool flip, int damage, Vector2 pos);
 	
-	[Export]
-	public long EnemyId { get; set; }
+	[Export] public long EnemyId { get; set; }
 	
 	public bool Attacking => _attack != null;
 	
-	[Export]
-	public int StartMaxHealth = 20;
+	[Export] public int StartMaxHealth = 20;
 
 	private int _health;
 	
-	[Export]
-	public int Health
+	[Export] public int Health
 	{
 		get => _health;
 		set
@@ -36,8 +33,7 @@ public partial class Enemy : CharacterBody2D, IDamageableEntity
 	
 	private int _maxHealth;
 	
-	[Export]
-	public int MaxHealth
+	[Export] public int MaxHealth
 	{
 		get => _maxHealth;
 		set
@@ -50,8 +46,9 @@ public partial class Enemy : CharacterBody2D, IDamageableEntity
 		}
 	}
 
-	[Export]
-	public int Damage { get; set; } = 5;
+	[Export] public int Damage { get; set; } = 5;
+
+	public int AttackOffset { get; set; } = 8;
 	
 	public Vector2 Pos => Position;
 	public Vector2 Direction { get; set; }
@@ -60,12 +57,19 @@ public partial class Enemy : CharacterBody2D, IDamageableEntity
 		get => _sprite.Scale.X < 0;
 		set => _sprite.Scale = new Vector2(value ? -0.1f : 0.1f, 0.1f);
 	}
+
+	[Export] public float KbResistance { get; set; } = 1.0f;
+	[Export] public float KbStrength { get; set; } = 20f;
+	public Vector2 Kb { get; set; } = Vector2.Zero;
+	
 	
 	private Attack _attack;
 	private Sprite2D _sprite;
 	private TextureProgressBar _healthBar;
 	private List<IDamageableEntity> _sightList; // note that the sight list will also contain everything on the detect list
 	private List<IDamageableEntity> _detectList;
+	private Area2D _sightArea;
+	private Area2D _detectArea;
 
 	private IDamageableEntity Target => _sightList.Count == 0 ? null : _sightList.MinBy(e => e.SquaredDist(this));
 	
@@ -77,6 +81,8 @@ public partial class Enemy : CharacterBody2D, IDamageableEntity
 	public void GetShit() {
 		_healthBar = GetNode<TextureProgressBar>("HealthBar");
 		_sprite = GetNode<Sprite2D>("Sprite2D");
+		_sightArea = GetNode<Area2D>("SightArea");
+		_detectArea = GetNode<Area2D>("DetectArea");
 	}
 
 	public override void _Ready()
@@ -90,8 +96,8 @@ public partial class Enemy : CharacterBody2D, IDamageableEntity
 			return;
 		}
 
-		_sightList = [];
-		_detectList = [];
+		_sightList = _sightArea.GetOverlappingBodies().Where(body => body == this || body is not IDamageableEntity).Select(body => body as IDamageableEntity).ToList();
+		_detectList = _detectArea.GetOverlappingBodies().Where(body => body == this || body is not IDamageableEntity).Select(body => body as IDamageableEntity).ToList();
 		
 		MaxHealth = StartMaxHealth;
 		Health = StartMaxHealth;
@@ -101,11 +107,13 @@ public partial class Enemy : CharacterBody2D, IDamageableEntity
 	{
 		if(Direction.X > 0) Flip = false;
 		else if(Direction.X < 0) Flip = true;
-		if(!IsHost) return;
 		Direction = Target == null ? Vector2.Zero : (Target.Pos - Position).Normalized();
 		Velocity = Direction * Speed;
-		if (Target != null && _detectList.Contains(Target)) Attack();
+		Kb = Kb.MoveToward(Vector2.Zero, KbResistance);
+		Velocity += Kb;
 		MoveAndSlide();
+		if(!IsHost) return;
+		if (Target != null && _detectList.Contains(Target)) Attack();
 	}
 
 	public void Attack()
@@ -126,10 +134,11 @@ public partial class Enemy : CharacterBody2D, IDamageableEntity
 
 	public void MarkDead()
 	{
-		_attack.QueueFree();
+		_attack?.QueueFree();
+		_attack = null;
 		QueueFree();
 	}
-    
+	
 	private void _on_detect_area_body_entered(Node2D body)
 	{
 		if (!IsHost || body == this || body is not IDamageableEntity e) return;

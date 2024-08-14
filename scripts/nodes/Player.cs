@@ -43,33 +43,23 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	
 	public bool Attacking => _attack != null;
 	
-	[Export]
-	public Vector2 Direction { get; set; }
+	[Export] public Vector2 Direction { get; set; }
 	
-	[Export]
-	public string Username
+	[Export] public string Username
 	{
 		get => _usernameLabel?.Text ?? "";
 		set { if(_usernameLabel!=null) _usernameLabel.Text = value; }
 	}
-	[Export]
-	public bool Sneaking;
-	[Export]
-	public bool Crying;
-	[Export]
-	public bool Angried;
-	[Export]
-	public bool Shocked;
-	[Export]
-	public bool MapOpen;
-	[Export]
-	public bool Alive = true;
-	[Export]
-	public bool TileIsSlippery = false;
+	[Export] public bool Sneaking;
+	[Export] public bool Crying;
+	[Export] public bool Angried;
+	[Export] public bool Shocked;
+	[Export] public bool MapOpen;
+	[Export] public bool Alive = true;
+	[Export] public bool TileIsSlippery = false;
 
 	private long _playerId;
-	[Export]
-	public long PlayerId
+	[Export] public long PlayerId
 	{
 		get => _playerId;
 		set
@@ -79,13 +69,11 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		}
 	}
 	
-	[Export]
-	public int StartMaxHealth = 20;
+	[Export] public int StartMaxHealth = 20;
 
 	private int _health;
 
-	[Export]
-	public int Health
+	[Export] public int Health
 	{
 		get => _health;
 		set
@@ -99,8 +87,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	
 	private int _maxHealth;
 	
-	[Export]
-	public int MaxHealth
+	[Export] public int MaxHealth
 	{
 		get => _maxHealth;
 		set
@@ -113,8 +100,9 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		}
 	}
 
-	[Export]
-	public int Damage { get; set; } = 5;
+	[Export] public int Damage { get; set; } = 5;
+	
+	public int AttackOffset { get; set; } = 4;
 	
 	public Vector2 Pos => Position;
 	public bool Flip
@@ -122,6 +110,10 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		get => _character.Scale.X < 0;
 		set => _character.Scale = new Vector2(value ? -1 : 1, 1);
 	}
+	
+	[Export] public float KbResistance { get; set; } = 1.5f;
+	[Export] public float KbStrength { get; set; } = 30f;
+	public Vector2 Kb { get; set; } = Vector2.Zero;
 	
 	private Attack _attack;
 	
@@ -161,15 +153,20 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 
 	public override void _PhysicsProcess(double delta)
 	{
+		if (!Alive) return;
+		
 		if(IsOwner) EmitSignal(SignalName.CheckTileProperties, GlobalPosition, this);
 		//if(IsHost && !Alive) SetAlive();
 		ApplyMovementFromInput();
 		ApplyAnimations();
+		Kb = Kb.MoveToward(Vector2.Zero, KbResistance);
+		Velocity += Kb;
+		MoveAndSlide();
 
 		if(_usernameLabel != null && GameData.Instance.PlayerName != "") Username = GameData.Instance.PlayerName;
 		
 		if(IsHost && IsOwner && Input.IsActionJustPressed("debug_spawn_enemy"))
-			GetNodeOrNull<Node2D>("/root/Game")?.Call("spawn_enemy", Position + new Random().NextVector()*50);
+			GetNodeOrNull<Node2D>("/root/Game")?.Call("spawn_enemy", Position + new Random().NextVector()*250);
 	}
 	
 	
@@ -225,7 +222,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 
 	public void ApplyMovementFromInput()
 	{
-		Direction = IsMultiplayer ? InputSynchronizer.InputDirection : Input.GetVector("move_left", "move_right", "move_up", "move_down");
+		Direction = IsOwner ? Input.GetVector("move_left", "move_right", "move_up", "move_down") : InputSynchronizer.InputDirection;
 		if(IsMultiplayer) GameData.Instance.PlayerName = InputSynchronizer.Username;
 		if(MapOpen) Direction = Vector2.Zero;
 		
@@ -248,8 +245,6 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		}
 		else if(TileIsSlippery) Velocity = new Vector2((float)Mathf.MoveToward(Velocity.X, 0, speed), (float)Mathf.MoveToward(Velocity.Y, 0, speed));
 		else Velocity = Vector2.Zero;
-		
-		MoveAndSlide();
 	}
 
 	public void PressSneak()
@@ -323,7 +318,8 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 
 	public void MarkDead()
 	{
-		_attack.QueueFree();
+		_attack?.QueueFree();
+		_attack = null;
 		Alive = false;
 		_collision.SetDeferred("disabled", true);
 		_respawnTimer.Start();

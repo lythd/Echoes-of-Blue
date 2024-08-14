@@ -52,12 +52,12 @@ properties/0/replication_mode = 1
 properties/1/path = NodePath(".:scale")
 properties/1/spawn = true
 properties/1/replication_mode = 2
-properties/2/path = NodePath(".:PlayerId")
+properties/2/path = NodePath(".:Damage")
 properties/2/spawn = true
 properties/2/replication_mode = 2
-properties/3/path = NodePath(".:Damage")
+properties/3/path = NodePath(".:Id")
 properties/3/spawn = true
-properties/3/replication_mode = 2
+properties/3/replication_mode = 1
 
 [node name="Attack" type="Node2D"]
 script = ExtResource("1_0n2tf")
