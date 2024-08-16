@@ -7,8 +7,6 @@ signal update_pickers
 # This was in turn based on Brackeys first game, although the only things that would have been taken from it are the free to use sounds and the font
 # Though obviously I had to do a lot of changes to adapt it to my game
 
-var multiplayer_scene = preload("res://scenes/multiplayer_player.tscn")
-
 func _ready():
 	if OS.has_feature("dedicated_server"):
 		print("Starting dedicated server...")
@@ -22,18 +20,7 @@ func start_solo():
 	print("Start single player pressed")
 	%SteamHUD.hide()
 	%Customizer.hide()
-	var id = -1
-	print("Player %s joined the game!" % id)
-	var player_to_add = multiplayer_scene.instantiate()
-	player_to_add.GetShit()
-	player_to_add.PlayerId = id
-	player_to_add.name = str(id)
-	if not GameData.HasPlayerData(str(id)):
-		GameData.AddPlayer(str(id), tr("DEFAULT_NAME"))
-	player_to_add.position = GameData.GetPlayerPosition(id)
-	player_to_add.MaxHealth = player_to_add.StartMaxHealth
-	player_to_add.Health = GameData.GetPlayerHealth(str(id))
-	%NetworkManager._players_spawn_node.add_child(player_to_add, true)
+	%NetworkManager.add_player(-1)
 	
 
 func become_host():

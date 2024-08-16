@@ -1,9 +1,9 @@
 extends Node
 
-var multiplayer_scene = preload("res://scenes/multiplayer_player.tscn")
 var multiplayer_peer: SteamMultiplayerPeer = SteamMultiplayerPeer.new()
 var _players_spawn_node
 var _hosted_lobby_id = 0
+var network_manager
 
 const LOBBY_NAME = "SDOFUNzDOU3"
 const LOBBY_MODE = "CO_OP"
@@ -71,7 +71,7 @@ func _create_host():
 		multiplayer.set_multiplayer_peer(multiplayer_peer)
 		
 		if not OS.has_feature("dedicated_server"):
-			_add_player_to_game(Steam.getSteamID())
+			_add_player_to_game(1) # THIS NEEDS TO BE 1, PEER MULTIPLAYER AUTHORITY NEEDS TO BE 1 FOR THE HOST
 	else:
 		print("error creating host: %s" % str(error))
 
@@ -115,18 +115,7 @@ func list_lobbies():
 	Steam.requestLobbyList()
 
 func _add_player_to_game(id: int):
-	print("Player %s joined the game!" % id)
-	
-	var player_to_add = multiplayer_scene.instantiate()
-	player_to_add.GetShit()
-	player_to_add.PlayerId = id
-	player_to_add.name = str(id)
-	if not GameData.HasPlayerData(str(id)):
-		GameData.AddPlayer(str(id), SteamManager.SteamUsername)
-	player_to_add.position = GameData.GetPlayerPosition(str(id))
-	player_to_add.MaxHealth = player_to_add.StartMaxHealth
-	player_to_add.Health = GameData.GetPlayerHealth(str(id))
-	_players_spawn_node.add_child(player_to_add, true)
+	network_manager.add_player(id)
 	
 func _del_player(id: int):
 	print("Player %s left the game!" % id)

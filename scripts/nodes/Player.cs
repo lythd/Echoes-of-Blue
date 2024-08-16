@@ -65,7 +65,17 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		set
 		{
 			_playerId = value;
-			(InputSynchronizer ?? GetNode<MultiplayerSynchronizer>("InputSynchronizer") as InputSynchronizer)?.SetMultiplayerAuthority(_playerId == -1 ? -1 : Convert.ToInt32(_playerId));
+			try
+			{
+				(InputSynchronizer ?? GetNode<MultiplayerSynchronizer>("InputSynchronizer") as InputSynchronizer)?.SetMultiplayerAuthority(_playerId == -1 ? -1 : Convert.ToInt32(_playerId));
+			}
+			catch (Exception e)
+			{
+				GD.Print($"PlayerId: {_playerId}");
+				GD.PrintErr(e);
+				GD.PrintErr(e.StackTrace);
+				throw;
+			}
 		}
 	}
 	
@@ -81,7 +91,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 			_health = value;
 			if(_health <= 0) MarkDead();
 			if(_healthBar != null) _healthBar.Value = _health;
-			if (IsHost) GameData.Instance.SetPlayerHealth(PlayerId.ToString(), _health);
+			if (IsHost) GameData.Instance.SetPlayerHealth(Name, _health);
 		}
 	}
 	
@@ -158,12 +168,12 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		Velocity += Kb;
 		MoveAndSlide();
 
-		if(_usernameLabel != null) Username = GameData.Instance.GetPlayerName(PlayerId.ToString());
+		if(_usernameLabel != null) Username = GameData.Instance.GetPlayerName(Name);
 		
 		if(IsHost && IsOwner && Input.IsActionJustPressed("debug_spawn_enemy"))
 			GetNodeOrNull<Node2D>("/root/Game")?.Call("spawn_enemy", Position + new Random().NextVector()*250);
 		
-		if(IsHost) GameData.Instance.SetPlayerPosition(PlayerId.ToString(), Position);
+		if(IsHost) GameData.Instance.SetPlayerPosition(Name, Position);
 		
 		if(IsHost) GameData.Instance.SaveGame();
 	}
@@ -217,7 +227,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	public void ApplyMovementFromInput()
 	{
 		Direction = IsOwner ? Input.GetVector("move_left", "move_right", "move_up", "move_down") : InputSynchronizer.InputDirection;
-		if (IsHost && IsMultiplayer) GameData.Instance.SetPlayerName(PlayerId.ToString(), InputSynchronizer.Username);
+		if (IsHost && IsMultiplayer) GameData.Instance.SetPlayerName(Name, InputSynchronizer.Username);
 		if(MapOpen) Direction = Vector2.Zero;
 		
 		// client side controls

@@ -6,6 +6,7 @@ enum MULTIPLAYER_NETWORK_TYPE { ENET, STEAM }
 
 var active_network_type: MULTIPLAYER_NETWORK_TYPE = MULTIPLAYER_NETWORK_TYPE.ENET
 var steam_network_scene := preload("res://scenes/multiplayer/networks/steam_network.tscn")
+var multiplayer_scene = preload("res://scenes/multiplayer_player.tscn")
 var active_network
 
 func _build_multiplayer_network():
@@ -25,6 +26,7 @@ func _set_active_network(active_network_scene):
 	var network_scene_initialized = active_network_scene.instantiate()
 	active_network = network_scene_initialized
 	active_network._players_spawn_node = _players_spawn_node
+	active_network.network_manager = self
 	add_child(active_network)
 
 func become_host(is_dedicated_server = false):
@@ -39,3 +41,18 @@ func join_as_client(lobby_id = 0) -> bool:
 func list_lobbies():
 	_build_multiplayer_network()
 	active_network.list_lobbies()
+	
+func add_player(id: int):
+	var steamId: String = str(Steam.getSteamID()) if abs(id) == 1 else str(id) # 1 or -1 both mean its on the current machine so just get current steam id
+	print("Player %s joined the game!" % id)
+
+	var player_to_add = multiplayer_scene.instantiate()
+	player_to_add.GetShit()
+	player_to_add.PlayerId = id
+	player_to_add.name = steamId
+	if not GameData.HasPlayerData(steamId):
+		GameData.AddPlayer(steamId, SteamManager.SteamUsername)
+	player_to_add.MaxHealth = player_to_add.StartMaxHealth
+	player_to_add.position = GameData.GetPlayerPosition(steamId)
+	player_to_add.Health = GameData.GetPlayerHealth(steamId)
+	_players_spawn_node.add_child(player_to_add, true)
