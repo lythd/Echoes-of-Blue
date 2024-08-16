@@ -15,15 +15,8 @@ public class GameMob : GameEntity
 	
 	private static readonly Dictionary<string, GameMob> Instances = new();
 	
-	public override string Name {
-		get => TranslationServer.Translate($"{Id}_MOB_NAME");
-		protected set {}
-	}
-	
-	public override string Desc {
-		get => TranslationServer.Translate($"{Id}_MOB_DESC");
-		protected set {}
-	}
+	public override string Name => TranslationServer.Translate($"{Id}_MOB_NAME");
+	public override string Desc => TranslationServer.Translate($"{Id}_MOB_DESC");
 	
 	public static GameMob Get(string id) {
 		if (Instances.TryGetValue(id, out var item)) return item;
@@ -40,5 +33,5 @@ public class GameMob : GameEntity
 	public int Defense => GameData.Instance.GetMob(this)?.Defense ?? -1;
 	public int Speed => GameData.Instance.GetMob(this)?.Speed ?? -1;
 	public List<GameEffect> Effects => GameData.Instance.GetMob(this)?.Effects ?? [];
-	public Dictionary<string, Dictionary<GameItem, Range>> Drops => GameData.Instance.GetMob(this)?.Drops ?? new Dictionary<string, Dictionary<GameItem, Range>>();
+	public LootTableRange<GameItem> Drops => GameData.Instance.GetMob(this)?.Drops ?? new();
 }

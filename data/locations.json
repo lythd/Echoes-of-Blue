@@ -84,6 +84,10 @@
 				"VULRINTH_BAR": 1
 			}
 		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
 		"mining": {
 			"COMMON": {
 				"BLACKSTONE": [
@@ -95,10 +99,6 @@
 					50
 				],
 				"PICKAXE": 1
-			},
-			"ore": {
-				"GOLD_ORE": 5,
-				"ORE_CHUNK": 0
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -205,6 +205,10 @@
 				"VULRINTH_BAR": 1
 			}
 		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
 		"mining": {
 			"COMMON": {
 				"BLACKSTONE": [
@@ -216,10 +220,6 @@
 					50
 				],
 				"PICKAXE": 1
-			},
-			"ore": {
-				"GOLD_ORE": 5,
-				"ORE_CHUNK": 0
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -325,6 +325,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -336,17 +347,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -459,6 +459,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -470,17 +481,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -589,6 +589,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -600,17 +611,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -727,6 +727,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -738,17 +749,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -857,6 +857,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -868,17 +879,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -987,6 +987,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -998,17 +1009,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -1130,6 +1130,17 @@
 				"TURTLE_SHELL": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -1141,17 +1152,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -1280,6 +1280,17 @@
 				"ROCKFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -1291,17 +1302,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -1422,6 +1422,17 @@
 				"ROCKFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 10,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -1433,17 +1444,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 10,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -1553,6 +1553,10 @@
 				"VULRINTH_BAR": 1
 			}
 		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
 		"mining": {
 			"COMMON": {
 				"BLACKSTONE": [
@@ -1564,10 +1568,6 @@
 					50
 				],
 				"PICKAXE": 1
-			},
-			"ore": {
-				"GOLD_ORE": 5,
-				"ORE_CHUNK": 0
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -1661,6 +1661,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -1672,17 +1683,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -1795,6 +1795,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -1806,17 +1817,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -1925,6 +1925,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -1936,17 +1947,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -2043,6 +2043,17 @@
 				"FLUTE": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -2054,17 +2065,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -2155,6 +2155,9 @@
 				"COMET_FRAGMENT": 1
 			}
 		},
+		"ores": {
+			"SILVER_ORE": 5
+		},
 		"mining": {
 			"COMMON": {
 				"CLOUD": [
@@ -2166,9 +2169,6 @@
 					13
 				],
 				"SILVER_PICKAXE": 1
-			},
-			"ore": {
-				"SILVER_ORE": 5
 			},
 			"RARE": {
 				"CLOUD": [
@@ -2281,6 +2281,17 @@
 				"SPRINGY_SPRING": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -2292,17 +2303,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -2404,6 +2404,10 @@
 				"VULRINTH_BAR": 1
 			}
 		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
 		"mining": {
 			"COMMON": {
 				"BLACKSTONE": [
@@ -2415,10 +2419,6 @@
 					50
 				],
 				"PICKAXE": 1
-			},
-			"ore": {
-				"GOLD_ORE": 5,
-				"ORE_CHUNK": 0
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -2516,6 +2516,17 @@
 				"GOLDFISH": 1
 			}
 		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
 		"mining": {
 			"COMMON": {
 				"STONE": [
@@ -2527,17 +2538,6 @@
 					3,
 					50
 				]
-			},
-			"ore": {
-				"COAL": 1,
-				"COPPER_ORE": 5,
-				"DIAMOND": 30,
-				"EMERALD": 30,
-				"GOLD_ORE": 25,
-				"IRON_ORE": 15,
-				"ORE_CHUNK": 0,
-				"SILVER_ORE": 20,
-				"TIN_ORE": 10
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,
@@ -2647,6 +2647,10 @@
 				"VULRINTH_BAR": 1
 			}
 		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
 		"mining": {
 			"COMMON": {
 				"BLACKSTONE": [
@@ -2658,10 +2662,6 @@
 					50
 				],
 				"PICKAXE": 1
-			},
-			"ore": {
-				"GOLD_ORE": 5,
-				"ORE_CHUNK": 0
 			},
 			"RARE": {
 				"DIAMOND_CHESTPLATE": 1,

@@ -6,10 +6,7 @@ namespace EchoesofBlue.scripts.serialization;
 
 public class Ammo
 {
-	[JsonProperty("blunt")]
-	public int BluntDamage { get; set; }
-	[JsonProperty("effects")]
-	public List<GameEffect> Effects { get; set; }
-	[JsonProperty("piercing")]
-	public int PiercingDamage { get; set; }
+	[JsonProperty("blunt")] public int BluntDamage { get; set; }
+	[JsonProperty("effects")] public List<GameEffect> Effects { get; set; }
+	[JsonProperty("piercing")] public int PiercingDamage { get; set; }
 }

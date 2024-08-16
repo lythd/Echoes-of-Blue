@@ -14,15 +14,8 @@ public class GameCategory : GameEntity
 	
 	private static readonly Dictionary<string, GameCategory> Instances = new();
 	
-	public override string Name {
-		get => TranslationServer.Translate($"{Id}_CATEGORY_NAME");
-		protected set {}
-	}
-	
-	public override string Desc {
-		get => TranslationServer.Translate($"{Id}_CATEGORY_DESC");
-		protected set {}
-	}
+	public override string Name => TranslationServer.Translate($"{Id}_CATEGORY_NAME");
+	public override string Desc => TranslationServer.Translate($"{Id}_CATEGORY_DESC");
 	
 	public static GameCategory Get(string id) {
 		if (Instances.TryGetValue(id, out var item)) return item;

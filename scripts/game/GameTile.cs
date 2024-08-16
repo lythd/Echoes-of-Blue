@@ -14,15 +14,8 @@ public class GameTile : GameEntity
 	
 	private static readonly Dictionary<string, GameTile> Instances = new();
 	
-	public override string Name {
-		get => TranslationServer.Translate($"{Id}_TILE_NAME");
-		protected set {}
-	}
-	
-	public override string Desc {
-		get => TranslationServer.Translate($"{Id}_TILE_DESC");
-		protected set {}
-	}
+	public override string Name => TranslationServer.Translate($"{Id}_TILE_NAME");
+	public override string Desc => TranslationServer.Translate($"{Id}_TILE_DESC");
 	
 	public static GameTile Get(string id) {
 		if (Instances.TryGetValue(id, out var item)) return item;

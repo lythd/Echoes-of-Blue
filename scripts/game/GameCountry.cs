@@ -14,15 +14,8 @@ public class GameCountry : GameEntity
 	
 	private static readonly Dictionary<string, GameCountry> Instances = new();
 	
-	public override string Name {
-		get => TranslationServer.Translate($"{Id}_COUNTRY_NAME");
-		protected set {}
-	}
-	
-	public override string Desc {
-		get => TranslationServer.Translate($"{Id}_COUNTRY_DESC");
-		protected set {}
-	}
+	public override string Name => TranslationServer.Translate($"{Id}_COUNTRY_NAME");
+	public override string Desc => TranslationServer.Translate($"{Id}_COUNTRY_DESC");
 	
 	public static GameCountry Get(string id) {
 		if (Instances.TryGetValue(id, out var item)) return item;

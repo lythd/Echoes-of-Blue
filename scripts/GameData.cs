@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Numerics;
 using EchoesofBlue.scripts.game;
 using EchoesofBlue.scripts.serialization;
 using EchoesofBlue.scripts.stuff;
 using Godot;
 using Newtonsoft.Json;
+using FileAccess = Godot.FileAccess;
 
 namespace EchoesofBlue.scripts;
 
@@ -16,6 +19,8 @@ public partial class GameData : Node
 	
 	public GameLocation PlayerLocation { get; set; }
 	public string PlayerName { get; set; }
+	
+	private Save _save;
 	
 	private Dictionary<GameItem, Accessory> _accessories;
 	private Dictionary<GameItem, Ammo> _ammos;
@@ -38,6 +43,16 @@ public partial class GameData : Node
 	private Dictionary<GameItem, Rod> _rods;
 	private Dictionary<GameTile, Tile> _tiles;
 	private Dictionary<GameItem, Weapon> _weapons;
+
+	public string SaveName { get; set; } = "save";
+
+	public User GetUser(GameUser key) => _save.Users.GetValueOrDefault(key);
+	public BigInteger GetMarketChange(GameItem key) => _save.MarketChanges.GetValueOrDefault(key);
+	public MapLocation GetMapLocation(GameLocation key) => _save.Map.GetValueOrDefault(key);
+	public bool SkeletonKingDefeated => _save.SkeletonKingDefeated;
+	public bool DyronixDefeated => _save.DyronixDefeated;
+	public int JimmyProgression => _save.JimmyProgression;
+	public int TinCrisis => _save.TinCrisis;
 	
 	public Accessory GetAccessory(GameItem key) => _accessories.GetValueOrDefault(key);
 	public Ammo GetAmmo(GameItem key) => _ammos.GetValueOrDefault(key);
@@ -61,7 +76,7 @@ public partial class GameData : Node
 	public Tile GetTile(GameTile key) => _tiles.GetValueOrDefault(key);
 	public Weapon GetWeapon(GameItem key) => _weapons.GetValueOrDefault(key);
 	
-	public readonly JsonSerializerSettings Settings = new()
+	public static readonly JsonSerializerSettings Settings = new()
 	{
 		Converters = new List<JsonConverter>
 		{
@@ -69,7 +84,9 @@ public partial class GameData : Node
 		}
 	};
 	
-	public override void _Ready() {
+	public override void _Ready()
+	{
+		_save = SaveFileExists(SaveName) ? LoadSaveWhole<Save>(SaveName) : new Save {Name = SaveName};
 		if(_initialized) return;
 		Instance = this;
 		_initialized = true;
@@ -96,29 +113,46 @@ public partial class GameData : Node
 		_weapons = LoadDict<GameItem, Weapon>("weapons");
 		ResetData();
 	}
-	
-	public T LoadWhole<T>(string name) {
+
+	public static bool SaveFileExists(string name)
+	{
+		return File.Exists($"res://save/{name}.json");
+	}
+    
+	public static T LoadSaveWhole<T>(string name) {
+		var file = FileAccess.Open($"res://save/{name}.json", FileAccess.ModeFlags.Read);
+		var fileContent = file.GetAsText();
+		file.Close();
+		return JsonConvert.DeserializeObject<T>(fileContent, Settings);
+	}
+
+	public static bool FileExists(string name)
+	{
+		return File.Exists($"res://data/{name}.json");
+	}
+    
+	public static T LoadWhole<T>(string name) {
 		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
 		var fileContent = file.GetAsText();
 		file.Close();
 		return JsonConvert.DeserializeObject<T>(fileContent, Settings);
 	}
 	
-	public Dictionary<string, T> LoadDict<T>(string name) {
+	public static Dictionary<string, T> LoadDict<T>(string name) {
 		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
 		var fileContent = file.GetAsText();
 		file.Close();
 		return JsonConvert.DeserializeObject<Dictionary<string, T>>(fileContent, Settings);
 	}
 	
-	public Dictionary<Tk, Tv> LoadDict<Tk,Tv>(string name) {
+	public static Dictionary<Tk, Tv> LoadDict<Tk,Tv>(string name) {
 		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
 		var fileContent = file.GetAsText();
 		file.Close();
 		return JsonConvert.DeserializeObject<Dictionary<Tk, Tv>>(fileContent, Settings);
 	}
 	
-	public List<T> LoadList<T>(string name) {
+	public static List<T> LoadList<T>(string name) {
 		var file = FileAccess.Open($"res://data/{name}.json", FileAccess.ModeFlags.Read);
 		var fileContent = file.GetAsText();
 		file.Close();

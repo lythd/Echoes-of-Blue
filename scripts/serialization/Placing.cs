@@ -5,6 +5,5 @@ namespace EchoesofBlue.scripts.serialization;
 
 public class Placing
 {
-	[JsonProperty("tile")]
-	public GameTile Tile { get; set; }
+	[JsonProperty("tile")] public GameTile Tile { get; set; }
 }

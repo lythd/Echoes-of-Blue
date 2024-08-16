@@ -14,15 +14,8 @@ public class GameEffect : GameEntity
 	
 	private static readonly Dictionary<string, GameEffect> Instances = new();
 	
-	public override string Name {
-		get => TranslationServer.Translate($"{Id}_EFFECT_NAME");
-		protected set {}
-	}
-	
-	public override string Desc {
-		get => TranslationServer.Translate($"{Id}_EFFECT_DESC");
-		protected set {}
-	}
+	public override string Name => TranslationServer.Translate($"{Id}_EFFECT_NAME");
+	public override string Desc => TranslationServer.Translate($"{Id}_EFFECT_DESC");
 	
 	public static GameEffect Get(string id) {
 		if (Instances.TryGetValue(id, out var item)) return item;

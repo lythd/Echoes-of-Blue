@@ -6,10 +6,7 @@ namespace EchoesofBlue.scripts.serialization;
 
 public class Bait
 {
-	[JsonProperty("drop")]
-	public GameItem Drop { get; set; }
-	[JsonProperty("effects")]
-	public List<GameEffect> Effects { get; set; }
-	[JsonProperty("fp")]
-	public int FishingPower { get; set; }
+	[JsonProperty("drop")] public GameItem Drop { get; set; }
+	[JsonProperty("effects")] public List<GameEffect> Effects { get; set; }
+	[JsonProperty("fp")] public int FishingPower { get; set; }
 }
