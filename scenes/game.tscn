@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://boqveo8nxeudt"]
+[gd_scene load_steps=22 format=3 uid="uid://boqveo8nxeudt"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_am83m"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_rnbs3"]
@@ -10,6 +10,11 @@
 [ext_resource type="Texture2D" uid="uid://c4lupff15374v" path="res://assets/sprites/tileset_borders.png" id="7_kikdw"]
 [ext_resource type="Shader" path="res://scenes/test2.gdshader" id="8_ra232"]
 [ext_resource type="Shader" path="res://scenes/test.gdshader" id="10_joiu5"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_os021"]
+properties/0/path = NodePath("../GameData:Save")
+properties/0/spawn = true
+properties/0/replication_mode = 2
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2n385"]
 texture = ExtResource("7_kikdw")
@@ -1781,6 +1786,9 @@ viewport_path = NodePath("Map/SubViewport")
 script = ExtResource("1_rnbs3")
 _attacks_spawn_node = NodePath("Attacks")
 _enemies_spawn_node = NodePath("Enemies")
+
+[node name="SaveSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_os021")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true

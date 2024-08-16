@@ -26,8 +26,13 @@ func start_solo():
 	print("Player %s joined the game!" % id)
 	var player_to_add = multiplayer_scene.instantiate()
 	player_to_add.GetShit()
-	player_to_add.SetPlayerId(id)
+	player_to_add.PlayerId = id
 	player_to_add.name = str(id)
+	if not GameData.HasPlayerData(str(id)):
+		GameData.AddPlayer(str(id), tr("DEFAULT_NAME"))
+	player_to_add.position = GameData.GetPlayerPosition(id)
+	player_to_add.MaxHealth = player_to_add.StartMaxHealth
+	player_to_add.Health = GameData.GetPlayerHealth(str(id))
 	%NetworkManager._players_spawn_node.add_child(player_to_add, true)
 	
 

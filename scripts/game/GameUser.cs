@@ -17,12 +17,7 @@ public class GameUser : GameEntity
 	
 	private static readonly Dictionary<string, GameUser> Instances = new();
 
-	public override string Name
-	{
-		get => User.Name;
-		protected set => User.Name = value;
-	}
-
+	public override string Name => "";
 	public override string Desc => "";
 	
 	public static GameUser Get(string id) {
@@ -34,6 +29,11 @@ public class GameUser : GameEntity
 
 	private User User => GameData.Instance.GetUser(this);
 	public bool Exists => User != null;
+	public string PlayerName
+	{
+		get => User?.Name ?? "";
+		set => User.Name = value;
+	}
 	public Dictionary<GameItem, BigInteger> Bag
 	{
 		get => User?.Bag ?? new();
@@ -143,5 +143,11 @@ public class GameUser : GameEntity
 	{
 		get => User?.Loans ?? new();
 		set => User.Loans = value;
+	}
+
+	public float Health
+	{
+		get => User?.Health ?? 20.0f;
+		set => User.Health = value;
 	}
 }

@@ -14,8 +14,8 @@ public class CoordinateIConverter : JsonConverter
 
 	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
 	{
-		if (reader is not { TokenType: JsonToken.StartArray, Value: not null })
-			throw new JsonSerializationException("Invalid token type");
+		if (reader is not { TokenType: JsonToken.StartArray })
+			throw new JsonSerializationException($"Invalid token type {existingValue} {reader.ValueType}");
 		CoordinateI instance = new();
 		var array = JArray.Load(reader);
 		List<int> list = [];

@@ -9,16 +9,20 @@ using EchoesofBlue.scripts.stuff;
 using Godot;
 using Newtonsoft.Json;
 using FileAccess = Godot.FileAccess;
+using Vector2 = Godot.Vector2;
 
 namespace EchoesofBlue.scripts;
 
 public partial class GameData : Node
 {
-	private static bool _initialized = false;
-	public static GameData Instance { get; private set; }
-	
-	public GameLocation PlayerLocation { get; set; }
-	public string PlayerName { get; set; }
+	private static bool _initialized;
+
+	private static GameData _instance;
+	public static GameData Instance
+	{
+		get => _initialized ? _instance : new GameData();
+		private set => _instance = value;
+	}
 	
 	private Save _save;
 	
@@ -27,6 +31,7 @@ public partial class GameData : Node
 	private Dictionary<GameItem, Armor> _armors;
 	private Dictionary<GameItem, Bait> _baits;
 	private Banned _banned;
+	private LootTableRange<GameItem> _beg;
 	private Dictionary<GameItem, BrewingRecipe> _brewingRecipes;
 	private Dictionary<GameCategory, Category> _categories;
 	private List<GameCountry> _countries;
@@ -46,6 +51,17 @@ public partial class GameData : Node
 
 	public string SaveName { get; set; } = "save";
 
+	public string Save
+	{
+		get => _save is null ? "" : JsonConvert.SerializeObject(_save, Formatting.Indented, Settings);
+		set
+		{
+			if(value is not "") _save = JsonConvert.DeserializeObject<Save>(value, Settings);
+		}
+	}
+	
+	public DateTime LastSave = DateTime.UnixEpoch;
+
 	public User GetUser(GameUser key) => _save.Users.GetValueOrDefault(key);
 	public BigInteger GetMarketChange(GameItem key) => _save.MarketChanges.GetValueOrDefault(key);
 	public MapLocation GetMapLocation(GameLocation key) => _save.Map.GetValueOrDefault(key);
@@ -53,12 +69,29 @@ public partial class GameData : Node
 	public bool DyronixDefeated => _save.DyronixDefeated;
 	public int JimmyProgression => _save.JimmyProgression;
 	public int TinCrisis => _save.TinCrisis;
-	
+
+	public Vector2 GetPlayerPosition(string playerId) => GameUser.Get(playerId).Position;
+	public float GetPlayerHealth(string playerId) => GameUser.Get(playerId).Health;
+	public GameLocation GetPlayerLocation(string playerId) => GameUser.Get(playerId).Location;
+	public string GetPlayerName(string playerId) => GameUser.Get(playerId).PlayerName;
+	public bool HasPlayerData(string playerId) => GameUser.Get(playerId).Exists;
+	public void SetPlayerPosition(string playerId, Vector2 position) => GameUser.Get(playerId).Position = position;
+	public void SetPlayerHealth(string playerId, float health) => GameUser.Get(playerId).Health = health;
+	public void SetPlayerLocationRpc(string playerId, GameLocation location) => Rpc(nameof(SetPlayerLocation), playerId, location.ToString());
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
+	public void SetPlayerLocation(string playerId, string location) => GameUser.Get(playerId).Location = GameLocation.Get(location);
+	public void SetPlayerNameRpc(string playerId, string name) => Rpc(nameof(SetPlayerLocation), playerId, name); // TODO : Will need some server side authentication with these rpcs, to make sure they are reasonable data, as well as from the playerid it says
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
+	public void SetPlayerName(string playerId, string name) => GameUser.Get(playerId).PlayerName = name;
+	public void AddPlayer(string playerId, string name) =>
+		_save.Users[GameUser.Get(playerId)] = new() {Name = name, Location = _locations.Keys.ToArray()[Random.Shared.Next(_locations.Keys.ToArray().Length)]};
+    
 	public Accessory GetAccessory(GameItem key) => _accessories.GetValueOrDefault(key);
 	public Ammo GetAmmo(GameItem key) => _ammos.GetValueOrDefault(key);
 	public Armor GetArmor(GameItem key) => _armors.GetValueOrDefault(key);
 	public Bait GetBait(GameItem key) => _baits.GetValueOrDefault(key);
 	public Banned GetBanned() => _banned;
+	public LootTableRange<GameItem> GetBeg() => _beg;
 	public BrewingRecipe GetBrewingRecipe(GameItem key) => _brewingRecipes.GetValueOrDefault(key);
 	public Category GetCategory(GameCategory key) => _categories.GetValueOrDefault(key);
 	public bool HasCountry(GameCountry key) => _countries.Contains(key);
@@ -80,12 +113,14 @@ public partial class GameData : Node
 	{
 		Converters = new List<JsonConverter>
 		{
-			new JsonCustomKeyDictionaryObjectConverter()
+			new JsonCustomKeyDictionaryObjectConverter(),
+			new BigIntegerConverter()
 		}
 	};
 	
-	public override void _Ready()
+	public GameData()
 	{
+		GD.Print($"{SaveFileExists(SaveName)}");
 		_save = SaveFileExists(SaveName) ? LoadSaveWhole<Save>(SaveName) : new Save {Name = SaveName};
 		if(_initialized) return;
 		Instance = this;
@@ -95,6 +130,7 @@ public partial class GameData : Node
 		_armors = LoadDict<GameItem, Armor>("armors");
 		_baits = LoadDict<GameItem, Bait>("baits");
 		_banned = LoadWhole<Banned>("banned");
+		_beg = LoadWhole<LootTableRange<GameItem>>("beg");
 		_brewingRecipes = LoadDict<GameItem, BrewingRecipe>("brewingrecipes");
 		_categories = LoadDict<GameCategory, Category>("categories");
 		_countries = LoadList<GameCountry>("countries");
@@ -111,16 +147,23 @@ public partial class GameData : Node
 		_rods = LoadDict<GameItem, Rod>("rods");
 		_tiles = LoadDict<GameTile, Tile>("tiles");
 		_weapons = LoadDict<GameItem, Weapon>("weapons");
-		ResetData();
 	}
 
-	public static bool SaveFileExists(string name)
+	public void SaveGame()
 	{
-		return File.Exists($"res://save/{name}.json");
+		if ((DateTime.UtcNow - LastSave).TotalSeconds < 10) return;
+		LastSave = DateTime.UtcNow;
+		if (!DirAccess.DirExistsAbsolute("user://saves")) DirAccess.MakeDirAbsolute("user://saves");
+		using var file = FileAccess.Open($"user://saves/{_save.Name}.json", FileAccess.ModeFlags.Write);
+		file.StoreString(Save);
+		file.Close();
+		GD.Print("Saving!");
 	}
+	
+	public static bool SaveFileExists(string name) => FileAccess.FileExists($"user://saves/{name}.json");
     
 	public static T LoadSaveWhole<T>(string name) {
-		var file = FileAccess.Open($"res://save/{name}.json", FileAccess.ModeFlags.Read);
+		var file = FileAccess.Open($"user://saves/{name}.json", FileAccess.ModeFlags.Read);
 		var fileContent = file.GetAsText();
 		file.Close();
 		return JsonConvert.DeserializeObject<T>(fileContent, Settings);
@@ -159,10 +202,10 @@ public partial class GameData : Node
 		return JsonConvert.DeserializeObject<List<T>>(fileContent, Settings);
 	}
 	
-	public void ResetData()
+	/*public void ResetData()
 	{
 		GameLocation[] locations = _locations.Keys.ToArray();
 		PlayerLocation = locations[Random.Shared.Next(locations.Length)];
 		PlayerName = Tr("DEFAULT_NAME");
-	}
+	}*/
 }

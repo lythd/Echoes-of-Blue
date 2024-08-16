@@ -1,6 +1,6 @@
+MultiplayerSynchronizer
 CollisionShape2D
 Area2D
-MultiplayerSynchronizer
 CharacterBody2D
 AnimatedSprite2D
 Sprite2D

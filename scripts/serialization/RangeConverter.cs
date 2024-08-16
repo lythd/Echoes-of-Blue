@@ -16,7 +16,7 @@ public class RangeConverter : JsonConverter
 	{
 		if (reader.TokenType != JsonToken.Integer)
 		{
-			if (reader.TokenType != JsonToken.StartArray) throw new JsonSerializationException("Invalid token type");
+			if (reader.TokenType != JsonToken.StartArray) throw new JsonSerializationException($"Invalid token type {existingValue} {reader.ValueType}");
 			Range instance = new();
 			var array = JArray.Load(reader);
 			List<long> list = [];
@@ -27,7 +27,7 @@ public class RangeConverter : JsonConverter
 		}
 		else
 		{
-			if (reader.Value == null) throw new JsonSerializationException("Invalid token type");
+			if (reader.Value == null) throw new JsonSerializationException($"Invalid token type {existingValue} {reader.ValueType}");
 			Range instance = new()
 			{
 				SingleValue = (long)reader.Value,

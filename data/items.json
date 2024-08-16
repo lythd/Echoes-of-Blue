@@ -1,4 +1,9 @@
 {
+	"COIN": {
+		"starting_amount": -1,
+		"categories": [],
+		"price": 0
+	},
 	"GLOWING_EYE": {
 		"starting_amount": -1,
 		"categories": ["GENERIC"],
@@ -477,7 +482,7 @@
 	"WHEAT": {
 		"starting_amount": 500000,
 		"categories": ["FOOD"],
-		"price": 100
+		"price": 1
 	},
 	"PICKAXE": {
 		"starting_amount": 1000,
@@ -1152,7 +1157,7 @@
 	"BREAD_BUNDLE": {
 		"starting_amount": 5000,
 		"categories": ["FOOD", "ACCESSORY"],
-		"price": 20
+		"price": 2
 	},
 	"GAUNTLET": {
 		"starting_amount": -1,

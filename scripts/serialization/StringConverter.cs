@@ -13,7 +13,7 @@ public class StringConverter<T> : JsonConverter where T : class
 
 	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
 	{
-		if (reader.TokenType != JsonToken.String) throw new JsonSerializationException("Invalid token type");
+		if (reader.TokenType != JsonToken.String) throw new JsonSerializationException($"Invalid token type {existingValue} {reader.ValueType}");
 		var instance = Activator.CreateInstance<T>();
 		var property = typeof(T).GetProperty("Value", BindingFlags.Instance | BindingFlags.Public);
 		if (property != null) property.SetValue(instance, (string)reader.Value);

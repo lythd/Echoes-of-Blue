@@ -71,7 +71,7 @@ func _create_host():
 		multiplayer.set_multiplayer_peer(multiplayer_peer)
 		
 		if not OS.has_feature("dedicated_server"):
-			_add_player_to_game(1)
+			_add_player_to_game(Steam.getSteamID())
 	else:
 		print("error creating host: %s" % str(error))
 
@@ -121,6 +121,11 @@ func _add_player_to_game(id: int):
 	player_to_add.GetShit()
 	player_to_add.PlayerId = id
 	player_to_add.name = str(id)
+	if not GameData.HasPlayerData(str(id)):
+		GameData.AddPlayer(str(id), SteamManager.SteamUsername)
+	player_to_add.position = GameData.GetPlayerPosition(str(id))
+	player_to_add.MaxHealth = player_to_add.StartMaxHealth
+	player_to_add.Health = GameData.GetPlayerHealth(str(id))
 	_players_spawn_node.add_child(player_to_add, true)
 	
 func _del_player(id: int):

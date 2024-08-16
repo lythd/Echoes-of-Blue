@@ -21,7 +21,7 @@ public class GameConverter<T> : JsonConverter where T : class
 			if (methodInfo != null) return methodInfo.Invoke(null, [(string)reader.Value]);
 			else throw new MissingMethodException($"The method 'Get' does not exist on type '{t.FullName}'."); //this should never run but just incase
 		}
-		else throw new JsonSerializationException("Invalid token type");
+		else throw new JsonSerializationException($"Invalid token type {existingValue} {reader.ValueType}");
 	}
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)

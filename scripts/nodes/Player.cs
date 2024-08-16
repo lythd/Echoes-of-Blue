@@ -65,7 +65,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		set
 		{
 			_playerId = value;
-			(InputSynchronizer ?? GetNode<MultiplayerSynchronizer>("InputSynchronizer") as InputSynchronizer)?.SetMultiplayerAuthority(Convert.ToInt32(_playerId));
+			(InputSynchronizer ?? GetNode<MultiplayerSynchronizer>("InputSynchronizer") as InputSynchronizer)?.SetMultiplayerAuthority(_playerId == -1 ? -1 : Convert.ToInt32(_playerId));
 		}
 	}
 	
@@ -80,8 +80,8 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		{
 			_health = value;
 			if(_health <= 0) MarkDead();
-			if(_healthBar == null) return;
-			_healthBar.Value = _health;
+			if(_healthBar != null) _healthBar.Value = _health;
+			if (IsHost) GameData.Instance.SetPlayerHealth(PlayerId.ToString(), _health);
 		}
 	}
 	
@@ -119,7 +119,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	
 	public bool IsMultiplayer => MultiplayerManager.Instance.MultiplayerModeEnabled;
 	public bool IsOwner => Multiplayer.GetUniqueId() == PlayerId || !MultiplayerManager.Instance.MultiplayerModeEnabled;
-	public bool IsHost => GetMultiplayerAuthority() == Multiplayer.GetUniqueId() || !MultiplayerManager.Instance.MultiplayerModeEnabled;
+	public bool IsHost => GetMultiplayerAuthority() == (Multiplayer?.GetUniqueId() ?? -1) || !(MultiplayerManager.Instance?.MultiplayerModeEnabled ?? false); // no clue but i was somehow getting a null ptr error here
 	
 	// GODOT METHODS //
 
@@ -138,11 +138,6 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	public override void _Ready()
 	{
 		GetShit();
-		
-		if(IsHost) {
-			MaxHealth = StartMaxHealth;
-			Health = StartMaxHealth;
-		}
 		
 		GetNodeOrNull<Node2D>("/root/Game")?.Call("connect_player_signals", this);
 
@@ -163,10 +158,14 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		Velocity += Kb;
 		MoveAndSlide();
 
-		if(_usernameLabel != null && GameData.Instance.PlayerName != "") Username = GameData.Instance.PlayerName;
+		if(_usernameLabel != null) Username = GameData.Instance.GetPlayerName(PlayerId.ToString());
 		
 		if(IsHost && IsOwner && Input.IsActionJustPressed("debug_spawn_enemy"))
 			GetNodeOrNull<Node2D>("/root/Game")?.Call("spawn_enemy", Position + new Random().NextVector()*250);
+		
+		if(IsHost) GameData.Instance.SetPlayerPosition(PlayerId.ToString(), Position);
+		
+		if(IsHost) GameData.Instance.SaveGame();
 	}
 	
 	
@@ -179,11 +178,6 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	
 	
 	// MY METHODS //
-	
-	public void SetPlayerId(long id)
-	{
-		PlayerId = id;
-	}
 	
 	public void SetCamera() {
 		if(IsOwner)
@@ -223,7 +217,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	public void ApplyMovementFromInput()
 	{
 		Direction = IsOwner ? Input.GetVector("move_left", "move_right", "move_up", "move_down") : InputSynchronizer.InputDirection;
-		if(IsMultiplayer) GameData.Instance.PlayerName = InputSynchronizer.Username;
+		if (IsHost && IsMultiplayer) GameData.Instance.SetPlayerName(PlayerId.ToString(), InputSynchronizer.Username);
 		if(MapOpen) Direction = Vector2.Zero;
 		
 		// client side controls
