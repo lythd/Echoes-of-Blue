@@ -4,7 +4,7 @@ a little game I'm making :3
 
 # Changelog
 
-## v0.0.2 (in development)
+## v0.0.2
 
 A lot prettier
 
@@ -17,7 +17,7 @@ A lot prettier
 - Localization
 - Improved code, siGnAl Up CaLl dOWn
 - Using the data files
-- Save files (wip)
+- Save files
 - Health, damage, test enemy, knockback
 - Moved some gdscript code to c# and a lot of refactoring
 

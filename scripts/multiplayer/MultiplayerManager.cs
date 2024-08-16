@@ -14,7 +14,7 @@ public partial class MultiplayerManager : Node
 	public bool MultiplayerModeEnabled { get; set; }
 	public Godot.Vector2 RespawnPoint = new(30, 20);
 	
-	public string GAME_VERSION = "v0.0.2d";
+	public string GAME_VERSION = "v0.0.2";
 	public string GAME_HASH { get; private set; }
 	
 	public override void _Ready() {
