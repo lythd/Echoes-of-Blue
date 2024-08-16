@@ -43,16 +43,11 @@ func list_lobbies():
 	active_network.list_lobbies()
 	
 func add_player(id: int):
-	var steamId: String = str(Steam.getSteamID()) if abs(id) == 1 else str(id) # 1 or -1 both mean its on the current machine so just get current steam id
 	print("Player %s joined the game!" % id)
 
 	var player_to_add = multiplayer_scene.instantiate()
 	player_to_add.GetShit()
 	player_to_add.PlayerId = id
-	player_to_add.name = steamId
-	if not GameData.HasPlayerData(steamId):
-		GameData.AddPlayer(steamId, SteamManager.SteamUsername)
+	player_to_add.name = str(id)
 	player_to_add.MaxHealth = player_to_add.StartMaxHealth
-	player_to_add.position = GameData.GetPlayerPosition(steamId)
-	player_to_add.Health = GameData.GetPlayerHealth(steamId)
 	_players_spawn_node.add_child(player_to_add, true)

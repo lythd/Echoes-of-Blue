@@ -71,12 +71,12 @@ public partial class GameData : Node
 	public int TinCrisis => _save.TinCrisis;
 
 	public Vector2 GetPlayerPosition(string playerId) => GameUser.Get(playerId).Position;
-	public float GetPlayerHealth(string playerId) => GameUser.Get(playerId).Health;
+	public int GetPlayerHealth(string playerId) => GameUser.Get(playerId).Health;
 	public GameLocation GetPlayerLocation(string playerId) => GameUser.Get(playerId).Location;
 	public string GetPlayerName(string playerId) => GameUser.Get(playerId).PlayerName;
 	public bool HasPlayerData(string playerId) => GameUser.Get(playerId).Exists;
 	public void SetPlayerPosition(string playerId, Vector2 position) => GameUser.Get(playerId).Position = position;
-	public void SetPlayerHealth(string playerId, float health) => GameUser.Get(playerId).Health = health;
+	public void SetPlayerHealth(string playerId, int health) => GameUser.Get(playerId).Health = health;
 	public void SetPlayerLocationRpc(string playerId, GameLocation location) => Rpc(nameof(SetPlayerLocation), playerId, location.ToString());
 	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void SetPlayerLocation(string playerId, string location) => GameUser.Get(playerId).Location = GameLocation.Get(location);
@@ -120,11 +120,11 @@ public partial class GameData : Node
 	
 	public GameData()
 	{
-		GD.Print($"{SaveFileExists(SaveName)}");
-		_save = SaveFileExists(SaveName) ? LoadSaveWhole<Save>(SaveName) : new Save {Name = SaveName};
 		if(_initialized) return;
 		Instance = this;
 		_initialized = true;
+		GD.Print($"Save file exists: {SaveFileExists(SaveName)}");
+		_save = SaveFileExists(SaveName) ? LoadSaveWhole<Save>(SaveName) : new Save {Name = SaveName};
 		_accessories = LoadDict<GameItem, Accessory>("accessories");
 		_ammos = LoadDict<GameItem, Ammo>("ammos");
 		_armors = LoadDict<GameItem, Armor>("armors");

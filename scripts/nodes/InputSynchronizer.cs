@@ -87,4 +87,15 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 	{
 		if(Multiplayer.IsServer()) _player.CallCharacter(color, part);
 	}
+
+	public void SyncSteamRpc(string steamId, string steamUsn)
+	{
+		Rpc(nameof(SyncSteam), steamId, steamUsn);
+	}
+
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
+	public void SyncSteam(string steamId, string steamUsn)
+	{
+		if(Multiplayer.IsServer()) _player.SyncSteam(steamId, steamUsn);
+	}
 }

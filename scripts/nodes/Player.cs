@@ -1,5 +1,6 @@
 using System;
 using EchoesofBlue.scripts.multiplayer;
+using EchoesofBlue.scripts.multiplayer.steam;
 using EchoesofBlue.scripts.stuff;
 using Godot;
 
@@ -56,8 +57,10 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	[Export] public bool Shocked;
 	[Export] public bool MapOpen;
 	[Export] public bool Alive = true;
-	[Export] public bool TileIsSlippery = false;
+	[Export] public bool TileIsSlippery;
 
+	public string SteamId { get; set; } = "";
+	
 	private long _playerId;
 	[Export] public long PlayerId
 	{
@@ -91,7 +94,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 			_health = value;
 			if(_health <= 0) MarkDead();
 			if(_healthBar != null) _healthBar.Value = _health;
-			if (IsHost) GameData.Instance.SetPlayerHealth(Name, _health);
+			if (IsHost && SteamId is not "") GameData.Instance.SetPlayerHealth(SteamId, _health);
 		}
 	}
 	
@@ -152,6 +155,8 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		GetNodeOrNull<Node2D>("/root/Game")?.Call("connect_player_signals", this);
 
 		if(IsOwner) EmitSignal(SignalName.SyncCharacter, this);
+		// TODO : Store character customization, so if you have that it would load that instead of whatever was on your screen
+		// TODO : In the character customizer area an input area for your name, so your character name would work similar to the customizer and be synced with sync character or loaded if its already there
 		
 		SetCamera();
 	}
@@ -168,12 +173,12 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 		Velocity += Kb;
 		MoveAndSlide();
 
-		if(_usernameLabel != null) Username = GameData.Instance.GetPlayerName(Name);
+		if(_usernameLabel != null && SteamId is not "") Username = GameData.Instance.GetPlayerName(SteamId);
 		
 		if(IsHost && IsOwner && Input.IsActionJustPressed("debug_spawn_enemy"))
 			GetNodeOrNull<Node2D>("/root/Game")?.Call("spawn_enemy", Position + new Random().NextVector()*250);
 		
-		if(IsHost) GameData.Instance.SetPlayerPosition(Name, Position);
+		if(IsHost && SteamId is not "") GameData.Instance.SetPlayerPosition(SteamId, Position);
 		
 		if(IsHost) GameData.Instance.SaveGame();
 	}
@@ -227,7 +232,7 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	public void ApplyMovementFromInput()
 	{
 		Direction = IsOwner ? Input.GetVector("move_left", "move_right", "move_up", "move_down") : InputSynchronizer.InputDirection;
-		if (IsHost && IsMultiplayer) GameData.Instance.SetPlayerName(Name, InputSynchronizer.Username);
+		if (IsHost && IsMultiplayer && SteamId is not "") GameData.Instance.SetPlayerName(SteamId, InputSynchronizer.Username);
 		if(MapOpen) Direction = Vector2.Zero;
 		
 		// client side controls
@@ -341,5 +346,13 @@ public partial class Player : CharacterBody2D, IDamageableEntity
 	public void CallCharacter(Color color, string part)
 	{
 		_character.Call("SetHSV", part, color.H, color.S, color.V);
+	}
+
+	public void SyncSteam(string steamId, string steamUsn)
+	{
+		if (!GameData.Instance.HasPlayerData(steamId)) GameData.Instance.AddPlayer(steamId, steamUsn);
+		Position = GameData.Instance.GetPlayerPosition(steamId);
+		Health = GameData.Instance.GetPlayerHealth(steamId);
+		SteamId = steamId;
 	}
 }

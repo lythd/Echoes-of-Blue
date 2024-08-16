@@ -145,9 +145,9 @@ public class GameUser : GameEntity
 		set => User.Loans = value;
 	}
 
-	public float Health
+	public int Health
 	{
-		get => User?.Health ?? 20.0f;
+		get => User?.Health ?? 20;
 		set => User.Health = value;
 	}
 }

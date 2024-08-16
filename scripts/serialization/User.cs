@@ -13,7 +13,7 @@ public class User
 	[JsonProperty("equipment")] public Equipment Equipment { get; set; } = new();
 	[JsonProperty("money")] public BigInteger Money { get; set; } = 100;
 	[JsonProperty("energy")] public BigInteger Energy { get; set; } = 10;
-	[JsonProperty("health")] public float Health { get; set; } = 20.0f;
+	[JsonProperty("health")] public int Health { get; set; } = 20;
 	[JsonProperty("gang")] public string Gang { get; set; } = "NONE"; // TODO : make a GameGang and use that instead of string, would also require storing the list of gangs in the save file, or if i decide to hardcode them then a data file for them
 	[JsonProperty("location")] public GameLocation Location { get; set; } = GameLocation.Get("SKY_CITY");
 	[JsonProperty("area")] public LocationArea Area { get; set; } = LocationArea.Main;
