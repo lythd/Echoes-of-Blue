@@ -14,3 +14,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EchoesofBlue
 build_property.ProjectDir = /home/raven/Documents/Coding/Godot Projects/Echoes of Blue/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

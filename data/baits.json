@@ -1,0 +1,104 @@
+{
+	"GLOWING_WORM": {
+		"drop": "GLOWING_COD",
+		"effects": [],
+		"fp": 60
+	},
+	"FLYING_FISH": {
+		"drop": "FLYING_SQUID",
+		"effects": [],
+		"fp": 80
+	},
+	"GLOWING_COD": {
+		"drop": "BLUE_RINGED_OCTOPUS",
+		"effects": [],
+		"fp": 100
+	},
+	"SHRIMP_SHRIMP": {
+		"drop": "STAR_FISH",
+		"effects": [],
+		"fp": 120
+	},
+	"FLYING_SQUID": {
+		"drop": "DEVIL_RAY",
+		"effects": [],
+		"fp": 140
+	},
+	"BLUE_RINGED_OCTOPUS": {
+		"drop": "GLOWING_EYE",
+		"effects": [],
+		"fp": 160
+	},
+	"STAR_FISH": {
+		"drop": "COMET_FRAGMENT",
+		"effects": [],
+		"fp": 180
+	},
+	"DEVIL_RAY": {
+		"drop": "UNHOLY_WINGS",
+		"effects": [
+			"SCARY"
+		],
+		"fp": 200
+	},
+	"EMERALD_SQUID": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 150
+	},
+	"GOLDFISH": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 25
+	},
+	"GOLD_GOLDFISH": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 50
+	},
+	"ILMANGO": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 20
+	},
+	"MANGO": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 10
+	},
+	"VULRINTH_WORM": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 200
+	},
+	"PUFFERFISH": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 10
+	},
+	"RAW_COD": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 10
+	},
+	"RAW_SALMON": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 15
+	},
+	"SEAFOOD_DINNER": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 100
+	},
+	"SQUID": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 50
+	},
+	"WORM": {
+		"drop": "NONE",
+		"effects": [],
+		"fp": 5
+	}
+}

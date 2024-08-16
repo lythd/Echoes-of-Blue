@@ -1,0 +1,3057 @@
+{
+	"DYRONIX": {
+		"type": "BOSS",
+		"pdmg": 600,
+		"bdmg": 50,
+		"mhp": 2000,
+		"def": 200,
+		"spd": 350,
+		"effects": [
+			"DECAYING"
+		],
+		"drops": {
+			"COMMON": {
+				"DRAGON_HEART": 1,
+				"VULRINTH_BAR": [
+					1,
+					3
+				],
+				"TITANIUM_BAR": [
+					125,
+					375
+				]
+			},
+			"UNCOMMON": {
+				"VULRINTH_AXE": 1,
+				"DRAGON_HEART": 2,
+				"MANA_CRYSTAL": [
+					40,
+					60
+				]
+			},
+			"RARE": {
+				"VULRINTH_HELMET": 1,
+				"TITANIUM_BAR": [
+					100,
+					150
+				]
+			},
+			"VERY_RARE": {
+				"VULRINTH_PICKAXE": 1
+			}
+		}
+	},
+	"PITCHSPAWN": {
+		"type": "MINI_BOSS",
+		"pdmg": 100,
+		"bdmg": 300,
+		"mhp": 1500,
+		"def": 50,
+		"spd": 50,
+		"effects": [
+			"OOZING"
+		],
+		"drops": {
+			"COMMON": {
+				"COPPER_BAR": [
+					400,
+					600
+				],
+				"TIN_BAR": [
+					400,
+					600
+				],
+				"BRONZE_BAR": [
+					400,
+					600
+				]
+			},
+			"UNCOMMON": {
+				"IRON_BAR": [
+					400,
+					600
+				],
+				"SILVER_BAR": [
+					400,
+					600
+				],
+				"GOLD_BAR": [
+					400,
+					600
+				]
+			},
+			"RARE": {
+				"DIAMOND": [
+					400,
+					600
+				],
+				"EMERALD": [
+					400,
+					600
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					400,
+					600
+				]
+			}
+		}
+	},
+	"BOARFATHER": {
+		"type": "MINI_BOSS",
+		"pdmg": -1,
+		"bdmg": 1750,
+		"mhp": 500,
+		"def": 50,
+		"spd": 200,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"COPPER_BAR": [
+					400,
+					600
+				],
+				"TIN_BAR": [
+					400,
+					600
+				],
+				"BRONZE_BAR": [
+					400,
+					600
+				]
+			},
+			"UNCOMMON": {
+				"IRON_BAR": [
+					400,
+					600
+				],
+				"SILVER_BAR": [
+					400,
+					600
+				],
+				"GOLD_BAR": [
+					400,
+					600
+				]
+			},
+			"RARE": {
+				"DIAMOND": [
+					400,
+					600
+				],
+				"EMERALD": [
+					400,
+					600
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					400,
+					600
+				]
+			}
+		}
+	},
+	"SKELETON_KING": {
+		"type": "BOSS",
+		"pdmg": 500,
+		"bdmg": 100,
+		"mhp": 500,
+		"def": 400,
+		"spd": 500,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"CROWN": 1,
+				"BONE": [
+					1000,
+					2000
+				],
+				"BRONZE_BAR": [
+					400,
+					600
+				]
+			},
+			"UNCOMMON": {
+				"IRON_BAR": [
+					400,
+					600
+				],
+				"SILVER_BAR": [
+					400,
+					600
+				],
+				"GOLD_BAR": [
+					400,
+					600
+				]
+			},
+			"RARE": {
+				"DIAMOND": [
+					400,
+					600
+				],
+				"EMERALD": [
+					400,
+					600
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					400,
+					600
+				]
+			}
+		}
+	},
+	"ZEUS": {
+		"type": "MINI_BOSS",
+		"pdmg": 750,
+		"bdmg": -1,
+		"mhp": 500,
+		"def": 250,
+		"spd": 500,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"COPPER_BAR": [
+					400,
+					600
+				],
+				"TIN_BAR": [
+					400,
+					600
+				],
+				"BRONZE_BAR": [
+					400,
+					600
+				]
+			},
+			"UNCOMMON": {
+				"IRON_BAR": [
+					400,
+					600
+				],
+				"SILVER_BAR": [
+					400,
+					600
+				],
+				"GOLD_BAR": [
+					400,
+					600
+				]
+			},
+			"RARE": {
+				"DIAMOND": [
+					400,
+					600
+				],
+				"EMERALD": [
+					400,
+					600
+				]
+			},
+			"VERY_RARE": {
+				"MASTER_BOLT": 1
+			}
+		}
+	},
+	"PUMPKIN_HORSEMAN": {
+		"type": "MINI_BOSS",
+		"pdmg": 400,
+		"bdmg": -1,
+		"mhp": 500,
+		"def": 50,
+		"spd": 600,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"PUMPKIN_SEED": [
+					3,
+					5
+				],
+				"PUMPKIN": [
+					400,
+					600
+				],
+				"PUMPKIN_PIE": [
+					80,
+					120
+				]
+			},
+			"UNCOMMON": {
+				"PUMPKIN_SEED": [
+					30,
+					50
+				],
+				"PUMPKIN": [
+					4000,
+					6000
+				],
+				"PUMPKIN_PIE": [
+					800,
+					1200
+				]
+			},
+			"RARE": {
+				"PUMPKIN_SEED": [
+					300,
+					500
+				],
+				"PUMPKIN": [
+					40000,
+					60000
+				]
+			},
+			"VERY_RARE": {
+				"PUMPKIN_SEED": [
+					1000,
+					3000
+				]
+			}
+		}
+	},
+	"ELITE_SENTRY": {
+		"type": "MINI_BOSS",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 500,
+		"def": 1000,
+		"spd": 100,
+		"effects": [
+			"MAGIC",
+			"MANA"
+		],
+		"drops": {
+			"COMMON": {
+				"MYSTERIOUS_SHARD": [
+					5,
+					15
+				],
+				"COPPER_WIRING": [
+					40,
+					60
+				],
+				"TITANIUM_BAR": [
+					5,
+					15
+				]
+			},
+			"UNCOMMON": {
+				"MYSTERIOUS_SHARD": [
+					20,
+					40
+				],
+				"GOLD_WIRING": [
+					40,
+					60
+				],
+				"TITANIUM_BAR": [
+					20,
+					40
+				]
+			},
+			"RARE": {
+				"MYSTERIOUS_SHARD": [
+					40,
+					60
+				],
+				"TITANIUM_BAR": [
+					40,
+					60
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					400,
+					600
+				]
+			}
+		}
+	},
+	"GRYMFANG": {
+		"type": "MINI_BOSS",
+		"pdmg": -1,
+		"bdmg": 300,
+		"mhp": 1000,
+		"def": 150,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"COPPER_BAR": [
+					400,
+					600
+				],
+				"TIN_BAR": [
+					400,
+					600
+				],
+				"BRONZE_BAR": [
+					400,
+					600
+				]
+			},
+			"UNCOMMON": {
+				"IRON_BAR": [
+					400,
+					600
+				],
+				"SILVER_BAR": [
+					400,
+					600
+				],
+				"GOLD_BAR": [
+					400,
+					600
+				]
+			},
+			"RARE": {
+				"DIAMOND": [
+					400,
+					600
+				],
+				"EMERALD": [
+					400,
+					600
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					400,
+					600
+				]
+			}
+		}
+	},
+	"GIANT": {
+		"type": "MINI_BOSS",
+		"pdmg": -1,
+		"bdmg": 200,
+		"mhp": 1500,
+		"def": 50,
+		"spd": 25,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"COPPER_BAR": [
+					400,
+					600
+				],
+				"TIN_BAR": [
+					400,
+					600
+				],
+				"BRONZE_BAR": [
+					400,
+					600
+				]
+			},
+			"UNCOMMON": {
+				"IRON_BAR": [
+					400,
+					600
+				],
+				"SILVER_BAR": [
+					400,
+					600
+				],
+				"GOLD_BAR": [
+					400,
+					600
+				]
+			},
+			"RARE": {
+				"DIAMOND": [
+					400,
+					600
+				],
+				"EMERALD": [
+					400,
+					600
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					400,
+					600
+				]
+			}
+		}
+	},
+	"HUGE_SLIME": {
+		"type": "MINI_BOSS",
+		"pdmg": -1,
+		"bdmg": 150,
+		"mhp": 1750,
+		"def": 50,
+		"spd": 125,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"SLIME_BALL": [
+					400,
+					600
+				],
+				"TIN_BAR": [
+					400,
+					600
+				],
+				"BRONZE_BAR": [
+					400,
+					600
+				]
+			},
+			"UNCOMMON": {
+				"IRON_BAR": [
+					400,
+					600
+				],
+				"SILVER_BAR": [
+					400,
+					600
+				],
+				"GOLD_BAR": [
+					400,
+					600
+				]
+			},
+			"RARE": {
+				"DIAMOND": [
+					400,
+					600
+				],
+				"EMERALD": [
+					400,
+					600
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					400,
+					600
+				]
+			}
+		}
+	},
+	"HALLOWED_CREATURE": {
+		"type": "ENEMY",
+		"pdmg": 400,
+		"bdmg": 100,
+		"mhp": 400,
+		"def": 50,
+		"spd": 300,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"SUGAR": [
+					90,
+					110
+				],
+				"CLOUD": [
+					1,
+					5
+				],
+				"SILVER_BAR": 1
+			},
+			"UNCOMMON": {
+				"SUGAR": [
+					180,
+					220
+				],
+				"CLOUD": [
+					10,
+					20
+				],
+				"SILVER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"HOLY_WINGS": 1,
+				"SILVER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"SUGAR": [
+					1800,
+					2200
+				]
+			}
+		}
+	},
+	"SKY_SORCERER": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 300,
+		"def": 300,
+		"spd": 300,
+		"effects": [
+			"MAGIC",
+			"MANA"
+		],
+		"drops": {
+			"COMMON": {
+				"MANA_CRYSTAL": 1,
+				"CLOUD": [
+					1,
+					5
+				],
+				"SILVER_BAR": 1
+			},
+			"UNCOMMON": {
+				"MANA_CRYSTAL": 2,
+				"CLOUD": [
+					10,
+					20
+				],
+				"SILVER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"CRYSTAL_WINGS": 1,
+				"SILVER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"MANA_CRYSTAL": [
+					15,
+					25
+				]
+			}
+		}
+	},
+	"SOLAR_FLARE": {
+		"type": "ENEMY",
+		"pdmg": 700,
+		"bdmg": -1,
+		"mhp": 200,
+		"def": -1,
+		"spd": 1000,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"HELLSTONE": 1,
+				"CLOUD": [
+					1,
+					5
+				],
+				"SILVER_BAR": 1
+			},
+			"UNCOMMON": {
+				"HELLSTONE": [
+					2,
+					4
+				],
+				"CLOUD": [
+					10,
+					20
+				],
+				"SILVER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"PHOTON_WINGS": 1,
+				"SILVER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"COMET_FRAGMENT": [
+					8,
+					12
+				]
+			}
+		}
+	},
+	"DRAGON": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 400,
+		"mhp": 500,
+		"def": 250,
+		"spd": 300,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"OBSIDIAN": 1,
+				"CLOUD": [
+					1,
+					5
+				],
+				"SILVER_BAR": 1
+			},
+			"UNCOMMON": {
+				"OBSIDIAN": [
+					2,
+					4
+				],
+				"CLOUD": [
+					10,
+					20
+				],
+				"SILVER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SCALY_WINGS": 1,
+				"SILVER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"OBSIDIAN": [
+					40,
+					60
+				]
+			}
+		}
+	},
+	"NAUTICAL_SENTRY": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 250,
+		"def": 250,
+		"spd": 200,
+		"effects": [
+			"MAGIC",
+			"MANA"
+		],
+		"drops": {
+			"COMMON": {
+				"MYSTERIOUS_SHARD": 1,
+				"COPPER_WIRING": [
+					4,
+					6
+				],
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"MYSTERIOUS_SHARD": [
+					2,
+					4
+				],
+				"GOLD_WIRING": [
+					4,
+					6
+				],
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MYSTERIOUS_SHARD": [
+					4,
+					6
+				],
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLD_BAR": [
+					40,
+					60
+				]
+			}
+		}
+	},
+	"BROKEN_SENTRY": {
+		"type": "ENEMY",
+		"pdmg": 400,
+		"bdmg": -1,
+		"mhp": 100,
+		"def": 50,
+		"spd": 400,
+		"effects": [
+			"MAGIC",
+			"MANA"
+		],
+		"drops": {
+			"COMMON": {
+				"MYSTERIOUS_SHARD": 1,
+				"COPPER_WIRING": [
+					4,
+					6
+				],
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"MYSTERIOUS_SHARD": [
+					2,
+					4
+				],
+				"GOLD_WIRING": [
+					4,
+					6
+				],
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MYSTERIOUS_SHARD": [
+					4,
+					6
+				],
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLD_BAR": [
+					40,
+					60
+				]
+			}
+		}
+	},
+	"IVEBORN_AUREA": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 625,
+		"mhp": 275,
+		"def": 25,
+		"spd": 350,
+		"effects": [
+			"EXPLOSION"
+		],
+		"drops": {
+			"COMMON": {
+				"VINE": [
+					1,
+					3
+				],
+				"CLOUD": [
+					1,
+					5
+				],
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"GOLD_BOW": 1,
+				"GOLD_SWORD": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EXPLOSIVE_ROCKET": [
+					2,
+					5
+				]
+			}
+		}
+	},
+	"IVEBORN_ADUSTUS": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 700,
+		"mhp": 250,
+		"def": -1,
+		"spd": 325,
+		"effects": [
+			"EXPLOSION"
+		],
+		"drops": {
+			"COMMON": {
+				"VINE": [
+					1,
+					3
+				],
+				"HELLSTONE": [
+					1,
+					5
+				],
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"GOLD_BOW": 1,
+				"GOLD_SWORD": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EXPLOSIVE_ROCKET": [
+					2,
+					5
+				]
+			}
+		}
+	},
+	"IVEBORN_CAVERNA": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 600,
+		"mhp": 250,
+		"def": 100,
+		"spd": 325,
+		"effects": [
+			"EXPLOSION"
+		],
+		"drops": {
+			"COMMON": {
+				"VINE": [
+					1,
+					3
+				],
+				"STONE": [
+					1,
+					5
+				],
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"GOLD_BOW": 1,
+				"GOLD_SWORD": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EXPLOSIVE_ROCKET": [
+					2,
+					5
+				]
+			}
+		}
+	},
+	"IVEBORN_GLACIO": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 600,
+		"mhp": 350,
+		"def": -1,
+		"spd": 325,
+		"effects": [
+			"EXPLOSION"
+		],
+		"drops": {
+			"COMMON": {
+				"VINE": [
+					1,
+					3
+				],
+				"ICE": [
+					1,
+					5
+				],
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"GOLD_BOW": 1,
+				"GOLD_SWORD": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EXPLOSIVE_ROCKET": [
+					2,
+					5
+				]
+			}
+		}
+	},
+	"IVEBORN_AQUAMARIS": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 600,
+		"mhp": 250,
+		"def": -1,
+		"spd": 425,
+		"effects": [
+			"EXPLOSION"
+		],
+		"drops": {
+			"COMMON": {
+				"VINE": [
+					1,
+					3
+				],
+				"RAW_COD": [
+					1,
+					5
+				],
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"GOLD_BOW": 1,
+				"GOLD_SWORD": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EXPLOSIVE_ROCKET": [
+					2,
+					5
+				]
+			}
+		}
+	},
+	"IVEBORN_HEDERA": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 600,
+		"mhp": 250,
+		"def": -1,
+		"spd": 325,
+		"effects": [
+			"EXPLOSION"
+		],
+		"drops": {
+			"COMMON": {
+				"VINE": [
+					1,
+					3
+				],
+				"DIRT": [
+					1,
+					5
+				],
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"GOLD_BOW": 1,
+				"GOLD_SWORD": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EXPLOSIVE_ROCKET": [
+					2,
+					5
+				]
+			}
+		}
+	},
+	"UNHOLY_SPECTRE": {
+		"type": "ENEMY",
+		"pdmg": 500,
+		"bdmg": -1,
+		"mhp": 500,
+		"def": -1,
+		"spd": 25,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"ASH": [
+					1,
+					3
+				],
+				"SILVER_BAR": 1,
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"ASH": [
+					3,
+					5
+				],
+				"SILVER_BAR": [
+					2,
+					4
+				],
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SILVER_BAR": [
+					4,
+					6
+				],
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"SILVER_BAR": [
+					45,
+					55
+				]
+			}
+		}
+	},
+	"INCINERATOR": {
+		"type": "ENEMY",
+		"pdmg": 300,
+		"bdmg": -1,
+		"mhp": 50,
+		"def": 200,
+		"spd": 200,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"MOLTEN_SULFUR": 2,
+				"BRONZE_BAR": 1,
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"MOLTEN_SULFUR": [
+					3,
+					4
+				],
+				"BRONZE_BAR": [
+					2,
+					4
+				],
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"BRONZE_BAR": [
+					4,
+					6
+				],
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"BRONZE_BAR": [
+					45,
+					55
+				]
+			}
+		}
+	},
+	"CHARRED_SKELETON": {
+		"type": "ENEMY",
+		"pdmg": 225,
+		"bdmg": 25,
+		"mhp": 200,
+		"def": 100,
+		"spd": 200,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					2,
+					4
+				],
+				"STONE_SWORD": 1,
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"BONE": [
+					4,
+					6
+				],
+				"COAL": [
+					5,
+					10
+				],
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLDEN_STEAK": [
+					15,
+					25
+				]
+			}
+		}
+	},
+	"KARKOTHIAN_BRUTE": {
+		"type": "ENEMY",
+		"pdmg": 280,
+		"bdmg": 70,
+		"mhp": 300,
+		"def": 50,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BACON": 1,
+				"GOLD_ORE": 1,
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"LEATHER": 1,
+				"GOLD_AXE": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"TRUE_GOLD_AXE": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLDEN_STEAK": [
+					15,
+					25
+				]
+			}
+		}
+	},
+	"ELDER_BOAR": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 200,
+		"mhp": 400,
+		"def": -1,
+		"spd": 100,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BACON": [
+					2,
+					5
+				],
+				"GOLD_ORE": 1,
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"LEATHER": 1,
+				"GOLD_PICKAXE": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLDEN_STEAK": [
+					15,
+					25
+				]
+			}
+		}
+	},
+	"BOAR": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 150,
+		"mhp": 500,
+		"def": -1,
+		"spd": 100,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BACON": [
+					2,
+					5
+				],
+				"GOLD_ORE": 1,
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"LEATHER": 1,
+				"GOLD_PICKAXE": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLDEN_STEAK": [
+					15,
+					25
+				]
+			}
+		}
+	},
+	"BABY_BOAR": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 150,
+		"mhp": 400,
+		"def": -1,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BACON": [
+					2,
+					5
+				],
+				"GOLD_ORE": 1,
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"LEATHER": 1,
+				"GOLD_PICKAXE": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLDEN_STEAK": [
+					15,
+					25
+				]
+			}
+		}
+	},
+	"KARKOTHIAN_GRUNT": {
+		"type": "ENEMY",
+		"pdmg": 125,
+		"bdmg": 100,
+		"mhp": 300,
+		"def": 75,
+		"spd": 100,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BACON": 1,
+				"GOLD_ORE": 1,
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"LEATHER": 1,
+				"GOLD_PICKAXE": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLDEN_STEAK": [
+					15,
+					25
+				]
+			}
+		}
+	},
+	"KARKOTHIAN_SCOUT": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 150,
+		"mhp": 300,
+		"def": 50,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BACON": 1,
+				"GOLD_ORE": 1,
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"LEATHER": 1,
+				"GOLD_PICKAXE": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BRACELET": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLDEN_STEAK": [
+					15,
+					25
+				]
+			}
+		}
+	},
+	"WITCH": {
+		"type": "ENEMY",
+		"pdmg": 100,
+		"bdmg": -1,
+		"mhp": 300,
+		"def": -1,
+		"spd": 150,
+		"effects": [
+			"MANA",
+			"MAGIC"
+		],
+		"drops": {
+			"COMMON": {
+				"FISHING_POTION": 1,
+				"STRENGTH_POTION": 1,
+				"MINING_POTION": 1
+			},
+			"UNCOMMON": {
+				"IRON_POTION": [
+					2,
+					4
+				],
+				"CACTUS_POTION": [
+					2,
+					4
+				],
+				"FIRE_RESISTANCE_POTION": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"BEETLE_MASTER_POTION": [
+					4,
+					6
+				],
+				"INVISIBILITY_POTION": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"TURTLE_MASTER_POTION": [
+					40,
+					60
+				]
+			}
+		}
+	},
+	"CAVERN_GHOUL": {
+		"type": "ENEMY",
+		"pdmg": 150,
+		"bdmg": -1,
+		"mhp": 150,
+		"def": 100,
+		"spd": 90,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"CHAIN": 1,
+				"SILVER_ORE": 1,
+				"SILVER_BAR": 1
+			},
+			"UNCOMMON": {
+				"CHAIN": [
+					3,
+					5
+				],
+				"SILVER_ORE": [
+					3,
+					5
+				],
+				"SILVER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SILVER_ORE": [
+					4,
+					6
+				],
+				"SILVER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"SILVER_BAR": [
+					40,
+					60
+				]
+			}
+		}
+	},
+	"TROLL": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 200,
+		"mhp": 200,
+		"def": 200,
+		"spd": 25,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"CHAIN": 1,
+				"STONE": [
+					50,
+					100
+				],
+				"BRONZE_BAR": 1
+			},
+			"UNCOMMON": {
+				"CHAIN": [
+					3,
+					5
+				],
+				"COPPER_ORE": [
+					3,
+					5
+				],
+				"BRONZE_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"COPPER_ORE": [
+					4,
+					6
+				],
+				"BRONZE_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"BRONZE_BAR": [
+					40,
+					60
+				]
+			}
+		}
+	},
+	"VULTURE": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": 50,
+		"mhp": 200,
+		"def": -1,
+		"spd": 375,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"STRING": 1,
+				"BONE": 1,
+				"SILVER_BAR": 1
+			},
+			"UNCOMMON": {
+				"STRING": [
+					3,
+					5
+				],
+				"BONE": [
+					3,
+					5
+				],
+				"SILVER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SILK_CLOTH": 1,
+				"SILVER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"SILVER_BAR": [
+					40,
+					60
+				]
+			}
+		}
+	},
+	"WARLOCK": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 150,
+		"mhp": 375,
+		"def": -1,
+		"spd": 175,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"DIRT": 1,
+				"WOOD": [
+					5,
+					10
+				],
+				"SILVER_BAR": 1
+			},
+			"UNCOMMON": {
+				"WOOD": [
+					15,
+					20
+				],
+				"GLASS": [
+					3,
+					5
+				],
+				"SILVER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MANA_CRYSTAL": 1,
+				"SILVER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"MANA_CRYSTAL": [
+					5,
+					10
+				]
+			}
+		}
+	},
+	"WARLOCK_SKELETON": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 150,
+		"mhp": 350,
+		"def": 25,
+		"spd": 175,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					3,
+					5
+				],
+				"WOOD": [
+					5,
+					10
+				],
+				"TIN_BAR": 2
+			},
+			"UNCOMMON": {
+				"WOOD_BOW": 1,
+				"BONE_ARROW": [
+					3,
+					5
+				],
+				"TIN_BAR": [
+					3,
+					5
+				]
+			},
+			"RARE": {
+				"BONE_RING": 1,
+				"TIN_BAR": [
+					5,
+					7
+				]
+			},
+			"VERY_RARE": {
+				"DUAL_BOW": 1
+			}
+		}
+	},
+	"SKELETON_HORSEMAN": {
+		"type": "ENEMY",
+		"pdmg": 500,
+		"bdmg": -1,
+		"mhp": 250,
+		"def": 150,
+		"spd": 300,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					3,
+					5
+				],
+				"WOODEN_ARROW": [
+					3,
+					7
+				],
+				"TIN_BAR": 2
+			},
+			"UNCOMMON": {
+				"WOOD_BOW": 1,
+				"BONE_ARROW": [
+					3,
+					5
+				],
+				"TIN_BAR": [
+					3,
+					5
+				]
+			},
+			"RARE": {
+				"BONE_RING": 1,
+				"TIN_BAR": [
+					5,
+					7
+				]
+			},
+			"VERY_RARE": {
+				"DUAL_BOW": 1
+			}
+		}
+	},
+	"SKELETON_MINER": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 150,
+		"mhp": 150,
+		"def": 200,
+		"spd": 175,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					1,
+					3
+				],
+				"PICKAXE": 1,
+				"TIN_BAR": 1
+			},
+			"UNCOMMON": {
+				"IRON_PICKAXE": 1,
+				"BONE": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MINING_CHARM": 1,
+				"MINING_HELMET": 1
+			},
+			"VERY_RARE": {
+				"DIAMOND_PICKAXE": 1
+			}
+		}
+	},
+	"SKELETON_ASSASSIN": {
+		"type": "ENEMY",
+		"pdmg": 250,
+		"bdmg": -1,
+		"mhp": 150,
+		"def": 100,
+		"spd": 225,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					3,
+					5
+				],
+				"DAGGER": 1,
+				"TIN_BAR": 2
+			},
+			"UNCOMMON": {
+				"WOOD_BOW": 1,
+				"BONE_ARROW": [
+					3,
+					5
+				],
+				"TIN_BAR": [
+					3,
+					5
+				]
+			},
+			"RARE": {
+				"BONE_RING": 1,
+				"TIN_BAR": [
+					5,
+					7
+				]
+			},
+			"VERY_RARE": {
+				"DUAL_BOW": 1
+			}
+		}
+	},
+	"WOLF_JOCKEY": {
+		"type": "ENEMY",
+		"pdmg": 150,
+		"bdmg": -1,
+		"mhp": 150,
+		"def": 100,
+		"spd": 275,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					3,
+					5
+				],
+				"WOODEN_ARROW": [
+					3,
+					7
+				],
+				"TIN_BAR": 2
+			},
+			"UNCOMMON": {
+				"WOOD_BOW": 1,
+				"BONE_ARROW": [
+					3,
+					5
+				],
+				"TIN_BAR": [
+					3,
+					5
+				]
+			},
+			"RARE": {
+				"BONE_RING": 1,
+				"TIN_BAR": [
+					5,
+					7
+				]
+			},
+			"VERY_RARE": {
+				"DUAL_BOW": 1
+			}
+		}
+	},
+	"SKELETON_ARCHER": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 150,
+		"def": 100,
+		"spd": 175,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					1,
+					3
+				],
+				"BONE_ARROW": [
+					1,
+					5
+				],
+				"TIN_BAR": 1
+			},
+			"UNCOMMON": {
+				"GOLD_BOW": 1,
+				"EMERALD_ARROW": [
+					1,
+					3
+				],
+				"TIN_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"BONE_RING": 1,
+				"TIN_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"DUAL_BOW": 1
+			}
+		}
+	},
+	"SKELETON_SOLDIER": {
+		"type": "ENEMY",
+		"pdmg": 150,
+		"bdmg": 50,
+		"mhp": 150,
+		"def": 100,
+		"spd": 175,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					1,
+					3
+				],
+				"STONE_SWORD": 1,
+				"SHIELD": 1
+			},
+			"UNCOMMON": {
+				"IRON_SWORD": 1,
+				"SPEAR": 1,
+				"TIN_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"BONE_RING": 1,
+				"TIN_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"DIAMOND_SWORD": 1
+			}
+		}
+	},
+	"FROZEN_SKELETON": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 200,
+		"def": 150,
+		"spd": 200,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					1,
+					3
+				],
+				"WOODEN_ARROW": [
+					1,
+					5
+				],
+				"ICE": [
+					3,
+					5
+				]
+			},
+			"UNCOMMON": {
+				"WOOD_BOW": 1,
+				"BONE_ARROW": [
+					1,
+					3
+				],
+				"TIN_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"BONE_RING": 1,
+				"TIN_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"DUAL_BOW": 1
+			}
+		}
+	},
+	"SKELETON": {
+		"type": "ENEMY",
+		"pdmg": 150,
+		"bdmg": -1,
+		"mhp": 150,
+		"def": 100,
+		"spd": 175,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BONE": [
+					1,
+					3
+				],
+				"WOODEN_ARROW": [
+					1,
+					5
+				],
+				"TIN_BAR": 1
+			},
+			"UNCOMMON": {
+				"WOOD_BOW": 1,
+				"BONE_ARROW": [
+					1,
+					3
+				],
+				"TIN_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"BONE_RING": 1,
+				"TIN_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"DUAL_BOW": 1
+			}
+		}
+	},
+	"SPIDER": {
+		"type": "ENEMY",
+		"pdmg": 150,
+		"bdmg": 25,
+		"mhp": 100,
+		"def": 50,
+		"spd": 275,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"STRING": [
+					1,
+					3
+				],
+				"COPPER_ORE": 1,
+				"BRONZE_BAR": 1
+			},
+			"UNCOMMON": {
+				"STRING": [
+					3,
+					5
+				],
+				"SILK_CLOTH": 1,
+				"BRONZE_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SILKY_STRING": 1,
+				"BRONZE_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"SILK_ROD": 1
+			}
+		}
+	},
+	"LAVA_SLIME": {
+		"type": "ENEMY",
+		"pdmg": 25,
+		"bdmg": 75,
+		"mhp": 375,
+		"def": 5,
+		"spd": 200,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"SLIME_BALL": [
+					1,
+					3
+				],
+				"HELLSTONE": [
+					1,
+					5
+				],
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"SLIME_BALL": [
+					3,
+					5
+				],
+				"COPPER_ORE": [
+					3,
+					5
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SLIME_BALL": [
+					15,
+					25
+				],
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EMERALD": 1
+			}
+		}
+	},
+	"FLYING_SLIME": {
+		"type": "ENEMY",
+		"pdmg": 25,
+		"bdmg": 125,
+		"mhp": 325,
+		"def": 5,
+		"spd": 250,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"SLIME_BALL": [
+					1,
+					3
+				],
+				"CLOUD": [
+					1,
+					5
+				],
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"SLIME_BALL": [
+					3,
+					5
+				],
+				"COPPER_ORE": [
+					3,
+					5
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SLIME_BALL": [
+					15,
+					25
+				],
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EMERALD": 1
+			}
+		}
+	},
+	"SLIME": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 15,
+		"mhp": 175,
+		"def": 5,
+		"spd": 200,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"SLIME_BALL": [
+					1,
+					3
+				],
+				"DIRT": [
+					1,
+					5
+				],
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"SLIME_BALL": [
+					3,
+					5
+				],
+				"COPPER_ORE": [
+					3,
+					5
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SLIME_BALL": [
+					15,
+					25
+				],
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EMERALD": 1
+			}
+		}
+	},
+	"ROLLING_CACTUS": {
+		"type": "ENEMY",
+		"pdmg": 1000,
+		"bdmg": -1,
+		"mhp": 5,
+		"def": -1,
+		"spd": 275,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"CACTUS": 1,
+				"SAND": [
+					5,
+					15
+				],
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"CACTUS": [
+					2,
+					4
+				],
+				"SAND": [
+					20,
+					40
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"CACTUS": [
+					4,
+					6
+				],
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"CACTUS": [
+					40,
+					60
+				]
+			}
+		}
+	},
+	"TORTOISE": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 100,
+		"mhp": 250,
+		"def": 750,
+		"spd": 50,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"TURTLE_SHELL": 1,
+				"COPPER_ORE": 1,
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"TURTLE_SHELL": [
+					1,
+					2
+				],
+				"COPPER_ORE": [
+					2,
+					4
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"TURTLE_SHELL": [
+					3,
+					4
+				],
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EMERALD": 1
+			}
+		}
+	},
+	"BEETLE": {
+		"type": "ENEMY",
+		"pdmg": 175,
+		"bdmg": 25,
+		"mhp": 50,
+		"def": 600,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BEETLE_HUSK": [
+					1,
+					3
+				],
+				"COPPER_ORE": 1,
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"BEETLE_HUSK": [
+					2,
+					4
+				],
+				"COPPER_ORE": [
+					2,
+					4
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"VIOLET_HUSK": 1,
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EMERALD": 1
+			}
+		}
+	},
+	"VICIOUS_MELON": {
+		"type": "ENEMY",
+		"pdmg": 25,
+		"bdmg": 175,
+		"mhp": 250,
+		"def": 300,
+		"spd": 25,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"WATERMELON": [
+					1,
+					3
+				],
+				"COPPER_ORE": 1,
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"WATERMELON": [
+					2,
+					4
+				],
+				"COPPER_ORE": [
+					2,
+					4
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"WATERMELON": [
+					4,
+					6
+				],
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EMERALD": 1
+			}
+		}
+	},
+	"VENUS_HUMAN_TRAP": {
+		"type": "ENEMY",
+		"pdmg": 225,
+		"bdmg": 20,
+		"mhp": 650,
+		"def": 50,
+		"spd": 5,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"VINE": [
+					1,
+					3
+				],
+				"COPPER_ORE": 1,
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"VINE": [
+					2,
+					4
+				],
+				"COPPER_ORE": [
+					2,
+					4
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"VINE": [
+					4,
+					6
+				],
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"EMERALD": 1
+			}
+		}
+	},
+	"PIRANHA": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 150,
+		"def": -1,
+		"spd": 300,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"RAW_COD": [
+					1,
+					3
+				],
+				"PIRANHA": 1,
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"RAW_SALMON": [
+					2,
+					4
+				],
+				"PIRANHA": [
+					2,
+					4
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SQUID": [
+					4,
+					6
+				],
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"SHRIMP_SHRIMP": [
+					4,
+					6
+				]
+			}
+		}
+	},
+	"SHARK": {
+		"type": "ENEMY",
+		"pdmg": 175,
+		"bdmg": -1,
+		"mhp": 175,
+		"def": 25,
+		"spd": 275,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"RAW_COD": [
+					1,
+					3
+				],
+				"COPPER_ORE": 1,
+				"COPPER_BAR": 1
+			},
+			"UNCOMMON": {
+				"RAW_SALMON": [
+					2,
+					4
+				],
+				"COPPER_ORE": [
+					2,
+					4
+				],
+				"COPPER_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SQUID": [
+					4,
+					6
+				],
+				"COPPER_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"SHRIMP_SHRIMP": [
+					4,
+					6
+				]
+			}
+		}
+	},
+	"ALCHEMIST": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 300,
+		"def": 50,
+		"spd": 150,
+		"effects": [
+			"MULTI_HIT"
+		],
+		"drops": {
+			"COMMON": {
+				"BREAD": [
+					2,
+					5
+				],
+				"IRON_ORE": 1,
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"MICROWAVE": 3,
+				"GOLD_BOW": 1,
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MICROWAVE": [
+					4,
+					6
+				],
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"MICROWAVE": [
+					10,
+					20
+				]
+			}
+		}
+	},
+	"NECROMANCER": {
+		"type": "ENEMY",
+		"pdmg": 600,
+		"bdmg": -1,
+		"mhp": 300,
+		"def": 50,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BREAD": [
+					2,
+					5
+				],
+				"IRON_ORE": 1,
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"MICROWAVE": 3,
+				"IRON_ORE": [
+					2,
+					4
+				],
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MICROWAVE": [
+					4,
+					6
+				],
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"MICROWAVE": [
+					10,
+					20
+				]
+			}
+		}
+	},
+	"ANGUISHED_SOUL": {
+		"type": "ENEMY",
+		"pdmg": 400,
+		"bdmg": -1,
+		"mhp": 50,
+		"def": -1,
+		"spd": 450,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BREAD": [
+					2,
+					5
+				],
+				"IRON_ORE": 1,
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"MICROWAVE": 2,
+				"IRON_ORE": [
+					2,
+					4
+				],
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MICROWAVE": [
+					3,
+					5
+				],
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"MICROWAVE": [
+					10,
+					20
+				]
+			}
+		}
+	},
+	"ARMED_CULTIST": {
+		"type": "ENEMY",
+		"pdmg": 400,
+		"bdmg": 100,
+		"mhp": 300,
+		"def": 50,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BREAD": [
+					2,
+					5
+				],
+				"IRON_ORE": 1,
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"MICROWAVE": 2,
+				"Dagger": 1,
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MICROWAVE": [
+					3,
+					5
+				],
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"MICROWAVE": [
+					10,
+					20
+				]
+			}
+		}
+	},
+	"FROZEN_CULTIST": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": 100,
+		"mhp": 300,
+		"def": 50,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BREAD": [
+					2,
+					5
+				],
+				"ICE": 1,
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"MICROWAVE": 2,
+				"ICE": [
+					2,
+					4
+				],
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MICROWAVE": [
+					3,
+					5
+				],
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"MICROWAVE": [
+					10,
+					20
+				]
+			}
+		}
+	},
+	"MEDITATING_CULTIST": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 300,
+		"def": 50,
+		"spd": 150,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"BREAD": [
+					2,
+					5
+				],
+				"IRON_ORE": 1,
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"MICROWAVE": 1,
+				"IRON_ORE": [
+					2,
+					4
+				],
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"MICROWAVE": [
+					2,
+					4
+				],
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"MICROWAVE": [
+					10,
+					20
+				]
+			}
+		}
+	},
+	"SPHINX": {
+		"type": "ENEMY",
+		"pdmg": 200,
+		"bdmg": -1,
+		"mhp": 150,
+		"def": 50,
+		"spd": 250,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"LEATHER": 1,
+				"SAND": [
+					1,
+					5
+				],
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"MINING_CHARM": 1,
+				"LEATHER": [
+					2,
+					4
+				],
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"GOLD_BAR": 2,
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"GOLD_BAR": [
+					50,
+					100
+				]
+			}
+		}
+	},
+	"MUMMY": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 150,
+		"mhp": 300,
+		"def": 50,
+		"spd": 100,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"CHUM": 1,
+				"SAND": [
+					1,
+					5
+				],
+				"GOLD_BAR": 1
+			},
+			"UNCOMMON": {
+				"MINING_CHARM": 1,
+				"LEATHER": 1,
+				"GOLD_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"IRON_PICKAXE": 1,
+				"GOLD_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"THE_SPADE": 1
+			}
+		}
+	},
+	"SAND_SERPENT": {
+		"type": "ENEMY",
+		"pdmg": 100,
+		"bdmg": -1,
+		"mhp": 50,
+		"def": 50,
+		"spd": 325,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"CHUM": 1,
+				"SAND": [
+					1,
+					5
+				],
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"MINING_CHARM": 1,
+				"LEATHER": 1,
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"STRING": [
+					20,
+					40
+				],
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"SILK_CLOTH": [
+					2,
+					4
+				]
+			}
+		}
+	},
+	"BRINEBOUND": {
+		"type": "ENEMY",
+		"pdmg": 50,
+		"bdmg": 75,
+		"mhp": 300,
+		"def": 50,
+		"spd": 125,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"CHUM": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1,
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"FISHING_CAP": 1,
+				"LEATHER": 1,
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"SHRIMP_SHRIMP": 1,
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"SUPER_ROD": 1
+			}
+		}
+	},
+	"ZOMBIE": {
+		"type": "ENEMY",
+		"pdmg": -1,
+		"bdmg": 100,
+		"mhp": 300,
+		"def": 50,
+		"spd": 125,
+		"effects": [],
+		"drops": {
+			"COMMON": {
+				"CHUM": 1,
+				"IRON_ORE": 1,
+				"IRON_BAR": 1
+			},
+			"UNCOMMON": {
+				"MINING_CHARM": 1,
+				"LEATHER": 1,
+				"IRON_BAR": [
+					2,
+					4
+				]
+			},
+			"RARE": {
+				"IRON_PICKAXE": 1,
+				"IRON_BAR": [
+					4,
+					6
+				]
+			},
+			"VERY_RARE": {
+				"THE_SPADE": 1
+			}
+		}
+	}
+}

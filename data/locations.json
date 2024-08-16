@@ -1,0 +1,2686 @@
+{
+	"INCENDIUM_KEEP": {
+		"conflict_at_start": "foreign",
+		"controller_at_start": "KARKOTHIAN_TRIBES",
+		"lava": true,
+		"air": false,
+		"sun": 10,
+		"wind": 0,
+		"resources": {
+			"BLACKSTONE": [
+				550,
+				650
+			],
+			"HELLSTONE": [
+				450,
+				550
+			],
+			"SMOKE_WOOD": [
+				50,
+				150
+			],
+			"BACON": [
+				150,
+				250
+			],
+			"GOLD_ORE": [
+				100,
+				200
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"LAVA_SLIME",
+				"KARKOTHIAN_SCOUT",
+				"BOAR"
+			],
+			"RARE": [
+				"CHARRED_SKELETON",
+				"INCINERATOR"
+			],
+			"UNCOMMON": [
+				"KARKOTHIAN_GRUNT",
+				"KARKOTHIAN_BRUTE",
+				"IVEBORN_ADUSTUS"
+			],
+			"VERY_RARE": [
+				"UNHOLY_SPECTRE"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"MOLTEN_SULFUR": [
+					1,
+					5
+				],
+				"BONE": [
+					3,
+					30
+				],
+				"BRONZE_BAR": [
+					3,
+					10
+				]
+			},
+			"RARE": {
+				"MOLTEN_SULFUR": [
+					10,
+					15
+				],
+				"LAVAPROOF_FISHING_HOOK": 1
+			},
+			"UNCOMMON": {
+				"MOLTEN_SULFUR": [
+					5,
+					10
+				],
+				"GOLD_BAR": [
+					3,
+					10
+				],
+				"STRENGTH_POTION": 1
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
+		"mining": {
+			"COMMON": {
+				"BLACKSTONE": [
+					3,
+					50
+				],
+				"SMOKE_WOOD": [
+					3,
+					50
+				],
+				"PICKAXE": 1
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		}
+	},
+	"BEASTS_DEN": {
+		"conflict_at_start": "foreign",
+		"controller_at_start": "NONE",
+		"lava": true,
+		"air": false,
+		"sun": 10,
+		"wind": 0,
+		"resources": {
+			"BLACKSTONE": [
+				450,
+				550
+			],
+			"HELLSTONE": [
+				450,
+				550
+			],
+			"BACON": [
+				200,
+				300
+			],
+			"SMOKE_WOOD": [
+				50,
+				150
+			],
+			"GOLD_ORE": [
+				50,
+				150
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ELDER_BOAR",
+				"BABY_BOAR",
+				"BOAR"
+			],
+			"RARE": [
+				"UNHOLY_SPECTRE",
+				"IVEBORN_ADUSTUS"
+			],
+			"UNCOMMON": [
+				"CHARRED_SKELETON",
+				"INCINERATOR",
+				"LAVA_SLIME"
+			],
+			"VERY_RARE": [
+				"BOARFATHER"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"MOLTEN_SULFUR": [
+					1,
+					5
+				],
+				"BONE": [
+					3,
+					30
+				],
+				"BRONZE_BAR": [
+					3,
+					10
+				]
+			},
+			"RARE": {
+				"MOLTEN_SULFUR": [
+					10,
+					15
+				],
+				"LAVAPROOF_FISHING_HOOK": 1
+			},
+			"UNCOMMON": {
+				"MOLTEN_SULFUR": [
+					5,
+					10
+				],
+				"GOLD_BAR": [
+					3,
+					10
+				],
+				"STRENGTH_POTION": 1
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
+		"mining": {
+			"COMMON": {
+				"BLACKSTONE": [
+					3,
+					50
+				],
+				"SMOKE_WOOD": [
+					3,
+					50
+				],
+				"PICKAXE": 1
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		}
+	},
+	"CROSS_ROADS": {
+		"conflict_at_start": "fighting",
+		"controller_at_start": "KINGDOM_OF_DUNGEONSIA",
+		"lava": false,
+		"air": false,
+		"sun": 5,
+		"wind": 5,
+		"resources": {
+			"STONE": [
+				1000,
+				2000
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"WHEAT": [
+				1,
+				250
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				300
+			],
+			"MUTTON": [
+				1,
+				200
+			],
+			"FILET_MIGNON": [
+				1,
+				100
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON",
+				"SPIDER"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"VULTURE"
+			],
+			"UNCOMMON": [
+				"IVEBORN_HEDERA",
+				"WARLOCK",
+				"SLIME"
+			],
+			"VERY_RARE": [
+				"SKELETON_HORSEMAN"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"DIRT": [
+					2,
+					5
+				],
+				"RAW_SALMON": 1
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"DUNGEON_CITY": {
+		"conflict_at_start": "foreign",
+		"controller_at_start": "KINGDOM_OF_DUNGEONSIA",
+		"lava": false,
+		"air": false,
+		"sun": 2,
+		"wind": 6,
+		"resources": {
+			"STONE": [
+				1000,
+				2000
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"GRAVEL": [
+				500,
+				1000
+			],
+			"LIMESTONE": [
+				500,
+				1000
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				300
+			],
+			"COAL": [
+				100,
+				300
+			],
+			"IRON_ORE": [
+				1,
+				100
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"SKELETON_SOLDIER",
+				"SKELETON",
+				"SKELETON_ARCHER"
+			],
+			"RARE": [
+				"WARLOCK_SKELETON",
+				"SKELETON_HORSEMAN"
+			],
+			"UNCOMMON": [
+				"SKELETON_MINER",
+				"WOLF_JOCKEY",
+				"SKELETON_ASSASSIN"
+			],
+			"VERY_RARE": [
+				"SKELETON_KING"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"BONE": [
+					2,
+					5
+				],
+				"RAW_SALMON": 1
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"FIELDS": {
+		"conflict_at_start": "fighting",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 8,
+		"wind": 7,
+		"resources": {
+			"STONE": [
+				1000,
+				2000
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"WHEAT": [
+				150,
+				450
+			],
+			"WORM": [
+				50,
+				300
+			],
+			"EGG": [
+				50,
+				300
+			],
+			"MUTTON": [
+				50,
+				200
+			],
+			"FILET_MIGNON": [
+				50,
+				100
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON",
+				"SPIDER"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"VULTURE"
+			],
+			"UNCOMMON": [
+				"IVEBORN_HEDERA",
+				"WARLOCK",
+				"SLIME"
+			],
+			"VERY_RARE": [
+				"SKELETON_HORSEMAN"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"EGG": [
+					2,
+					5
+				],
+				"RAW_SALMON": 1
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"FISHING_VILLE": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 6,
+		"wind": 8,
+		"resources": {
+			"SAND": [
+				500,
+				1500
+			],
+			"WOOD": [
+				100,
+				300
+			],
+			"COCONUT": [
+				50,
+				150
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				300
+			],
+			"CACTUS": [
+				1,
+				200
+			],
+			"SUGAR_CANE": [
+				1,
+				150
+			],
+			"RAW_COD": [
+				1,
+				100
+			],
+			"SEASHELL": [
+				1,
+				100
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"BRINEBOUND",
+				"SAND_SERPENT",
+				"SKELETON"
+			],
+			"RARE": [
+				"NAUTICAL_SENTRY",
+				"VULTURE"
+			],
+			"UNCOMMON": [
+				"IVEBORN_AQUAMARIS",
+				"SHARK",
+				"ROLLING_CACTUS"
+			],
+			"VERY_RARE": [
+				"ELITE_SENTRY"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"RAW_SALMON": 1,
+				"RUBBER": [
+					2,
+					5
+				]
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"FORESTS": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 3,
+		"wind": 4,
+		"resources": {
+			"WOOD": [
+				1000,
+				2000
+			],
+			"STONE": [
+				500,
+				1500
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				300
+			],
+			"MUTTON": [
+				1,
+				200
+			],
+			"FILET_MIGNON": [
+				1,
+				100
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON",
+				"SPIDER"
+			],
+			"RARE": [
+				"ALCHEMIST",
+				"NECROMANCER"
+			],
+			"UNCOMMON": [
+				"MEDITATING_CULTIST",
+				"ARMED_CULTIST",
+				"ANGUISHED_SOUL"
+			],
+			"VERY_RARE": [
+				"GRYMFANG"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"RAW_SALMON": 1,
+				"WOOD": [
+					2,
+					5
+				]
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"HAVEN": {
+		"conflict_at_start": "foreign",
+		"controller_at_start": "NONE",
+		"lava": false,
+		"air": false,
+		"sun": 5,
+		"wind": 6,
+		"resources": {
+			"STONE": [
+				1000,
+				2000
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"WOOD": [
+				100,
+				500
+			],
+			"WORM": [
+				1,
+				200
+			],
+			"EGG": [
+				1,
+				200
+			],
+			"MUTTON": [
+				1,
+				150
+			],
+			"FILET_MIGNON": [
+				1,
+				50
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON",
+				"SPIDER"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"VULTURE"
+			],
+			"UNCOMMON": [
+				"IVEBORN_HEDERA",
+				"WARLOCK",
+				"SLIME"
+			],
+			"VERY_RARE": [
+				"SKELETON_HORSEMAN"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"BREAD": [
+					2,
+					5
+				],
+				"RAW_SALMON": 1
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"JUNGLE": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 5,
+		"wind": 3,
+		"resources": {
+			"DIRT": [
+				500,
+				1500
+			],
+			"WOOD": [
+				500,
+				1500
+			],
+			"PUMPKIN": [
+				1,
+				400
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				300
+			],
+			"WATERMELON": [
+				1,
+				200
+			],
+			"MANGO": [
+				1,
+				200
+			],
+			"SUGAR_CANE": [
+				1,
+				150
+			],
+			"MUTTON": [
+				1,
+				200
+			],
+			"LAMP_OIL": [
+				50,
+				100
+			],
+			"FILET_MIGNON": [
+				1,
+				100
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"IVEBORN_HEDERA",
+				"SLIME",
+				"SPIDER"
+			],
+			"RARE": [
+				"BEETLE",
+				"TORTOISE"
+			],
+			"UNCOMMON": [
+				"PIRANHA",
+				"VENUS_HUMAN_TRAP",
+				"VICIOUS_MELON"
+			],
+			"VERY_RARE": [
+				"PUMPKIN_HORSEMAN"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"PIRANHA": 1,
+				"RAW_COD": 1,
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"BEETLE_HUSK": 1,
+				"PUFFERFISH": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"RAW_SALMON": 1,
+				"THORN": [
+					2,
+					5
+				]
+			},
+			"VERY_RARE": {
+				"TURTLE_SHELL": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"MINES": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 2,
+		"wind": 2,
+		"resources": {
+			"STONE": [
+				1500,
+				2500
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"GRAVEL": [
+				500,
+				1000
+			],
+			"LIMESTONE": [
+				500,
+				1000
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				200
+			],
+			"COAL": [
+				100,
+				500
+			],
+			"IRON_ORE": [
+				1,
+				300
+			],
+			"SILVER_ORE": [
+				1,
+				150
+			],
+			"GOLD_ORE": [
+				1,
+				100
+			],
+			"DIAMOND": [
+				1,
+				50
+			],
+			"EMERALD": [
+				1,
+				50
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON",
+				"SLIME"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"CAVERN_GHOUL"
+			],
+			"UNCOMMON": [
+				"IVEBORN_CAVERNA",
+				"WARLOCK",
+				"TROLL"
+			],
+			"VERY_RARE": [
+				"PITCHSPAWN"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"RAW_SALMON": 1,
+				"TITANIUM_ORE": [
+					1,
+					3
+				]
+			},
+			"VERY_RARE": {
+				"ROCKFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"MINESHAFT": {
+		"conflict_at_start": "foreign",
+		"controller_at_start": "KINGDOM_OF_DUNGEONSIA",
+		"lava": false,
+		"air": false,
+		"sun": 2,
+		"wind": 2,
+		"resources": {
+			"STONE": [
+				1500,
+				2500
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"GRAVEL": [
+				500,
+				1000
+			],
+			"LIMESTONE": [
+				500,
+				1000
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				200
+			],
+			"COAL": [
+				100,
+				500
+			],
+			"IRON_ORE": [
+				100,
+				300
+			],
+			"SILVER_ORE": [
+				1,
+				150
+			],
+			"GOLD_ORE": [
+				1,
+				100
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON_MINER",
+				"SLIME"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"CAVERN_GHOUL"
+			],
+			"UNCOMMON": [
+				"IVEBORN_CAVERNA",
+				"WARLOCK",
+				"TROLL"
+			],
+			"VERY_RARE": [
+				"HUGE_SLIME"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"RAW_SALMON": 1,
+				"TITANIUM_ORE": [
+					1,
+					3
+				]
+			},
+			"VERY_RARE": {
+				"ROCKFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 10,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"SINGED_PYRAMID": {
+		"conflict_at_start": "fighting",
+		"controller_at_start": "KARKOTHIAN_TRIBES",
+		"lava": true,
+		"air": false,
+		"sun": 10,
+		"wind": 0,
+		"resources": {
+			"BLACKSTONE": [
+				450,
+				550
+			],
+			"HELLSTONE": [
+				450,
+				550
+			],
+			"BACON": [
+				100,
+				200
+			],
+			"SMOKE_WOOD": [
+				50,
+				150
+			],
+			"GOLD_ORE": [
+				50,
+				150
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"KARKOTHIAN_SCOUT",
+				"CHARRED_SKELETON",
+				"INCINERATOR"
+			],
+			"RARE": [
+				"UNHOLY_SPECTRE",
+				"KARKOTHIAN_GRUNT"
+			],
+			"UNCOMMON": [
+				"IVEBORN_ADUSTUS",
+				"BOAR",
+				"LAVA_SLIME"
+			],
+			"VERY_RARE": [
+				"KARKOTHIAN_BRUTE"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"MOLTEN_SULFUR": [
+					1,
+					5
+				],
+				"BONE": [
+					3,
+					30
+				],
+				"BRONZE_BAR": [
+					3,
+					10
+				]
+			},
+			"RARE": {
+				"MOLTEN_SULFUR": [
+					10,
+					15
+				],
+				"LAVAPROOF_FISHING_HOOK": 1
+			},
+			"UNCOMMON": {
+				"MOLTEN_SULFUR": [
+					5,
+					10
+				],
+				"GOLD_BAR": [
+					3,
+					10
+				],
+				"STRENGTH_POTION": 1
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
+		"mining": {
+			"COMMON": {
+				"BLACKSTONE": [
+					3,
+					50
+				],
+				"SMOKE_WOOD": [
+					3,
+					50
+				],
+				"PICKAXE": 1
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		}
+	},
+	"PORT_CITY": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 8,
+		"wind": 10,
+		"resources": {
+			"STONE": [
+				1000,
+				2000
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"WORM": [
+				1,
+				150
+			],
+			"EGG": [
+				1,
+				150
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON",
+				"SPIDER"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"VULTURE"
+			],
+			"UNCOMMON": [
+				"IVEBORN_HEDERA",
+				"WARLOCK",
+				"SLIME"
+			],
+			"VERY_RARE": [
+				"SKELETON_HORSEMAN"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"RAW_SALMON": 1,
+				"SUGAR": [
+					2,
+					5
+				]
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"RUBBERPORT": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 7,
+		"wind": 9,
+		"resources": {
+			"STONE": [
+				1000,
+				2000
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"ICE": [
+				250,
+				500
+			],
+			"WOOD": [
+				250,
+				500
+			],
+			"RUBBER": [
+				200,
+				400
+			],
+			"LAMP_OIL": [
+				200,
+				400
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				300
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"FROZEN_SKELETON",
+				"SPIDER"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"FROZEN_CULTIST"
+			],
+			"UNCOMMON": [
+				"IVEBORN_GLACIO",
+				"WARLOCK",
+				"SLIME"
+			],
+			"VERY_RARE": [
+				"SKELETON_HORSEMAN"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"RAW_SALMON": 1,
+				"RUBBER": [
+					2,
+					5
+				]
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"SILK_ROAD": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 6,
+		"wind": 3,
+		"resources": {
+			"SAND": [
+				500,
+				1500
+			],
+			"WOOD": [
+				50,
+				150
+			],
+			"COCONUT": [
+				25,
+				75
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				300
+			],
+			"CACTUS": [
+				1,
+				200
+			],
+			"SILK_CLOTH": [
+				50,
+				150
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"SLIME",
+				"SKELETON",
+				"SAND_SERPENT"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"VULTURE"
+			],
+			"UNCOMMON": [
+				"IVEBORN_HEDERA",
+				"WARLOCK",
+				"Mummy"
+			],
+			"VERY_RARE": [
+				"Sphinx"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"RAW_SALMON": 1,
+				"SILK_CLOTH": [
+					2,
+					5
+				]
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"SKY_CITY": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 7,
+		"wind": 7,
+		"resources": {
+			"STONE": [
+				1000,
+				2000
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"WORM": [
+				1,
+				150
+			],
+			"EGG": [
+				1,
+				150
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON",
+				"SPIDER"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"VULTURE"
+			],
+			"UNCOMMON": [
+				"IVEBORN_HEDERA",
+				"WARLOCK",
+				"SLIME"
+			],
+			"VERY_RARE": [
+				"SKELETON_HORSEMAN"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"CLOUD": [
+					5,
+					10
+				],
+				"RAW_SALMON": 1
+			},
+			"VERY_RARE": {
+				"FLUTE": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"THE_CLOUDS": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "NONE",
+		"lava": false,
+		"air": true,
+		"sun": 10,
+		"wind": 10,
+		"resources": {
+			"CLOUD": [
+				50,
+				150
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"FLYING_SLIME",
+				"VULTURE",
+				"IVEBORN_AUREA"
+			],
+			"RARE": [
+				"SKY_SORCERER",
+				"HALLOWED_CREATURE"
+			],
+			"UNCOMMON": [
+				"SOLAR_FLARE",
+				"WARLOCK",
+				"DRAGON"
+			],
+			"VERY_RARE": [
+				"ZEUS"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"CLOUD": [
+					4,
+					6
+				],
+				"SILVER_ORE": [
+					4,
+					6
+				],
+				"SILVER_BAR": 1
+			},
+			"RARE": {
+				"CLOUD": [
+					15,
+					25
+				],
+				"FLYING_SQUID": 1
+			},
+			"UNCOMMON": {
+				"CLOUD": [
+					7,
+					13
+				],
+				"SILVER_BAR": [
+					7,
+					13
+				],
+				"FLYING_FISH": 1
+			},
+			"VERY_RARE": {
+				"COMET_FRAGMENT": 1
+			}
+		},
+		"ores": {
+			"SILVER_ORE": 5
+		},
+		"mining": {
+			"COMMON": {
+				"CLOUD": [
+					7,
+					13
+				],
+				"SILVER_ORE": [
+					7,
+					13
+				],
+				"SILVER_PICKAXE": 1
+			},
+			"RARE": {
+				"CLOUD": [
+					40,
+					60
+				],
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"CLOUD": [
+					15,
+					25
+				],
+				"LUCKY_COIN": 1,
+				"SILVER_BAR": [
+					5,
+					10
+				]
+			},
+			"VERY_RARE": {
+				"COMET_FRAGMENT": 1
+			}
+		}
+	},
+	"SMITHLANDS": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 8,
+		"wind": 5,
+		"resources": {
+			"STONE": [
+				1000,
+				2000
+			],
+			"DIRT": [
+				500,
+				1500
+			],
+			"GRAVEL": [
+				500,
+				1000
+			],
+			"LIMESTONE": [
+				500,
+				1000
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				300
+			],
+			"COAL": [
+				100,
+				300
+			],
+			"IRON_ORE": [
+				1,
+				100
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON",
+				"SPIDER"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"VULTURE"
+			],
+			"UNCOMMON": [
+				"IVEBORN_HEDERA",
+				"WARLOCK",
+				"SLIME"
+			],
+			"VERY_RARE": [
+				"SKELETON_HORSEMAN"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"RAW_SALMON": 1
+			},
+			"VERY_RARE": {
+				"SPRINGY_SPRING": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"ASHEN_VALLEYS": {
+		"conflict_at_start": "foreign",
+		"controller_at_start": "KARKOTHIAN_TRIBES",
+		"lava": true,
+		"air": false,
+		"sun": 10,
+		"wind": 2,
+		"resources": {
+			"ASH": [
+				450,
+				550
+			],
+			"BACON": [
+				100,
+				200
+			],
+			"BASALT": [
+				50,
+				150
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"KARKOTHIAN_SCOUT",
+				"KARKOTHIAN_GRUNT",
+				"BOAR"
+			],
+			"RARE": [
+				"IVEBORN_ADUSTUS",
+				"UNHOLY_SPECTRE"
+			],
+			"UNCOMMON": [
+				"CHARRED_SKELETON",
+				"INCINERATOR",
+				"LAVA_SLIME"
+			],
+			"VERY_RARE": [
+				"KARKOTHIAN_BRUTE"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"MOLTEN_SULFUR": [
+					1,
+					5
+				],
+				"BONE": [
+					3,
+					30
+				],
+				"BRONZE_BAR": [
+					3,
+					10
+				]
+			},
+			"RARE": {
+				"MOLTEN_SULFUR": [
+					10,
+					15
+				],
+				"LAVAPROOF_FISHING_HOOK": 1
+			},
+			"UNCOMMON": {
+				"MOLTEN_SULFUR": [
+					5,
+					10
+				],
+				"GOLD_BAR": [
+					3,
+					10
+				],
+				"STRENGTH_POTION": 1
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
+		"mining": {
+			"COMMON": {
+				"BLACKSTONE": [
+					3,
+					50
+				],
+				"SMOKE_WOOD": [
+					3,
+					50
+				],
+				"PICKAXE": 1
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		}
+	},
+	"WITCHES_SWAMP": {
+		"conflict_at_start": "safe",
+		"controller_at_start": "BLUE_REPUBLIC",
+		"lava": false,
+		"air": false,
+		"sun": 4,
+		"wind": 6,
+		"resources": {
+			"DIRT": [
+				500,
+				1500
+			],
+			"WOOD": [
+				500,
+				1500
+			],
+			"WORM": [
+				1,
+				300
+			],
+			"EGG": [
+				1,
+				300
+			],
+			"SUGAR_CANE": [
+				1,
+				150
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"ZOMBIE",
+				"SKELETON",
+				"SPIDER"
+			],
+			"RARE": [
+				"WOLF_JOCKEY",
+				"WITCH"
+			],
+			"UNCOMMON": [
+				"IVEBORN_HEDERA",
+				"WARLOCK",
+				"SLIME"
+			],
+			"VERY_RARE": [
+				"GIANT"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"RAW_COD": 1,
+				"STRING": [
+					1,
+					5
+				],
+				"WATER_BOTTLE": 1
+			},
+			"RARE": {
+				"PUFFERFISH": 1,
+				"SQUID": 1
+			},
+			"UNCOMMON": {
+				"ALGAE": [
+					3,
+					10
+				],
+				"MANA_CRYSTAL": [
+					1,
+					3
+				],
+				"RAW_SALMON": 1
+			},
+			"VERY_RARE": {
+				"GOLDFISH": 1
+			}
+		},
+		"ores": {
+			"COAL": 1,
+			"COPPER_ORE": 5,
+			"DIAMOND": 30,
+			"EMERALD": 30,
+			"GOLD_ORE": 25,
+			"IRON_ORE": 15,
+			"ORE_CHUNK": 0,
+			"SILVER_ORE": 20,
+			"TIN_ORE": 10
+		},
+		"mining": {
+			"COMMON": {
+				"STONE": [
+					3,
+					50
+				],
+				"PICKAXE": 1,
+				"WOOD": [
+					3,
+					50
+				]
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"TITANIUM_BAR": [
+					25,
+					75
+				]
+			}
+		}
+	},
+	"DYRONIXS_LAIR": {
+		"conflict_at_start": "foreign",
+		"controller_at_start": "KARKOTHIAN_TRIBES",
+		"lava": true,
+		"air": false,
+		"sun": 10,
+		"wind": 0,
+		"resources": {
+			"BLACKSTONE": [
+				450,
+				550
+			],
+			"HELLSTONE": [
+				450,
+				550
+			],
+			"BACON": [
+				100,
+				200
+			],
+			"SMOKE_WOOD": [
+				50,
+				150
+			],
+			"GOLD_ORE": [
+				50,
+				150
+			]
+		},
+		"fighting": {
+			"COMMON": [
+				"KARKOTHIAN_SCOUT",
+				"KARKOTHIAN_GRUNT",
+				"CHARRED_SKELETON"
+			],
+			"RARE": [
+				"KARKOTHIAN_BRUTE",
+				"UNHOLY_SPECTRE"
+			],
+			"UNCOMMON": [
+				"IVEBORN_ADUSTUS",
+				"INCINERATOR",
+				"LAVA_SLIME"
+			],
+			"VERY_RARE": [
+				"DYRONIX"
+			]
+		},
+		"fishing": {
+			"COMMON": {
+				"MOLTEN_SULFUR": [
+					1,
+					5
+				],
+				"BONE": [
+					3,
+					30
+				],
+				"BRONZE_BAR": [
+					3,
+					10
+				]
+			},
+			"RARE": {
+				"MOLTEN_SULFUR": [
+					10,
+					15
+				],
+				"LAVAPROOF_FISHING_HOOK": 1
+			},
+			"UNCOMMON": {
+				"MOLTEN_SULFUR": [
+					5,
+					10
+				],
+				"GOLD_BAR": [
+					3,
+					10
+				],
+				"STRENGTH_POTION": 1
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		},
+		"ores": {
+			"GOLD_ORE": 5,
+			"ORE_CHUNK": 0
+		},
+		"mining": {
+			"COMMON": {
+				"BLACKSTONE": [
+					3,
+					50
+				],
+				"SMOKE_WOOD": [
+					3,
+					50
+				],
+				"PICKAXE": 1
+			},
+			"RARE": {
+				"DIAMOND_CHESTPLATE": 1,
+				"MINING_CHARM": 1
+			},
+			"UNCOMMON": {
+				"GOLD_PICKAXE": 1,
+				"IRON_BAR": [
+					5,
+					10
+				],
+				"TIN_BAR": [
+					5,
+					20
+				]
+			},
+			"VERY_RARE": {
+				"VULRINTH_BAR": 1
+			}
+		}
+	}
+}

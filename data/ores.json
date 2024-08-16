@@ -1,0 +1,38 @@
+{
+	"COAL": {
+		"reducedtier": 0,
+		"tier": 0
+	},
+	"COPPER_ORE": {
+		"reducedtier": 0,
+		"tier": 0
+	},
+	"DIAMOND": {
+		"reducedtier": 5,
+		"tier": 7
+	},
+	"EMERALD": {
+		"reducedtier": 6,
+		"tier": 8
+	},
+	"GOLD_ORE": {
+		"reducedtier": 4,
+		"tier": 6
+	},
+	"IRON_ORE": {
+		"reducedtier": 2,
+		"tier": 2
+	},
+	"ORE_CHUNK": {
+		"reducedtier": 0,
+		"tier": 0
+	},
+	"SILVER_ORE": {
+		"reducedtier": 3,
+		"tier": 5
+	},
+	"TIN_ORE": {
+		"reducedtier": 1,
+		"tier": 1
+	}
+}

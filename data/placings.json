@@ -1,0 +1,134 @@
+{
+	"BLACKSTONE": {
+		"tile": "BLACKSTONE"
+	},
+	"HELLSTONE": {
+		"tile": "HELLSTONE"
+	},
+	"ASH": {
+		"tile": "ASH"
+	},
+	"BONE": {
+		"tile": "BONES"
+	},
+	"BASALT": {
+		"tile": "BASALT"
+	},
+	"DIRT": {
+		"tile": "DIRT"
+	},
+	"ICE": {
+		"tile": "ICE"
+	},
+	"SNOW_GLOBE": {
+		"tile": "SNOW_GLOBE"
+	},
+	"SIGN": {
+		"tile": "SIGN"
+	},
+	"HOT_CHOCOLATE": {
+		"tile": "HOT_CHOCOLATE"
+	},
+	"CLOUD": {
+		"tile": "CLOUD"
+	},
+	"SAND": {
+		"tile": "SAND"
+	},
+	"SEASHELL": {
+		"tile": "SEASHELLS"
+	},
+	"COCKTAIL": {
+		"tile": "PINA_COLADA"
+	},
+	"STONE": {
+		"tile": "STONE"
+	},
+	"LIMESTONE": {
+		"tile": "LIMESTONE"
+	},
+	"GRAVEL": {
+		"tile": "GRAVEL"
+	},
+	"TORCH": {
+		"tile": "TORCH"
+	},
+	"GRAVESTONE": {
+		"tile": "GRAVESTONE"
+	},
+	"WINDOW": {
+		"tile": "WINDOW"
+	},
+	"WOOD_FLOOR": {
+		"tile": "WOOD_FLOOR"
+	},
+	"STONE_FLOOR": {
+		"tile": "STONE_FLOOR"
+	},
+	"LIMESTONE_FLOOR": {
+		"tile": "LIMESTONE_FLOOR"
+	},
+	"IRON_FLOOR": {
+		"tile": "IRON_FLOOR"
+	},
+	"WOOD_WALL": {
+		"tile": "WOOD_WALL"
+	},
+	"STONE_WALL": {
+		"tile": "STONE_WALL"
+	},
+	"LIMESTONE_WALL": {
+		"tile": "LIMESTONE_WALL"
+	},
+	"IRON_WALL": {
+		"tile": "IRON_WALL"
+	},
+	"WOOD_POLE": {
+		"tile": "WOOD_POLE"
+	},
+	"STONE_POLE": {
+		"tile": "STONE_POLE"
+	},
+	"LIMESTONE_POLE": {
+		"tile": "LIMESTONE_POLE"
+	},
+	"IRON_POLE": {
+		"tile": "IRON_POLE"
+	},
+	"WOOD_DOOR": {
+		"tile": "WOOD_DOOR"
+	},
+	"STONE_DOOR": {
+		"tile": "STONE_DOOR"
+	},
+	"LIMESTONE_DOOR": {
+		"tile": "LIMESTONE_DOOR"
+	},
+	"IRON_DOOR": {
+		"tile": "IRON_DOOR"
+	},
+	"WOOD_FENCE": {
+		"tile": "WOOD_FENCE"
+	},
+	"STONE_FENCE": {
+		"tile": "STONE_FENCE"
+	},
+	"LIMESTONE_FENCE": {
+		"tile": "LIMESTONE_FENCE"
+	},
+	"IRON_FENCE": {
+		"tile": "IRON_FENCE"
+	},
+	"WOOD_GATE": {
+		"tile": "WOOD_GATE"
+	},
+	"STONE_GATE": {
+		"tile": "STONE_GATE"
+	},
+	"LIMESTONE_GATE": {
+		"tile": "LIMESTONE_GATE"
+	},
+	"IRON_GATE": {
+		"tile": "IRON_GATE"
+	}
+}

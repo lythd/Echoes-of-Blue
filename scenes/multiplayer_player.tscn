@@ -1,196 +1,184 @@
-[gd_scene load_steps=24 format=3 uid="uid://dg6viorw2o3l4"]
+[gd_scene load_steps=9 format=3 uid="uid://dg6viorw2o3l4"]
 
-[ext_resource type="Script" path="res://scripts/multiplayer/multiplayer_controller.gd" id="1_ij7lf"]
-[ext_resource type="Script" path="res://scripts/multiplayer/multiplayer_input.gd" id="2_75sn2"]
-[ext_resource type="Texture2D" uid="uid://bv4re4xesfx8x" path="res://assets/sprites/player_character.png" id="3_f4ttf"]
+[ext_resource type="Script" path="res://scripts/nodes/Player.cs" id="1_jwmff"]
+[ext_resource type="Script" path="res://scripts/nodes/InputSynchronizer.cs" id="2_opeyo"]
+[ext_resource type="PackedScene" uid="uid://bltgi20a35aro" path="res://scenes/character.tscn" id="3_ogou4"]
+[ext_resource type="Texture2D" uid="uid://bm36uudwodk7j" path="res://assets/sprites/progress_bar_under.png" id="4_i6yqx"]
+[ext_resource type="Texture2D" uid="uid://bmdwwry120wyf" path="res://assets/sprites/progress_bar_progress.png" id="5_u5rb5"]
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_bcfu3"]
-properties/0/path = NodePath(".:player_id")
+properties/0/path = NodePath("Character:SpecialInd")
 properties/0/spawn = true
-properties/0/replication_mode = 1
-properties/1/path = NodePath(".:position")
+properties/0/replication_mode = 2
+properties/1/path = NodePath("Character:HairInd")
 properties/1/spawn = true
-properties/1/replication_mode = 1
-properties/2/path = NodePath(".:direction")
+properties/1/replication_mode = 2
+properties/2/path = NodePath("Character:EyesInd")
 properties/2/spawn = true
-properties/2/replication_mode = 1
-properties/3/path = NodePath(".:username")
+properties/2/replication_mode = 2
+properties/3/path = NodePath("Character:HandsInd")
 properties/3/spawn = true
-properties/3/replication_mode = 1
-properties/4/path = NodePath(".:sneaking")
+properties/3/replication_mode = 2
+properties/4/path = NodePath("Character:ShirtInd")
 properties/4/spawn = true
-properties/4/replication_mode = 1
-properties/5/path = NodePath(".:map_open")
+properties/4/replication_mode = 2
+properties/5/path = NodePath("Character:PantsInd")
 properties/5/spawn = true
-properties/5/replication_mode = 1
+properties/5/replication_mode = 2
+properties/6/path = NodePath("Character:ShoesInd")
+properties/6/spawn = true
+properties/6/replication_mode = 2
+properties/7/path = NodePath("Character:SkinInd")
+properties/7/spawn = true
+properties/7/replication_mode = 2
+properties/8/path = NodePath("Character:HairHue")
+properties/8/spawn = true
+properties/8/replication_mode = 2
+properties/9/path = NodePath("Character:HairSat")
+properties/9/spawn = true
+properties/9/replication_mode = 2
+properties/10/path = NodePath("Character:HairVal")
+properties/10/spawn = true
+properties/10/replication_mode = 2
+properties/11/path = NodePath("Character:EyesHue")
+properties/11/spawn = true
+properties/11/replication_mode = 2
+properties/12/path = NodePath("Character:EyesSat")
+properties/12/spawn = true
+properties/12/replication_mode = 2
+properties/13/path = NodePath("Character:EyesVal")
+properties/13/spawn = true
+properties/13/replication_mode = 2
+properties/14/path = NodePath("Character:HandsHue")
+properties/14/spawn = true
+properties/14/replication_mode = 2
+properties/15/path = NodePath("Character:HandsSat")
+properties/15/spawn = true
+properties/15/replication_mode = 2
+properties/16/path = NodePath("Character:HandsVal")
+properties/16/spawn = true
+properties/16/replication_mode = 2
+properties/17/path = NodePath("Character:ShirtHue")
+properties/17/spawn = true
+properties/17/replication_mode = 2
+properties/18/path = NodePath("Character:ShirtSat")
+properties/18/spawn = true
+properties/18/replication_mode = 2
+properties/19/path = NodePath("Character:ShirtVal")
+properties/19/spawn = true
+properties/19/replication_mode = 2
+properties/20/path = NodePath("Character:PantsHue")
+properties/20/spawn = true
+properties/20/replication_mode = 2
+properties/21/path = NodePath("Character:PantsSat")
+properties/21/spawn = true
+properties/21/replication_mode = 2
+properties/22/path = NodePath("Character:PantsVal")
+properties/22/spawn = true
+properties/22/replication_mode = 2
+properties/23/path = NodePath("Character:ShoesHue")
+properties/23/spawn = true
+properties/23/replication_mode = 2
+properties/24/path = NodePath("Character:ShoesSat")
+properties/24/spawn = true
+properties/24/replication_mode = 2
+properties/25/path = NodePath("Character:ShoesVal")
+properties/25/spawn = true
+properties/25/replication_mode = 2
+properties/26/path = NodePath("Character:SkinHue")
+properties/26/spawn = true
+properties/26/replication_mode = 2
+properties/27/path = NodePath("Character:SkinSat")
+properties/27/spawn = true
+properties/27/replication_mode = 2
+properties/28/path = NodePath("Character:SkinVal")
+properties/28/spawn = true
+properties/28/replication_mode = 2
+properties/29/path = NodePath(".:position")
+properties/29/spawn = true
+properties/29/replication_mode = 1
+properties/30/path = NodePath(".:Direction")
+properties/30/spawn = true
+properties/30/replication_mode = 1
+properties/31/path = NodePath(".:Username")
+properties/31/spawn = true
+properties/31/replication_mode = 2
+properties/32/path = NodePath(".:Sneaking")
+properties/32/spawn = true
+properties/32/replication_mode = 2
+properties/33/path = NodePath(".:Crying")
+properties/33/spawn = true
+properties/33/replication_mode = 2
+properties/34/path = NodePath(".:Angried")
+properties/34/spawn = true
+properties/34/replication_mode = 2
+properties/35/path = NodePath(".:Shocked")
+properties/35/spawn = true
+properties/35/replication_mode = 2
+properties/36/path = NodePath(".:MapOpen")
+properties/36/spawn = true
+properties/36/replication_mode = 2
+properties/37/path = NodePath(".:Alive")
+properties/37/spawn = true
+properties/37/replication_mode = 2
+properties/38/path = NodePath(".:TileIsSlippery")
+properties/38/spawn = true
+properties/38/replication_mode = 2
+properties/39/path = NodePath(".:PlayerId")
+properties/39/spawn = true
+properties/39/replication_mode = 2
+properties/40/path = NodePath(".:Health")
+properties/40/spawn = true
+properties/40/replication_mode = 2
+properties/41/path = NodePath(".:MaxHealth")
+properties/41/spawn = true
+properties/41/replication_mode = 2
+properties/42/path = NodePath(".:Damage")
+properties/42/spawn = true
+properties/42/replication_mode = 2
+properties/43/path = NodePath(".:Kb")
+properties/43/spawn = true
+properties/43/replication_mode = 1
+properties/44/path = NodePath(".:KbResistance")
+properties/44/spawn = true
+properties/44/replication_mode = 2
+properties/45/path = NodePath(".:KbStrength")
+properties/45/spawn = true
+properties/45/replication_mode = 2
+properties/46/path = NodePath(".:SteamId")
+properties/46/spawn = true
+properties/46/replication_mode = 2
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_kgm8b"]
-properties/0/path = NodePath("InputSynchronizer:input_direction")
+properties/0/path = NodePath("InputSynchronizer:InputDirection")
 properties/0/spawn = true
 properties/0/replication_mode = 1
-properties/1/path = NodePath("InputSynchronizer:username")
+properties/1/path = NodePath("InputSynchronizer:Username")
 properties/1/spawn = true
-properties/1/replication_mode = 1
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_70hq2"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(48, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ftfwp"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(48, 16, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2uaqe"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(48, 32, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_awmoy"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(48, 48, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lv5ql"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(0, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q7qen"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(0, 16, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_loiiu"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(0, 32, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6f52d"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(0, 48, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w86qi"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(16, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_of4aw"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(16, 16, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2xp6o"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(16, 32, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hnpn7"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(16, 48, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_y77ug"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(32, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gmy7u"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(32, 16, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ofx2w"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(32, 32, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mlkhf"]
-atlas = ExtResource("3_f4ttf")
-region = Rect2(32, 48, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_6mmu2"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_70hq2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ftfwp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2uaqe")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_awmoy")
-}],
-"loop": true,
-"name": &"attack",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lv5ql")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q7qen")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_loiiu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6f52d")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w86qi")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_of4aw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2xp6o")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hnpn7")
-}],
-"loop": true,
-"name": &"run",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_y77ug")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gmy7u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ofx2w")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mlkhf")
-}],
-"loop": true,
-"name": &"sneak",
-"speed": 5.0
-}]
+properties/1/replication_mode = 2
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n685k"]
 radius = 3.0
 height = 14.0
 
 [node name="MultiplayerPlayer" type="CharacterBody2D"]
-z_index = 5
+y_sort_enabled = true
 collision_layer = 2
-script = ExtResource("1_ij7lf")
+collision_mask = 7
+script = ExtResource("1_jwmff")
 
 [node name="PlayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_bcfu3")
 
 [node name="InputSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_kgm8b")
-script = ExtResource("2_75sn2")
+script = ExtResource("2_opeyo")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-z_index = 5
+[node name="Character" parent="." instance=ExtResource("3_ogou4")]
 position = Vector2(0, -8)
-sprite_frames = SubResource("SpriteFrames_6mmu2")
-animation = &"attack"
-autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = -1
 position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_n685k")
 
@@ -215,4 +203,21 @@ grow_horizontal = 2
 grow_vertical = 2
 horizontal_alignment = 1
 
-[connection signal="timeout" from="RespawnTimer" to="." method="_respawn"]
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -12.0
+offset_top = -25.0
+offset_right = 12.0
+offset_bottom = -17.0
+step = 0.0
+value = 50.0
+nine_patch_stretch = true
+stretch_margin_left = 4
+stretch_margin_top = 4
+stretch_margin_right = 4
+stretch_margin_bottom = 4
+texture_under = ExtResource("4_i6yqx")
+texture_progress = ExtResource("5_u5rb5")
+tint_progress = Color(0, 0.77, 0.0256666, 1)
+
+[connection signal="timeout" from="RespawnTimer" to="." method="Respawn"]

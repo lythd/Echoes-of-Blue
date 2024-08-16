@@ -1,0 +1,50 @@
+{
+	"GENERIC": {
+		"show": true
+	},
+	"FOOD": {
+		"show": true
+	},
+	"PICKAXE": {
+		"show": true
+	},
+	"MINING": {
+		"show": true
+	},
+	"INDUSTRIAL": {
+		"show": true
+	},
+	"ROD": {
+		"show": true
+	},
+	"WEAPON": {
+		"show": true
+	},
+	"ARMOR": {
+		"show": true
+	},
+	"ACCESSORY": {
+		"show": true
+	},
+	"AMMO": {
+		"show": true
+	},
+	"ARROW": {
+		"show": false
+	},
+	"ROCKET": {
+		"show": false
+	},
+	"COMET_FRAGMENT": {
+		"show": false
+	},
+	"IMPROVISED_EXPLOSIVE": {
+		"show": false
+	},
+	"BAIT": {
+		"show": true
+	},
+	"UTILITY": {
+		"show": true
+	}
+}

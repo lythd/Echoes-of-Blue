@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c3inyxtwckvhh"
+
+[deps]
+
+files=["res://localization/tiles_localization.en_US.translation", "res://localization/tiles_localization.fr_FR.translation", "res://localization/tiles_localization.es_MX.translation", "res://localization/tiles_localization.de_DE.translation", "res://localization/tiles_localization.it_IT.translation", "res://localization/tiles_localization.pt_BR.translation", "res://localization/tiles_localization.pt_PT.translation", "res://localization/tiles_localization.ru_RU.translation", "res://localization/tiles_localization.el_GR.translation", "res://localization/tiles_localization.tr_TR.translation", "res://localization/tiles_localization.da_DK.translation", "res://localization/tiles_localization.nb_NB.translation", "res://localization/tiles_localization.sv_SE.translation", "res://localization/tiles_localization.nl_NL.translation", "res://localization/tiles_localization.pl_PL.translation", "res://localization/tiles_localization.fi_FI.translation", "res://localization/tiles_localization.ja_JP.translation", "res://localization/tiles_localization.zh_CN.translation", "res://localization/tiles_localization.zh_TW.translation", "res://localization/tiles_localization.ko_KR.translation", "res://localization/tiles_localization.cs_CZ.translation", "res://localization/tiles_localization.hu_HU.translation", "res://localization/tiles_localization.ro_RO.translation", "res://localization/tiles_localization.th_TH.translation", "res://localization/tiles_localization.bg_BG.translation", "res://localization/tiles_localization.he_IL.translation", "res://localization/tiles_localization.ar.translation", "res://localization/tiles_localization.bs_BS.translation"]
+
+source_file="res://localization/tiles_localization.csv"
+dest_files=["res://localization/tiles_localization.en_US.translation", "res://localization/tiles_localization.fr_FR.translation", "res://localization/tiles_localization.es_MX.translation", "res://localization/tiles_localization.de_DE.translation", "res://localization/tiles_localization.it_IT.translation", "res://localization/tiles_localization.pt_BR.translation", "res://localization/tiles_localization.pt_PT.translation", "res://localization/tiles_localization.ru_RU.translation", "res://localization/tiles_localization.el_GR.translation", "res://localization/tiles_localization.tr_TR.translation", "res://localization/tiles_localization.da_DK.translation", "res://localization/tiles_localization.nb_NB.translation", "res://localization/tiles_localization.sv_SE.translation", "res://localization/tiles_localization.nl_NL.translation", "res://localization/tiles_localization.pl_PL.translation", "res://localization/tiles_localization.fi_FI.translation", "res://localization/tiles_localization.ja_JP.translation", "res://localization/tiles_localization.zh_CN.translation", "res://localization/tiles_localization.zh_TW.translation", "res://localization/tiles_localization.ko_KR.translation", "res://localization/tiles_localization.cs_CZ.translation", "res://localization/tiles_localization.hu_HU.translation", "res://localization/tiles_localization.ro_RO.translation", "res://localization/tiles_localization.th_TH.translation", "res://localization/tiles_localization.bg_BG.translation", "res://localization/tiles_localization.he_IL.translation", "res://localization/tiles_localization.ar.translation", "res://localization/tiles_localization.bs_BS.translation"]
+
+[params]
+
+compress=true
+delimiter=0

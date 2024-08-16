@@ -1,0 +1,26 @@
+{
+	"GOOD_ROD": {
+		"bcc": 75,
+		"durability": 80,
+		"fp": 75,
+		"lbc": 10
+	},
+	"OLD_ROD": {
+		"bcc": 100,
+		"durability": 60,
+		"fp": 50,
+		"lbc": 15
+	},
+	"SILK_ROD": {
+		"bcc": 25,
+		"durability": 200,
+		"fp": 150,
+		"lbc": 0
+	},
+	"SUPER_ROD": {
+		"bcc": 50,
+		"durability": 100,
+		"fp": 100,
+		"lbc": 5
+	}
+}

@@ -1,0 +1,16 @@
+key,en_US,fr_FR,es_MX,de_DE,it_IT,pt_BR,pt_PT,ru_RU,el_GR,tr_TR,da_DK,no_NB,sv_SE,nl_NL,pl_PL,fi_FI,ja_JP,zh_CN,zh_TW,ko_KR,cs_CZ,hu_HU,ro_RO,th_TH,bg_BG,he_IL,ar,bs_BS
+TITLE,Echoes of Blue,,Ecos de Azul,,,,,Эхо Синего,,,,,,,,,,,,,,,,,,,,
+TITLE_FORMATTED,[center][b][color=#f4b73d]Echoes[/color] of [color=#2841cc]Blue[/color][/b][/center],,[center][b][color=#f4b73d]Ecos[/color] de [color=#2841cc]Azul[/color][/b][/center],,,,,[center][b][color=#f4b73d]Эхо[/color] [color=#2841cc]Синего[/color][/b][/center],,,,,,,,,,,,,,,,,,,,
+DESC,"Explore, mine, fight, create, lead! The island is in need of your strength to finish its liberation!",,,,,,,,,,,,,,,,,,,,,,,,,,,
+SINGLE_PLAYER,Single Player,Solo,Solo,Einzelspielermodus,Giocatore singolo,Um jogador,Um jogador,Одиночная игра,Μονός παίκτης,Tek oyuncu,Enkel spiller,Enkeltspiller,En spelare,Een speler,Jeden gracz,Yksinpeli,シングルプレイ,单人模式,單人模式,싱글플레이,Jeden hráč,Egyjátékos mód,Individual,ผู้เล่นเดี่ยว,Самостоятелна игра,שחקן יחיד,وضع اللاعب المفرد,Singleplayer
+HOST_GAME,Host Game,,Juego Anfitrión,,,,,Хост Игры,,,,,,,,,,,,,,,,,,,,
+LIST_LOBBIES,List Lobbies,Multijoueur,Multijugador,Mehrspielermodus,Multiplayer,Multijogador,Multijogador,Мультиплеер,Πολλαπλοί παίχτες,Çok oyuncu,Flere spillere,Flerspiller,Flera spelare,Meerdere spelers,Gra Wieloosobowa,Moninpeli,マルチプレイ,联机模式,聯機模式,멀티플레이,Více hráčů,Többjátékos mód,Multiplayer,ผู้เล่นหลายคน,Групова игра,משחק מרובה-משתתפים,وضع متعدد اللاعبين,Multiplayer
+CO_OP,Co-op,Co-op,Co-op,Koop,Coop,Co-op,Co-op,Co-op,Co-op,Eşli Oyun,Co-op,Samarbeid,Samarbete,Co-op,Kooperacja,Yhteistyöpeli,協力,合作,團隊合作,협동,Ko-op,Co-op,Co-op,ร่วมมือ,Кооперативна игра,שיתוף-פעולה,وضع التعاون Co-op,Kooperativna Igra
+DEFAULT_NAME,Amber,,Ámbar,,,,,Янтарь,,,,,,,,,,,,,,,,,,,,
+BOSS,Boss,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MINI_BOSS,Mini Boss,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ENEMY,Enemy,Ennemi,Enemigo,Gegner,Nemico,Inimigo,Inimigo,Враг,Εχθρός,Düşman,Fjende,Fiende,Fiende,Vijand,Przeciwnik,Vastustaja,敵,敌人,敵人,적,Nepřítel,Ellenség,Inamic,ศัตรู,Противник,אויב,العدو,Neprijatelj
+COMMON,Common,,,,,,,,,,,,,,,,,,,,,,,,,,,
+UNCOMMON,Uncommon,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RARE,Rare,,,,,,,,,,,,,,,,,,,,,,,,,,,
+VERY_RARE,Very Rare,,,,,,,,,,,,,,,,,,,,,,,,,,,

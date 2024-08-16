@@ -1,0 +1,518 @@
+{
+	"PYRO_GRASS": {
+		"drop": "DIRT",
+		"count": 1
+	},
+	"PYRO_SOIL": {
+		"drop": "DIRT",
+		"count": 1
+	},
+	"BLACKSTONE": {
+		"drop": "BLACKSTONE",
+		"count": 1
+	},
+	"FIRE": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"SMOKE_BUSH": {
+		"drop": "SMOKE_WOOD",
+		"count": 2
+	},
+	"LAVA": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"HELLSTONE": {
+		"drop": "HELLSTONE",
+		"count": 1
+	},
+	"BLOOD_SAGE": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"SMOKE_TREE": {
+		"drop": "SMOKE_WOOD",
+		"count": 5
+	},
+	"SURFACE_GOLD_ORE": {
+		"drop": "GOLD_ORE",
+		"count": 1
+	},
+	"PYRO_TALL_GRASS": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"ASH": {
+		"drop": "ASH",
+		"count": 1
+	},
+	"SMOOTH_ASH": {
+		"drop": "ASH",
+		"count": 1
+	},
+	"BONES": {
+		"drop": "BONE",
+		"count": 3
+	},
+	"FOSSIL": {
+		"drop": "BONE",
+		"count": 10
+	},
+	"BURNT_TALL_GRASS": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"BASALT": {
+		"drop": "BASALT",
+		"count": 1
+	},
+	"GRASS": {
+		"drop": "DIRT",
+		"count": 1
+	},
+	"DIRT": {
+		"drop": "DIRT",
+		"count": 1
+	},
+	"ICE": {
+		"drop": "ICE",
+		"count": 1
+	},
+	"TALL_GRASS": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"BUSH": {
+		"drop": "WOOD",
+		"count": 2
+	},
+	"OAK_TREE": {
+		"drop": "WOOD",
+		"count": 5
+	},
+	"SNOW_GLOBE": {
+		"drop": "SNOW_GLOBE",
+		"count": 0
+	},
+	"WATER": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"SUNFLOWER": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"WHEAT": {
+		"drop": "WHEAT",
+		"count": 3
+	},
+	"AUTUMN_OAK_TREE": {
+		"drop": "WOOD",
+		"count": 5
+	},
+	"SIGN": {
+		"drop": "SIGN",
+		"count": 0
+	},
+	"BLUE_FLAX": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"SNOW_PILE": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"RUBBER_TREE": {
+		"drop": "wood",
+		"count": 5
+	},
+	"HOT_CHOCOLATE": {
+		"drop": "HOT_CHOCOLATE",
+		"count": 0
+	},
+	"JUNGLE_GRASS": {
+		"drop": "DIRT",
+		"count": 1
+	},
+	"MUD": {
+		"drop": "DIRT",
+		"count": 1
+	},
+	"PUMPKIN": {
+		"drop": "PUMPKIN",
+		"count": 0
+	},
+	"WATERMELON": {
+		"drop": "WATERMELON",
+		"count": 5
+	},
+	"JUNGLE_BUSH": {
+		"drop": "WOOD",
+		"count": 2
+	},
+	"MAHOGANY_TREE": {
+		"drop": "WOOD",
+		"count": 5
+	},
+	"JUNGLE_TALL_GRASS": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"JUNGLE_WATER": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"MANGO_TREE": {
+		"drop": "WOOD",
+		"count": 5
+	},
+	"MAHOGANY_LOG": {
+		"drop": "WOOD",
+		"count": 4
+	},
+	"SUGARCANE": {
+		"drop": "SUGARCANE",
+		"count": 3
+	},
+	"SWAMP": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"SWAMP_LEAVES": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"MANGROVE_TREE": {
+		"drop": "WOOD",
+		"count": 5
+	},
+	"SWAMP_WATER": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"LILYPAD": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"MANGROVE_LOG": {
+		"drop": "WOOD",
+		"count": 4
+	},
+	"SKY": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"CLOUD": {
+		"drop": "CLOUD",
+		"count": 1
+	},
+	"STORM_CLOUD": {
+		"drop": "CLOUD",
+		"count": 1
+	},
+	"SAND": {
+		"drop": "SAND",
+		"count": 1
+	},
+	"SEASHELLS": {
+		"drop": "SEASHELL",
+		"count": 3
+	},
+	"CACTUS": {
+		"drop": "CACTUS",
+		"count": 3
+	},
+	"COCONUT_TREE": {
+		"drop": "WOOD",
+		"count": 5
+	},
+	"CLEAR_WATER": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"PINA_COLADA": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"CHALK_SOIL": {
+		"drop": "DIRT",
+		"count": 1
+	},
+	"STONE": {
+		"drop": "STONE",
+		"count": 1
+	},
+	"LIMESTONE": {
+		"drop": "LIMESTONE",
+		"count": 1
+	},
+	"GRAVEL": {
+		"drop": "GRAVEL",
+		"count": 1
+	},
+	"PEBBLES": {
+		"drop": "STONE",
+		"count": 1
+	},
+	"TWIGS": {
+		"drop": "WOOD",
+		"count": 1
+	},
+	"ROCK_FLOWER": {
+		"drop": "STONE",
+		"count": 1
+	},
+	"RAIL": {
+		"drop": "WOOD",
+		"count": 1
+	},
+	"TORCH": {
+		"drop": "TORCH",
+		"count": 1
+	},
+	"BOULDER": {
+		"drop": "STONE",
+		"count": 3
+	},
+	"COAL_ORE_BOULDER": {
+		"drop": "COAL_ORE",
+		"count": 1
+	},
+	"COAL_ORE": {
+		"drop": "COAL_ORE",
+		"count": 1
+	},
+	"TIN_ORE": {
+		"drop": "TIN_ORE",
+		"count": 1
+	},
+	"COPPER_ORE": {
+		"drop": "COPPER_ORE",
+		"count": 1
+	},
+	"IRON_ORE_BOULDER": {
+		"drop": "IRON_ORE",
+		"count": 1
+	},
+	"IRON_ORE": {
+		"drop": "IRON_ORE",
+		"count": 1
+	},
+	"SILVER_ORE_BOULDER": {
+		"drop": "SILVER_ORE",
+		"count": 1
+	},
+	"SILVER_ORE": {
+		"drop": "SILVER_ORE",
+		"count": 1
+	},
+	"GOLD_ORE_BOULDER": {
+		"drop": "GOLD_ORE",
+		"count": 1
+	},
+	"GOLD_ORE": {
+		"drop": "GOLD_ORE",
+		"count": 1
+	},
+	"RUBY_ORE": {
+		"drop": "RUBY",
+		"count": 1
+	},
+	"DIAMOND_ORE_BOULDER": {
+		"drop": "DIAMOND",
+		"count": 1
+	},
+	"DIAMOND_ORE": {
+		"drop": "DIAMOND",
+		"count": 1
+	},
+	"EMERALD_ORE_BOULDER": {
+		"drop": "EMERALD",
+		"count": 1
+	},
+	"EMERALD_ORE": {
+		"drop": "EMERALD",
+		"count": 1
+	},
+	"TITANIUM_ORE": {
+		"drop": "TITANIUM_ORE",
+		"count": 1
+	},
+	"VULRINTH_ORE": {
+		"drop": "VULRINTH_ORE",
+		"count": 1
+	},
+	"PATH": {
+		"drop": "DIRT",
+		"count": 1
+	},
+	"CARRIAGE_FLOOR": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"CARRIAGE": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"PIGGY_BANK": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"SAFE": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"SLEEPING_MAT": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"GRAVESTONE": {
+		"drop": "GRAVESTONE",
+		"count": 1
+	},
+	"WINDOW": {
+		"drop": "WINDOW",
+		"count": 1
+	},
+	"WOOD_FLOOR": {
+		"drop": "WOOD_FLOOR",
+		"count": 1
+	},
+	"STONE_FLOOR": {
+		"drop": "STONE_FLOOR",
+		"count": 1
+	},
+	"LIMESTONE_FLOOR": {
+		"drop": "LIMESTONE_FLOOR",
+		"count": 1
+	},
+	"IRON_FLOOR": {
+		"drop": "IRON_FLOOR",
+		"count": 1
+	},
+	"WOOD_WALL": {
+		"drop": "WOOD_WALL",
+		"count": 1
+	},
+	"STONE_WALL": {
+		"drop": "STONE_WALL",
+		"count": 1
+	},
+	"LIMESTONE_WALL": {
+		"drop": "LIMESTONE_WALL",
+		"count": 1
+	},
+	"IRON_WALL": {
+		"drop": "IRON_WALL",
+		"count": 1
+	},
+	"WOOD_POLE": {
+		"drop": "WOOD_POLE",
+		"count": 1
+	},
+	"STONE_POLE": {
+		"drop": "STONE_POLE",
+		"count": 1
+	},
+	"LIMESTONE_POLE": {
+		"drop": "LIMESTONE_POLE",
+		"count": 1
+	},
+	"IRON_POLE": {
+		"drop": "IRON_POLE",
+		"count": 1
+	},
+	"WOOD_DOOR": {
+		"drop": "WOOD_DOOR",
+		"count": 1
+	},
+	"STONE_DOOR": {
+		"drop": "STONE_DOOR",
+		"count": 1
+	},
+	"LIMESTONE_DOOR": {
+		"drop": "LIMESTONE_DOOR",
+		"count": 1
+	},
+	"IRON_DOOR": {
+		"drop": "IRON_DOOR",
+		"count": 1
+	},
+	"WOOD_FENCE": {
+		"drop": "WOOD_FENCE",
+		"count": 1
+	},
+	"STONE_FENCE": {
+		"drop": "STONE_FENCE",
+		"count": 1
+	},
+	"LIMESTONE_FENCE": {
+		"drop": "LIMESTONE_FENCE",
+		"count": 1
+	},
+	"IRON_FENCE": {
+		"drop": "IRON_FENCE",
+		"count": 1
+	},
+	"WOOD_GATE": {
+		"drop": "WOOD_GATE",
+		"count": 1
+	},
+	"STONE_GATE": {
+		"drop": "STONE_GATE",
+		"count": 1
+	},
+	"LIMESTONE_GATE": {
+		"drop": "LIMESTONE_GATE",
+		"count": 1
+	},
+	"IRON_GATE": {
+		"drop": "IRON_GATE",
+		"count": 1
+	},
+	"STALL": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"PLANE": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"BEANSTALK": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"SAND_TOYS": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"DUNGEON_BACKGROUND": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"DUNGEON_FLOOR": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"DUNGEON_WALL": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"DUNGEON_POT": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"DUNGEON_CHEST": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"DUNGEON_CELL": {
+		"drop": "NONE",
+		"count": 0
+	},
+	"DUNGEON_STAIRS": {
+		"drop": "NONE",
+		"count": 0
+	}
+}

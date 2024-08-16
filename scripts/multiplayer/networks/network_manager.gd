@@ -6,13 +6,14 @@ enum MULTIPLAYER_NETWORK_TYPE { ENET, STEAM }
 
 var active_network_type: MULTIPLAYER_NETWORK_TYPE = MULTIPLAYER_NETWORK_TYPE.ENET
 var steam_network_scene := preload("res://scenes/multiplayer/networks/steam_network.tscn")
+var multiplayer_scene = preload("res://scenes/multiplayer_player.tscn")
 var active_network
 
 func _build_multiplayer_network():
 	if not active_network:
 		print("Setting active_network")
 		
-		MultiplayerManager.multiplayer_mode_enabled = true
+		MultiplayerManager.MultiplayerModeEnabled = true
 		
 		match active_network_type:
 			MULTIPLAYER_NETWORK_TYPE.STEAM:
@@ -25,13 +26,12 @@ func _set_active_network(active_network_scene):
 	var network_scene_initialized = active_network_scene.instantiate()
 	active_network = network_scene_initialized
 	active_network._players_spawn_node = _players_spawn_node
-	active_network._tile_map = %TileMap
-	active_network._game = get_tree().get_root()
+	active_network.network_manager = self
 	add_child(active_network)
 
 func become_host(is_dedicated_server = false):
 	_build_multiplayer_network()
-	MultiplayerManager.host_mode_enabled = true if is_dedicated_server == false else false
+	MultiplayerManager.HostModeEnabled = true if is_dedicated_server == false else false
 	active_network.become_host()
 	
 func join_as_client(lobby_id = 0) -> bool:
@@ -41,3 +41,14 @@ func join_as_client(lobby_id = 0) -> bool:
 func list_lobbies():
 	_build_multiplayer_network()
 	active_network.list_lobbies()
+	
+func add_player(id: int):
+	print("Player %s joined the game!" % id)
+
+	var player_to_add = multiplayer_scene.instantiate()
+	player_to_add.GetShit()
+	player_to_add.PlayerId = id
+	player_to_add.name = str(id)
+	player_to_add.MaxHealth = player_to_add.StartMaxHealth
+	player_to_add.Health = player_to_add.StartMaxHealth
+	_players_spawn_node.add_child(player_to_add, true)

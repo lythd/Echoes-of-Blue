@@ -6,4 +6,12 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>EchoesofBlue</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
 </Project>

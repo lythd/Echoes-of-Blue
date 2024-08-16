@@ -1,0 +1,384 @@
+{
+	"BATTERING_RAM": {
+		"blunt": 50,
+		"durability": 500,
+		"effects": [
+			"SPEED_BOOST"
+		],
+		"piercing": -1,
+		"priority": 0
+	},
+	"DAGGER": {
+		"blunt": -1,
+		"durability": 2,
+		"effects": [
+			"SURPRISE"
+		],
+		"piercing": 60,
+		"priority": 0
+	},
+	"DIAMOND_AXE": {
+		"blunt": 100,
+		"durability": 5,
+		"effects": [],
+		"piercing": 400,
+		"priority": -1
+	},
+	"DIAMOND_SWORD": {
+		"blunt": 25,
+		"durability": 10,
+		"effects": [],
+		"piercing": 225,
+		"priority": 0
+	},
+	"DUAL_BOW": {
+		"blunt": -1,
+		"durability": 15,
+		"effects": [
+			"BOW",
+			"DOUBLE_HIT"
+		],
+		"piercing": 100,
+		"priority": 1
+	},
+	"EMERALD_STAFF": {
+		"blunt": -1,
+		"durability": 20,
+		"effects": [
+			"MAGIC"
+		],
+		"piercing": 200,
+		"priority": 0
+	},
+	"EMERALD_WAND": {
+		"blunt": -1,
+		"durability": 2000,
+		"effects": [
+			"MAGIC",
+			"MULTI_HIT"
+		],
+		"piercing": 75,
+		"priority": 0
+	},
+	"ENCHANTED_SHIELD": {
+		"blunt": 150,
+		"durability": 50,
+		"effects": [
+			"BLOCK",
+			"CRITICAL_CHANCE"
+		],
+		"piercing": 50,
+		"priority": 0
+	},
+	"ENCHANTED_SWORD": {
+		"blunt": 50,
+		"durability": 50,
+		"effects": [
+			"CRITICAL_CHANCE"
+		],
+		"piercing": 200,
+		"priority": 1
+	},
+	"EVENIFE": {
+		"blunt": -1,
+		"durability": 10,
+		"effects": [
+			"EVEN_OUT"
+		],
+		"piercing": 25,
+		"priority": 0
+	},
+	"FIST": {
+		"blunt": 25,
+		"durability": -1,
+		"effects": [
+			"HANDS"
+		],
+		"piercing": -1,
+		"priority": 0
+	},
+	"FLAMETHROWER": {
+		"blunt": -1,
+		"durability": 10,
+		"effects": [
+			"MAGIC",
+			"COUNTER MAGIC"
+		],
+		"piercing": 350,
+		"priority": 0
+	},
+	"METEOR_STAFF": {
+		"blunt": -1,
+		"durability": 25,
+		"effects": [
+			"MAGIC",
+			"CRITICAL_CHANCE"
+		],
+		"piercing": 400,
+		"priority": -2
+	},
+	"MASTER_BOLT": {
+		"blunt": -1,
+		"durability": 25,
+		"effects": [
+			"MAGIC"
+		],
+		"piercing": 300,
+		"priority": 1
+	},
+	"FLUTE": {
+		"blunt": -1,
+		"durability": 2000,
+		"effects": [
+			"MAGIC",
+			"SOOTHING"
+		],
+		"piercing": 100,
+		"priority": 2
+	},
+	"GOLD_AXE": {
+		"blunt": 80,
+		"durability": 2,
+		"effects": [
+			"CRITICAL CHANCE"
+		],
+		"piercing": 320,
+		"priority": -1
+	},
+	"GOLD_BOW": {
+		"blunt": -1,
+		"durability": 5,
+		"effects": [
+			"BOW",
+			"CRITICAL CHANCE"
+		],
+		"piercing": 175,
+		"priority": 1
+	},
+	"GOLD_SWORD": {
+		"blunt": 20,
+		"durability": 3,
+		"effects": [
+			"CRITICAL CHANCE"
+		],
+		"piercing": 180,
+		"priority": 0
+	},
+	"IRON_AXE": {
+		"blunt": 60,
+		"durability": 5,
+		"effects": [],
+		"piercing": 240,
+		"priority": -1
+	},
+	"IRON_SWORD": {
+		"blunt": 15,
+		"durability": 10,
+		"effects": [],
+		"piercing": 135,
+		"priority": 0
+	},
+	"KATANA": {
+		"blunt": -1,
+		"durability": 500,
+		"effects": [
+			"SPEED BOOST",
+			"SHARP"
+		],
+		"piercing": 50,
+		"priority": 0
+	},
+	"VULRINTH_AXE": {
+		"blunt": 300,
+		"durability": 10,
+		"effects": [],
+		"piercing": 1200,
+		"priority": -1
+	},
+	"VULRINTH_SWORD": {
+		"blunt": 75,
+		"durability": 20,
+		"effects": [],
+		"piercing": 675,
+		"priority": 0
+	},
+	"COMET_LANCE": {
+		"blunt": -1,
+		"durability": 25,
+		"effects": [
+			"CRITICAL_CHANCE",
+			"SPEED_BOOST"
+		],
+		"piercing": 500,
+		"priority": 0
+	},
+	"POWER_FLOWER": {
+		"blunt": -1,
+		"durability": 15,
+		"effects": [
+			"MAGIC",
+			"POWER_UP"
+		],
+		"piercing": 150,
+		"priority": 0
+	},
+	"ROCKET_LAUNCHER": {
+		"blunt": -1,
+		"durability": 5,
+		"effects": [],
+		"piercing": 400,
+		"priority": -2
+	},
+	"STAR_LAUNCHER": {
+		"blunt": -1,
+		"durability": 25,
+		"effects": [
+			"STAR_LAUNCHER",
+			"CRITICAL_CHANCE"
+		],
+		"piercing": 350,
+		"priority": 0
+	},
+	"SHURIKENS": {
+		"blunt": -1,
+		"durability": 1,
+		"effects": [
+			"MULTI_HIT",
+			"CRITICAL_CHANCE"
+		],
+		"piercing": 50,
+		"priority": 1
+	},
+	"SLEDGEHAMMER": {
+		"blunt": 150,
+		"durability": 2,
+		"effects": [
+			"DEFENSE_BASHER"
+		],
+		"piercing": -1,
+		"priority": 0
+	},
+	"SPEAR": {
+		"blunt": -1,
+		"durability": 3,
+		"effects": [],
+		"piercing": 150,
+		"priority": 1
+	},
+	"SPRINGY_SPRING": {
+		"blunt": 5,
+		"durability": 808,
+		"effects": [
+			"ELASTIC_POTENTIAL"
+		],
+		"piercing": -1,
+		"priority": -100
+	},
+	"STONE_AXE": {
+		"blunt": 40,
+		"durability": 500,
+		"effects": [
+			"FRAGILE"
+		],
+		"piercing": 160,
+		"priority": 0
+	},
+	"STONE_SWORD": {
+		"blunt": 10,
+		"durability": 500,
+		"effects": [
+			"FRAGILE"
+		],
+		"piercing": 90,
+		"priority": 0
+	},
+	"THE_SPADE": {
+		"blunt": 250,
+		"durability": 25,
+		"effects": [],
+		"piercing": -1,
+		"priority": -1
+	},
+	"TIN_BOW": {
+		"blunt": -1,
+		"durability": 40,
+		"effects": [
+			"BOW"
+		],
+		"piercing": 125,
+		"priority": 0
+	},
+	"TRUE_GOLD_AXE": {
+		"blunt": 70,
+		"durability": 5,
+		"effects": [
+			"LIGHT_WEIGHT",
+			"CRITICAL_CHANCE"
+		],
+		"piercing": 280,
+		"priority": 0
+	},
+	"WOOD_BOW": {
+		"blunt": -1,
+		"durability": 20,
+		"effects": [
+			"BOW"
+		],
+		"piercing": 75,
+		"priority": 1
+	},
+	"SHIV": {
+		"blunt": -1,
+		"durability": 5,
+		"effects": [],
+		"piercing": 50
+	},
+	"CROWBAR": {
+		"blunt": 40,
+		"durability": 15,
+		"effects": [
+			"STUN"
+		],
+		"piercing": -1,
+		"priority": 0
+	},
+	"BRASS_KNUCKLES": {
+		"blunt": 75,
+		"durability": 50,
+		"effects": [],
+		"piercing": 25,
+		"priority": 0
+	},
+	"BROKEN_BOTTLE": {
+		"blunt": -1,
+		"durability": 3,
+		"effects": [],
+		"piercing": 175,
+		"priority": 0
+	},
+	"METAL_PIPE": {
+		"blunt": 100,
+		"durability": 5,
+		"effects": [],
+		"piercing": -1,
+		"priority": 0
+	},
+	"SEISMOMETER": {
+		"blunt": 300,
+		"durability": 500,
+		"effects": [
+			"SEISMOMETER"
+		],
+		"piercing": -1,
+		"priority": 0
+	},
+	"EXTENDABLE_ARM": {
+		"blunt": 75,
+		"durability": 500,
+		"effects": [
+			"EXTENDABLE_ARM"
+		],
+		"piercing": -1,
+		"priority": 0
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"ARMOR_PENETRATING_ROCKET": {
+		"blunt": 150,
+		"effects": [],
+		"piercing": -1
+	},
+	"COMET_FRAGMENT": {
+		"blunt": -1,
+		"effects": [
+			"CRITICAL_CHANCE"
+		],
+		"piercing": 250
+	},
+	"BONE_ARROW": {
+		"blunt": -1,
+		"effects": [
+			"CRITICAL_CHANCE"
+		],
+		"piercing": 10
+	},
+	"EMERALD_ARROW": {
+		"blunt": -1,
+		"effects": [],
+		"piercing": 25
+	},
+	"EXPLOSIVE_ROCKET": {
+		"blunt": -1,
+		"effects": [],
+		"piercing": 200
+	},
+	"WOODEN_ARROW": {
+		"blunt": -1,
+		"effects": [],
+		"piercing": 5
+	},
+	"PIPE_BOMB": {
+		"blunt": 50,
+		"effects": [],
+		"piercing": 50
+	},
+	"MOLOTOV_COCKTAIL": {
+		"blunt": -1,
+		"effects": [],
+		"piercing": 150
+	}
+}

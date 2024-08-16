@@ -1,0 +1,1416 @@
+{
+	"ARMOR_PIERCING_ROCKET": {
+		"amount": 1,
+		"inputs": {
+			"MOLTEN_SULFUR": 10,
+			"TITANIUM_BAR": 20
+		},
+		"rocketrequired": true
+	},
+	"BATTERING_RAM": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 20
+		}
+	},
+	"PACKED_EXPERIENCE": {
+		"amount": 1,
+		"inputs": {
+			"EXPERIENCE": 100
+		}
+	},
+	"DENSE_EXPERIENCE": {
+		"amount": 1,
+		"inputs": {
+			"PACKED_EXPERIENCE": 100
+		}
+	},
+	"BINOCULARS": {
+		"amount": 1,
+		"inputs": {
+			"GLASS": 5,
+			"IRON_BAR": 5
+		}
+	},
+	"GLOWING_WORM": {
+		"amount": 1,
+		"inputs": {
+			"WORM": 1,
+			"MANA_CRYSTAL": 2
+		}
+	},
+	"FLYING_FISH": {
+		"amount": 1,
+		"inputs": {
+			"RAW_COD": 1,
+			"CLOUD": 25,
+			"STRING": 50,
+			"SUGAR": 25,
+			"MANA_CRYSTAL": 5
+		}
+	},
+	"GLOWING_COD": {
+		"amount": 1,
+		"inputs": {
+			"WORM": 1,
+			"MANA_CRYSTAL": 20
+		}
+	},
+	"BLUE_RINGED_OCTOPUS": {
+		"amount": 1,
+		"inputs": {
+			"SQUID": 1,
+			"MANA_CRYSTAL": 200
+		}
+	},
+	"BONE_ARROW": {
+		"amount": 5,
+		"inputs": {
+			"BONE": 1
+		}
+	},
+	"BONE_CHESTPLATE": {
+		"amount": 1,
+		"inputs": {
+			"BONE": 8
+		}
+	},
+	"BONE_RING": {
+		"amount": 1,
+		"inputs": {
+			"BONE": 5
+		}
+	},
+	"BREAD": {
+		"amount": 1,
+		"inputs": {
+			"WHEAT": 3
+		}
+	},
+	"BREAD_BUNDLE": {
+		"amount": 1,
+		"inputs": {
+			"BREAD": 10
+		}
+	},
+	"BRONZE_PICKAXE": {
+		"amount": 1,
+		"inputs": {
+			"BRONZE_BAR": 8,
+			"WOOD": 2
+		}
+	},
+	"CACTUS_SHIELD": {
+		"amount": 1,
+		"inputs": {
+			"CACTUS": 10,
+			"SHIELD": 1
+		}
+	},
+	"CAKE": {
+		"amount": 1,
+		"inputs": {
+			"WHEAT": 6
+		}
+	},
+	"CHAIN": {
+		"amount": 3,
+		"inputs": {
+			"SCREW": 6
+		}
+	},
+	"CHAIN_CHESTPLATE": {
+		"amount": 1,
+		"inputs": {
+			"CHAIN": 8
+		}
+	},
+	"COPPER_PICKAXE": {
+		"amount": 1,
+		"inputs": {
+			"COPPER_BAR": 6,
+			"WOOD": 2
+		}
+	},
+	"DAGGER": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 15,
+			"SILVER_BAR": 5,
+			"WOOD": 5
+		}
+	},
+	"DENSE_CHESTPLATE": {
+		"amount": 1,
+		"inputs": {
+			"SILVER_BAR": 4,
+			"TITANIUM_BAR": 4
+		}
+	},
+	"DIAMOND_AXE": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND": 3,
+			"WOOD": 2
+		}
+	},
+	"DIAMOND_BOOTS": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND": 4
+		}
+	},
+	"DIAMOND_CHESTPLATE": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND": 8
+		}
+	},
+	"DIAMOND_PICKAXE": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND": 16,
+			"WOOD": 2
+		}
+	},
+	"DIAMOND_SWORD": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND": 2,
+			"WOOD": 2
+		}
+	},
+	"DUAL_BOW": {
+		"amount": 1,
+		"inputs": {
+			"GOLD_BOW": 2,
+			"TITANIUM_BAR": 3
+		}
+	},
+	"EMERALD_ARROW": {
+		"amount": 5,
+		"inputs": {
+			"EMERALD": 1
+		}
+	},
+	"EMERALD_PICKAXE": {
+		"amount": 1,
+		"inputs": {
+			"EMERALD": 18,
+			"WOOD": 2
+		}
+	},
+	"EMERALD_SQUID": {
+		"amount": 1,
+		"inputs": {
+			"EMERALD": 20,
+			"SQUID": 1
+		}
+	},
+	"EMERALD_STAFF": {
+		"amount": 1,
+		"inputs": {
+			"EMERALD": 1,
+			"MANA_CRYSTAL": 1,
+			"SILVER_BAR": 20
+		}
+	},
+	"EMERALD_WAND": {
+		"amount": 1,
+		"inputs": {
+			"EMERALD": 1,
+			"MANA_CRYSTAL": 1,
+			"SILVER_BAR": 10
+		}
+	},
+	"ENCHANTED_SHIELD": {
+		"amount": 1,
+		"inputs": {
+			"EVENIFE": 1,
+			"SHIELD": 1
+		}
+	},
+	"ENCHANTED_SWORD": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_SWORD": 1,
+			"EVENIFE": 1
+		}
+	},
+	"EVENIFE": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND": 5,
+			"EMERALD": 5,
+			"SILVER_BAR": 10
+		}
+	},
+	"EXPLOSIVE_ROCKET": {
+		"amount": 1,
+		"inputs": {
+			"MOLTEN_SULFUR": 20,
+			"TITANIUM_BAR": 10
+		},
+		"rocketrequired": true
+	},
+	"FISHING_CAP": {
+		"amount": 1,
+		"inputs": {
+			"LEATHER": 5
+		}
+	},
+	"FLAMETHROWER": {
+		"amount": 1,
+		"inputs": {
+			"MOLTEN_SULFUR": 10,
+			"BRONZE_BAR": 25
+		}
+	},
+	"FLORAL_ARMOR": {
+		"amount": 1,
+		"inputs": {
+			"ALGAE": 25,
+			"MANA_CRYSTAL": 1,
+			"VINE": 25,
+			"WOOD": 25
+		}
+	},
+	"GAUNTLET": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 25
+		}
+	},
+	"GLASS": {
+		"amount": 2,
+		"inputs": {
+			"COAL": 1,
+			"SAND": 2
+		}
+	},
+	"GOLD_AXE": {
+		"amount": 1,
+		"inputs": {
+			"GOLD_BAR": 3,
+			"WOOD": 2
+		}
+	},
+	"GOLD_BOW": {
+		"amount": 1,
+		"inputs": {
+			"GOLD_BAR": 3,
+			"STRING": 3
+		}
+	},
+	"GOLD_BRACELET": {
+		"amount": 1,
+		"inputs": {
+			"GOLD_BAR": 5
+		}
+	},
+	"GOLD_GOLDFISH": {
+		"amount": 1,
+		"inputs": {
+			"GOLD_BAR": 1,
+			"GOLDFISH": 1
+		}
+	},
+	"GOLD_PICKAXE": {
+		"amount": 1,
+		"inputs": {
+			"GOLD_BAR": 14,
+			"WOOD": 2
+		}
+	},
+	"GOLD_SWORD": {
+		"amount": 1,
+		"inputs": {
+			"GOLD_BAR": 2,
+			"WOOD": 2
+		}
+	},
+	"GOOD_ROD": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 5,
+			"STRING": 3
+		}
+	},
+	"HEAL_BELL": {
+		"amount": 1,
+		"inputs": {
+			"EMERALD": 5,
+			"SILVER_BAR": 20
+		}
+	},
+	"ILMANGO": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 3,
+			"MANGO": 1
+		}
+	},
+	"IRON_AXE": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 3,
+			"WOOD": 2
+		}
+	},
+	"IRON_BOOTS": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 4
+		}
+	},
+	"IRON_CHESTPLATE": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 8
+		}
+	},
+	"IRON_PICKAXE": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 10,
+			"WOOD": 2
+		}
+	},
+	"IRON_SWORD": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 2,
+			"WOOD": 2
+		}
+	},
+	"KATANA": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 20,
+			"SILVER_BAR": 10,
+			"WOOD": 10
+		}
+	},
+	"LAVAPROOF_FISHING_HOOK": {
+		"amount": 1,
+		"inputs": {
+			"MOLTEN_SULFUR": 1,
+			"IRON_BAR": 5
+		}
+	},
+	"LEATHER": {
+		"amount": 1,
+		"inputs": {
+			"FILET_MIGNON": 1
+		}
+	},
+	"MAGIC_CRYSTAL": {
+		"amount": 1,
+		"inputs": {
+			"MANA_CRYSTAL": 2000
+		}
+	},
+	"MAGIC_FISHING_CAP": {
+		"amount": 1,
+		"inputs": {
+			"FISHING_CAP": 1,
+			"MANA_CRYSTAL": 1
+		}
+	},
+	"MAGIC_GUARD": {
+		"amount": 1,
+		"inputs": {
+			"EMERALD": 1,
+			"MANA_CRYSTAL": 1,
+			"TITANIUM_BAR": 5
+		}
+	},
+	"MINING_HELMET": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 5,
+			"TORCH": 5
+		}
+	},
+	"ROCK_HELMET": {
+		"amount": 1,
+		"inputs": {
+			"MINING_HELMET": 1,
+			"ROCKFISH": 1
+		}
+	},
+	"MUDPIE": {
+		"amount": 1,
+		"inputs": {
+			"DIRT": 5,
+			"PUMPKIN_PIE": 1
+		}
+	},
+	"COMET_LANCE": {
+		"amount": 1,
+		"inputs": {
+			"COMET_FRAGMENT": 2,
+			"WOOD": 1
+		}
+	},
+	"COMET_ARMOR": {
+		"amount": 1,
+		"inputs": {
+			"COMET_FRAGMENT": 5
+		}
+	},
+	"STARLIGHT_GOGGLES": {
+		"amount": 1,
+		"inputs": {
+			"COMET_FRAGMENT": 1,
+			"GLASS": 10
+		}
+	},
+	"STAR_LAUNCHER": {
+		"amount": 1,
+		"inputs": {
+			"COMET_FRAGMENT": 1,
+			"ROCKET_LAUNCHER": 1
+		}
+	},
+	"METEOR_STAFF": {
+		"amount": 1,
+		"inputs": {
+			"COMET_FRAGMENT": 2,
+			"MANA_CRYSTAL": 5
+		}
+	},
+	"VULRINTH_AXE": {
+		"amount": 1,
+		"inputs": {
+			"VULRINTH_BAR": 3,
+			"WOOD": 2
+		}
+	},
+	"VULRINTH_HELMET": {
+		"amount": 1,
+		"inputs": {
+			"VULRINTH_BAR": 5
+		}
+	},
+	"VULRINTH_PICKAXE": {
+		"amount": 1,
+		"inputs": {
+			"VULRINTH_BAR": 20,
+			"WOOD": 2
+		}
+	},
+	"VULRINTH_SWORD": {
+		"amount": 1,
+		"inputs": {
+			"VULRINTH_BAR": 2,
+			"WOOD": 2
+		}
+	},
+	"VULRINTH_WORM": {
+		"amount": 1,
+		"inputs": {
+			"VULRINTH_BAR": 1,
+			"WORM": 1
+		}
+	},
+	"OLD_ROD": {
+		"amount": 1,
+		"inputs": {
+			"STRING": 3,
+			"WOOD": 5
+		}
+	},
+	"PICKAXE": {
+		"amount": 1,
+		"inputs": {
+			"STONE": 4,
+			"WOOD": 2
+		}
+	},
+	"PORTABLE_WALL": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 10,
+			"STONE": 20
+		}
+	},
+	"POWER_FLOWER": {
+		"amount": 1,
+		"inputs": {
+			"ALGAE": 5,
+			"MANA_CRYSTAL": 1,
+			"VINE": 5,
+			"WOOD": 5
+		}
+	},
+	"PUMPKIN_PIE": {
+		"amount": 1,
+		"inputs": {
+			"EGG": 1,
+			"PUMPKIN": 1,
+			"SUGAR": 1
+		}
+	},
+	"ROCKET_LAUNCHER": {
+		"amount": 1,
+		"inputs": {
+			"MOLTEN_SULFUR": 50,
+			"TITANIUM_BAR": 50
+		},
+		"rocketrequired": true
+	},
+	"SCREW": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 1
+		}
+	},
+	"TORCH": {
+		"amount": 1,
+		"inputs": {
+			"COAL": 1,
+			"WOOD": 1
+		}
+	},
+	"SEAFOOD_DINNER": {
+		"amount": 1,
+		"inputs": {
+			"COOKED_COD": 20,
+			"COOKED_SALMON": 20,
+			"PIRANHA": 10,
+			"ROCKFISH": 1,
+			"GOLDFISH": 2,
+			"PUFFERFISH": 10,
+			"SILVER_BAR": 10,
+			"SQUID": 5
+		}
+	},
+	"SHIELD": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 1,
+			"WOOD": 6
+		}
+	},
+	"SHURIKENS": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 5,
+			"SILVER_BAR": 5
+		}
+	},
+	"SILICON_WAFER": {
+		"amount": 1,
+		"inputs": {
+			"RAW_SILICON": 1
+		}
+	},
+	"SILVER_PICKAXE": {
+		"amount": 1,
+		"inputs": {
+			"SILVER_BAR": 12,
+			"WOOD": 2
+		}
+	},
+	"SLEDGEHAMMER": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 50,
+			"SCREW": 1,
+			"WOOD": 50
+		}
+	},
+	"SPEAR": {
+		"amount": 1,
+		"inputs": {
+			"GOLD_BAR": 10,
+			"IRON_BAR": 15
+		}
+	},
+	"STONE": {
+		"amount": 1,
+		"inputs": {
+			"ORE_CHUNK": 1
+		}
+	},
+	"STONE_AXE": {
+		"amount": 1,
+		"inputs": {
+			"STONE": 3,
+			"WOOD": 2
+		}
+	},
+	"STONE_SWORD": {
+		"amount": 1,
+		"inputs": {
+			"STONE": 2,
+			"WOOD": 2
+		}
+	},
+	"SUGAR": {
+		"amount": 1,
+		"inputs": {
+			"SUGAR_CANE": 1
+		}
+	},
+	"SUPER_ROD": {
+		"amount": 1,
+		"inputs": {
+			"GOLD_BAR": 5,
+			"STRING": 3
+		}
+	},
+	"TEMMIES_PI": {
+		"amount": 1,
+		"inputs": {
+			"PUMPKIN_PIE": 1
+		}
+	},
+	"THORNS_CHESTPLATE": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_CHESTPLATE": 1,
+			"THORN": 5
+		}
+	},
+	"TIN_BOW": {
+		"amount": 1,
+		"inputs": {
+			"STRING": 3,
+			"TIN_BAR": 3
+		}
+	},
+	"TITANIUM_CHESTPLATE": {
+		"amount": 1,
+		"inputs": {
+			"TITANIUM_BAR": 8
+		}
+	},
+	"WOOD_BOW": {
+		"amount": 1,
+		"inputs": {
+			"STRING": 3,
+			"WOOD": 3
+		}
+	},
+	"WOODEN_ARROW": {
+		"amount": 5,
+		"inputs": {
+			"WOOD": 1
+		}
+	},
+	"WOOD_FLOOR": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 5
+		}
+	},
+	"STONE_FLOOR": {
+		"amount": 1,
+		"inputs": {
+			"STONE": 5
+		}
+	},
+	"LIMESTONE_FLOOR": {
+		"amount": 1,
+		"inputs": {
+			"LIMESTONE": 5
+		}
+	},
+	"IRON_FLOOR": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 5
+		}
+	},
+	"WOOD_WALL": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 5
+		}
+	},
+	"STONE_WALL": {
+		"amount": 1,
+		"inputs": {
+			"STONE": 5
+		}
+	},
+	"LIMESTONE_WALL": {
+		"amount": 1,
+		"inputs": {
+			"LIMESTONE": 5
+		}
+	},
+	"IRON_WALL": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 5
+		}
+	},
+	"WOOD_DOOR": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 5
+		}
+	},
+	"STONE_DOOR": {
+		"amount": 1,
+		"inputs": {
+			"STONE": 5
+		}
+	},
+	"LIMESTONE_DOOR": {
+		"amount": 1,
+		"inputs": {
+			"LIMESTONE": 5
+		}
+	},
+	"IRON_DOOR": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 5
+		}
+	},
+	"WOOD_POLE": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 5
+		}
+	},
+	"STONE_POLE": {
+		"amount": 1,
+		"inputs": {
+			"STONE": 5
+		}
+	},
+	"LIMESTONE_POLE": {
+		"amount": 1,
+		"inputs": {
+			"LIMESTONE": 5
+		}
+	},
+	"IRON_POLE": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 5
+		}
+	},
+	"WOOD_FENCE": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 5
+		}
+	},
+	"STONE_FENCE": {
+		"amount": 1,
+		"inputs": {
+			"STONE": 5
+		}
+	},
+	"LIMESTONE_FENCE": {
+		"amount": 1,
+		"inputs": {
+			"LIMESTONE": 5
+		}
+	},
+	"IRON_FENCE": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 5
+		}
+	},
+	"WOOD_GATE": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 5
+		}
+	},
+	"STONE_GATE": {
+		"amount": 1,
+		"inputs": {
+			"STONE": 5
+		}
+	},
+	"LIMESTONE_GATE": {
+		"amount": 1,
+		"inputs": {
+			"LIMESTONE": 5
+		}
+	},
+	"IRON_GATE": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 5
+		}
+	},
+	"SHIV": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 15,
+			"WOOD": 5
+		}
+	},
+	"CROWBAR": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 20
+		}
+	},
+	"COAL_BURNER": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 1,
+			"STONE": 10
+		}
+	},
+	"OIL_BURNER": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 1,
+			"STONE": 10
+		}
+	},
+	"SOLAR_PANEL": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 1,
+			"GLASS": 10,
+			"DIAMOND": 1
+		}
+	},
+	"WINDMILL": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 1,
+			"TIN_BAR": 10
+		}
+	},
+	"GEOTHERMAL_POWER_PLANT": {
+		"amount": 1,
+		"inputs": {
+			"GENERATOR": 3,
+			"BRONZE_BAR": 25
+		}
+	},
+	"BATTERY_STATION": {
+		"amount": 1,
+		"inputs": {
+			"COPPER_WIRING": 5,
+			"IRON_BAR": 5
+		}
+	},
+	"BATTERY_CHARGER": {
+		"amount": 1,
+		"inputs": {
+			"COPPER_WIRING": 5,
+			"IRON_BAR": 5
+		}
+	},
+	"TREE_CHOPPER_9000": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_SAW": 1,
+			"BASIC_MACHINE_PART": 1,
+			"IRON_BAR": 5
+		}
+	},
+	"TREE_CHOPPER_9001": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_SAW": 1,
+			"BASIC_MACHINE_PART": 1,
+			"BRONZE_BAR": 5
+		}
+	},
+	"EXCAVATOR": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 1,
+			"TIN_BAR": 25
+		}
+	},
+	"AUTOMATIC_PLASTIC_SHOVEL": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 1,
+			"RUBBER": 15
+		}
+	},
+	"JERRYS_TRUCK": {
+		"amount": 1,
+		"inputs": {
+			"RUBBER": 5,
+			"BASIC_MACHINE_PART": 1,
+			"IRON_BAR": 25
+		}
+	},
+	"BLACKSTONE_QUARRY": {
+		"amount": 1,
+		"inputs": {
+			"STONE_PICKAXE": 1,
+			"BASIC_MACHINE_PART": 10,
+			"SMOKE_WOOD": 250
+		}
+	},
+	"STONE_QUARRY": {
+		"amount": 1,
+		"inputs": {
+			"STONE_PICKAXE": 1,
+			"BASIC_MACHINE_PART": 10,
+			"WOOD": 250
+		}
+	},
+	"EARLY_BIRD": {
+		"amount": 1,
+		"inputs": {
+			"EGG": 8
+		}
+	},
+	"ROBOTIC_EARLY_BIRD": {
+		"amount": 1,
+		"inputs": {
+			"TIN_BAR": 5,
+			"GOLD_WIRING": 3
+		}
+	},
+	"CHICKEN_COOP": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 40,
+			"BRONZE_BAR": 5,
+			"EGG": 80
+		}
+	},
+	"AUTOMATIC_CACTUS_FARM": {
+		"amount": 1,
+		"inputs": {
+			"CACTUS": 10,
+			"BASIC_MACHINE_PART": 1,
+			"SAND": 50
+		}
+	},
+	"AUTOMATIC_SUGARCANE_FARM": {
+		"amount": 1,
+		"inputs": {
+			"SUGARCANE": 10,
+			"BASIC_MACHINE_PART": 1,
+			"SAND": 50
+		}
+	},
+	"MANGO_TREE_SHAKER": {
+		"amount": 1,
+		"inputs": {
+			"MANGO": 10,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"COCONUT_TREE_SHAKER": {
+		"amount": 1,
+		"inputs": {
+			"COCONUT": 10,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"AUTOMATIC_WATERMELON_FARM": {
+		"amount": 1,
+		"inputs": {
+			"WATERMELON": 10,
+			"BASIC_MACHINE_PART": 1,
+			"SAND": 50
+		}
+	},
+	"GIANT_PUMPKIN_FARM": {
+		"amount": 1,
+		"inputs": {
+			"PUMPKIN_SEED": 20
+		}
+	},
+	"ALIEN_CROP_CIRCLE": {
+		"amount": 1,
+		"inputs": {
+			"BONE": 100,
+			"MANA_CRYSTAL": 1
+		}
+	},
+	"BACONATOR": {
+		"amount": 1,
+		"inputs": {
+			"IRON_SWORD": 1,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"WOOLY_WHEEL_OF_DOOM": {
+		"amount": 1,
+		"inputs": {
+			"IRON_SWORD": 1,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"COW_CHAMBER": {
+		"amount": 1,
+		"inputs": {
+			"IRON_SWORD": 1,
+			"BASIC_MACHINE_PART": 1,
+			"WOOD": 50
+		}
+	},
+	"SHEEP_PYRE": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 50
+		}
+	},
+	"THE_DELUXE_FISH_SLAYER_COMPOSITE_PRO": {
+		"amount": 1,
+		"inputs": {
+			"STRING": 50,
+			"IRON_BAR": 5,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"RUBBER_TAPPER": {
+		"amount": 1,
+		"inputs": {
+			"WOOD": 5
+		}
+	},
+	"VOLCANO_VANQUISHER": {
+		"amount": 1,
+		"inputs": {
+			"IRON_PICKAXE": 1,
+			"BRONZE_BAR": 5,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"VACUUM_CLEANER": {
+		"amount": 1,
+		"inputs": {
+			"TIN_BAR": 15,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"LOOM": {
+		"amount": 1,
+		"inputs": {
+			"STRING": 25,
+			"WOOD": 15,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"SILICON_EXTRACTOR": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 25,
+			"BASIC_MACHINE_PART": 1
+		}
+	},
+	"OIL_DRILLING_RIG": {
+		"amount": 1,
+		"inputs": {
+			"COPPER_BAR": 25,
+			"BASIC_MACHINE_PART": 3
+		}
+	},
+	"DEEP_QUARRY": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_PICKAXE": 1,
+			"BASIC_MACHINE_PART": 10,
+			"WOOD": 250
+		}
+	},
+	"SENTIENT_MINECART": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_PICKAXE": 1,
+			"BASIC_MACHINE_PART": 1,
+			"IRON_BAR": 5
+		}
+	},
+	"GOBLIN_MINER": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_PICKAXE": 1,
+			"MANA_CRYSTAL": 1,
+			"GOLD_ORE": 5,
+			"MUTTON": 5
+		}
+	},
+	"VILLAGER_MINER": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_PICKAXE": 1,
+			"MANA_CRYSTAL": 1,
+			"EMERALD": 1,
+			"MUTTON": 5
+		}
+	},
+	"DIAMOND_COMPRESSOR": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 12,
+			"TITANIUM_BAR": 45,
+			"BASIC_MACHINE_PART": 30,
+			"INSULATED_WIRING": 750,
+			"SCREW": 1300
+		}
+	},
+	"DIAMOND_SAW_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 2,
+			"BASIC_MACHINE_PART": 1,
+			"INSULATED_WIRING": 20,
+			"SCREW": 50
+		}
+	},
+	"ORE_EXTRACTOR": {
+		"amount": 1,
+		"inputs": {
+			"DIAMOND_SAW": 1,
+			"GENERATOR": 2,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 20,
+			"COPPER_WIRING": 20,
+			"SCREW": 80
+		}
+	},
+	"COPPER_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"TIN_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"BRONZE_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 1,
+			"BASIC_MACHINE_PART": 3,
+			"INSULATED_WIRING": 50,
+			"SCREW": 200
+		}
+	},
+	"IRON_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 2,
+			"BASIC_MACHINE_PART": 3,
+			"INSULATED_WIRING": 75,
+			"SCREW": 300
+		}
+	},
+	"SILVER_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 2,
+			"BASIC_MACHINE_PART": 4,
+			"INSULATED_WIRING": 100,
+			"SCREW": 400
+		}
+	},
+	"GOLD_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 3,
+			"BASIC_MACHINE_PART": 4,
+			"INSULATED_WIRING": 125,
+			"SCREW": 500
+		}
+	},
+	"TITANIUM_MOLDER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 3,
+			"BASIC_MACHINE_PART": 5,
+			"INSULATED_WIRING": 150,
+			"SCREW": 600
+		}
+	},
+	"BREAD_MILL": {
+		"amount": 1,
+		"inputs": {
+			"MILL": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"GOLDIFIER": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"COD_COOKER": {
+		"amount": 1,
+		"inputs": {
+			"MICROWAVE": 1
+		}
+	},
+	"SALMON_COOKER": {
+		"amount": 1,
+		"inputs": {
+			"MICROWAVE": 1
+		}
+	},
+	"MICROWAVE_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"SILICON_FABRICATOR": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 2,
+			"SOLDREING_IRON": 4,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"SCREW_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"COPPER_WIRE_CUTTER": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"WIRE_INSULATOR": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 2,
+			"GOLD_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"GOLD_WIRE_CUTTER": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"ADVANCED_MACHINE_PART": 2,
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 75,
+			"SCREW": 200
+		}
+	},
+	"BASIC_MACHINE_PART_MAKER": {
+		"amount": 1,
+		"inputs": {
+			"IRON_BAR": 60,
+			"TIN_BAR": 25,
+			"COPPER_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"ADVANCED_MACHINE_PART_MAKER": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"GENERATOR_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 2,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"SOLDERING_IRON_MAKER": {
+		"amount": 1,
+		"inputs": {
+			"PLASMA_CUTTER": 1,
+			"BASIC_MACHINE_PART": 3,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"MILL_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 1,
+			"BASIC_MACHINE_PART": 4,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"INDUSTRIAL_PRESS_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"ADVANCED_MACHINE_PART": 5,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"PLASMA_CUTTER_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"ADVANCED_MACHINE_PART": 5,
+			"INSULATED_WIRING": 25,
+			"SCREW": 100
+		}
+	},
+	"TANK_FACTORY": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 5,
+			"PLASMA_CUTTER": 5,
+			"ADVANCED_MACHINE_PART": 10,
+			"INSULATED_WIRING": 250,
+			"SCREW": 1000
+		}
+	},
+	"SPACE_ROCKET_ASSEMBLER": {
+		"amount": 1,
+		"inputs": {
+			"INDUSTRIAL_PRESS": 10,
+			"PLASMA_CUTTER": 10,
+			"ADVANCED_MACHINE_PART": 20,
+			"GOLD_WIRING": 50,
+			"INSULATED_WIRING": 250,
+			"SCREW": 1000
+		}
+	},
+	"GRAPPLING_HOOK_MAKER": {
+		"amount": 1,
+		"inputs": {
+			"BASIC_MACHINE_PART": 1
+		}
+	}
+}

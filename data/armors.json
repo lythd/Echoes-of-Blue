@@ -1,0 +1,129 @@
+{
+	"BONE_CHESTPLATE": {
+		"defense": 150,
+		"durability": 20,
+		"effects": [
+			"CRITICAL_CHANCE",
+			"RANGER"
+		],
+		"priority": 0
+	},
+	"CHAINMAIL_CHESTLATE": {
+		"defense": 150,
+		"durability": 20,
+		"effects": [
+			"LIGHT_WEIGHT",
+			"SLASH"
+		],
+		"priority": 0
+	},
+	"DENSE_CHESTPLATE": {
+		"defense": 300,
+		"durability": 20,
+		"effects": [
+			"DENSE"
+		],
+		"priority": 0
+	},
+	"DIAMOND_BOOTS": {
+		"defense": 90,
+		"durability": 5,
+		"effects": [],
+		"priority": 1
+	},
+	"DIAMOND_CHESTPLATE": {
+		"defense": 360,
+		"durability": 10,
+		"effects": [],
+		"priority": 0
+	},
+	"FISHING_CAP": {
+		"defense": 10,
+		"durability": 20,
+		"effects": [
+			"FISHING_BUFF"
+		],
+		"priority": 0
+	},
+	"FLORAL_ARMOR": {
+		"defense": 80,
+		"durability": 20,
+		"effects": [
+			"REGENERATOR"
+		],
+		"priority": 0
+	},
+	"IRON_BOOTS": {
+		"defense": 50,
+		"durability": 10,
+		"effects": [],
+		"priority": 1
+	},
+	"IRON_CHESTPLATE": {
+		"defense": 200,
+		"durability": 20,
+		"effects": [],
+		"priority": 0
+	},
+	"MAGIC_FISHING_CAP": {
+		"defense": 10,
+		"durability": 30,
+		"effects": [
+			"STRONG_FISHING_BUFF"
+		],
+		"priority": 0
+	},
+	"MINING_HELMET": {
+		"defense": 50,
+		"durability": 50,
+		"effects": [
+			"MINING_BUFF"
+		],
+		"priority": 0
+	},
+	"ROCK_HELMET": {
+		"defense": 150,
+		"durability": 150,
+		"effects": [
+			"STRONG_MINING_BUFF"
+		],
+		"priority": 0
+	},
+	"VULRINTH_HELMET": {
+		"defense": 450,
+		"durability": 20,
+		"effects": [],
+		"priority": 0
+	},
+	"COMET_ARMOR": {
+		"defense": 400,
+		"durability": 500,
+		"effects": [
+			"CRITICAL_CHANCE"
+		],
+		"priority": 0
+	},
+	"STARLIGHT_GOGGLES": {
+		"defense": 40,
+		"durability": 250,
+		"effects": [
+			"STARLIGHT",
+			"CRITICAL_CHANCE"
+		],
+		"priority": 0
+	},
+	"THORNS_CHESTPLATE": {
+		"defense": 340,
+		"durability": 4,
+		"effects": [
+			"THORNS_DAMAGE"
+		],
+		"priority": 0
+	},
+	"TITANIUM_CHESTPLATE": {
+		"defense": 500,
+		"durability": 100,
+		"effects": [],
+		"priority": -1
+	}
+}

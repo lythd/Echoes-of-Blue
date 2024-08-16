@@ -1,0 +1,158 @@
+{
+	"BREAD": {
+		"energy": 4,
+		"health": 0
+	},
+	"BREAD_BUNDLE": {
+		"energy": 45,
+		"health": 25
+	},
+	"CACTUS": {
+		"energy": 11,
+		"health": -3
+	},
+	"CAKE": {
+		"energy": 10,
+		"health": 0
+	},
+	"CARAMELS_CREAM": {
+		"energy": 5,
+		"health": 0
+	},
+	"CHUM": {
+		"energy": -10,
+		"health": 0
+	},
+	"COOKED_COD": {
+		"energy": 30,
+		"health": 0
+	},
+	"COOKED_SALMON": {
+		"energy": 50,
+		"health": 0
+	},
+	"COOKIE": {
+		"energy": 4,
+		"health": 0
+	},
+	"EMERALD_SQUID": {
+		"energy": 3000,
+		"health": 0
+	},
+	"FILET_MIGNON": {
+		"energy": 225,
+		"health": 0
+	},
+	"GOLDEN_STEAK": {
+		"energy": 175,
+		"health": 0
+	},
+	"GOLDFISH": {
+		"energy": 10,
+		"health": 0
+	},
+	"GOLD_GOLDFISH": {
+		"energy": 100,
+		"health": 0
+	},
+	"MANGO": {
+		"energy": 11,
+		"health": 0
+	},
+	"COCONUT": {
+		"energy": 11,
+		"health": 0
+	},
+	"MILK": {
+		"energy": 4,
+		"health": 1
+	},
+	"MOLDY_BREAD": {
+		"energy": -10,
+		"health": -10
+	},
+	"MUD_PIE": {
+		"energy": 1,
+		"health": -1
+	},
+	"MUTTON": {
+		"energy": 100,
+		"health": 0
+	},
+	"BACON": {
+		"energy": 24,
+		"health": 0
+	},
+	"VULRINTH_WORM": {
+		"energy": 5000,
+		"health": 0
+	},
+	"POTATO": {
+		"energy": 10,
+		"health": 0
+	},
+	"PUFFERFISH": {
+		"energy": 50,
+		"health": -50
+	},
+	"PUMPKIN": {
+		"energy": 15,
+		"health": 0
+	},
+	"PUMPKIN_PIE": {
+		"energy": 45,
+		"health": 0
+	},
+	"RAW_COD": {
+		"energy": 3,
+		"health": -1
+	},
+	"RAW_SALMON": {
+		"energy": 5,
+		"health": -1
+	},
+	"PIRANHA": {
+		"energy": 10,
+		"health": 0
+	},
+	"ROCKFISH": {
+		"energy": 15,
+		"health": -15
+	},
+	"ROASTED_TURKEY": {
+		"energy": 20,
+		"health": 0
+	},
+	"SEAFOOD_DINNER": {
+		"energy": 40000,
+		"health": 25
+	},
+	"SEAL_MEAT": {
+		"energy": 25,
+		"health": 0
+	},
+	"SQUID": {
+		"energy": 300,
+		"health": 0
+	},
+	"TEMMIES_PI": {
+		"energy": 50,
+		"health": 0
+	},
+	"VODKA": {
+		"energy": 10,
+		"health": -3
+	},
+	"WATERMELON": {
+		"energy": 19,
+		"health": 0
+	},
+	"WHEAT": {
+		"energy": 1,
+		"health": 0
+	},
+	"WORM": {
+		"energy": 1,
+		"health": 0
+	}
+}

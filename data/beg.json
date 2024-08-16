@@ -1,0 +1,19 @@
+{
+	"COMMON": {
+		"COIN": [25, 50],
+		"PICKAXE": 1,
+		"BREAD": [12, 25]
+	},
+	"UNCOMMON": {
+		"COIN": [50, 100],
+		"COPPER_PICKAXE": 1,
+		"COOKED_COD": [2, 5]
+	},
+	"RARE": {
+		"GOLDEN_STEAK": [7, 15],
+		"GOLD_PICKAXE": 1
+	},
+	"VERYRARE": {
+		"COIN": [5000, 10000]
+	}
+}

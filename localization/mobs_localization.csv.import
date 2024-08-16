@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bivhpxw2c5gd7"
+
+[deps]
+
+files=["res://localization/mobs_localization.en_US.translation", "res://localization/mobs_localization.fr_FR.translation", "res://localization/mobs_localization.es_MX.translation", "res://localization/mobs_localization.de_DE.translation", "res://localization/mobs_localization.it_IT.translation", "res://localization/mobs_localization.pt_BR.translation", "res://localization/mobs_localization.pt_PT.translation", "res://localization/mobs_localization.ru_RU.translation", "res://localization/mobs_localization.el_GR.translation", "res://localization/mobs_localization.tr_TR.translation", "res://localization/mobs_localization.da_DK.translation", "res://localization/mobs_localization.nb_NB.translation", "res://localization/mobs_localization.sv_SE.translation", "res://localization/mobs_localization.nl_NL.translation", "res://localization/mobs_localization.pl_PL.translation", "res://localization/mobs_localization.fi_FI.translation", "res://localization/mobs_localization.ja_JP.translation", "res://localization/mobs_localization.zh_CN.translation", "res://localization/mobs_localization.zh_TW.translation", "res://localization/mobs_localization.ko_KR.translation", "res://localization/mobs_localization.cs_CZ.translation", "res://localization/mobs_localization.hu_HU.translation", "res://localization/mobs_localization.ro_RO.translation", "res://localization/mobs_localization.th_TH.translation", "res://localization/mobs_localization.bg_BG.translation", "res://localization/mobs_localization.he_IL.translation", "res://localization/mobs_localization.ar.translation", "res://localization/mobs_localization.bs_BS.translation"]
+
+source_file="res://localization/mobs_localization.csv"
+dest_files=["res://localization/mobs_localization.en_US.translation", "res://localization/mobs_localization.fr_FR.translation", "res://localization/mobs_localization.es_MX.translation", "res://localization/mobs_localization.de_DE.translation", "res://localization/mobs_localization.it_IT.translation", "res://localization/mobs_localization.pt_BR.translation", "res://localization/mobs_localization.pt_PT.translation", "res://localization/mobs_localization.ru_RU.translation", "res://localization/mobs_localization.el_GR.translation", "res://localization/mobs_localization.tr_TR.translation", "res://localization/mobs_localization.da_DK.translation", "res://localization/mobs_localization.nb_NB.translation", "res://localization/mobs_localization.sv_SE.translation", "res://localization/mobs_localization.nl_NL.translation", "res://localization/mobs_localization.pl_PL.translation", "res://localization/mobs_localization.fi_FI.translation", "res://localization/mobs_localization.ja_JP.translation", "res://localization/mobs_localization.zh_CN.translation", "res://localization/mobs_localization.zh_TW.translation", "res://localization/mobs_localization.ko_KR.translation", "res://localization/mobs_localization.cs_CZ.translation", "res://localization/mobs_localization.hu_HU.translation", "res://localization/mobs_localization.ro_RO.translation", "res://localization/mobs_localization.th_TH.translation", "res://localization/mobs_localization.bg_BG.translation", "res://localization/mobs_localization.he_IL.translation", "res://localization/mobs_localization.ar.translation", "res://localization/mobs_localization.bs_BS.translation"]
+
+[params]
+
+compress=true
+delimiter=0

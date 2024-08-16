@@ -1,0 +1,87 @@
+[gd_scene load_steps=10 format=3 uid="uid://bj6i7r21pmwqo"]
+
+[ext_resource type="Script" path="res://scripts/nodes/Attack.cs" id="1_0n2tf"]
+[ext_resource type="Texture2D" uid="uid://2ck86h6s738y" path="res://assets/sprites/attack_animation.png" id="1_su7pl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qqnoi"]
+radius = 12.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4d2d"]
+atlas = ExtResource("1_su7pl")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgwgb"]
+atlas = ExtResource("1_su7pl")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ann2i"]
+atlas = ExtResource("1_su7pl")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p7dws"]
+atlas = ExtResource("1_su7pl")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ydbk2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4d2d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgwgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ann2i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p7dws")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_nye31"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:scale")
+properties/1/spawn = true
+properties/1/replication_mode = 2
+properties/2/path = NodePath(".:Damage")
+properties/2/spawn = true
+properties/2/replication_mode = 2
+properties/3/path = NodePath(".:Id")
+properties/3/spawn = true
+properties/3/replication_mode = 1
+
+[node name="Attack" type="Node2D"]
+script = ExtResource("1_0n2tf")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -10)
+shape = SubResource("CircleShape2D_qqnoi")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.333
+one_shot = true
+autostart = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_ydbk2")
+autoplay = "default"
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_nye31")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

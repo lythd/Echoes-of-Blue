@@ -1,0 +1,47 @@
+{
+	"BRONZE_PICKAXE": {
+		"double": 25,
+		"durability": 30,
+		"tier": 2
+	},
+	"COPPER_PICKAXE": {
+		"double": 10,
+		"durability": 20,
+		"tier": 1
+	},
+	"DIAMOND_PICKAXE": {
+		"double": 50,
+		"durability": 150,
+		"tier": 6
+	},
+	"EMERALD_PICKAXE": {
+		"double": 60,
+		"durability": 300,
+		"tier": 7
+	},
+	"GOLD_PICKAXE": {
+		"double": 50,
+		"durability": 70,
+		"tier": 5
+	},
+	"IRON_PICKAXE": {
+		"double": 25,
+		"durability": 60,
+		"tier": 3
+	},
+	"VULRINTH_PICKAXE": {
+		"double": 50,
+		"durability": 15000,
+		"tier": 8
+	},
+	"PICKAXE": {
+		"double": 0,
+		"durability": 10,
+		"tier": 0
+	},
+	"SILVER_PICKAXE": {
+		"double": 60,
+		"durability": 80,
+		"tier": 4
+	}
+}
