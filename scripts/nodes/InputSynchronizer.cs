@@ -1,3 +1,4 @@
+using EchoesofBlue.scripts.game;
 using Godot;
 
 namespace EchoesofBlue.scripts;
@@ -97,5 +98,21 @@ public partial class InputSynchronizer : MultiplayerSynchronizer
 	public void SyncSteam(string steamId, string steamUsn)
 	{
 		if(Multiplayer.IsServer()) _player.SyncSteam(steamId, steamUsn);
+	}
+	
+	public void SetPlayerLocationRpc(GameLocation location) => Rpc(nameof(SetPlayerLocation), location.ToString());
+	
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
+	public void SetPlayerLocation(string location)
+	{
+		if(Multiplayer.IsServer()) GameData.Instance.SetPlayerLocation(_player.SteamId, location);
+	}
+
+	public void SetPlayerNameRpc(string name) => Rpc(nameof(SetPlayerName), name); // TODO : Will need some server side authentication with these rpcs, to make sure they are reasonable data
+
+	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
+	public void SetPlayerName(string name)
+	{
+		if(Multiplayer.IsServer()) GameData.Instance.SetPlayerName(_player.SteamId, name);
 	}
 }

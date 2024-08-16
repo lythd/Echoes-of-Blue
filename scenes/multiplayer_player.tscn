@@ -145,6 +145,9 @@ properties/44/replication_mode = 2
 properties/45/path = NodePath(".:KbStrength")
 properties/45/spawn = true
 properties/45/replication_mode = 2
+properties/46/path = NodePath(".:SteamId")
+properties/46/spawn = true
+properties/46/replication_mode = 2
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_kgm8b"]
 properties/0/path = NodePath("InputSynchronizer:InputDirection")

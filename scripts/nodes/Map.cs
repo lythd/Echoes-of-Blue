@@ -66,7 +66,7 @@ public partial class Map : Node2D
 			_cursor.Texture = _atlasTexture;
 			_cursorEnabled = false;
 			_transitionTimer.Start();
-			GameData.Instance.SetPlayerLocationRpc(Player.SteamId, GameLocation.Get(_locationName));
+			Player.InputSynchronizer.SetPlayerLocationRpc(GameLocation.Get(_locationName));
 		}
 	}
 	

@@ -47,7 +47,7 @@ func _on_sync_character(player):
 	var parts = ["Eyes", "Hair", "Skin", "Shirt", "Hands", "Pants", "Shoes"]
 	for part in parts:
 		player.InputSynchronizer.CallCharacterRpc(character_pick.call("GetHSV", part), part)
-	player.InputSynchronizer.SyncSteamRpc(str(Steam.getSteamID()), SteamManager.SteamUsername)
+	player.InputSynchronizer.SyncSteamRpc(str(SteamManager.SteamId), SteamManager.SteamUsername)
 
 func _on_add_map(map):
 	add_child(map, true)

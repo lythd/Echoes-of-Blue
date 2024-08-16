@@ -77,11 +77,7 @@ public partial class GameData : Node
 	public bool HasPlayerData(string playerId) => GameUser.Get(playerId).Exists;
 	public void SetPlayerPosition(string playerId, Vector2 position) => GameUser.Get(playerId).Position = position;
 	public void SetPlayerHealth(string playerId, int health) => GameUser.Get(playerId).Health = health;
-	public void SetPlayerLocationRpc(string playerId, GameLocation location) => Rpc(nameof(SetPlayerLocation), playerId, location.ToString());
-	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void SetPlayerLocation(string playerId, string location) => GameUser.Get(playerId).Location = GameLocation.Get(location);
-	public void SetPlayerNameRpc(string playerId, string name) => Rpc(nameof(SetPlayerLocation), playerId, name); // TODO : Will need some server side authentication with these rpcs, to make sure they are reasonable data, as well as from the playerid it says
-	[Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
 	public void SetPlayerName(string playerId, string name) => GameUser.Get(playerId).PlayerName = name;
 	public void AddPlayer(string playerId, string name) =>
 		_save.Users[GameUser.Get(playerId)] = new() {Name = name, Location = _locations.Keys.ToArray()[Random.Shared.Next(_locations.Keys.ToArray().Length)]};

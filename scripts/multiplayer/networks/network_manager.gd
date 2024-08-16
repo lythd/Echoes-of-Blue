@@ -50,4 +50,5 @@ func add_player(id: int):
 	player_to_add.PlayerId = id
 	player_to_add.name = str(id)
 	player_to_add.MaxHealth = player_to_add.StartMaxHealth
+	player_to_add.Health = player_to_add.StartMaxHealth
 	_players_spawn_node.add_child(player_to_add, true)
